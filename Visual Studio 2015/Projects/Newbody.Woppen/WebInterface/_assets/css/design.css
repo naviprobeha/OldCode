@@ -1,0 +1,249 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+#main a:link    { color: #ce1817; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+#main a:visited { color: #ce1817; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+#main a:active  { color: #ce1817; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+#main a:hover   { color: #ff0908; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+
+#languages a:link    { color: #ffffff; font-weight: normal; font-size: 10px; text-decoration: none; text-transform: none; }
+#languages a:visited { color: #ffffff; font-weight: normal; font-size: 10px; text-decoration: none; text-transform: none; }
+#languages a:active  { color: #ffffff; font-weight: normal; font-size: 10px; text-decoration: none; text-transform: none; }
+#languages a:hover   { color: #ffffff; font-weight: normal; font-size: 10px; text-decoration: none; text-transform: none; }
+
+#menu a:link    { color: #ffffff; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+#menu a:visited { color: #ffffff; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+#menu a:active  { color: #ffffff; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+#menu a:hover   { color: #cccccc; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+
+
+body {
+	background: #ffffff;
+}
+
+
+#page 
+{
+	width: 1000px;
+	height:	100%;
+	background-color: #ffffff;
+}
+
+#page #header #logo
+{
+	width: 100%;	
+}
+
+#page #header
+{
+	font: 12px/18px Verdana;
+	height: 168px;
+	width: 100%;
+}
+
+#page #header #info
+{
+	float: right;
+	background: url(../img/red_bg.jpg);	
+	height: 73px;
+	width: 300px;
+	text-align: right;
+	
+}
+
+#page #header #info #searchBox
+{
+	padding-top: 5px;
+	height: 73px;	
+}
+
+#page #header #info #languages
+{
+	color: #ffffff;
+	font-size: 10px;
+}
+
+#page #header #logo
+{
+	width: 100%;
+	height: 168px;
+	background: url(../img/newbody_header.jpg);	
+	text-align: left;	
+}
+
+#page #header #logo #title
+{
+	color: #f01c2a;
+	font-size: 32px;
+	line-height:40px;
+}
+
+#page #header #logo #user
+{
+	color: #000000;
+	font-size: 11px;	
+	height: 30px;
+}
+
+#page #border
+{
+	width: 100%;
+	height: 66px;
+	background: url(../img/newbody_border.jpg);	
+	text-align: left;
+	padding-left: 5px;
+}
+
+#page #border #menu td
+{
+	height: 33px;
+	vertical-align: middle;
+	border-right: 1px solid #f25c69;	
+}
+
+#page #body
+{
+	width: 100%;
+	float: left;
+	padding-top: 7px;
+	padding-right: 0px;
+	padding-bottom: 7px;
+	background-color: #ffffff;
+	text-align: left;	
+	
+}
+
+
+
+#page #body #main
+{
+	float: left;
+	width: 760px;		
+	vertical-align: top;
+}
+
+#page #body #main .userControl
+{
+	background-color: #f0f0f0;
+	padding-left: 5px;
+
+}
+
+
+#page #body #right
+{
+	float: left;
+	width: 235px;		
+	padding-left: 5px;
+	vertical-align: top;
+
+}
+
+#page #body #right .userControl
+{
+	background-color: #f01c2a;
+	padding-left: 5px;
+	padding-top: 5px;	
+	padding-bottom: 5px;	
+	color: #ffffff;
+	font-size: 11px;
+
+}
+
+#page #bottom
+{
+	text-align: right;
+	font-size: 9px;
+}
+
+#page #bottom #line
+{
+	border-bottom: 1px solid #cccccc;
+	width: 100%;
+}
+
+
+
+img.imgBottom
+{
+	border: 0px;
+	vertical-align: bottom;
+}
+
+.itemListHeader
+{
+	background-color: #f0f0f0;
+	border-top: dashed 1px #000000;
+	border-bottom: dashed 1px #000000;
+}
+
+.itemListLine
+{
+	background-color: #f5f5f5;
+	border-bottom: solid 1px #e5e5e5;
+	vertical-align: top;
+	font-size: 11px;
+}
+
+.itemListAltLine
+{
+	background-color: #ffffff;
+	border-bottom: solid 1px #e5e5e5;
+	vertical-align: top;
+	font-size: 11px;
+}
+.itemListLineHover
+{
+	background-color: #e7e7e7;
+	border-bottom: solid 1px #e5e5e5;
+	vertical-align: top;
+	font-size: 11px;
+	cursor: hand;
+}
+
+.itemFilterForm .itemListHeader
+{
+	font-size: 11px;
+}
+
+.middle input
+{
+	vertical-align: text-bottom;
+	margin: 0px;
+}
+
+
+.Textfield      {
+                        font-family:            Verdana, Helvetica, Arial, sans-serif;
+                        font-size:              11px;
+                        color:                  #333333;
+                        height:                 16px;
+                        background-color:       #f5f5f5;
+                        border-top:             #777777 1px solid;
+                        border-left:            #777777 1px solid;
+                        border-right:           #777777 1px solid;
+                        border-bottom:          #777777 1px solid;
+                        vertical-align:			 baseline;
+                        }
+
+.DropDown      {
+                        font-family:            Verdana, Helvetica, Arial, sans-serif;
+                        font-size:              10px;
+                        color:                  #333333;
+                        height:                 18px;
+                        background-color:       #FFFFFF;
+                        border-top:             #777777 1px solid;
+                        border-left:            #777777 1px solid;
+                        border-right:           #777777 1px solid;
+                        border-bottom:          #777777 1px solid;
+                        }
+
+.Button      {
+                        font-family:            Verdana, Helvetica, Arial, sans-serif;
+                        font-size:                      10px;
+                        color:                          #333333;
+                        height:                         20px;
+                        }

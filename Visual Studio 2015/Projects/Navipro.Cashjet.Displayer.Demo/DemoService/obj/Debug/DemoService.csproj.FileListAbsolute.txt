@@ -1,0 +1,5 @@
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.Displayer.Demo\DemoService\bin\DemoService.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.Displayer.Demo\DemoService\bin\DemoService.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.Displayer.Demo\DemoService\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.Displayer.Demo\DemoService\obj\Debug\DemoService.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.Displayer.Demo\DemoService\obj\Debug\DemoService.pdb

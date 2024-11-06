@@ -1,0 +1,7 @@
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebInterface\bin\WebInterface.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebInterface\bin\WebInterface.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebInterface\bin\InfojetLib.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebInterface\bin\InfojetLib.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebInterface\obj\Debug\WebInterface.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebInterface\obj\Debug\WebInterface.pdb

@@ -1,0 +1,15 @@
+C:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\bin\Debug\Navipro.Newbody.PartnerPortal.Library.dll
+C:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\bin\Debug\Navipro.Newbody.PartnerPortal.Library.pdb
+C:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\bin\Debug\Navipro.Infojet.Lib.dll
+C:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\bin\Debug\Navipro.Infojet.Lib.pdb
+C:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\obj\Debug\Navipro.Newbody.PartnerPortal.Library.dll
+C:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\obj\Debug\Navipro.Newbody.PartnerPortal.Library.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\bin\Debug\Navipro.Newbody.PartnerPortal.Library.dll.config
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\bin\Debug\Navipro.Newbody.PartnerPortal.Library.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\bin\Debug\Navipro.Newbody.PartnerPortal.Library.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\bin\Debug\Navipro.Infojet.Lib.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\bin\Debug\Navipro.Infojet.Lib.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\obj\Debug\Navipro.Newbody.PartnerPortal.Library.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Library\obj\Debug\Navipro.Newbody.PartnerPortal.Library.pdb

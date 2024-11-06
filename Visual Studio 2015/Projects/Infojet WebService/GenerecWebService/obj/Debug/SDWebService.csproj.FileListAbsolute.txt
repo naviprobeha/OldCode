@@ -1,0 +1,7 @@
+D:\Visual Studio\VS2008\Projects\Infojet WebService\SDWebService\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Infojet WebService\SDWebService\bin\Navipro.Infojet.WebService.dll
+D:\Visual Studio\VS2008\Projects\Infojet WebService\SDWebService\bin\Navipro.Infojet.WebService.pdb
+D:\Visual Studio\VS2008\Projects\Infojet WebService\SDWebService\bin\Navipro.Infojet.Lib.dll
+D:\Visual Studio\VS2008\Projects\Infojet WebService\SDWebService\bin\Navipro.Infojet.Lib.pdb
+D:\Visual Studio\VS2008\Projects\Infojet WebService\SDWebService\obj\Debug\Navipro.Infojet.WebService.dll
+D:\Visual Studio\VS2008\Projects\Infojet WebService\SDWebService\obj\Debug\Navipro.Infojet.WebService.pdb

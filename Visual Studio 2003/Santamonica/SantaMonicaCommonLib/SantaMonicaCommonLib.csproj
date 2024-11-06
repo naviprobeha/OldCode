@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F55275C4-0FA0-4E4D-9FA3-A276637EF592}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>SantaMonicaCommonLib</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SantaMonicaCommonLib</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AgentItemPriceUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AgentItemPriceUpdates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Agents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AgentServiceSchedule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AgentServiceSchedules.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AgentStorageGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AgentStorageGroups.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AgentTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AgentTransactions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CalendarHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Categories.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckSum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Consumer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsumerCapacities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsumerCapacity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsumerInventories.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsumerInventory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsumerInventoryOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsumerInventoryOrders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsumerRelation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsumerRelations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Consumers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsumerStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsumerStatuses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Container.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerEntries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerLinkEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Containers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerServiceEntries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerServiceEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerUnits.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomerShipAddress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomerShipAddresses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Factories.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Factory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryCapacities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryCapacity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryInventories.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryInventory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryInventoryEntries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryInventoryEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryInventoryQueueEntries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryInventoryQueueEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryOrders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryOrganization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryOrganizations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeoCoding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemPrice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemPriceExtended.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemPrices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemPricesExtended.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Items.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemUnitOfMeasure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemUnitOfMeasures.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineJournal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineJournals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineOrderContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineOrderContainers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineOrderHistory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineOrders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineOrderShipment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineOrderShipments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Map.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Maps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MapServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MenuItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageAgent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageAgents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileUsers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperatorFactories.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperatorFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Organization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrganizationLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrganizationLocations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrganizationOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Organizations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PhoneLogEntries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PhoneLogEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PurchasePrice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PurchasePrices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reason.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReasonReportedLineOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReasonReportedLineOrders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reasons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportJob.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportJobs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportMaterialOverview.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleMenuItems.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScaleEntries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScaleEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScheduledShipOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScheduledShipOrders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServerLogging.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipmenHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipmentContainerQueueEntries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipmentContainerQueueEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipmentHeaders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipmentLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipmentLineId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipmentLineIds.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipmentLines.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipOrderLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipOrderLineId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipOrderLineIds.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipOrderLines.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipOrderLogLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipOrderLogLines.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShipOrders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingCustomer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingCustomerOrganization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingCustomerOrganizations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingCustomers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingCustomerSchedule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingCustomerSchedules.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingCustomerUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingCustomerUsers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMSMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMSMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SynchronizationQueueEntries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SynchronizationQueueEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserOperators.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web References\se.workanywhere.maps\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <None Include="Web References\se.workanywhere.maps\MapServer.disco" />
+    <None Include="Web References\se.workanywhere.maps\MapServer.wsdl" />
+    <None Include="Web References\se.workanywhere.maps\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <WebReferences Include="Web References\" />
+    <WebReferenceUrl Include="http://maps.workanywhere.se/MapServer.asmx">
+      <RelPath>Web References\se.workanywhere.maps\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

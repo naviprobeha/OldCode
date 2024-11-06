@@ -1,0 +1,10 @@
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebAdmin\bin\Navipro.Infojet.CMS.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebAdmin\bin\Navipro.Infojet.CMS.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebAdmin\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebAdmin\obj\Debug\Navipro.Infojet.CMS.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebAdmin\obj\Debug\Navipro.Infojet.CMS.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebAdmin\bin\Navipro.Infojet.CMS.dll
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebAdmin\bin\Navipro.Infojet.CMS.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebAdmin\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebAdmin\obj\Debug\Navipro.Infojet.CMS.dll
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebAdmin\obj\Debug\Navipro.Infojet.CMS.pdb

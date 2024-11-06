@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfojetLib", "InfojetLib\InfojetLib.csproj", "{7843B615-E659-45B6-A6CE-F4689596A0ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebInterface", "WebInterface\WebInterface.csproj", "{CE7E5263-40D5-4553-856D-B8B85B733699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfojetObjectSources", "InfojetObjectSources\InfojetObjectSources.csproj", "{069688A5-7811-4787-8D98-7B4D770E1C08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{C89F777E-1139-4526-AA30-7F279366846F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7843B615-E659-45B6-A6CE-F4689596A0ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7843B615-E659-45B6-A6CE-F4689596A0ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7843B615-E659-45B6-A6CE-F4689596A0ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7843B615-E659-45B6-A6CE-F4689596A0ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE7E5263-40D5-4553-856D-B8B85B733699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE7E5263-40D5-4553-856D-B8B85B733699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE7E5263-40D5-4553-856D-B8B85B733699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE7E5263-40D5-4553-856D-B8B85B733699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069688A5-7811-4787-8D98-7B4D770E1C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069688A5-7811-4787-8D98-7B4D770E1C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069688A5-7811-4787-8D98-7B4D770E1C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069688A5-7811-4787-8D98-7B4D770E1C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C89F777E-1139-4526-AA30-7F279366846F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C89F777E-1139-4526-AA30-7F279366846F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C89F777E-1139-4526-AA30-7F279366846F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C89F777E-1139-4526-AA30-7F279366846F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

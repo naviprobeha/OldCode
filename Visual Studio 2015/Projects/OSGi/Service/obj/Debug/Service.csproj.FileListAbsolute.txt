@@ -1,0 +1,12 @@
+C:\Visual Studio\VS2008\Projects\OSGi\Service\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\OSGi\Service\bin\Debug\Navipro.OSGi.Framework.dll
+C:\Visual Studio\VS2008\Projects\OSGi\Service\bin\Debug\Navipro.OSGi.Interfaces.dll
+C:\Visual Studio\VS2008\Projects\OSGi\Service\bin\Debug\Navipro.OSGi.Interfaces.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\Service\bin\Debug\Navipro.OSGi.Framework.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\Service\bin\Debug\Navipro.OSGi.Service.exe
+C:\Visual Studio\VS2008\Projects\OSGi\Service\bin\Debug\Navipro.OSGi.Service.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\Service\obj\Debug\Navipro.OSGi.Service.exe
+C:\Visual Studio\VS2008\Projects\OSGi\Service\obj\Debug\Navipro.OSGi.Service.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\Service\obj\Debug\Navipro.OSGi.Service.ProjectInstaller.resources
+C:\Visual Studio\VS2008\Projects\OSGi\Service\obj\Debug\Service.csproj.GenerateResource.Cache
+C:\Visual Studio\VS2008\Projects\OSGi\Service\obj\Debug\Navipro.OSGi.Service.Service.resources

@@ -1,0 +1,13 @@
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\bin\Debug\config.xml
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\bin\Debug\NaviPro.Alufluor.Idus.Library.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\bin\Debug\NaviPro.Alufluor.Idus.Library.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\bin\Debug\Newtonsoft.Json.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\obj\Debug\NaviPro.Alufluor.Idus.Library.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\obj\Debug\NaviPro.Alufluor.Idus.Library.pdb
+H:\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\bin\Debug\config.xml
+H:\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\bin\Debug\NaviPro.Alufluor.Idus.Library.dll
+H:\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\bin\Debug\NaviPro.Alufluor.Idus.Library.pdb
+H:\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+H:\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\obj\Debug\NaviPro.Alufluor.Idus.Library.dll
+H:\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\obj\Debug\NaviPro.Alufluor.Idus.Library.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache

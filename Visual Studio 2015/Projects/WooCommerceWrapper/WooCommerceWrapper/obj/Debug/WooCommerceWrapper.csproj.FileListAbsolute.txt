@@ -1,0 +1,6 @@
+C:\Projects\WooCommerceWrapper\bin\Debug\WooCommerceWrapper.dll
+C:\Projects\WooCommerceWrapper\bin\Debug\WooCommerceWrapper.pdb
+C:\Projects\WooCommerceWrapper\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\WooCommerceWrapper\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\WooCommerceWrapper\obj\Debug\WooCommerceWrapper.dll
+C:\Projects\WooCommerceWrapper\obj\Debug\WooCommerceWrapper.pdb

@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="VoucherService.asmx.cs" Class="VoucherService.VoucherService" %>

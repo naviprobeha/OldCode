@@ -1,0 +1,7 @@
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetObjectSources\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetObjectSources\bin\Debug\InfojetObjectSources.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetObjectSources\bin\Debug\InfojetObjectSources.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetObjectSources\bin\Debug\InfojetLib.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetObjectSources\bin\Debug\InfojetLib.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetObjectSources\obj\Debug\InfojetObjectSources.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetObjectSources\obj\Debug\InfojetObjectSources.pdb

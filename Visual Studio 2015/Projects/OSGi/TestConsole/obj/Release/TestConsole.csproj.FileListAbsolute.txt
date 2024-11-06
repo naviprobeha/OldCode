@@ -1,0 +1,9 @@
+C:\Visual Studio\VS2008\Projects\OSGi\TestConsole\bin\Release\TestConsole.exe
+C:\Visual Studio\VS2008\Projects\OSGi\TestConsole\bin\Release\TestConsole.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\TestConsole\bin\Release\Navipro.OSGi.Framework.dll
+C:\Visual Studio\VS2008\Projects\OSGi\TestConsole\bin\Release\Navipro.OSGi.Interfaces.dll
+C:\Visual Studio\VS2008\Projects\OSGi\TestConsole\bin\Release\Navipro.OSGi.Interfaces.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\TestConsole\bin\Release\Navipro.OSGi.Framework.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\TestConsole\obj\Release\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\OSGi\TestConsole\obj\Release\TestConsole.exe
+C:\Visual Studio\VS2008\Projects\OSGi\TestConsole\obj\Release\TestConsole.pdb

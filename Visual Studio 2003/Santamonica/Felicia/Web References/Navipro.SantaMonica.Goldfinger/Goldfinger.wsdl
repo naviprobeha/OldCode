@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://santamonica.navipro.se/goldfinger" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://santamonica.navipro.se/goldfinger" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://santamonica.navipro.se/goldfinger">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="reportStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="rt90x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rt90y" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="heading" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="speed" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="height" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reportStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="reportStatusResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reportStatusEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="rt90x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rt90y" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="heading" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="speed" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="height" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reportStatusExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="reportStatusExResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reportStatusTrip">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="rt90x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rt90y" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="heading" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="speed" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="height" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tripMeter" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reportStatusTripResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="reportStatusTripResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSynchEntry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="action" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="primaryKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="synchEntryNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSynchEntryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSynchEntryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="action" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="primaryKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="synchEntryNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setShipOrderStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="no" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="positionX" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="positionY" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setShipOrderStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="setShipOrderStatusEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="no" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="positionX" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="positionY" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="shipTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setShipOrderStatusExResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="setLineOrderStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="no" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="positionX" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="positionY" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="shipTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setLineOrderStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="setLineOrderStatusEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="no" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="positionX" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="positionY" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="shipTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="loadWaitTime" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setLineOrderStatusExResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="createShipment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shipmentHeaderDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="shipmentLinesDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="shipmentLineIdsDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createShipmentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="createOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shipmentHeaderDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="shipmentLinesDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="shipmentLineIdsDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createOrderResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="reportLineJournal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lineJournalDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reportLineJournalResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="setMessageStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="messageEntryNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setMessageStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ackSynchEntry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="synchEntryNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ackSynchEntryResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="assignShipOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newAgentCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="assignShipOrderResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="reportError">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reportErrorResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="createContainerEntry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="containerEntryDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createContainerEntryResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="setFactoryOrderStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="factoryOrderDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setFactoryOrderStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getPriceUpdateItemNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPriceUpdateItemNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPriceUpdateItemNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="acknowledgePriceUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agentCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="itemNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="checksum" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="acknowledgePriceUpdateResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="reportStatusSoapIn">
+    <part name="parameters" element="s0:reportStatus" />
+  </message>
+  <message name="reportStatusSoapOut">
+    <part name="parameters" element="s0:reportStatusResponse" />
+  </message>
+  <message name="reportStatusExSoapIn">
+    <part name="parameters" element="s0:reportStatusEx" />
+  </message>
+  <message name="reportStatusExSoapOut">
+    <part name="parameters" element="s0:reportStatusExResponse" />
+  </message>
+  <message name="reportStatusTripSoapIn">
+    <part name="parameters" element="s0:reportStatusTrip" />
+  </message>
+  <message name="reportStatusTripSoapOut">
+    <part name="parameters" element="s0:reportStatusTripResponse" />
+  </message>
+  <message name="getSynchEntrySoapIn">
+    <part name="parameters" element="s0:getSynchEntry" />
+  </message>
+  <message name="getSynchEntrySoapOut">
+    <part name="parameters" element="s0:getSynchEntryResponse" />
+  </message>
+  <message name="setShipOrderStatusSoapIn">
+    <part name="parameters" element="s0:setShipOrderStatus" />
+  </message>
+  <message name="setShipOrderStatusSoapOut">
+    <part name="parameters" element="s0:setShipOrderStatusResponse" />
+  </message>
+  <message name="setShipOrderStatusExSoapIn">
+    <part name="parameters" element="s0:setShipOrderStatusEx" />
+  </message>
+  <message name="setShipOrderStatusExSoapOut">
+    <part name="parameters" element="s0:setShipOrderStatusExResponse" />
+  </message>
+  <message name="setLineOrderStatusSoapIn">
+    <part name="parameters" element="s0:setLineOrderStatus" />
+  </message>
+  <message name="setLineOrderStatusSoapOut">
+    <part name="parameters" element="s0:setLineOrderStatusResponse" />
+  </message>
+  <message name="setLineOrderStatusExSoapIn">
+    <part name="parameters" element="s0:setLineOrderStatusEx" />
+  </message>
+  <message name="setLineOrderStatusExSoapOut">
+    <part name="parameters" element="s0:setLineOrderStatusExResponse" />
+  </message>
+  <message name="createShipmentSoapIn">
+    <part name="parameters" element="s0:createShipment" />
+  </message>
+  <message name="createShipmentSoapOut">
+    <part name="parameters" element="s0:createShipmentResponse" />
+  </message>
+  <message name="createOrderSoapIn">
+    <part name="parameters" element="s0:createOrder" />
+  </message>
+  <message name="createOrderSoapOut">
+    <part name="parameters" element="s0:createOrderResponse" />
+  </message>
+  <message name="reportLineJournalSoapIn">
+    <part name="parameters" element="s0:reportLineJournal" />
+  </message>
+  <message name="reportLineJournalSoapOut">
+    <part name="parameters" element="s0:reportLineJournalResponse" />
+  </message>
+  <message name="setMessageStatusSoapIn">
+    <part name="parameters" element="s0:setMessageStatus" />
+  </message>
+  <message name="setMessageStatusSoapOut">
+    <part name="parameters" element="s0:setMessageStatusResponse" />
+  </message>
+  <message name="ackSynchEntrySoapIn">
+    <part name="parameters" element="s0:ackSynchEntry" />
+  </message>
+  <message name="ackSynchEntrySoapOut">
+    <part name="parameters" element="s0:ackSynchEntryResponse" />
+  </message>
+  <message name="assignShipOrderSoapIn">
+    <part name="parameters" element="s0:assignShipOrder" />
+  </message>
+  <message name="assignShipOrderSoapOut">
+    <part name="parameters" element="s0:assignShipOrderResponse" />
+  </message>
+  <message name="reportErrorSoapIn">
+    <part name="parameters" element="s0:reportError" />
+  </message>
+  <message name="reportErrorSoapOut">
+    <part name="parameters" element="s0:reportErrorResponse" />
+  </message>
+  <message name="createContainerEntrySoapIn">
+    <part name="parameters" element="s0:createContainerEntry" />
+  </message>
+  <message name="createContainerEntrySoapOut">
+    <part name="parameters" element="s0:createContainerEntryResponse" />
+  </message>
+  <message name="setFactoryOrderStatusSoapIn">
+    <part name="parameters" element="s0:setFactoryOrderStatus" />
+  </message>
+  <message name="setFactoryOrderStatusSoapOut">
+    <part name="parameters" element="s0:setFactoryOrderStatusResponse" />
+  </message>
+  <message name="getPriceUpdateItemNoSoapIn">
+    <part name="parameters" element="s0:getPriceUpdateItemNo" />
+  </message>
+  <message name="getPriceUpdateItemNoSoapOut">
+    <part name="parameters" element="s0:getPriceUpdateItemNoResponse" />
+  </message>
+  <message name="acknowledgePriceUpdateSoapIn">
+    <part name="parameters" element="s0:acknowledgePriceUpdate" />
+  </message>
+  <message name="acknowledgePriceUpdateSoapOut">
+    <part name="parameters" element="s0:acknowledgePriceUpdateResponse" />
+  </message>
+  <portType name="GoldfingerSoap">
+    <operation name="reportStatus">
+      <input message="s0:reportStatusSoapIn" />
+      <output message="s0:reportStatusSoapOut" />
+    </operation>
+    <operation name="reportStatusEx">
+      <input message="s0:reportStatusExSoapIn" />
+      <output message="s0:reportStatusExSoapOut" />
+    </operation>
+    <operation name="reportStatusTrip">
+      <input message="s0:reportStatusTripSoapIn" />
+      <output message="s0:reportStatusTripSoapOut" />
+    </operation>
+    <operation name="getSynchEntry">
+      <input message="s0:getSynchEntrySoapIn" />
+      <output message="s0:getSynchEntrySoapOut" />
+    </operation>
+    <operation name="setShipOrderStatus">
+      <input message="s0:setShipOrderStatusSoapIn" />
+      <output message="s0:setShipOrderStatusSoapOut" />
+    </operation>
+    <operation name="setShipOrderStatusEx">
+      <input message="s0:setShipOrderStatusExSoapIn" />
+      <output message="s0:setShipOrderStatusExSoapOut" />
+    </operation>
+    <operation name="setLineOrderStatus">
+      <input message="s0:setLineOrderStatusSoapIn" />
+      <output message="s0:setLineOrderStatusSoapOut" />
+    </operation>
+    <operation name="setLineOrderStatusEx">
+      <input message="s0:setLineOrderStatusExSoapIn" />
+      <output message="s0:setLineOrderStatusExSoapOut" />
+    </operation>
+    <operation name="createShipment">
+      <input message="s0:createShipmentSoapIn" />
+      <output message="s0:createShipmentSoapOut" />
+    </operation>
+    <operation name="createOrder">
+      <input message="s0:createOrderSoapIn" />
+      <output message="s0:createOrderSoapOut" />
+    </operation>
+    <operation name="reportLineJournal">
+      <input message="s0:reportLineJournalSoapIn" />
+      <output message="s0:reportLineJournalSoapOut" />
+    </operation>
+    <operation name="setMessageStatus">
+      <input message="s0:setMessageStatusSoapIn" />
+      <output message="s0:setMessageStatusSoapOut" />
+    </operation>
+    <operation name="ackSynchEntry">
+      <input message="s0:ackSynchEntrySoapIn" />
+      <output message="s0:ackSynchEntrySoapOut" />
+    </operation>
+    <operation name="assignShipOrder">
+      <input message="s0:assignShipOrderSoapIn" />
+      <output message="s0:assignShipOrderSoapOut" />
+    </operation>
+    <operation name="reportError">
+      <input message="s0:reportErrorSoapIn" />
+      <output message="s0:reportErrorSoapOut" />
+    </operation>
+    <operation name="createContainerEntry">
+      <input message="s0:createContainerEntrySoapIn" />
+      <output message="s0:createContainerEntrySoapOut" />
+    </operation>
+    <operation name="setFactoryOrderStatus">
+      <input message="s0:setFactoryOrderStatusSoapIn" />
+      <output message="s0:setFactoryOrderStatusSoapOut" />
+    </operation>
+    <operation name="getPriceUpdateItemNo">
+      <input message="s0:getPriceUpdateItemNoSoapIn" />
+      <output message="s0:getPriceUpdateItemNoSoapOut" />
+    </operation>
+    <operation name="acknowledgePriceUpdate">
+      <input message="s0:acknowledgePriceUpdateSoapIn" />
+      <output message="s0:acknowledgePriceUpdateSoapOut" />
+    </operation>
+  </portType>
+  <binding name="GoldfingerSoap" type="s0:GoldfingerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="reportStatus">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/reportStatus" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reportStatusEx">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/reportStatusEx" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reportStatusTrip">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/reportStatusTrip" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getSynchEntry">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/getSynchEntry" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setShipOrderStatus">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/setShipOrderStatus" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setShipOrderStatusEx">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/setShipOrderStatusEx" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setLineOrderStatus">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/setLineOrderStatus" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setLineOrderStatusEx">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/setLineOrderStatusEx" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createShipment">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/createShipment" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createOrder">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/createOrder" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reportLineJournal">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/reportLineJournal" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setMessageStatus">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/setMessageStatus" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ackSynchEntry">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/ackSynchEntry" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="assignShipOrder">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/assignShipOrder" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reportError">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/reportError" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createContainerEntry">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/createContainerEntry" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setFactoryOrderStatus">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/setFactoryOrderStatus" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPriceUpdateItemNo">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/getPriceUpdateItemNo" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="acknowledgePriceUpdate">
+      <soap:operation soapAction="http://santamonica.navipro.se/goldfinger/acknowledgePriceUpdate" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Goldfinger">
+    <port name="GoldfingerSoap" binding="s0:GoldfingerSoap">
+      <soap:address location="http://dev1.navipro.se/SantaMonica/Goldfinger.asmx" />
+    </port>
+  </service>
+</definitions>

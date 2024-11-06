@@ -1,0 +1,5 @@
+H:\Visual Studio\VS2008\Projects\Navipro.NAVWebService\NAVWebService\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Navipro.NAVWebService\NAVWebService\bin\NAVWebService.dll
+H:\Visual Studio\VS2008\Projects\Navipro.NAVWebService\NAVWebService\bin\NAVWebService.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.NAVWebService\NAVWebService\obj\Debug\NAVWebService.dll
+H:\Visual Studio\VS2008\Projects\Navipro.NAVWebService\NAVWebService\obj\Debug\NAVWebService.pdb

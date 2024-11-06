@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\navipro_beha.WORKANYWHERE\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\navipro_beha.WORKANYWHERE\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ]
+  }
+}

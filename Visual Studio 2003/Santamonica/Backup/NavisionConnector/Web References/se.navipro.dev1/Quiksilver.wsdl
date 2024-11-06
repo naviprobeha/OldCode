@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="getAvailableShipments">
+        <s:complexType />
+      </s:element>
+      <s:element name="getAvailableShipmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAvailableShipmentsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getShipmentLines">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="shipmentNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getShipmentLinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getShipmentLinesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getShipmentLineIds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="shipmentNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="shipmentLineNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getShipmentLineIdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getShipmentLineIdsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setShipmentStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="shipmentNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setShipmentStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getOrganizationInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="organizationNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOrganizationInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOrganizations">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="syncGroupCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOrganizationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getOrganizationsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlRecord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="organizationNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateCustomerResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="updateItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlRecord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateItemResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="updateItemPrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlRecord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateItemPriceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="updateItemPriceExtended">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlRecord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateItemPriceExtendedResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="updatePurchasePrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlRecord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updatePurchasePriceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="updateShippingCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlRecord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateShippingCustomerResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUpdatedCustomers">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUpdatedCustomersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUpdatedCustomersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setCustomerUpdated">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="organizationNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="updated" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setCustomerUpdatedResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getScaleEntries">
+        <s:complexType />
+      </s:element>
+      <s:element name="getScaleEntriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getScaleEntriesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setScaleEntryStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="entryNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setScaleEntryStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getFactoryOrderEntries">
+        <s:complexType />
+      </s:element>
+      <s:element name="getFactoryOrderEntriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFactoryOrderEntriesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setFactoryOrderEntryStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="entryNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setFactoryOrderEntryStatusResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getAvailableShipmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:getAvailableShipments" />
+  </wsdl:message>
+  <wsdl:message name="getAvailableShipmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:getAvailableShipmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentLinesSoapIn">
+    <wsdl:part name="parameters" element="tns:getShipmentLines" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentLinesSoapOut">
+    <wsdl:part name="parameters" element="tns:getShipmentLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentLineIdsSoapIn">
+    <wsdl:part name="parameters" element="tns:getShipmentLineIds" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentLineIdsSoapOut">
+    <wsdl:part name="parameters" element="tns:getShipmentLineIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="setShipmentStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:setShipmentStatus" />
+  </wsdl:message>
+  <wsdl:message name="setShipmentStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:setShipmentStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOrganizationInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:getOrganizationInfo" />
+  </wsdl:message>
+  <wsdl:message name="getOrganizationInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:getOrganizationInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOrganizationsSoapIn">
+    <wsdl:part name="parameters" element="tns:getOrganizations" />
+  </wsdl:message>
+  <wsdl:message name="getOrganizationsSoapOut">
+    <wsdl:part name="parameters" element="tns:getOrganizationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:updateCustomer" />
+  </wsdl:message>
+  <wsdl:message name="updateCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:updateCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateItemSoapIn">
+    <wsdl:part name="parameters" element="tns:updateItem" />
+  </wsdl:message>
+  <wsdl:message name="updateItemSoapOut">
+    <wsdl:part name="parameters" element="tns:updateItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateItemPriceSoapIn">
+    <wsdl:part name="parameters" element="tns:updateItemPrice" />
+  </wsdl:message>
+  <wsdl:message name="updateItemPriceSoapOut">
+    <wsdl:part name="parameters" element="tns:updateItemPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateItemPriceExtendedSoapIn">
+    <wsdl:part name="parameters" element="tns:updateItemPriceExtended" />
+  </wsdl:message>
+  <wsdl:message name="updateItemPriceExtendedSoapOut">
+    <wsdl:part name="parameters" element="tns:updateItemPriceExtendedResponse" />
+  </wsdl:message>
+  <wsdl:message name="updatePurchasePriceSoapIn">
+    <wsdl:part name="parameters" element="tns:updatePurchasePrice" />
+  </wsdl:message>
+  <wsdl:message name="updatePurchasePriceSoapOut">
+    <wsdl:part name="parameters" element="tns:updatePurchasePriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateShippingCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:updateShippingCustomer" />
+  </wsdl:message>
+  <wsdl:message name="updateShippingCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:updateShippingCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUpdatedCustomersSoapIn">
+    <wsdl:part name="parameters" element="tns:getUpdatedCustomers" />
+  </wsdl:message>
+  <wsdl:message name="getUpdatedCustomersSoapOut">
+    <wsdl:part name="parameters" element="tns:getUpdatedCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="setCustomerUpdatedSoapIn">
+    <wsdl:part name="parameters" element="tns:setCustomerUpdated" />
+  </wsdl:message>
+  <wsdl:message name="setCustomerUpdatedSoapOut">
+    <wsdl:part name="parameters" element="tns:setCustomerUpdatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="getScaleEntriesSoapIn">
+    <wsdl:part name="parameters" element="tns:getScaleEntries" />
+  </wsdl:message>
+  <wsdl:message name="getScaleEntriesSoapOut">
+    <wsdl:part name="parameters" element="tns:getScaleEntriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="setScaleEntryStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:setScaleEntryStatus" />
+  </wsdl:message>
+  <wsdl:message name="setScaleEntryStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:setScaleEntryStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFactoryOrderEntriesSoapIn">
+    <wsdl:part name="parameters" element="tns:getFactoryOrderEntries" />
+  </wsdl:message>
+  <wsdl:message name="getFactoryOrderEntriesSoapOut">
+    <wsdl:part name="parameters" element="tns:getFactoryOrderEntriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="setFactoryOrderEntryStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:setFactoryOrderEntryStatus" />
+  </wsdl:message>
+  <wsdl:message name="setFactoryOrderEntryStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:setFactoryOrderEntryStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="QuiksilverSoap">
+    <wsdl:operation name="getAvailableShipments">
+      <wsdl:input message="tns:getAvailableShipmentsSoapIn" />
+      <wsdl:output message="tns:getAvailableShipmentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentLines">
+      <wsdl:input message="tns:getShipmentLinesSoapIn" />
+      <wsdl:output message="tns:getShipmentLinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentLineIds">
+      <wsdl:input message="tns:getShipmentLineIdsSoapIn" />
+      <wsdl:output message="tns:getShipmentLineIdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setShipmentStatus">
+      <wsdl:input message="tns:setShipmentStatusSoapIn" />
+      <wsdl:output message="tns:setShipmentStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getOrganizationInfo">
+      <wsdl:input message="tns:getOrganizationInfoSoapIn" />
+      <wsdl:output message="tns:getOrganizationInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getOrganizations">
+      <wsdl:input message="tns:getOrganizationsSoapIn" />
+      <wsdl:output message="tns:getOrganizationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateCustomer">
+      <wsdl:input message="tns:updateCustomerSoapIn" />
+      <wsdl:output message="tns:updateCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateItem">
+      <wsdl:input message="tns:updateItemSoapIn" />
+      <wsdl:output message="tns:updateItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateItemPrice">
+      <wsdl:input message="tns:updateItemPriceSoapIn" />
+      <wsdl:output message="tns:updateItemPriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateItemPriceExtended">
+      <wsdl:input message="tns:updateItemPriceExtendedSoapIn" />
+      <wsdl:output message="tns:updateItemPriceExtendedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updatePurchasePrice">
+      <wsdl:input message="tns:updatePurchasePriceSoapIn" />
+      <wsdl:output message="tns:updatePurchasePriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateShippingCustomer">
+      <wsdl:input message="tns:updateShippingCustomerSoapIn" />
+      <wsdl:output message="tns:updateShippingCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUpdatedCustomers">
+      <wsdl:input message="tns:getUpdatedCustomersSoapIn" />
+      <wsdl:output message="tns:getUpdatedCustomersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setCustomerUpdated">
+      <wsdl:input message="tns:setCustomerUpdatedSoapIn" />
+      <wsdl:output message="tns:setCustomerUpdatedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getScaleEntries">
+      <wsdl:input message="tns:getScaleEntriesSoapIn" />
+      <wsdl:output message="tns:getScaleEntriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setScaleEntryStatus">
+      <wsdl:input message="tns:setScaleEntryStatusSoapIn" />
+      <wsdl:output message="tns:setScaleEntryStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFactoryOrderEntries">
+      <wsdl:input message="tns:getFactoryOrderEntriesSoapIn" />
+      <wsdl:output message="tns:getFactoryOrderEntriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setFactoryOrderEntryStatus">
+      <wsdl:input message="tns:setFactoryOrderEntryStatusSoapIn" />
+      <wsdl:output message="tns:setFactoryOrderEntryStatusSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="QuiksilverSoap" type="tns:QuiksilverSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="getAvailableShipments">
+      <soap:operation soapAction="http://tempuri.org/getAvailableShipments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentLines">
+      <soap:operation soapAction="http://tempuri.org/getShipmentLines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentLineIds">
+      <soap:operation soapAction="http://tempuri.org/getShipmentLineIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setShipmentStatus">
+      <soap:operation soapAction="http://tempuri.org/setShipmentStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOrganizationInfo">
+      <soap:operation soapAction="http://tempuri.org/getOrganizationInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOrganizations">
+      <soap:operation soapAction="http://tempuri.org/getOrganizations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateCustomer">
+      <soap:operation soapAction="http://tempuri.org/updateCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateItem">
+      <soap:operation soapAction="http://tempuri.org/updateItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateItemPrice">
+      <soap:operation soapAction="http://tempuri.org/updateItemPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateItemPriceExtended">
+      <soap:operation soapAction="http://tempuri.org/updateItemPriceExtended" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePurchasePrice">
+      <soap:operation soapAction="http://tempuri.org/updatePurchasePrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateShippingCustomer">
+      <soap:operation soapAction="http://tempuri.org/updateShippingCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUpdatedCustomers">
+      <soap:operation soapAction="http://tempuri.org/getUpdatedCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setCustomerUpdated">
+      <soap:operation soapAction="http://tempuri.org/setCustomerUpdated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getScaleEntries">
+      <soap:operation soapAction="http://tempuri.org/getScaleEntries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setScaleEntryStatus">
+      <soap:operation soapAction="http://tempuri.org/setScaleEntryStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFactoryOrderEntries">
+      <soap:operation soapAction="http://tempuri.org/getFactoryOrderEntries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setFactoryOrderEntryStatus">
+      <soap:operation soapAction="http://tempuri.org/setFactoryOrderEntryStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Quiksilver">
+    <wsdl:port name="QuiksilverSoap" binding="tns:QuiksilverSoap">
+      <soap:address location="http://dev1.navipro.se/SantaMonica/Quiksilver.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

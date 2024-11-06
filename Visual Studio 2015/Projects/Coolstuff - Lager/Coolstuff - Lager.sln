@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartInventory", "SmartInventory\SmartInventory.csproj", "{BBFF70E2-1CEE-4C08-89FE-B12818C31E42}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "SmartInventorySetup", "SmartInventorySetup\SmartInventorySetup.vddproj", "{B5284F37-EF46-4999-AC60-0F131870CC21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartInventory.x86", "SmartInventory.x86\SmartInventory.x86.csproj", "{13EE6A73-9178-42E5-9D6C-3953CD607650}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBFF70E2-1CEE-4C08-89FE-B12818C31E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBFF70E2-1CEE-4C08-89FE-B12818C31E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBFF70E2-1CEE-4C08-89FE-B12818C31E42}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BBFF70E2-1CEE-4C08-89FE-B12818C31E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBFF70E2-1CEE-4C08-89FE-B12818C31E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBFF70E2-1CEE-4C08-89FE-B12818C31E42}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B5284F37-EF46-4999-AC60-0F131870CC21}.Debug|Any CPU.ActiveCfg = Debug
+		{B5284F37-EF46-4999-AC60-0F131870CC21}.Release|Any CPU.ActiveCfg = Release
+		{13EE6A73-9178-42E5-9D6C-3953CD607650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13EE6A73-9178-42E5-9D6C-3953CD607650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13EE6A73-9178-42E5-9D6C-3953CD607650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13EE6A73-9178-42E5-9D6C-3953CD607650}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

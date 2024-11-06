@@ -1,0 +1,10 @@
+<publishData>
+  <publishTarget publishUrl="\\challenger\Websites2\services.workanywhere.se\apcoa\">
+    <file relUrl="ServiceRequest.asmx" publishTime="07/27/2015 14:16:36" />
+    <file relUrl="bin/Navipro.Apcoa.ContractParker.WebService.pdb" publishTime="04/06/2017 12:45:39" />
+    <file relUrl="bin/Navipro.Apcoa.ContractParker.Library.dll" publishTime="04/06/2017 12:45:38" />
+    <file relUrl="bin/Navipro.Apcoa.ContractParker.WebService.dll" publishTime="04/06/2017 12:45:39" />
+    <file relUrl="bin/Navipro.Apcoa.ContractParker.Library.pdb" publishTime="04/06/2017 12:45:38" />
+    <file relUrl="Web.config" publishTime="12/14/2015 21:39:21" />
+  </publishTarget>
+</publishData>

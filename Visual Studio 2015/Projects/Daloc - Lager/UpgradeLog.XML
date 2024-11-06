@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Daloc - Lager">
+</Property><Property Name="Solution File" Value="C:\Visual Studio\VS2008\Projects\Daloc - Lager\Daloc - Lager.sln">
+</Property><Property Name="User Options File" Value="C:\Visual Studio\VS2008\Projects\Daloc - Lager\Daloc - Lager.suo">
+</Property><Property Name="Date" Value="den 15 december 2011">
+</Property><Property Name="Time" Value="08:29">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Daloc - Lager.sln" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\Daloc - Lager.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Daloc - Lager.suo" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\Daloc - Lager.suo">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\SmartShipment.csdproj" Description="Project file successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\SmartShipment.csdproj">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\SmartShipment.csdproj.user" Description="Project user file successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\SmartShipment.csdproj.user">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Agent.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Agent.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\AssemblyInfo.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\CreditCheck.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\CreditCheck.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\CustomerList.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\CustomerList.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Data.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Data.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataCollection.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataCollection.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataCustomer.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataCustomer.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataCustomers.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataCustomers.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataItem.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataItem.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataItems.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataItems.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataReference.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataReference.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataSalesHeader.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataSalesHeader.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataSalesHeaders.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataSalesHeaders.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataSalesLine.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataSalesLine.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataSalesLines.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataSalesLines.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\DataSetup.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\DataSetup.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Error.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Error.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Header.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Header.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\ItemList.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\ItemList.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\ItemPrice.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\ItemPrice.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Logger.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Logger.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\OrderHeader.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\OrderHeader.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\OrderLines.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\OrderLines.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Orders.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Orders.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Publication.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Publication.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\QuantityForm.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\QuantityForm.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Service.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Service.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\ServiceArgument.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\ServiceArgument.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\ServiceRequest.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\ServiceRequest.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\ServiceResponse.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\ServiceResponse.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\SmartDatabase.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\SmartDatabase.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Sound.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Sound.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Startform.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Startform.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\StringConverter.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\StringConverter.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Synchronize.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Synchronize.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\SynchSettings.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\SynchSettings.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Web References\se.navipro.dev1\Reference.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Web References\se.navipro.dev1\Reference.cs">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Web References\se.navipro.dev1\Reference.map" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Web References\se.navipro.dev1\Reference.map">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Web References\se.navipro.dev1\SynchService.disco" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Web References\se.navipro.dev1\SynchService.disco">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Web References\se.navipro.dev1\SynchService.wsdl" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Web References\se.navipro.dev1\SynchService.wsdl">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\CustomerList.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\CustomerList.resx">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\ItemList.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\ItemList.resx">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\OrderHeader.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\OrderHeader.resx">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\OrderLines.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\OrderLines.resx">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Orders.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Orders.resx">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\QuantityForm.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\QuantityForm.resx">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Startform.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Startform.resx">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Synchronize.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\Synchronize.resx">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\SynchSettings.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Daloc - Lager\Backup\SmartShipment\SynchSettings.resx">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\SmartShipment.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartShipment" Source="SmartShipment\SmartShipment.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="NavisionMobile" Source="http://192.168.5.22:/NavisionMobile/NavisionMobile.csproj" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="2" Project="http://192.168.5.22:/NavisionMobile/NavisionMobile.csproj" Source="http://192.168.5.22:/NavisionMobile/NavisionMobile.csproj" Description="ERROR: Failed to back up Web site http://192.168.5.22:/NavisionMobile/NavisionMobile.csproj">
+</Event><Event ErrorLevel="0" Project="" Source="Daloc - Lager.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Daloc - Lager.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\CustomerList.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartShipment" Source="SmartShipment\CustomerList.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\ItemList.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartShipment" Source="SmartShipment\ItemList.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\OrderHeader.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartShipment" Source="SmartShipment\OrderHeader.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\OrderLines.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartShipment" Source="SmartShipment\OrderLines.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Orders.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartShipment" Source="SmartShipment\Orders.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\QuantityForm.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartShipment" Source="SmartShipment\QuantityForm.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Startform.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartShipment" Source="SmartShipment\Startform.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\Synchronize.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartShipment" Source="SmartShipment\Synchronize.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\SynchSettings.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartShipment" Source="SmartShipment\SynchSettings.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartShipment" Source="SmartShipment\SmartShipment.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

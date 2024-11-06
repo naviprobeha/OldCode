@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nav>
+  <type>addresses</type>
+  <method>CREATE</method>
+  <filter />
+  <id>0</id>
+  <data>
+    <address>
+      <account_number>430</account_number>
+      <billing_company_1>Trygghet &amp;amp; S&amp;#228;kerhet i &amp;#214;-g&amp;#246;tlan</billing_company_1>
+      <billing_company_2 />
+      <billing_address_1 />
+      <billing_address_2>Smedtorpsv&amp;#228;gen 3 B</billing_address_2>
+      <billing_city>&amp;#197;TVIDABERG</billing_city>
+      <billing_state />
+      <billing_postcode>597 94</billing_postcode>
+      <billing_country>SE</billing_country>
+      <currency>SEK</currency>
+      <language>SV-SE</language>
+    </address>
+  </data>
+</nav>

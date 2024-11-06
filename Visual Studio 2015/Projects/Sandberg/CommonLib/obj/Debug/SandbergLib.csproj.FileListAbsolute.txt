@@ -1,0 +1,7 @@
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\bin\Debug\SandbergLib.dll
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\bin\Debug\SandbergLib.pdb
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\obj\Debug\SandbergLib.dll
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\obj\Debug\SandbergLib.pdb
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\bin\Debug\Navipro.Base.Common.dll
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\bin\Debug\Navipro.Base.Common.pdb

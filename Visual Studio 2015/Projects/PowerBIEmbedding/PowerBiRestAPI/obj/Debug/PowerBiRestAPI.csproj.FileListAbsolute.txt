@@ -1,0 +1,13 @@
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\bin\Debug\PowerBiRestAPI.exe.config
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\bin\Debug\PowerBiRestAPI.exe
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\bin\Debug\PowerBiRestAPI.pdb
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\bin\Debug\Newtonsoft.Json.dll
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\bin\Debug\Newtonsoft.Json.xml
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\obj\Debug\PowerBiRestAPI.csprojResolveAssemblyReference.cache
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\obj\Debug\PowerBiRestAPI.Properties.Resources.resources
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\obj\Debug\PowerBiRestAPI.csproj.GenerateResource.Cache
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\obj\Debug\PowerBiRestAPI.exe
+H:\Visual Studio\VS2015\Projects\PowerBIEmbedding\PowerBiRestAPI\obj\Debug\PowerBiRestAPI.pdb

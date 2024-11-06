@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BroadsoftLib", "BroadsoftLib\BroadsoftLib.csproj", "{A704E559-1AB3-483B-8EBD-CCA2518414C4}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BroadsoftSetup", "BroadsoftSetup\BroadsoftSetup.vdproj", "{5588018E-32AA-4181-8CA2-828815F60DB4}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BroadsoftLib\\BroadsoftLib.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = BroadsoftLib\\
+		SccProjectUniqueName2 = BroadsoftSetup\\BroadsoftSetup.vdproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = BroadsoftSetup\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A704E559-1AB3-483B-8EBD-CCA2518414C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A704E559-1AB3-483B-8EBD-CCA2518414C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A704E559-1AB3-483B-8EBD-CCA2518414C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A704E559-1AB3-483B-8EBD-CCA2518414C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5588018E-32AA-4181-8CA2-828815F60DB4}.Debug|Any CPU.ActiveCfg = Debug
+		{5588018E-32AA-4181-8CA2-828815F60DB4}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

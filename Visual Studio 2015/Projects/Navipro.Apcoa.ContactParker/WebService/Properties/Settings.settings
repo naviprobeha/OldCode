@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Navipro.Apcoa.ContractParker.WebService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Navipro_Apcoa_ContractParker_WebService_NavWebService_contractParkerWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://stardust:8217/APCOA2009R2DEV/WS/TEST_EuroPark%20%C3%96st%20AB_TEST/Codeunit/contractParkerWebService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

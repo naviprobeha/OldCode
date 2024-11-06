@@ -1,0 +1,6 @@
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\Navipro.Backoffice.Library\bin\Release\Navipro.Backoffice.Library.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\Navipro.Backoffice.Library\bin\Release\Navipro.Backoffice.Library.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\Navipro.Backoffice.Library\obj\Release\Navipro.Backoffice.Library.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\Navipro.Backoffice.Library\obj\Release\Navipro.Backoffice.Library.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\Navipro.Backoffice.Library\bin\Release\ChilkatDotNet46.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\Navipro.Backoffice.Library\obj\Release\Navipro.Backoffice.Library.csprojResolveAssemblyReference.cache

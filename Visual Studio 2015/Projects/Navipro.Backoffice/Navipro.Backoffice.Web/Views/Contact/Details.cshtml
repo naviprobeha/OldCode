@@ -1,0 +1,255 @@
+﻿@model Navipro.Backoffice.Web.Models.CaseMember
+@{
+    ViewBag.Title = Model.name;
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-9">
+        <h2>@Model.name</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="/">Hem</a>
+            </li>
+            <li class="active">
+                <a href="@Url.Action("List", "Contact")">Kontakter</a>
+            </li>
+            <li class="active">
+                <strong>@Model.name</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-sm-1">&nbsp;</div>
+    <div class="col-sm-1">
+        <div class="title-action" style="text-align: left;">
+
+            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Åtgärder <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="@Url.Action("Edit", "Contact")?email=@Model.email" class="font-bold">Redigera</a></li>
+                <li class="divider"></li>
+                <li><a href="#confirmDeleteModal" data-toggle="modal">Ta bort</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInUp">
+            @if (ViewBag.errorMessage != null)
+            {
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-danger alert-dismissable">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            @ViewBag.errorMessage
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <dl class="dl-horizontal">
+
+                                <dt>Namn:</dt>
+                                <dd>@Model.name</dd>
+
+                                <dt>Kund:</dt>
+                                <dd><a href="@Url.Action("Details", "Customer")/@Model.customerNo">@Model.customerNo - @Model.customerName</a></dd>
+                                <dt>Standardprojekt:</dt>
+                                <dd><a href="@Url.Action("Details", "Job")/@Model.defaultJobNo">@Model.defaultJobNo - @Model.defaultJobDescription</a></dd>
+
+                            </dl>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <dl class="dl-horizontal">
+
+                                <dt>E-post:</dt>
+                                <dd><a href="mailto:@Model.email">@Model.email</a></dd>
+                                <dt>Telefonnr:</dt>
+                                <dd><a href="tel:@Model.phoneNo">@Model.phoneNo</a></dd>
+                                <dt>Mobiltelefonnr:</dt>
+                                <dd><a href="tel:@Model.cellPhoneNo">@Model.cellPhoneNo</a></dd>
+
+                            </dl>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+ 
+      
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="row m-t-sm">
+                        <div class="col-lg-12">
+                            <div class="panel blank-panel">
+                                <div class="panel-heading">
+                                    <div class="panel-options">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#tab-1" data-toggle="tab">Pågående ärenden</a></li>
+                                            <li class=""><a href="#tab-2" data-toggle="tab">Avslutade ärenden</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+
+                                    <div class="tab-content">
+
+                                        <div class="tab-pane active" id="tab-1">
+
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Nr</th>
+                                                        <th>Rubrik</th>
+                                                        <th>Skapad datum</th>
+                                                        <th>Aktivitetstyp</th>
+                                                        <th>Status</th>
+                                                        <th>Ansvarig</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="openCaseTable"></tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="tab-pane" id="tab-2">
+
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Nr</th>
+                                                        <th>Rubrik</th>
+                                                        <th>Skapad datum</th>
+                                                        <th>Aktivitetstyp</th>
+                                                        <th>Status</th>
+                                                        <th>Ansvarig</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="closedCaseTable"></tbody>
+                                            </table>
+
+                                        </div>
+                                                                                   
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+<!-- Confirm Delete Modal HTML -->
+<div id="confirmDeleteModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Details", "Contact", FormMethod.Post))
+
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true)
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Ta bort kontakt</h4>
+                    <input type="hidden" name="mode" value="deleteCaseMember" />
+                    <input type="hidden" name="email" value="@Model.email" />
+                </div>
+                <div class="modal-body">
+                    <p>Du kommer att ta bort kontakten @Model.email helt. Är du säker?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                    <button type="submit" class="btn btn-primary">Ta bort</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+@section Styles {
+
+}
+
+@section Scripts {
+
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            updateOpenCaseTable();
+            updateClosedCaseTable();
+
+        });
+
+        function updateOpenCaseTable() {
+            // Creat JSON url to controller
+            var url = '@Url.Action("getOpenCases", "Contact")?email=@Model.email';
+
+            // Ajax call for table data
+            $.ajax({
+                url: url,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    var divBody = $('#openCaseTable');
+                    divBody.empty();
+
+                    var div = $('#openCaseTable');
+
+
+                    $.each(data, function (i, item) {
+                        div.append(
+                            $('<tr>')
+                                .append($('<td>').html(item.no)).append($('<td>').html(item.subject)).append($('<td>').html(item.receivedDateText)).append($('<td>').html(item.activityTypeCode)).append($('<td>').html(item.caseStatusCode)).append($('<td>').html(item.responsibleResource)).append($('<td align="right">').html('<a href="@Url.Action("Details", "Case")/' + item.no + '" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> Visa </a>'))
+                            );
+                    })
+                }
+            });
+        }
+
+        function updateClosedCaseTable() {
+            // Creat JSON url to controller
+            var url = '@Url.Action("getClosedCases", "Contact")?email=@Model.email';
+
+            // Ajax call for table data
+            $.ajax({
+                url: url,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    var divBody = $('#closedCaseTable');
+                    divBody.empty();
+
+                    var div = $('#closedCaseTable');
+
+
+                    $.each(data, function (i, item) {
+                        div.append(
+                            $('<tr>')
+                                .append($('<td>').html(item.no)).append($('<td>').html(item.subject)).append($('<td>').html(item.receivedDateText)).append($('<td>').html(item.activityTypeCode)).append($('<td>').html(item.caseStatusCode)).append($('<td>').html(item.responsibleResource)).append($('<td align="right">').html('<a href="@Url.Action("Details", "Case")/' + item.no + '" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> Visa </a>'))
+                            );
+                    })
+                }
+            });
+        }
+
+    </script>
+
+}

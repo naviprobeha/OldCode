@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="STWebService.asmx.cs" Class="Navipro.SvensktTenn.Nav.STWebService" %>

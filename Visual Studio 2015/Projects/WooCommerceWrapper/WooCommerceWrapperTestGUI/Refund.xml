@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nav>
+  <type>orders/52853/refunds</type>
+  <method>CREATE</method>
+  <filter />
+  <id>0</id>
+  <data>
+    <order_refund>
+      <amount>1000</amount>
+    </order_refund>
+  </data>
+</nav>

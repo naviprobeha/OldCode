@@ -1,0 +1,7 @@
+D:\Visual Studio\VS2008\Projects\Navipro.CashJet.AddIns\ButtonPanel\bin\Debug\Microsoft.Dynamics.Framework.UI.Extensibility.dll
+D:\Visual Studio\VS2008\Projects\Navipro.CashJet.AddIns\ButtonPanel\bin\Debug\Microsoft.Dynamics.Framework.UI.Extensibility.xml
+D:\Visual Studio\VS2008\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Navipro.CashJet.AddIns\ButtonPanel\bin\Debug\Navipro.CashJet.AddIns.dll
+D:\Visual Studio\VS2008\Projects\Navipro.CashJet.AddIns\ButtonPanel\bin\Debug\Navipro.CashJet.AddIns.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\Debug\Navipro.CashJet.AddIns.dll
+D:\Visual Studio\VS2008\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\Debug\Navipro.CashJet.AddIns.pdb

@@ -1,0 +1,6 @@
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\BoschProductFeed\bin\Debug\BoschProductFeed.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\BoschProductFeed\bin\Debug\BoschProductFeed.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\BoschProductFeed\bin\Debug\Newtonsoft.Json.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\BoschProductFeed\obj\Debug\BoschProductFeed.csprojResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\BoschProductFeed\obj\Debug\BoschProductFeed.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\BoschProductFeed\obj\Debug\BoschProductFeed.pdb

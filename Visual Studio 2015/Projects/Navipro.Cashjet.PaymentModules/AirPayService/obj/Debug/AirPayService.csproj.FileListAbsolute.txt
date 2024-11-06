@@ -1,0 +1,13 @@
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\bin\Debug\AirPayService.exe
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\bin\Debug\AirPayService.pdb
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\obj\Debug\ResolveAssemblyReference.cache
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\obj\Debug\AirPayService.exe
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\obj\Debug\AirPayService.pdb
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\obj\Debug\Interop.rti.dll
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\obj\Debug\AirPayService.csproj.ResolveComReference.cache
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\bin\Debug\AirPayServer.dll
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\bin\Debug\Interop.rti.dll
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\bin\Debug\AirPayServer.pdb
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\obj\Debug\AirPayService.ProjectInstaller.resources
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\obj\Debug\AirPayService.csproj.GenerateResource.Cache
+\\zenit\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\AirPayService\obj\Debug\Navipro.Cashjet.PaymentModules.AirPay.AirPayService.resources

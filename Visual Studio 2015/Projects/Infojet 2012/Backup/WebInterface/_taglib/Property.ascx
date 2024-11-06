@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Property.ascx.cs" Inherits="Navipro.Infojet.WebInterface._taglib.Property" %>
+<asp:Literal ID="propertyLiteral" runat="server"></asp:Literal>

@@ -1,0 +1,10 @@
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\TestConsole\bin\Debug\TestConsole.exe.config
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\TestConsole\bin\Debug\TestConsole.exe
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\TestConsole\bin\Debug\TestConsole.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\TestConsole\bin\Debug\PowerBIConnector.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\TestConsole\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\TestConsole\bin\Debug\PowerBIConnector.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\TestConsole\obj\Debug\TestConsole.exe
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\TestConsole\obj\Debug\TestConsole.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\TestConsole\bin\Debug\Newtonsoft.Json.dll

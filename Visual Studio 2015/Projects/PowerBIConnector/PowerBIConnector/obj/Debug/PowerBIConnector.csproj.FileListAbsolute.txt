@@ -1,0 +1,12 @@
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\bin\Debug\PowerBIConnector.dll.config
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\bin\Debug\PowerBIConnector.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\bin\Debug\PowerBIConnector.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\obj\Debug\PowerBIConnector.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\obj\Debug\PowerBIConnector.pdb
+H:\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\bin\Debug\PowerBIConnector.dll.config
+H:\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\bin\Debug\PowerBIConnector.dll
+H:\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\bin\Debug\PowerBIConnector.pdb
+H:\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\obj\Debug\PowerBIConnector.dll
+H:\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\obj\Debug\PowerBIConnector.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\obj\Debug\PowerBIConnector.csprojResolveAssemblyReference.cache
+H:\Visual Studio\VS2015\Projects\PowerBIConnector\PowerBIConnector\obj\Debug\PowerBIConnector.csprojResolveAssemblyReference.cache

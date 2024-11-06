@@ -1,0 +1,20 @@
+﻿StarPRNTSDK
+
+
+winexe
+C#
+.cs
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\StarSDK\StarPRNTSDK\obj\x64\Debug\
+StarPRNTSDK
+none
+false
+DEBUG;TRACE
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\StarSDK\StarPRNTSDK\App.xaml
+301081246102
+3-1910859432
+75-1941563529
+181959889119
+AllReceiptsExtSamplePage.xaml;AllReceiptsSamplePage.xaml;APISamplePage.xaml;BarcodeReaderExtSamplePage.xaml;BlackMarkPasteSamplePage.xaml;BlackMarkSamplePage.xaml;BluetoothSettingSamplePage.xaml;CashDrawerExtSamplePage.xaml;CashDrawerSamplePage.xaml;CombinationExtSamplePage.xaml;CombinationPrinterDriverSamplePage.xaml;CombinationSamplePage.xaml;DeviceStatusSamplePage.xaml;DisplayExtSamplePage.xaml;DisplaySamplePage.xaml;PageModeSamplePage.xaml;PrinterDriverWithBarcodeReaderSamplePage.xaml;PrinterDriverWithCheckStatusSamplePage.xaml;PrinterDriverWithDisplaySamplePage.xaml;PrinterDriverWithScaleSamplePage.xaml;PrinterExtSamplePage.xaml;ScaleExtSamplePage.xaml;ScaleSamplePage.xaml;UIManager\EnterTextWindow.xaml;MainPage.xaml;MainWindow.xaml;PrinterSamplePage.xaml;UIManager\ProgressBarWindow.xaml;SearchPortSamplePage.xaml;UIManager\SelectSettingWindow.xaml;
+resources\launch_image.jpg
+True
+

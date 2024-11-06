@@ -1,0 +1,10 @@
+D:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\TcpClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\TcpClient\bin\Debug\Navipro.Cashjet.TcpClient.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\TcpClient\bin\Debug\Navipro.Cashjet.TcpClient.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\TcpClient\obj\Debug\Navipro.Cashjet.TcpClient.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\TcpClient\obj\Debug\Navipro.Cashjet.TcpClient.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\TcpClient\bin\Debug\Navipro.Cashjet.TcpClient.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\TcpClient\bin\Debug\Navipro.Cashjet.TcpClient.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\TcpClient\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\TcpClient\obj\Debug\Navipro.Cashjet.TcpClient.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\TcpClient\obj\Debug\Navipro.Cashjet.TcpClient.pdb

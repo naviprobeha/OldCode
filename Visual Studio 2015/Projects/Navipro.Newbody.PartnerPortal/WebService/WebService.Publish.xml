@@ -1,0 +1,12 @@
+<publishData>
+  <publishTarget publishUrl="\\hera\Websites\default\NewbodyInfojetWebService\SalesID\">
+    <file relUrl="bin/Navipro.Newbody.PartnerPortal.Library.pdb" publishTime="05/30/2014 12:27:47" />
+    <file relUrl="bin/Navipro.Infojet.Lib.dll" publishTime="05/25/2014 21:57:58" />
+    <file relUrl="bin/Navipro.Newbody.PartnerPortal.WebService.pdb" publishTime="05/30/2014 12:27:47" />
+    <file relUrl="SalesIDService.asmx" publishTime="04/23/2013 19:57:16" />
+    <file relUrl="Web.config" publishTime="05/02/2013 15:40:23" />
+    <file relUrl="bin/Navipro.Newbody.PartnerPortal.Library.dll" publishTime="05/30/2014 12:27:47" />
+    <file relUrl="bin/Navipro.Infojet.Lib.pdb" publishTime="05/25/2014 21:57:58" />
+    <file relUrl="bin/Navipro.Newbody.PartnerPortal.WebService.dll" publishTime="05/30/2014 12:27:47" />
+  </publishTarget>
+</publishData>

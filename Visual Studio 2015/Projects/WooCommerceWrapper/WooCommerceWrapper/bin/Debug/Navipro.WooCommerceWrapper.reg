@@ -1,0 +1,29 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\WooCommerceWrapper.Rest]
+@="WooCommerceWrapper.REST"
+
+[HKEY_CLASSES_ROOT\WooCommerceWrapper.Rest\CLSID]
+@="{00DA3303-A259-4641-8459-4A5D7F3D286F}"
+
+[HKEY_CLASSES_ROOT\CLSID\{00DA3303-A259-4641-8459-4A5D7F3D286F}]
+@="WooCommerceWrapper.REST"
+
+[HKEY_CLASSES_ROOT\CLSID\{00DA3303-A259-4641-8459-4A5D7F3D286F}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="WooCommerceWrapper.REST"
+"Assembly"="Navipro.WooCommerceWrapper, Version=1.0.0.6, Culture=neutral, PublicKeyToken=d192f8e64d3b3bba"
+"RuntimeVersion"="v2.0.50727"
+"CodeBase"="file:///C:/Projects/WooCommerceWrapper/bin/Debug/Navipro.WooCommerceWrapper.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{00DA3303-A259-4641-8459-4A5D7F3D286F}\InprocServer32\1.0.0.6]
+"Class"="WooCommerceWrapper.REST"
+"Assembly"="Navipro.WooCommerceWrapper, Version=1.0.0.6, Culture=neutral, PublicKeyToken=d192f8e64d3b3bba"
+"RuntimeVersion"="v2.0.50727"
+"CodeBase"="file:///C:/Projects/WooCommerceWrapper/bin/Debug/Navipro.WooCommerceWrapper.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{00DA3303-A259-4641-8459-4A5D7F3D286F}\ProgId]
+@="WooCommerceWrapper.Rest"
+
+[HKEY_CLASSES_ROOT\CLSID\{00DA3303-A259-4641-8459-4A5D7F3D286F}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]

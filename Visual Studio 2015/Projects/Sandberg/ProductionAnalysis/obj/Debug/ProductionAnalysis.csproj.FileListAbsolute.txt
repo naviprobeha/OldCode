@@ -1,0 +1,9 @@
+C:\Visual Studio\VS2008\Projects\Sandberg\ProductionAnalysis\bin\ProductionAnalysis.dll
+C:\Visual Studio\VS2008\Projects\Sandberg\ProductionAnalysis\bin\ProductionAnalysis.pdb
+C:\Visual Studio\VS2008\Projects\Sandberg\ProductionAnalysis\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Sandberg\ProductionAnalysis\obj\Debug\ProductionAnalysis.dll
+C:\Visual Studio\VS2008\Projects\Sandberg\ProductionAnalysis\obj\Debug\ProductionAnalysis.pdb
+C:\Visual Studio\VS2008\Projects\Sandberg\ProductionAnalysis\bin\Navipro.Base.Common.dll
+C:\Visual Studio\VS2008\Projects\Sandberg\ProductionAnalysis\bin\SandbergLib.dll
+C:\Visual Studio\VS2008\Projects\Sandberg\ProductionAnalysis\bin\SandbergLib.pdb
+C:\Visual Studio\VS2008\Projects\Sandberg\ProductionAnalysis\bin\Navipro.Base.Common.pdb

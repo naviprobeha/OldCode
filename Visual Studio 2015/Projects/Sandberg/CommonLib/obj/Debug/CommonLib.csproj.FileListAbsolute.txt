@@ -1,0 +1,7 @@
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\bin\Debug\CommonLib.dll
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\bin\Debug\CommonLib.pdb
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\bin\Debug\Common.dll
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\bin\Debug\Common.pdb
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\obj\Debug\CommonLib.dll
+C:\Visual Studio\VS2008\Projects\Sandberg\CommonLib\obj\Debug\CommonLib.pdb

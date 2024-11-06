@@ -1,0 +1,7 @@
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebServiceAPI\bin\Debug\STWebServiceAPI.dll
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebServiceAPI\bin\Debug\STWebServiceAPI.pdb
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebServiceAPI\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebServiceAPI\obj\Debug\STWebServiceAPI.dll
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebServiceAPI\obj\Debug\STWebServiceAPI.pdb
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebServiceAPI\bin\Debug\STWebServiceAPI.dll.config
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebServiceAPI\bin\Debug\STWebServiceAPI.tlb

@@ -1,0 +1,12 @@
+<publishData>
+  <publishTarget publishUrl="\\hera\Websites\default\HappySocksServiceRequest\">
+    <file relUrl="WebSiteService.asmx" publishTime="04/29/2013 21:38:31" />
+    <file relUrl="bin/Navipro.Infojet.WebService.dll" publishTime="01/18/2014 21:37:18" />
+    <file relUrl="bin/Navipro.Infojet.Lib.dll" publishTime="01/15/2014 20:21:07" />
+    <file relUrl="Web.config" publishTime="01/18/2014 21:32:19" />
+    <file relUrl="bin/Navipro.Infojet.Lib.pdb" publishTime="01/15/2014 20:21:07" />
+    <file relUrl="InfojetServiceRequest.asmx" publishTime="04/22/2010 07:04:25" />
+    <file relUrl="WebCheckoutService.asmx" publishTime="09/16/2013 20:47:51" />
+    <file relUrl="bin/Navipro.Infojet.WebService.pdb" publishTime="01/18/2014 21:37:18" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nav>
+  <type>orders</type>
+  <method>CREATE</method>
+  <filter />
+  <id>1148</id>
+  <data>
+    <order>     
+      <marked>true</marked>
+    </order>
+  </data>
+</nav>

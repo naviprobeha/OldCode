@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/SDRequestWebService" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/SDRequestWebService" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/SDRequestWebService" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="ProcessRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="p_strGuid" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ProcessRequest_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="Hepp">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="p_strGuid" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Hepp_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="ProcessRequest">
+    <part name="parameters" element="tns:ProcessRequest" />
+  </message>
+  <message name="ProcessRequest_Result">
+    <part name="parameters" element="tns:ProcessRequest_Result" />
+  </message>
+  <message name="Hepp">
+    <part name="parameters" element="tns:Hepp" />
+  </message>
+  <message name="Hepp_Result">
+    <part name="parameters" element="tns:Hepp_Result" />
+  </message>
+  <portType name="SDRequestWebService_Port">
+    <operation name="ProcessRequest">
+      <input name="ProcessRequest" message="tns:ProcessRequest" />
+      <output name="ProcessRequest_Result" message="tns:ProcessRequest_Result" />
+    </operation>
+    <operation name="Hepp">
+      <input name="Hepp" message="tns:Hepp" />
+      <output name="Hepp_Result" message="tns:Hepp_Result" />
+    </operation>
+  </portType>
+  <binding name="SDRequestWebService_Binding" type="tns:SDRequestWebService_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="ProcessRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/SDRequestWebService:ProcessRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ProcessRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ProcessRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Hepp">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/SDRequestWebService:Hepp" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Hepp">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Hepp_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SDRequestWebService">
+    <port name="SDRequestWebService_Port" binding="tns:SDRequestWebService_Binding">
+      <address location="http://sirius:7087/OUTNORTH2009R2/WS/Outnorth%20AB/Codeunit/SDRequestWebService" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

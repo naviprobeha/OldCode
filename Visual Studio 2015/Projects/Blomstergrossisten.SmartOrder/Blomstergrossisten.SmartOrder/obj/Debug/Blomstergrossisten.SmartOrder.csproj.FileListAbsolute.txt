@@ -1,0 +1,61 @@
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Properties.Resources.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.StartForm.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\Blomstergrossisten.SmartOrder.csproj.GenerateResource.Cache
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\SmartOrder.exe
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\SmartOrder.pdb
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\SerialNET.dll
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\System.Data.SqlServerCe.dll
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.exe
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.pdb
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\SmartOrder.exe
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\SmartOrder.pdb
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\SerialNET.dll
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\System.Data.SqlServerCe.dll
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\ResolveAssemblyReference.cache
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Properties.Resources.resources
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.StartForm.resources
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\Blomstergrossisten.SmartOrder.csproj.GenerateResource.Cache
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.exe
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.pdb
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Menu.resources
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Setup.resources
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Sync.resources
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.CustomerList.resources
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Order.resources
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.ItemList.resources
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.OrderItem.resources
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.QuantityForm.resources
+D:\Temp\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Orders.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.CustomerList.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.ItemList.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Menu.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Order.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.OrderItem.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Orders.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.QuantityForm.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Setup.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Sync.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.PriceScan.resources
+D:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.InventoryJournal.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\SmartOrder.exe
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\SmartOrder.pdb
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\SerialNET.dll
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\bin\Debug\System.Data.SqlServerCe.dll
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.CustomerList.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.InventoryJournal.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.ItemList.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Menu.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Order.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.OrderItem.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Orders.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.PriceScan.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Properties.Resources.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.QuantityForm.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Setup.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.StartForm.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.Sync.resources
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\Blomstergrossisten.SmartOrder.csproj.GenerateResource.Cache
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.exe
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder\obj\Debug\SmartOrder.pdb

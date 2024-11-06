@@ -1,0 +1,14 @@
+<publishData>
+  <publishTarget publishUrl="\\challenger\websites2\cashjetipos.workanywhere.se\voucherservice\">
+    <file relUrl="bin/VoucherService.dll" publishTime="06/04/2018 18:57:09" />
+    <file relUrl="VoucherService.asmx" publishTime="06/04/2018 18:56:40" />
+    <file relUrl="bin/VoucherService.pdb" publishTime="06/04/2018 18:57:08" />
+    <file relUrl="Web.config" publishTime="06/04/2018 18:51:04" />
+  </publishTarget>
+  <publishTarget publishUrl="\\challenger\websites2\cashjet.workanywhere.se\voucherservice\">
+    <file relUrl="bin/VoucherService.dll" publishTime="06/04/2018 18:57:09" />
+    <file relUrl="VoucherService.asmx" publishTime="06/04/2018 18:56:40" />
+    <file relUrl="bin/VoucherService.pdb" publishTime="06/04/2018 18:57:08" />
+    <file relUrl="Web.config" publishTime="06/04/2018 18:51:04" />
+  </publishTarget>
+</publishData>

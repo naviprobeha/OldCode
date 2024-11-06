@@ -1,0 +1,7 @@
+C:\Visual Studio\VS2008\Projects\Navipro.Base\LogHandler\obj\Release\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Navipro.Base\LogHandler\bin\Release\LogHandler.dll
+C:\Visual Studio\VS2008\Projects\Navipro.Base\LogHandler\bin\Release\LogHandler.pdb
+C:\Visual Studio\VS2008\Projects\Navipro.Base\LogHandler\obj\Release\LogHandler.dll
+C:\Visual Studio\VS2008\Projects\Navipro.Base\LogHandler\obj\Release\LogHandler.pdb
+C:\Visual Studio\VS2008\Projects\Navipro.Base\LogHandler\bin\Release\Navipro.Base.Common.dll
+C:\Visual Studio\VS2008\Projects\Navipro.Base\LogHandler\bin\Release\Navipro.Base.Common.pdb

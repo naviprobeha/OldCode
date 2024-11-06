@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://navipro.svenskttenn.nav/stwebservice" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://navipro.svenskttenn.nav/stwebservice" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://navipro.svenskttenn.nav/stwebservice">
+      <s:element name="performService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="documentStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="performServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="performServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="performServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:performService" />
+  </wsdl:message>
+  <wsdl:message name="performServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:performServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="STWebServiceSoap">
+    <wsdl:operation name="performService">
+      <wsdl:input message="tns:performServiceSoapIn" />
+      <wsdl:output message="tns:performServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="STWebServiceSoap" type="tns:STWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="performService">
+      <soap:operation soapAction="http://navipro.svenskttenn.nav/stwebservice/performService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="STWebServiceSoap12" type="tns:STWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="performService">
+      <soap12:operation soapAction="http://navipro.svenskttenn.nav/stwebservice/performService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="STWebService">
+    <wsdl:port name="STWebServiceSoap" binding="tns:STWebServiceSoap">
+      <soap:address location="http://192.168.222.14:82/STWebService/STWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="STWebServiceSoap12" binding="tns:STWebServiceSoap12">
+      <soap12:address location="http://192.168.222.14:82/STWebService/STWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7843B615-E659-45B6-A6CE-F4689596A0ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Navipro.Infojet.Lib</RootNamespace>
+    <AssemblyName>Navipro.Infojet.Lib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationServerConnection.cs" />
+    <Compile Include="CacheableNavigationItem.cs" />
+    <Compile Include="CacheableNavigationItemCollection.cs" />
+    <Compile Include="CalendarHelper.cs" />
+    <Compile Include="Captcha.cs" />
+    <Compile Include="CaptchaImage.cs" />
+    <Compile Include="ContentHandler.cs" />
+    <Compile Include="CustomerCollection.cs" />
+    <Compile Include="CustomerHistoryCrMemo.cs" />
+    <Compile Include="CustomerHistoryCrMemoCollection.cs" />
+    <Compile Include="CustomerHistoryInvoiceCollection.cs" />
+    <Compile Include="CustomerHistoryLedger.cs" />
+    <Compile Include="CustomerHistoryLedgerCollection.cs" />
+    <Compile Include="CustomerHistoryLineCollection.cs" />
+    <Compile Include="CustomerHistoryOrderCollection.cs" />
+    <Compile Include="CustomerHistoryShipmentCollection.cs" />
+    <Compile Include="EditorManagerControl.cs" />
+    <Compile Include="FieldValue.cs" />
+    <Compile Include="FieldValueCollection.cs" />
+    <Compile Include="GlobalCache.cs" />
+    <Compile Include="ItemAttribute.cs" />
+    <Compile Include="ItemAttributeCollection.cs" />
+    <Compile Include="CartItem.cs" />
+    <Compile Include="CartHandler.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Contact.cs" />
+    <Compile Include="CurrencyExchangeRate.cs" />
+    <Compile Include="CurrencyExchangeRates.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerHistory.cs" />
+    <Compile Include="CustomerHistoryInvoice.cs" />
+    <Compile Include="CustomerHistoryLine.cs" />
+    <Compile Include="CustomerHistoryOrder.cs" />
+    <Compile Include="CustomerHistoryShipment.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DatabaseQuery.cs" />
+    <Compile Include="DefaultSearchEngine.cs" />
+    <Compile Include="ExtendedTextHeader.cs" />
+    <Compile Include="ExtendedTextHeaders.cs" />
+    <Compile Include="ExtendedTextLine.cs" />
+    <Compile Include="ExtendedTextLines.cs" />
+    <Compile Include="GeneralLedgerSetup.cs" />
+    <Compile Include="HistoryDocument.cs" />
+    <Compile Include="HistoryList.cs" />
+    <Compile Include="ItemCalendarBooking.cs" />
+    <Compile Include="ItemCalendarBookingCollection.cs" />
+    <Compile Include="ItemInfoPrice.cs" />
+    <Compile Include="ItemInfoPriceCollection.cs" />
+    <Compile Include="ItemReceiptInfo.cs" />
+    <Compile Include="ItemReceiptInfoCollection.cs" />
+    <Compile Include="ItemUnitOfMeasure.cs" />
+    <Compile Include="Link.cs" />
+    <Compile Include="LinkFactory.cs" />
+    <Compile Include="NewsletterAddress.cs" />
+    <Compile Include="SalesPerson.cs" />
+    <Compile Include="Sitemap.cs" />
+    <Compile Include="UnitOfMeasureTranslations.cs" />
+    <Compile Include="WebCartConfigLine.cs" />
+    <Compile Include="WebCartConfigLineCollection.cs" />
+    <Compile Include="WebCartField.cs" />
+    <Compile Include="WebCartFieldCollection.cs" />
+    <Compile Include="WebApplicationCache.cs" />
+    <Compile Include="WebConfigGlobalRule.cs" />
+    <Compile Include="WebConfigRule.cs" />
+    <Compile Include="WebFormFieldCondition.cs" />
+    <Compile Include="WebFormFieldConditionCollection.cs" />
+    <Compile Include="WebItemConfigDef.cs" />
+    <Compile Include="WebItemConfigDefCollection.cs" />
+    <Compile Include="WebItemConfigDefValue.cs" />
+    <Compile Include="WebItemConfigDefValueCollection.cs" />
+    <Compile Include="WebItemConfigHeader.cs" />
+    <Compile Include="WebItemConfigLine.cs" />
+    <Compile Include="WebItemConfigLineCollection.cs" />
+    <Compile Include="WebItemDocument.cs" />
+    <Compile Include="WebItemDocumentCollection.cs" />
+    <Compile Include="WebItemRelation.cs" />
+    <Compile Include="WebItemRelationCollection.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="LanguageCollection.cs" />
+    <Compile Include="NavigationItem.cs" />
+    <Compile Include="NavigationItemCollection.cs" />
+    <Compile Include="PaymentModule.cs" />
+    <Compile Include="ProductImage.cs" />
+    <Compile Include="ProductImageCollection.cs" />
+    <Compile Include="CartItemCollection.cs" />
+    <Compile Include="EditorControl.cs" />
+    <Compile Include="ProductTranslation.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="URLRewriter.cs" />
+    <Compile Include="UserProfile.cs" />
+    <Compile Include="Web References\InfojetServiceRequest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebDesignSessionTicket.cs" />
+    <Compile Include="WebFormFieldAssignment.cs" />
+    <Compile Include="WebFormFieldAssignments.cs" />
+    <Compile Include="WebFormFieldFilter.cs" />
+    <Compile Include="WebFormFieldFilters.cs" />
+    <Compile Include="WebItemImageCollection.cs" />
+    <Compile Include="Infojet.cs" />
+    <Compile Include="InfojetInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InfojetUserControl.cs" />
+    <Compile Include="InventoryItemList.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemAttributeValue.cs" />
+    <Compile Include="ItemAttributeVisibilities.cs" />
+    <Compile Include="ItemAttributeVisibility.cs" />
+    <Compile Include="ItemInfo.cs" />
+    <Compile Include="ItemInventory.cs" />
+    <Compile Include="ItemListArgument.cs" />
+    <Compile Include="ItemListFilterForm.cs" />
+    <Compile Include="ItemListServiceArgument.cs" />
+    <Compile Include="Items.cs" />
+    <Compile Include="ItemTranslation.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="PaymentModuleDibs.cs" />
+    <Compile Include="PostCode.cs" />
+    <Compile Include="PostCodes.cs" />
+    <Compile Include="ProductItem.cs" />
+    <Compile Include="ProductItemCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesLineDiscount.cs" />
+    <Compile Include="SalesLineDiscounts.cs" />
+    <Compile Include="SalesLineDiscountsCalculation.cs" />
+    <Compile Include="SalesLineDiscountsStandard.cs" />
+    <Compile Include="SalesLineDiscountsUnique.cs" />
+    <Compile Include="SalesPrice.cs" />
+    <Compile Include="SalesPrices.cs" />
+    <Compile Include="SalesPricesCalculation.cs" />
+    <Compile Include="SalesPricesStandard.cs" />
+    <Compile Include="SalesPricesUnique.cs" />
+    <Compile Include="ServiceArgument.cs" />
+    <Compile Include="ServiceRequest.cs" />
+    <Compile Include="ServiceResponse.cs" />
+    <Compile Include="ShipmentMethod.cs" />
+    <Compile Include="ShippingAgent.cs" />
+    <Compile Include="ShippingAgents.cs" />
+    <Compile Include="ShipToAddress.cs" />
+    <Compile Include="ShipToAddresses.cs" />
+    <Compile Include="SystemHandler.cs" />
+    <Compile Include="ApplicationServerTransporter.cs" />
+    <Compile Include="UserSession.cs" />
+    <Compile Include="WebCart.cs" />
+    <Compile Include="WebCartHeader.cs" />
+    <Compile Include="WebCartLine.cs" />
+    <Compile Include="WebCartLines.cs" />
+    <Compile Include="WebColor.cs" />
+    <Compile Include="WebDocument.cs" />
+    <Compile Include="WebForm.cs" />
+    <Compile Include="WebFormDocument.cs" />
+    <Compile Include="WebFormField.cs" />
+    <Compile Include="WebFormFields.cs" />
+    <Compile Include="WebFormFieldTranslation.cs" />
+    <Compile Include="WebFormFieldValue.cs" />
+    <Compile Include="WebFormFieldValues.cs" />
+    <Compile Include="WebImage.cs" />
+    <Compile Include="WebItemCampain.cs" />
+    <Compile Include="WebItemCampainMembers.cs" />
+    <Compile Include="WebItemCategory.cs" />
+    <Compile Include="WebItemCategoryText.cs" />
+    <Compile Include="WebItemCategoryTexts.cs" />
+    <Compile Include="WebItemCategoryTranslation.cs" />
+    <Compile Include="WebItemImage.cs" />
+    <Compile Include="WebItemImages.cs" />
+    <Compile Include="WebItemList.cs" />
+    <Compile Include="WebItemRanking.cs" />
+    <Compile Include="WebItemSale.cs" />
+    <Compile Include="WebItemSaleCollection.cs" />
+    <Compile Include="WebItemSetting.cs" />
+    <Compile Include="WebItemVarDim.cs" />
+    <Compile Include="WebItemVarDimValue.cs" />
+    <Compile Include="WebLogin.cs" />
+    <Compile Include="WebMenu.cs" />
+    <Compile Include="WebModel.cs" />
+    <Compile Include="WebModelDimension.cs" />
+    <Compile Include="WebModelDimensionCollection.cs" />
+    <Compile Include="WebModelDimValue.cs" />
+    <Compile Include="WebModelDimValueCollection.cs" />
+    <Compile Include="WebModelTranslation.cs" />
+    <Compile Include="WebModelVariant.cs" />
+    <Compile Include="WebModelVariants.cs" />
+    <Compile Include="WebNewsCollection.cs" />
+    <Compile Include="WebNewsEntries.cs" />
+    <Compile Include="WebNewsEntry.cs" />
+    <Compile Include="WebPage.cs" />
+    <Compile Include="WebPageCategories.cs" />
+    <Compile Include="WebPageLine.cs" />
+    <Compile Include="WebPageLines.cs" />
+    <Compile Include="WebPageLineText.cs" />
+    <Compile Include="WebPageLineTexts.cs" />
+    <Compile Include="WebPageMenuText.cs" />
+    <Compile Include="WebPages.cs" />
+    <Compile Include="WebPaymentEntry.cs" />
+    <Compile Include="WebPaymentMethod.cs" />
+    <Compile Include="WebPaymentMethodDetail.cs" />
+    <Compile Include="WebPaymentMethodCollection.cs" />
+    <Compile Include="WebPaymentMethods.cs" />
+    <Compile Include="WebShipmentMethodCollection.cs" />
+    <Compile Include="WebShipmentMethodDetail.cs" />
+    <Compile Include="WebShipmentMethods.cs" />
+    <Compile Include="WebShipmentMethod.cs" />
+    <Compile Include="WebCheckout.cs" />
+    <Compile Include="WebSite.cs" />
+    <Compile Include="WebSiteCountries.cs" />
+    <Compile Include="WebSiteCountry.cs" />
+    <Compile Include="WebSiteIPAddress.cs" />
+    <Compile Include="WebSiteLanguage.cs" />
+    <Compile Include="WebSiteLanguages.cs" />
+    <Compile Include="WebSiteNewUserMessageLines.cs" />
+    <Compile Include="WebSiteProperty.cs" />
+    <Compile Include="WebSiteUnit.cs" />
+    <Compile Include="WebStyle.cs" />
+    <Compile Include="WebStyleProperty.cs" />
+    <Compile Include="WebTemplate.cs" />
+    <Compile Include="WebTemplatePart.cs" />
+    <Compile Include="WebTextConstantValue.cs" />
+    <Compile Include="WebUserAccount.cs" />
+    <Compile Include="WebUserAccountCustomerRelations.cs" />
+    <Compile Include="WebUserAccountRelation.cs" />
+    <Compile Include="WebUserAccountRelations.cs" />
+    <Compile Include="WebUserAccounts.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InfojetInstaller.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\InfojetServiceRequest\InfojetServiceRequest.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://hera/DemoInfojetWebService/InfojetServiceRequest.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\InfojetServiceRequest\</RelPath>
+      <UpdateFromURL>http://hera/DemoInfojetWebService/InfojetServiceRequest.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>InfojetLib_InfojetServiceRequest_InfojetServiceRequest</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\InfojetServiceRequest\InfojetServiceRequest.disco" />
+    <None Include="Web References\InfojetServiceRequest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

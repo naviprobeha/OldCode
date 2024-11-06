@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nav>
+  <type>products</type>
+  <method>UPDATE</method>
+  <filter />
+  <id>512</id>
+  <data>
+    <product>
+      <stock_quantity>645</stock_quantity>
+      <in_stock>true</in_stock>
+    </product>
+  </data>
+</nav>

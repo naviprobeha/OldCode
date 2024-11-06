@@ -1,0 +1,14 @@
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\bin\Debug\InfojetLib.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\bin\Debug\InfojetLib.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\obj\Debug\InfojetLib.InfojetInstaller.resources
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\obj\Debug\InfojetLib.csproj.GenerateResource.Cache
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\obj\Debug\InfojetLib.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\obj\Debug\InfojetLib.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\bin\Debug\InfojetLib.dll
+D:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\bin\Debug\InfojetLib.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\obj\Debug\InfojetLib.InfojetInstaller.resources
+D:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\obj\Debug\InfojetLib.csproj.GenerateResource.Cache
+D:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\obj\Debug\InfojetLib.dll
+D:\Visual Studio\VS2008\Projects\Infojet 2010\InfojetLib\obj\Debug\InfojetLib.pdb

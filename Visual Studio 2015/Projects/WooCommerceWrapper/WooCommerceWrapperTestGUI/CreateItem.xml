@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nav>
+  <type>products</type>
+  <method>CREATE</method>
+  <filter />
+  <data>
+    <product>
+      <title>Papercup 100pcs</title>
+      <sku>SWB019</sku>
+      <reviews_allowed>true</reviews_allowed>
+      <short_description>Papercup 100pcs</short_description>
+      <description>Papercup 100pcs</description>
+      <status>draft</status>
+      <downloadable>false</downloadable>
+      <virtual>false</virtual>
+      <dimensions>
+        <length />
+        <width />
+        <height />
+      </dimensions>
+      <catalog_visibility>visible</catalog_visibility>
+      <regular_price>0</regular_price>
+      <weight>0</weight>
+      <type>simple</type>
+      <managing_stock>true</managing_stock>
+      <stock_quantity>0</stock_quantity>
+      <in_stock>false</in_stock>
+    </product>
+  </data>
+</nav>

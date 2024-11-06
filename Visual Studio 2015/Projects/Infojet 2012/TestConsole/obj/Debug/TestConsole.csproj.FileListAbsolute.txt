@@ -1,0 +1,7 @@
+D:\Visual Studio\VS2008\Projects\Infojet 2012\TestConsole\bin\Debug\TestConsole.exe
+D:\Visual Studio\VS2008\Projects\Infojet 2012\TestConsole\bin\Debug\TestConsole.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2012\TestConsole\bin\Debug\Navipro.Infojet.Lib.dll
+D:\Visual Studio\VS2008\Projects\Infojet 2012\TestConsole\bin\Debug\Navipro.Infojet.Lib.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2012\TestConsole\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Infojet 2012\TestConsole\obj\Debug\TestConsole.exe
+D:\Visual Studio\VS2008\Projects\Infojet 2012\TestConsole\obj\Debug\TestConsole.pdb

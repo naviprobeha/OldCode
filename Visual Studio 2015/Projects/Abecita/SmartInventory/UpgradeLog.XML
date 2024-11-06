@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SmartInventory">
+</Property><Property Name="Solution File" Value="C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\SmartInventory.sln">
+</Property><Property Name="User Options File" Value="C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\SmartInventory.suo">
+</Property><Property Name="Date" Value="den 19 december 2011">
+</Property><Property Name="Time" Value="21:07">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="SmartInventory.sln" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SmartInventory.sln">
+</Event><Event ErrorLevel="0" Project="" Source="SmartInventory.suo" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SmartInventory.suo">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SmartInventory.csdproj" Description="Project file successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SmartInventory.csdproj">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SmartInventory.csdproj.user" Description="Project user file successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SmartInventory.csdproj.user">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Agent.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Agent.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Bins.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Bins.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Data.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Data.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataBin.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataBin.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataBinContent.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataBinContent.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataBins.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataBins.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataCollection.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataCollection.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataCustomer.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataCustomer.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataCustomers.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataCustomers.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataItemUnit.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataItemUnit.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataItemUnits.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataItemUnits.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataSetup.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataSetup.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataWhseActivityHeader.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataWhseActivityHeader.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataWhseActivityHeaders.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataWhseActivityHeaders.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataWhseActivityLine.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataWhseActivityLine.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataWhseActivityLines.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataWhseActivityLines.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataWhseItemStore.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataWhseItemStore.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="DataWhseItemStores.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\DataWhseItemStores.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Error.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Error.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Header.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Header.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Inventory.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Inventory.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobFreq.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\JobFreq.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobItem.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\JobItem.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobItems.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\JobItems.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Jobs.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Jobs.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobSynch.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\JobSynch.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Logger.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Logger.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Maintenance.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Maintenance.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintInfo.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintInfo.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintInv.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintInv.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintMove.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintMove.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintMoveItem.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintMoveItem.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintSaveItem.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintSaveItem.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintSaveItems.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintSaveItems.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintStatus.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintStatus.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintStatusChange.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintStatusChange.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Publication.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Publication.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="QuantityForm.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\QuantityForm.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SaveFreq.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SaveFreq.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SaveItem.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SaveItem.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SaveItems.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SaveItems.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Service.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Service.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="ServiceArgument.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\ServiceArgument.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="ServiceRequest.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\ServiceRequest.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="ServiceResponse.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\ServiceResponse.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SmartDatabase.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SmartDatabase.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Sound.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Sound.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StartForm.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StartForm.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Status.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Status.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreFreq.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreFreq.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreItem.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreItem.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreItemInstant.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreItemInstant.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreItemQuantity.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreItemQuantity.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreJobLines.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreJobLines.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreJobs.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreJobs.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreSynch.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreSynch.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Synchronize.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Synchronize.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SynchSettings.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SynchSettings.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Web References\se.navipro.dev1\Reference.cs" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Web References\se.navipro.dev1\Reference.cs">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Web References\se.navipro.dev1\Reference.map" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Web References\se.navipro.dev1\Reference.map">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Web References\se.navipro.dev1\SynchService.disco" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Web References\se.navipro.dev1\SynchService.disco">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Web References\se.navipro.dev1\SynchService.wsdl" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Web References\se.navipro.dev1\SynchService.wsdl">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Bins.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Bins.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Inventory.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Inventory.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobFreq.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\JobFreq.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobItem.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\JobItem.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobItems.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\JobItems.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Jobs.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Jobs.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobSynch.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\JobSynch.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Maintenance.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Maintenance.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintInfo.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintInfo.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintInv.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintInv.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintMove.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintMove.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintMoveItem.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintMoveItem.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintSaveItem.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintSaveItem.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintSaveItems.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintSaveItems.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintStatus.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintStatus.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintStatusChange.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\MaintStatusChange.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="QuantityForm.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\QuantityForm.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SaveFreq.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SaveFreq.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SaveItem.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SaveItem.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SaveItems.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SaveItems.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StartForm.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StartForm.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreFreq.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreFreq.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreItem.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreItem.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreItemInstant.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreItemInstant.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreItemQuantity.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreItemQuantity.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreJobLines.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreJobLines.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreJobs.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreJobs.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreSynch.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\StoreSynch.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Synchronize.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\Synchronize.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SynchSettings.resx" Description="File successfully backed up as C:\Visual Studio\VS2008\Projects\Abecita\SmartInventory\Backup\SynchSettings.resx">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SmartInventory.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="SmartInventory.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SmartInventory.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SmartInventory.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Bins.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="Bins.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Inventory.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="Inventory.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobFreq.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="JobFreq.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobItem.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="JobItem.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobItems.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="JobItems.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Jobs.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="Jobs.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="JobSynch.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="JobSynch.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Maintenance.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="Maintenance.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintInfo.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="MaintInfo.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintInv.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="MaintInv.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintMove.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="MaintMove.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintMoveItem.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="MaintMoveItem.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintSaveItem.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="MaintSaveItem.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintSaveItems.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="MaintSaveItems.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintStatus.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="MaintStatus.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="MaintStatusChange.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="MaintStatusChange.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="QuantityForm.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="QuantityForm.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SaveFreq.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="SaveFreq.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SaveItem.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="SaveItem.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SaveItems.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="SaveItems.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StartForm.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="StartForm.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreFreq.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="StoreFreq.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreItem.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="StoreItem.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreItemInstant.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="StoreItemInstant.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreItemQuantity.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="StoreItemQuantity.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreJobLines.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="StoreJobLines.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreJobs.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="StoreJobs.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="StoreSynch.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="StoreSynch.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="Synchronize.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="Synchronize.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SynchSettings.resx" Description="File converted successfully">
+</Event><Event ErrorLevel="3" Project="SmartInventory" Source="SynchSettings.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SmartInventory" Source="SmartInventory.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,93 @@
+﻿@model List<Navipro.Backoffice.Web.Models.Job>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>@ViewBag.Title</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("Index", "Home")">Hem</a>
+            </li>
+            <li>
+                Projekt
+            </li>
+            <li class="active">
+                <strong>@ViewBag.Title</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInUp">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Projektlista</h5>
+                    <div class="ibox-tools">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row m-b-sm m-t-sm">
+ 
+                    </div>
+
+                    <div class="project-list">
+
+                            <input type="text" class="form-control input-sm m-b-xs" id="filter" placeholder="Sök bland projekten">
+
+                            <table class="footable table table-hover" data-filter=#filter data-page-size="600">
+
+                                <tbody>
+                                    @foreach (Navipro.Backoffice.Web.Models.Job job in Model)
+                                    {
+                                        <tr>
+                                            <td class="project-status">
+                                                <span class="label @job.statusIcon">@job.statusText</span>
+                                            </td>
+                                            <td class="project-title">
+                                                <a href="@Url.Action("Details", "Job")/@job.no">@job.no - @job.description</a>
+                                                <br />
+                                                <small></small>
+                                            </td>
+                                            <td class="project-completion">
+                                                <small>@job.startingDateText - @job.endingDateText</small>
+                                            <div class="progress progress-mini">
+                                                
+                                            </div>
+                                        </td>
+                                        <td class="project-people"></td>
+                                        <td class="project-actions">
+                                            <a href="@Url.Action("Details", "Job")/@job.no" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> Visa </a>
+                                        </td>
+                                    </tr>
+                                    }
+                                </tbody>
+                            </table>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    @Styles.Render("~/plugins/footableStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/footable")
+
+<script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+ 
+            $('.footable').footable();
+        });
+
+
+</script>
+
+}

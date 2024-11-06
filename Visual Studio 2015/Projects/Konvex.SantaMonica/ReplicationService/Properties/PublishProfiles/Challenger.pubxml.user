@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\challenger\Websites\konvex.workanywhere.se\replicationService\</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ChilkatDotNet.dll">
+      <publishTime>08/06/2012 16:26:30</publishTime>
+    </File>
+    <File Include="bin/Konvex.SmartShipping.DataObjects.dll">
+      <publishTime>04/13/2023 10:40:55</publishTime>
+    </File>
+    <File Include="bin/Konvex.SmartShipping.Goldfinger.dll">
+      <publishTime>05/26/2023 10:24:55</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.Net20.dll">
+      <publishTime>09/27/2020 16:23:02</publishTime>
+    </File>
+    <File Include="bin/ReplicationService.dll">
+      <publishTime>05/26/2023 10:24:55</publishTime>
+    </File>
+    <File Include="bin/SantaMonicaCommonLib.dll">
+      <publishTime>05/22/2023 20:20:43</publishTime>
+    </File>
+    <File Include="Request.asmx">
+      <publishTime>10/27/2013 19:24:15</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/03/2022 10:52:46</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

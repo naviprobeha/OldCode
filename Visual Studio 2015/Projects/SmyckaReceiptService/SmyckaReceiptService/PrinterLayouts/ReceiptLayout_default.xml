@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<layout>
+  <logo height="120"/>
+  <header height="200">
+    <label text="Kvitto" fontSize="36" xPos="10" yPos="30" width="400" height="50" isHeader="true"/>
+
+    <label text="Kassa-ID" fontSize="18" xPos="10" yPos="60" width="120" height="28"/>
+    <label text="Kvittonr" fontSize="18" xPos="160" yPos="60" width="150" height="28"/>
+    <label text="Datum och tid" fontSize="18" xPos="360" yPos="60" width="200" height="28" textAlign="right"/>
+    <label text="Säljare" fontSize="18" xPos="10" yPos="120" width="120" height="28"/>
+    <label text="Kontrollenhet" fontSize="18" xPos="160" yPos="120" width="240" height="28"/>
+    <label text="Källnr" fontSize="18" xPos="360" yPos="120" width="200" height="28" textAlign="right"/>
+    <field name="posDeviceId" fontSize="24" xPos="10" yPos="90" width="120" height="40"/>
+    <field name="registeredReceiptNo" fontSize="24" xPos="160" yPos="90" width="150" height="40"/>
+    <field name="registeredDateTime" fontSize="24" xPos="360" yPos="90" width="200" height="40" textAlign="right"/>
+    <field name="salesPersonName" fontSize="24" xPos="10" yPos="150" width="140" height="40"/>
+    <field name="controlUnitId" fontSize="24" xPos="160" yPos="150" width="240" height="40"/>
+    <field name="transactionNo" fontSize="24" xPos="360" yPos="150" width="200" height="40" textAlign="right"/>
+
+    <line xPos="10" yPos="180" width="550" height="1"/>
+  </header>
+  <lines>
+    <salesLine height="70">
+      <field name="sku" fontSize="20" xPos="10" yPos="10" width="300" height="40"/>
+      <field name="description" fontSize="24" xPos="10" yPos="35" width="260" height="40"/>
+      <field name="quantity" fontSize="24" xPos="245" yPos="35" textAlign="right" width="50" height="40"/>
+      <field name="discount" fontSize="24" xPos="300" yPos="35" textAlign="right" width="80" height="40"/>
+      <field name="presentationAmount" fontSize="24" xPos="400" yPos="35" textAlign="right" width="150" height="40"/>
+    </salesLine>
+    <returnLine height="100">
+      <field name="returnReasonDescription" fontSize="24" xPos="10" yPos="10" width="300" height="40"/>
+      <field name="sku" fontSize="20" xPos="10" yPos="45" width="300" height="40"/>
+      <field name="description" fontSize="24" xPos="10" yPos="70" width="260" height="40"/>
+      <field name="quantity" fontSize="24" xPos="245" yPos="70" textAlign="right" width="50" height="40"/>
+      <field name="discount" fontSize="24" xPos="300" yPos="70" textAlign="right" width="100" height="40"/>
+      <field name="presentationAmount" fontSize="24" xPos="400" yPos="70" textAlign="right" width="150" height="40"/>
+    </returnLine>
+    <totalLine height="40">
+      <field name="description" fontSize="24" xPos="10" yPos="10" fontBold="true" width="300" height="40"/>
+      <field name="presentationAmount" fontSize="24" xPos="400" yPos="10" textAlign="right" fontBold="true" width="150" height="40"/>
+    </totalLine>
+    <paymentLine height="40">
+      <field name="description" fontSize="24" xPos="10" yPos="10" width="300" height="40"/>
+      <field name="presentationAmount" fontSize="24" xPos="400" yPos="10" textAlign="right" width="150" height="40"/>
+    </paymentLine>
+  </lines>
+  <vatSpecification>
+    <vatHeader height="50">
+      <line xPos="10" yPos="1" width="550" height="1"/>
+      <label text="Moms %" fontSize="20" xPos="10" yPos="20" width="120" height="30"/>
+      <label text="Nettobelopp" fontSize="20" xPos="140" yPos="20" textAlign="right" width="120" height="30"/>
+      <label text="Momsbelopp" fontSize="20" xPos="270" yPos="20" textAlign="right" width="120" height="30"/>
+      <label text="Belopp" fontSize="20" xPos="400" yPos="20" textAlign="right" width="150" height="30"/>
+    </vatHeader>
+    <vatLine height="40">
+      <field name="vatProc" fontSize="24" xPos="10" yPos="10" width="120" height="40"/>
+      <field name="netAmount" fontSize="24" xPos="140" yPos="10" textAlign="right" width="120" height="40"/>
+      <field name="vatAmount" fontSize="24" xPos="270" yPos="10" textAlign="right" width="120" height="40"/>
+      <field name="grossAmount" fontSize="24" xPos="400" yPos="10" textAlign="right" width="150" height="40"/>
+    </vatLine>
+    <vatFooter height="1">
+      <line xPos="10" yPos="1" width="550" height="1"/>
+    </vatFooter>
+  </vatSpecification>
+  <cardPaymentInformation type="customer" fontSize="18" xPos="10" yPos="10" textAlign="center" width="550" height="24"/>
+  <receiptTexts height="30">
+    <field name="receiptText" fontSize="24" xPos="10" yPos="10" textAlign="center" width="550" height="30"/>
+  </receiptTexts>
+  <footer height="270">
+    <field name="storeName" fontSize="30" xPos="10" yPos="60" textAlign="center" width="550" height="40"/>
+    <field name="storeAddress" fontSize="18" xPos="10" yPos="100" textAlign="center" width="550" height="40"/>
+    <field name="storePostalAddress" fontSize="18" xPos="10" yPos="125" textAlign="center" width="550" height="40"/>
+    <field name="registrationNo" fontSize="18" xPos="10" yPos="150" textAlign="center" width="550" height="40"/>
+    <field name="vatRegistrationNo" fontSize="18" xPos="10" yPos="175" textAlign="center" width="550" height="40"/>
+    <field name="phoneNo" fontSize="18" xPos="10" yPos="200" textAlign="center" width="550" height="40"/>
+    <field name="homePage" fontSize="18" xPos="10" yPos="225" textAlign="center" width="550" height="40"/>
+    <field name="email" fontSize="18" xPos="10" yPos="250" textAlign="center" width="550" height="40"/>
+  </footer>
+</layout>

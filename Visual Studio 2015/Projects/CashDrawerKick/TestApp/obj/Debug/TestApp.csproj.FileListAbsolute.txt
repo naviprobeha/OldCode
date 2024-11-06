@@ -1,0 +1,8 @@
+D:\Visual Studio\VS2008\Projects\CashDrawerKick\TestApp\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\CashDrawerKick\TestApp\obj\Debug\TestApp.Form1.resources
+D:\Visual Studio\VS2008\Projects\CashDrawerKick\TestApp\obj\Debug\TestApp.Properties.Resources.resources
+D:\Visual Studio\VS2008\Projects\CashDrawerKick\TestApp\obj\Debug\TestApp.csproj.GenerateResource.Cache
+D:\Visual Studio\VS2008\Projects\CashDrawerKick\TestApp\bin\Debug\TestApp.exe
+D:\Visual Studio\VS2008\Projects\CashDrawerKick\TestApp\bin\Debug\TestApp.pdb
+D:\Visual Studio\VS2008\Projects\CashDrawerKick\TestApp\obj\Debug\TestApp.exe
+D:\Visual Studio\VS2008\Projects\CashDrawerKick\TestApp\obj\Debug\TestApp.pdb

@@ -1,0 +1,12 @@
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\bin\Debug\SMSComService.exe
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\bin\Debug\SMSComService.pdb
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\bin\Debug\Navipro.Base.Common.dll
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\bin\Debug\Navipro.SMSCom.Lib.dll
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\bin\Debug\mCoreLib.dll
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\bin\Debug\Navipro.SMSCom.Lib.pdb
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\bin\Debug\Navipro.Base.Common.pdb
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\obj\Debug\SMSComService.exe
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\obj\Debug\SMSComService.pdb
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\obj\Debug\SMSComService.ProjectInstaller.resources
+C:\Visual Studio\VS2008\Projects\SMSCom\SMSComService\obj\Debug\SMSComService.csproj.GenerateResource.Cache

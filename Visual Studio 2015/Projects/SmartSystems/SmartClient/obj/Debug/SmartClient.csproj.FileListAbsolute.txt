@@ -1,0 +1,12 @@
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\obj\Debug\SmartClient.Properties.Resources.resources
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\obj\Debug\SmartClient.csproj.GenerateResource.Cache
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\bin\Debug\SmartClient.exe
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\bin\Debug\SmartClient.pdb
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\obj\Debug\SmartClient.exe
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\obj\Debug\SmartClient.pdb
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\obj\Debug\Navipro.SmartSystems.SmartClient.StartForm.resources
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\obj\Debug\Navipro.SmartSystems.SmartClient.SerialInput.resources
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\bin\Debug\ColorButton.dll
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\bin\Debug\SmartLibrary.dll
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartClient\bin\Debug\SmartLibrary.pdb

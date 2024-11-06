@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96414DAF-A80B-461B-9112-704B691364B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NaviPro.Alufluor.Idus.Library</RootNamespace>
+    <AssemblyName>NaviPro.Alufluor.Idus.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connectors\BCConnector.cs" />
+    <Compile Include="Connectors\IdusConnector.cs" />
+    <Compile Include="Helpers\Logger.cs" />
+    <Compile Include="Helpers\XmlHelper.cs" />
+    <Compile Include="IdusIntegration.cs" />
+    <Compile Include="Models\BCPurchaseLine.cs" />
+    <Compile Include="Models\BCServiceRequest.cs" />
+    <Compile Include="Models\Configuration.cs" />
+    <Compile Include="Models\BCDimension.cs" />
+    <Compile Include="Models\BCDimensionResponse.cs" />
+    <Compile Include="Models\BCDimensionValue.cs" />
+    <Compile Include="Models\BCDimensionValueResponse.cs" />
+    <Compile Include="Models\BCGLAccount.cs" />
+    <Compile Include="Models\BCGLAccountResponse.cs" />
+    <Compile Include="Models\IdusAccount.cs" />
+    <Compile Include="Models\IdusAccountFields.cs" />
+    <Compile Include="Models\IdusAccountMembers.cs" />
+    <Compile Include="Models\IdusAccountObjectList.cs" />
+    <Compile Include="Models\IdusGetAccountResult.cs" />
+    <Compile Include="Models\IdusGetPurchaseResult.cs" />
+    <Compile Include="Models\IdusPurchase.cs" />
+    <Compile Include="Models\IdusPurchaseFields.cs" />
+    <Compile Include="Models\IdusPurchaseLine.cs" />
+    <Compile Include="Models\IdusPurchaseLineFields.cs" />
+    <Compile Include="Models\IdusPurchaseLineMembers.cs" />
+    <Compile Include="Models\IdusPurchaseLineObjectList.cs" />
+    <Compile Include="Models\IdusPurchaseMembers.cs" />
+    <Compile Include="Models\IdusPurchaseObjectList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

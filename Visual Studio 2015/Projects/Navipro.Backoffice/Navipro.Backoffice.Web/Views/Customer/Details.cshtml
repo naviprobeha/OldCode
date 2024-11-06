@@ -1,0 +1,422 @@
+﻿@model Navipro.Backoffice.Web.Models.Customer
+@{
+    ViewBag.Title = Model.name;
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-9">
+        <h2>@Model.name</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="/">Hem</a>
+            </li>
+            <li class="active">
+                <a href="@Url.Action("List", "Case")">Kunder</a>
+            </li>
+            <li class="active">
+                <strong>@Model.name</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-sm-1">&nbsp;</div>
+    <div class="col-sm-1">
+        <div class="title-action" style="text-align: left;">
+
+            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Åtgärder <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#createContactWindow" data-toggle="modal" id="createContact">Skapa kontakt</a></li>
+                <li class="divider"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInUp">
+            @if (ViewBag.errorMessage != null)
+            {
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-danger alert-dismissable">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            @ViewBag.errorMessage
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <dl class="dl-horizontal">
+
+                                <dt>Kund:</dt>
+                                <dd>@Model.no - @Model.name</dd>
+
+                            </dl>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <dl class="dl-horizontal">
+
+                                <dt>Ort:</dt>
+                                <dd>@Model.city</dd>
+
+                            </dl>
+                        </div>
+                        <div class="col-lg-4">
+                            <dl class="dl-horizontal">
+
+                                <dt>Status:</dt>
+                                <dd><span class="label @Model.statusIcon">@Model.status</span></dd>
+
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="ibox" id="description">
+                <div class="ibox-title">
+                    <h5>Karta</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="fullscreen-link">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="google-map" id="customerMap"></div>
+                </div>
+            </div>            
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="row m-t-sm">
+                        <div class="col-lg-12">
+                            <div class="panel blank-panel">
+                                <div class="panel-heading">
+                                    <div class="panel-options">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#tab-1" data-toggle="tab">Teknik</a></li>
+                                            <li class=""><a href="#tab-2" data-toggle="tab">Kontakter</a></li>
+                                            <li class=""><a href="#tab-3" data-toggle="tab">Projekt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+
+                                    <div class="tab-content">
+
+                                        <div class="tab-pane active" id="tab-1">
+                                            <table class="table table-striped" id="techTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Avdelning</th>
+                                                        <th>Kod</th>
+                                                        <th>Text</th>
+                                                        <th>Senast uppdaterad</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="techTableBody"></tbody>
+                                            </table>
+                                        </div>
+                                                                                   
+                                        <div class="tab-pane" id="tab-2">
+
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Namn</th>
+                                                        <th>E-post</th>
+                                                        <th>Telefonnr</th>
+                                                        <th>Mobiltelefon</th>
+                                                        <th>&nbsp;</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="caseMemberTableBody">
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="tab-pane" id="tab-3">
+
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Nr</th>
+                                                        <th>Beskrivning</th>
+                                                        <th>&nbsp;</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="jobTableBody">
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-- Create Contact Modal HTML -->
+<div id="createContactWindow" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Details", "Customer", FormMethod.Post, new { @id = "createContactForm" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Skapa kontakt</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger alert-dismissable" id="errorMessage" style="display: none;">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                    </div>
+                    <p>E-post:</p>
+                    <div class="form-group">
+                        <input type="text" name="email" class="text-box single-line" id="email" maxlength="100" />
+                    </div>
+                    <p>Namn:</p>
+                    <div class="form-group">
+                        <input type="text" name="name" class="text-box single-line" id="name" maxlength="50" />
+                    </div>
+                    <p>Telefonnr:</p>
+                    <div class="form-group">
+                        <input type="text" name="phoneNo" class="text-box single-line" id="phoneNo" maxlength="30" />
+                    </div>
+                    <p>Mobiltelefonnr:</p>
+                    <div class="form-group">
+                        <input type="text" name="cellPhoneNo" class="text-box single-line" id="cellPhoneNo" maxlength="30" />
+                    </div>
+ 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                    <button type="button" class="btn btn-primary" id="createContactSubmit">Spara</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+@section Styles {
+
+}
+
+@section Scripts {
+
+    @Scripts.Render("https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTpXj82d8UpCi97wzo_nKXL7nYrd4G70")
+
+
+    <script type="text/javascript">
+
+        google.maps.event.addDomListener(window, 'load', init);
+
+        var geocoder;
+        var customerMap;
+
+        function init() {
+            // Options for Google map
+            // More info see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var customerMapOptions = {
+                zoom: 18,
+                center: new google.maps.LatLng(40.6700, -73.9400),
+
+                // Style for Google Maps
+                styles: [{ "featureType": "water", "stylers": [{ "saturation": 43 }, { "lightness": -11 }, { "hue": "#0088ff" }] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "hue": "#ff0000" }, { "saturation": -100 }, { "lightness": 99 }] }, { "featureType": "road", "elementType": "geometry.stroke", "stylers": [{ "color": "#808080" }, { "lightness": 54 }] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "color": "#ece2d9" }] }, { "featureType": "poi.park", "elementType": "geometry.fill", "stylers": [{ "color": "#ccdca1" }] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "color": "#767676" }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "poi", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.natural", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#b8cb93" }] }, { "featureType": "poi.park", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.sports_complex", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.medical", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.business", "stylers": [{ "visibility": "simplified" }] }]
+            };
+
+            // Get all html elements for map
+            var customerMapElement = document.getElementById('customerMap');
+
+            // Create the Google Map using elements
+            customerMap = new google.maps.Map(customerMapElement, customerMapOptions);
+
+            geocoder = new google.maps.Geocoder();
+
+            var address = '@Model.address, @Model.address2, @Model.postCode @Model.city, @Model.countryCode';
+
+            geocoder.geocode({ 'address': address }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    customerMap.setCenter(results[0].geometry.location);
+                    var marker = new google.maps.Marker({
+                        map: customerMap,
+                        position: results[0].geometry.location,
+                        label: '@Model.name'
+                    });
+                }
+            });
+
+
+
+        }
+
+        $(document).ready(function () {
+
+            updateAssetSiteComments();
+            updateCaseMembers();
+            updateJobs();
+
+            $("#createContactSubmit").click(function () {
+                var errorMessage = "";
+                if ($("#name").val() == "") {
+                    errorMessage = "Namn måste fyllas i.";
+                }
+                if ($("#email").val() == "") {
+                    errorMessage = "E-post måste fyllas i.";
+                }
+
+                if (errorMessage != "") {
+                    $("#errorMessage").append("<span>").html(errorMessage);
+                    $("#errorMessage").show();
+                    return;
+                }
+
+                $("#errorMessage").hide();
+
+
+                createNewContact($("#email").val(), $("#name").val(), $("#phoneNo").val(), $("#cellPhoneNo").val(), '@Model.no');
+
+            });
+        });
+
+
+        function updateAssetSiteComments() {
+            // Creat JSON url to controller
+            var url = '@Url.Action("getAssetSiteComments", "Customer")/@Model.no';
+
+            // Ajax call for table data
+            $.ajax({
+                url: url,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    var divBody = $('#techTableBody');
+                    divBody.empty();
+
+                    var div = $('#techTableBody');
+
+                    
+                    $.each(data, function (i, item) {
+
+                        div.append(
+                            $('<tr>')
+                                .append($('<td>').html('<b>' + item.name+'</b>')).append($('<td>').html(item.code)).append($('<td>').html(item.text)).append($('<td>').html(item.lastUpdatedDateText))
+                            );
+                    })
+                }
+            });
+        }
+
+        function updateCaseMembers() {
+            // Creat JSON url to controller
+            var url = '@Url.Action("getCaseMembers", "Customer")/@Model.no';
+
+            // Ajax call for table data
+            $.ajax({
+                url: url,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    var divBody = $('#caseMemberTableBody');
+                    divBody.empty();
+
+                    var div = $('#caseMemberTableBody');
+
+
+                    $.each(data, function (i, item) {
+                        div.append(
+                            $('<tr>')
+                                .append($('<td>').html(item.name)).append($('<td>').html('<a href="mailto:' + item.email + '">' + item.email + '</a>')).append($('<td>').html(item.phoneNo)).append($('<td>').html(item.cellPhoneNo)).append($('<td align="right">').html('<a href="@Url.Action("Create", "Case")?ordererEmail=' + item.email + '" class="btn btn-white btn-sm"><i class="fa fa-table"></i> Skapa ärende </a>&nbsp;<a href="@Url.Action("Details", "Contact")?email=' + item.email + '" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> Visa </a>'))
+                            );
+                    })
+                }
+            });
+        }
+
+        function updateJobs() {
+            // Creat JSON url to controller
+            var url = '@Url.Action("getJobs", "Customer")/@Model.no';
+
+            // Ajax call for table data
+            $.ajax({
+                url: url,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    var divBody = $('#jobTableBody');
+                    divBody.empty();
+
+                    var div = $('#jobTableBody');
+
+
+                    $.each(data, function (i, item) {
+                        div.append(
+                            $('<tr>')
+                                .append($('<td>').html(item.no)).append($('<td>').html(item.description)).append($('<td align="right">').html('<a href="@Url.Action("Details", "Job")/' + item.no + '" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> Visa </a>'))
+                            );
+                    })
+                }
+            });
+        }
+
+        function createNewContact(email, name, phoneNo, cellPhoneNo, customerNo) {
+            // Create JSON url to controller
+
+
+            var contactUrl = '@Url.Action("createContact", "Contact")' + '?email=' + email + '&name=' + name + '&phoneNo=' + phoneNo + '&cellPhoneNo=' + cellPhoneNo + '&customerNo=' + customerNo + '&t=' + new Date().getTime();
+
+
+            // Ajax call for table data
+            $.ajax({
+                url: contactUrl,
+                cashe: false,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    if (data == false) {
+
+                        $("#errorMessage").append("<span>").html("E-postadressen finns redan.");
+                        $("#errorMessage").show();
+
+                    }
+                    else {
+                        window.location.replace('@Url.Action("Details", "Customer")');
+                    }
+
+                }
+            });
+
+        }
+
+    </script>
+
+}

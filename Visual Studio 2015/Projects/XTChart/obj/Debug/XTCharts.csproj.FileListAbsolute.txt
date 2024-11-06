@@ -1,0 +1,12 @@
+C:\Users\lohndorf\Documents\Visual Studio 2008\Projects\XTCharts\XTCharts\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lohndorf\Documents\Visual Studio 2008\Projects\XTCharts\XTCharts\bin\Debug\XTCharts.dll
+C:\Users\lohndorf\Documents\Visual Studio 2008\Projects\XTCharts\XTCharts\bin\Debug\XTCharts.pdb
+C:\Users\lohndorf\Documents\Visual Studio 2008\Projects\XTCharts\XTCharts\bin\Debug\Microsoft.Dynamics.Framework.UI.Extensibility.dll
+C:\Users\lohndorf\Documents\Visual Studio 2008\Projects\XTCharts\XTCharts\bin\Debug\Microsoft.Dynamics.Framework.UI.Extensibility.xml
+C:\Users\lohndorf\Documents\Visual Studio 2008\Projects\XTCharts\XTCharts\obj\Debug\XTCharts.dll
+C:\Users\lohndorf\Documents\Visual Studio 2008\Projects\XTCharts\XTCharts\obj\Debug\XTCharts.pdb
+C:\Visual Studio\VS2008\Projects\XTChart\bin\Debug\XTCharts.dll
+C:\Visual Studio\VS2008\Projects\XTChart\bin\Debug\XTCharts.pdb
+C:\Visual Studio\VS2008\Projects\XTChart\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\XTChart\obj\Debug\XTCharts.dll
+C:\Visual Studio\VS2008\Projects\XTChart\obj\Debug\XTCharts.pdb

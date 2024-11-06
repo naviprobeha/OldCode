@@ -1,0 +1,31 @@
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebService\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebService\bin\WebService.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebService\bin\WebService.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebService\obj\Debug\WebService.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2010\WebService\obj\Debug\WebService.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.Lib.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.Lib.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.WebService.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.WebService.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\obj\Debug\Navipro.Infojet.WebService.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\obj\Debug\Navipro.Infojet.WebService.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.WebService.dll
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.WebService.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.Lib.dll
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.Lib.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\obj\Debug\Navipro.Infojet.WebService.dll
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\obj\Debug\Navipro.Infojet.WebService.pdb
+H:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.WebService.dll
+H:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.WebService.pdb
+H:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.Lib.dll
+H:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\bin\Navipro.Infojet.Lib.pdb
+H:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\obj\Debug\Navipro.Infojet.WebService.dll
+H:\Visual Studio\VS2008\Projects\Infojet 2012\WebService\obj\Debug\Navipro.Infojet.WebService.pdb
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\NavisionMobile\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\NavisionMobile\obj\Debug\Navipro.Infojet.WebService.pdb
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\NavisionMobile\bin\Navipro.Infojet.WebService.dll
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\NavisionMobile\bin\Navipro.Infojet.WebService.pdb
+H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\NavisionMobile\obj\Debug\Navipro.Infojet.WebService.dll

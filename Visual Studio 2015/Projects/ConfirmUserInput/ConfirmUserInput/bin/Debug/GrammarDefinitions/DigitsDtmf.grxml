@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--====================================================================
+  File:      DigitsDtmf.grxml
+
+  Summary:   Grammar rule definitions for recognizing sequences of 4 and 6 digits using DTMF.
+
+========================================================================
+  This file is part of the Microsoft Live Communications Code Samples.
+
+  Copyright (C) 2005 Microsoft Corporation.  All rights reserved.
+
+This source code is intended only as a supplement to Microsoft
+Development Tools and/or on-line documentation.  See these other
+materials for detailed information regarding Microsoft code samples.
+
+THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+=====================================================================-->
+
+<grammar xml:lang="en-US" tag-format="semantics-ms/1.0" version="1.0" mode="dtmf" xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="digit" scope="public">
+    <one-of>
+      <item>0</item>
+      <item>1</item>
+      <item>2</item>
+      <item>3</item>
+      <item>4</item>
+      <item>5</item>
+      <item>6</item>
+      <item>7</item>
+      <item>8</item>
+      <item>9</item>
+    </one-of>
+  </rule>
+  
+  <rule id="fourdigits" scope="public">
+    <tag>$._value = '';</tag>
+    <item>
+      <ruleref uri="#digit" type="application/srgs+xml"/>
+      <tag>$._value = $._value + $$._value;</tag>
+      <ruleref uri="#digit" type="application/srgs+xml"/>
+      <tag>$._value = $._value + $$._value;</tag>
+      <ruleref uri="#digit" type="application/srgs+xml"/>
+      <tag>$._value = $._value + $$._value;</tag>
+      <ruleref uri="#digit" type="application/srgs+xml"/>
+      <tag>$._value = $._value + $$._value;</tag>
+    </item>
+  </rule>
+  
+  <rule id="sixdigits" scope="public">
+    <tag>$._value = '';</tag>
+    <item>
+      <ruleref uri="#digit" type="application/srgs+xml"/>
+      <tag>$._value = $._value + $$._value;</tag>
+      <ruleref uri="#digit" type="application/srgs+xml"/>
+      <tag>$._value = $._value + $$._value;</tag>
+      <ruleref uri="#digit" type="application/srgs+xml"/>
+      <tag>$._value = $._value + $$._value;</tag>
+      <ruleref uri="#digit" type="application/srgs+xml"/>
+      <tag>$._value = $._value + $$._value;</tag>
+      <ruleref uri="#digit" type="application/srgs+xml"/>
+      <tag>$._value = $._value + $$._value;</tag>
+      <ruleref uri="#digit" type="application/srgs+xml"/>
+      <tag>$._value = $._value + $$._value;</tag>
+    </item>
+  </rule>
+  
+</grammar>

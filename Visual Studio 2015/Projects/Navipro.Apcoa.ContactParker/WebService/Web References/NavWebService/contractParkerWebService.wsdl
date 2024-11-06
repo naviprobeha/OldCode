@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/contractParkerWebService" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/contractParkerWebService" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/contractParkerWebService" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="GetInvoicePdfAsBase64">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="p_codeInvoiceNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="p_strBase64" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetInvoicePdfAsBase64_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="p_strBase64" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetCrMemoPdfAsBase64">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="p_codeCrMemoNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="p_strBase64" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetCrMemoPdfAsBase64_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="p_strBase64" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ResendInvoice">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="p_codeInvoiceNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ResendInvoice_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="GetInvoicePdfAsBase64">
+    <part name="parameters" element="tns:GetInvoicePdfAsBase64" />
+  </message>
+  <message name="GetInvoicePdfAsBase64_Result">
+    <part name="parameters" element="tns:GetInvoicePdfAsBase64_Result" />
+  </message>
+  <message name="GetCrMemoPdfAsBase64">
+    <part name="parameters" element="tns:GetCrMemoPdfAsBase64" />
+  </message>
+  <message name="GetCrMemoPdfAsBase64_Result">
+    <part name="parameters" element="tns:GetCrMemoPdfAsBase64_Result" />
+  </message>
+  <message name="ResendInvoice">
+    <part name="parameters" element="tns:ResendInvoice" />
+  </message>
+  <message name="ResendInvoice_Result">
+    <part name="parameters" element="tns:ResendInvoice_Result" />
+  </message>
+  <portType name="contractParkerWebService_Port">
+    <operation name="GetInvoicePdfAsBase64">
+      <input name="GetInvoicePdfAsBase64" message="tns:GetInvoicePdfAsBase64" />
+      <output name="GetInvoicePdfAsBase64_Result" message="tns:GetInvoicePdfAsBase64_Result" />
+    </operation>
+    <operation name="GetCrMemoPdfAsBase64">
+      <input name="GetCrMemoPdfAsBase64" message="tns:GetCrMemoPdfAsBase64" />
+      <output name="GetCrMemoPdfAsBase64_Result" message="tns:GetCrMemoPdfAsBase64_Result" />
+    </operation>
+    <operation name="ResendInvoice">
+      <input name="ResendInvoice" message="tns:ResendInvoice" />
+      <output name="ResendInvoice_Result" message="tns:ResendInvoice_Result" />
+    </operation>
+  </portType>
+  <binding name="contractParkerWebService_Binding" type="tns:contractParkerWebService_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="GetInvoicePdfAsBase64">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/contractParkerWebService:GetInvoicePdfAsBase64" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetInvoicePdfAsBase64">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetInvoicePdfAsBase64_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetCrMemoPdfAsBase64">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/contractParkerWebService:GetCrMemoPdfAsBase64" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetCrMemoPdfAsBase64">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetCrMemoPdfAsBase64_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ResendInvoice">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/contractParkerWebService:ResendInvoice" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ResendInvoice">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ResendInvoice_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="contractParkerWebService">
+    <port name="contractParkerWebService_Port" binding="tns:contractParkerWebService_Binding">
+      <address location="http://stardust:8217/APCOA2009R2DEV/WS/TEST_EuroPark%20%C3%96st%20AB_TEST/Codeunit/contractParkerWebService" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,8 @@
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrintJobConsole\bin\Debug\PrintJobConsole.exe.config
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrintJobConsole\bin\Debug\PrintJobConsole.exe
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrintJobConsole\bin\Debug\PrintJobConsole.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrintJobConsole\bin\Debug\PrinterTCPJobLibrary.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrintJobConsole\bin\Debug\PrinterTCPJobLibrary.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrintJobConsole\obj\Debug\PrintJobConsole.csprojResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrintJobConsole\obj\Debug\PrintJobConsole.exe
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrintJobConsole\obj\Debug\PrintJobConsole.pdb

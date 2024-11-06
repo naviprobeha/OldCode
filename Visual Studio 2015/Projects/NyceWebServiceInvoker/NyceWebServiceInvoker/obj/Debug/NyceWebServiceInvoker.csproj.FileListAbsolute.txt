@@ -1,0 +1,5 @@
+H:\Visual Studio\VS2008\Projects\NyceWebServiceInvoker\NyceWebServiceInvoker\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\NyceWebServiceInvoker\NyceWebServiceInvoker\bin\Debug\NyceWebServiceInvoker.dll
+H:\Visual Studio\VS2008\Projects\NyceWebServiceInvoker\NyceWebServiceInvoker\bin\Debug\NyceWebServiceInvoker.pdb
+H:\Visual Studio\VS2008\Projects\NyceWebServiceInvoker\NyceWebServiceInvoker\obj\Debug\NyceWebServiceInvoker.dll
+H:\Visual Studio\VS2008\Projects\NyceWebServiceInvoker\NyceWebServiceInvoker\obj\Debug\NyceWebServiceInvoker.pdb

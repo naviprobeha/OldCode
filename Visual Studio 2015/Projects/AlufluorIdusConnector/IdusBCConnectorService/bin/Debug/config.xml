@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <bcUrl>http://betty.workanywhere.net:7048/ALUFLUORBC15TEST/ODataV4/Company('AluFluor')</bcUrl>
+  <bcUserName>navipro_beha</bcUserName>
+  <bcPassword>@ccountManager</bcPassword>
+
+  <idusUrl/>
+  <idusApiUserName></idusApiUserName>
+  <idusUserName></idusUserName>
+  <idusPassword></idusPassword>
+  <intervalMinutes>5</intervalMinutes>
+
+</configuration>

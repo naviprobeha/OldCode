@@ -1,0 +1,13 @@
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\obj\Debug\SantaMonica.Global.resources
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\obj\Debug\Navipro.SantaMonica.Goldfinger.WebService.Goldfinger.resources
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\obj\Debug\Navipro.SantaMonica.Goldfinger.WebService.InventoryPool.resources
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\obj\Debug\Navipro.SantaMonica.Goldfinger.WebService.Quiksilver.resources
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\obj\Debug\Navipro.SantaMonica.Goldfinger.WebService.ScaleRunner.resources
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\obj\Debug\SantaMonica.ShipmentPool.resources
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\obj\Debug\SantaMonica.csproj.GenerateResource.Cache
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\bin\SantaMonica.dll
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\bin\SantaMonica.pdb
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\bin\ChilkatDotNet.dll
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\obj\Debug\SantaMonica.dll
+D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\obj\Debug\SantaMonica.pdb

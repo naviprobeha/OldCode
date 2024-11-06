@@ -1,0 +1,2243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://infojet.navipro.se/newbody/partnerportal" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://infojet.navipro.se/newbody/partnerportal" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://infojet.navipro.se/newbody/partnerportal">
+      <s:element name="getSalesID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSalesIDResult" type="tns:SalesID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SalesID">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="contactWebUserAccount" type="tns:WebUserAccount" />
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="salesConcept" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="noOfSalesPersons" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="showCase" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="itemSelection" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="orderWeek" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="closingDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="startDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="startOrderDelivery" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="orderDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="orderDeliveryDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="supplementaryOrderStartDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="customerNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactWebUserAccountNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="userRegWebUserAccountNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pageUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sentLinesCollection" type="tns:ArrayOfOrderItem" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactUserId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactPassword" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="additionalOrder" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="customerName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebUserAccount">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="no" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="closed" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="customerNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="companyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="postCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToCompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToPostCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToCountryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="registrationNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="companyRole" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cellPhoneNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="historyDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="lastLoggedOnDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="maxBuyType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="maxBuyLimitPerOrder" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="languageCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="allowOrdering" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOrderItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OrderItem" nillable="true" type="tns:OrderItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OrderItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="itemNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="unitPrice" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="quantity" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="quantity2" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="quantity3" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="method" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="quantityShowCase" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="quantityToOrder" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="soldQuantity" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="remainingQuantity" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getProducts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webSiteCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="salesIdCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="languageCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getProductsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getProductsResult" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProduct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Product">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="modelNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="text" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="unitPrice" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="unitOfMeasure" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="webImage" type="tns:WebImage" />
+          <s:element minOccurs="0" maxOccurs="1" name="itemCategoryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="itemCategoryDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="productSkuArray" type="tns:ArrayOfProductSku" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebImage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="publicDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="imageType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="lastModified" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="doNotAllowResize" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductSku">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductSku" nillable="true" type="tns:ProductSku" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProductSku">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="itemNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="size" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getItemCategories">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesIdCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="languageCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getItemCategoriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getItemCategoriesResult" type="tns:ArrayOfItemCategory" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfItemCategory">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ItemCategory" nillable="true" type="tns:ItemCategory" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ItemCategory">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getConsumers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getConsumersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getConsumersResult" type="tns:ArrayOfConsumer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfConsumer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Consumer" nillable="true" type="tns:Consumer" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Consumer">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="entryNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ocrNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="createConsumer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consumer" type="tns:Consumer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createConsumerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="createConsumerResult" type="tns:Consumer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateConsumer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consumer" type="tns:Consumer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateConsumerResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="deleteConsumer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consumer" type="tns:Consumer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteConsumerResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getConsumerSales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getConsumerSalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getConsumerSalesResult" type="tns:ArrayOfConsumerSale" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfConsumerSale">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ConsumerSale" nillable="true" type="tns:ConsumerSale" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ConsumerSale">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="consumer" type="tns:Consumer" />
+          <s:element minOccurs="0" maxOccurs="1" name="cartItemArray" type="tns:ArrayOfCartItem" />
+          <s:element minOccurs="1" maxOccurs="1" name="noOfCartLines" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="orderingNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCartItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CartItem" nillable="true" type="tns:CartItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CartItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="lineNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="itemNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="referenceNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="extra1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="extra2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="extra3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="extra4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="extra5" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="unitPrice" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="quantity" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="formatedAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="formatedUnitPrice" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="inventory" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="checkInventory" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="inventoryText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="removeLink" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="webModelNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="minOrderableQty" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getHistoryConsumerSales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getHistoryConsumerSalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getHistoryConsumerSalesResult" type="tns:ArrayOfConsumerSale" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIdConsumerSales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIdConsumerSalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSalesIdConsumerSalesResult" type="tns:ArrayOfConsumerSale" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIdHistoryConsumerSales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIdHistoryConsumerSalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSalesIdHistoryConsumerSalesResult" type="tns:ArrayOfConsumerSale" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addToCart">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="consumerEntryNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="itemNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="quantity" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addToCartResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="removeFromCart">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="consumerEntryNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="webCartLineEntryNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="removeFromCartResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getWebUserAccountSalesIDs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getWebUserAccountSalesIDsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getWebUserAccountSalesIDsResult" type="tns:ArrayOfSalesID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesID">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesID" nillable="true" type="tns:SalesID" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getSalesIdConsumers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIdConsumersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSalesIdConsumersResult" type="tns:ArrayOfConsumer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addConsumerToSalesId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="consumer" type="tns:Consumer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addConsumerToSalesIdResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="removeConsumerFromSalesId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="consumer" type="tns:Consumer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="removeConsumerFromSalesIdResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="releaseCart">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="releaseCartResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMessages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="salesIdNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMessagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMessagesResult" type="tns:ArrayOfWebInfoMessageHeader" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWebInfoMessageHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WebInfoMessageHeader" nillable="true" type="tns:WebInfoMessageHeader" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebInfoMessageHeader">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="languageCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="header" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="text" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getAllMessages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="salesIdNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllMessagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAllMessagesResult" type="tns:ArrayOfWebInfoMessageHeader" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIDSalesPersons">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIDSalesPersonsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSalesIDSalesPersonsResult" type="tns:ArrayOfSalesIDSalesPerson" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesIDSalesPerson">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesIDSalesPerson" nillable="true" type="tns:SalesIDSalesPerson" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesIDSalesPerson">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="webUserAccount" type="tns:WebUserAccount" />
+          <s:element minOccurs="1" maxOccurs="1" name="soldPackages" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="soldAmount" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="paymentReceived" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="userProfile_authenticate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="userProfile_authenticateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userProfile_authenticateResult" type="tns:UserSession" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserSession">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="webUserAccount" type="tns:WebUserAccount" />
+          <s:element minOccurs="0" maxOccurs="1" name="customer" type="tns:Customer" />
+          <s:element minOccurs="0" maxOccurs="1" name="contact" type="tns:Contact" />
+          <s:element minOccurs="0" maxOccurs="1" name="clientIp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="clientAgent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="startPageCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="flags" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Customer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="no" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="name2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="postCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="currencyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="customerPriceGroup" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="locationCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="customerDiscGroup" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipmentMethodCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentServiceCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="vatBusPostingGroup" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="creditLimitLcy" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="salesPersonCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="salesPerson" type="tns:SalesPerson" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesPerson">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Contact">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="no" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="name2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="postCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="companyNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getTotalSoldPackages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTotalSoldPackagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="soldPackages" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="soldAmount" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesPersonTotalSoldPackages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesPersonTotalSoldPackagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="soldPackages" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="soldAmount" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIDSalesPerson">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIDSalesPersonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSalesIDSalesPersonResult" type="tns:SalesIDSalesPerson" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createSalesPerson">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createSalesPersonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="createSalesPersonResult" type="tns:UserResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="result" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="responseWebPageCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="deleteSalesPerson">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteSalesPersonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteSalesPersonResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getShipmentMethods">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesIdArray" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="shipToCountryCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shipToPostCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="languageCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getShipmentMethodsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getShipmentMethodsResult" type="tns:ArrayOfWebShipmentMethod" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWebShipmentMethod">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WebShipmentMethod" nillable="true" type="tns:WebShipmentMethod" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebShipmentMethod">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="webSiteCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipmentMethodCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentServiceCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="levelType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="active" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="text" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="defaultValue" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="defaultText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="amountInclVat" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="formatedAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="formatedAmountInclVat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="glAccountNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="vatProdPostingGroup" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="specifyCheckouts" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getAgreement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="languageCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAgreementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAgreementResult" type="tns:ArrayOfSalesIDAgreementLine" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSalesIDAgreementLine">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SalesIDAgreementLine" nillable="true" type="tns:SalesIDAgreementLine" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SalesIDAgreementLine">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="text" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="bold" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="header" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="approveAgreement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="approveAgreementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="approveAgreementResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkAvailableSalesPersonQuota">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkAvailableSalesPersonQuotaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="checkAvailableSalesPersonQuotaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getStartPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getStartPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getStartPageResult" type="tns:WebPage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WebPage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="webSiteCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="webTemplateCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="parentWebPageCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="group" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="indent" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="order" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="viewOrder" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="protectedPage" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="publishedFrom" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="publishedTo" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="publishedVersionNo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="workingVersionNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="externalPageLink" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="windowMode" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getPackingImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesIdArray" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="languageCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPackingImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPackingImageResult" type="tns:PackingImage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PackingImage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="imageCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getSalesIDStatistics">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="customerNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIDStatisticsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSalesIDStatisticsResult" type="tns:SalesIDStatistics" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SalesIDStatistics">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="balance" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="soldPackages" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="profitAmount" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="setSalesPersonPaymentReceived">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="paymentReceived" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setSalesPersonPaymentReceivedResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="checkSalesIdOrderExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesIdCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkSalesIdOrderExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="checkSalesIdOrderExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getContactInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesIdCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getContactInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getContactInformationResult" type="tns:Contact" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sendOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesIdArray" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webCartHeader" type="tns:WebCartHeader" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WebCartHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="webCheckoutCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="customerNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="userAccountNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToName2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToPostCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToCountryCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="addShipToAddress" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToName2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToPostCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToCountryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="customerOrderNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="noteOfGoods" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="clientIpAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="clientUserAgent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="currencyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="webPaymentMethodCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="webShipmentMethodCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="salesTermsConfirmed" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="paymentReference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="paymentOrderNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentServiceCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipmentMethodCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentServiceDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAdvice" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="shipmentDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="freightFee" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="adminFee" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="campaignCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="pricesInclVat" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="webShipmentMethod" type="tns:WebShipmentMethod" />
+          <s:element minOccurs="0" maxOccurs="1" name="webPaymentMethod" type="tns:WebPaymentMethod" />
+          <s:element minOccurs="0" maxOccurs="1" name="extraFields" type="tns:ArrayOfWebCartField" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebPaymentMethod" />
+      <s:complexType name="ArrayOfWebCartField">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WebCartField" nillable="true" type="tns:WebCartField" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebCartField">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="webFormCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fieldCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="transferToOrderTextLine" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="sendOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sendOrderResult" type="tns:OrderResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OrderResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="result" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="responseWebPageCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="orderNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getWebUserAccountBankAccountNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webUserAccountNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getWebUserAccountBankAccountNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getWebUserAccountBankAccountNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIDStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSalesIDStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getSalesIDStatusResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setAdditionalOrderMode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="active" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setAdditionalOrderModeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getShipmentMethodsSingle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="salesId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shipToCountryCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shipToPostCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="languageCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getShipmentMethodsSingleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getShipmentMethodsSingleResult" type="tns:ArrayOfWebShipmentMethod" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getSalesIDSoapIn">
+    <wsdl:part name="parameters" element="tns:getSalesID" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIDSoapOut">
+    <wsdl:part name="parameters" element="tns:getSalesIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getProductsSoapIn">
+    <wsdl:part name="parameters" element="tns:getProducts" />
+  </wsdl:message>
+  <wsdl:message name="getProductsSoapOut">
+    <wsdl:part name="parameters" element="tns:getProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getItemCategoriesSoapIn">
+    <wsdl:part name="parameters" element="tns:getItemCategories" />
+  </wsdl:message>
+  <wsdl:message name="getItemCategoriesSoapOut">
+    <wsdl:part name="parameters" element="tns:getItemCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getConsumersSoapIn">
+    <wsdl:part name="parameters" element="tns:getConsumers" />
+  </wsdl:message>
+  <wsdl:message name="getConsumersSoapOut">
+    <wsdl:part name="parameters" element="tns:getConsumersResponse" />
+  </wsdl:message>
+  <wsdl:message name="createConsumerSoapIn">
+    <wsdl:part name="parameters" element="tns:createConsumer" />
+  </wsdl:message>
+  <wsdl:message name="createConsumerSoapOut">
+    <wsdl:part name="parameters" element="tns:createConsumerResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateConsumerSoapIn">
+    <wsdl:part name="parameters" element="tns:updateConsumer" />
+  </wsdl:message>
+  <wsdl:message name="updateConsumerSoapOut">
+    <wsdl:part name="parameters" element="tns:updateConsumerResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteConsumerSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteConsumer" />
+  </wsdl:message>
+  <wsdl:message name="deleteConsumerSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteConsumerResponse" />
+  </wsdl:message>
+  <wsdl:message name="getConsumerSalesSoapIn">
+    <wsdl:part name="parameters" element="tns:getConsumerSales" />
+  </wsdl:message>
+  <wsdl:message name="getConsumerSalesSoapOut">
+    <wsdl:part name="parameters" element="tns:getConsumerSalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getHistoryConsumerSalesSoapIn">
+    <wsdl:part name="parameters" element="tns:getHistoryConsumerSales" />
+  </wsdl:message>
+  <wsdl:message name="getHistoryConsumerSalesSoapOut">
+    <wsdl:part name="parameters" element="tns:getHistoryConsumerSalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIdConsumerSalesSoapIn">
+    <wsdl:part name="parameters" element="tns:getSalesIdConsumerSales" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIdConsumerSalesSoapOut">
+    <wsdl:part name="parameters" element="tns:getSalesIdConsumerSalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIdHistoryConsumerSalesSoapIn">
+    <wsdl:part name="parameters" element="tns:getSalesIdHistoryConsumerSales" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIdHistoryConsumerSalesSoapOut">
+    <wsdl:part name="parameters" element="tns:getSalesIdHistoryConsumerSalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="addToCartSoapIn">
+    <wsdl:part name="parameters" element="tns:addToCart" />
+  </wsdl:message>
+  <wsdl:message name="addToCartSoapOut">
+    <wsdl:part name="parameters" element="tns:addToCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="removeFromCartSoapIn">
+    <wsdl:part name="parameters" element="tns:removeFromCart" />
+  </wsdl:message>
+  <wsdl:message name="removeFromCartSoapOut">
+    <wsdl:part name="parameters" element="tns:removeFromCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="getWebUserAccountSalesIDsSoapIn">
+    <wsdl:part name="parameters" element="tns:getWebUserAccountSalesIDs" />
+  </wsdl:message>
+  <wsdl:message name="getWebUserAccountSalesIDsSoapOut">
+    <wsdl:part name="parameters" element="tns:getWebUserAccountSalesIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIdConsumersSoapIn">
+    <wsdl:part name="parameters" element="tns:getSalesIdConsumers" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIdConsumersSoapOut">
+    <wsdl:part name="parameters" element="tns:getSalesIdConsumersResponse" />
+  </wsdl:message>
+  <wsdl:message name="addConsumerToSalesIdSoapIn">
+    <wsdl:part name="parameters" element="tns:addConsumerToSalesId" />
+  </wsdl:message>
+  <wsdl:message name="addConsumerToSalesIdSoapOut">
+    <wsdl:part name="parameters" element="tns:addConsumerToSalesIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="removeConsumerFromSalesIdSoapIn">
+    <wsdl:part name="parameters" element="tns:removeConsumerFromSalesId" />
+  </wsdl:message>
+  <wsdl:message name="removeConsumerFromSalesIdSoapOut">
+    <wsdl:part name="parameters" element="tns:removeConsumerFromSalesIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="releaseCartSoapIn">
+    <wsdl:part name="parameters" element="tns:releaseCart" />
+  </wsdl:message>
+  <wsdl:message name="releaseCartSoapOut">
+    <wsdl:part name="parameters" element="tns:releaseCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMessagesSoapIn">
+    <wsdl:part name="parameters" element="tns:getMessages" />
+  </wsdl:message>
+  <wsdl:message name="getMessagesSoapOut">
+    <wsdl:part name="parameters" element="tns:getMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllMessagesSoapIn">
+    <wsdl:part name="parameters" element="tns:getAllMessages" />
+  </wsdl:message>
+  <wsdl:message name="getAllMessagesSoapOut">
+    <wsdl:part name="parameters" element="tns:getAllMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIDSalesPersonsSoapIn">
+    <wsdl:part name="parameters" element="tns:getSalesIDSalesPersons" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIDSalesPersonsSoapOut">
+    <wsdl:part name="parameters" element="tns:getSalesIDSalesPersonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="userProfile_authenticateSoapIn">
+    <wsdl:part name="parameters" element="tns:userProfile_authenticate" />
+  </wsdl:message>
+  <wsdl:message name="userProfile_authenticateSoapOut">
+    <wsdl:part name="parameters" element="tns:userProfile_authenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTotalSoldPackagesSoapIn">
+    <wsdl:part name="parameters" element="tns:getTotalSoldPackages" />
+  </wsdl:message>
+  <wsdl:message name="getTotalSoldPackagesSoapOut">
+    <wsdl:part name="parameters" element="tns:getTotalSoldPackagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSalesPersonTotalSoldPackagesSoapIn">
+    <wsdl:part name="parameters" element="tns:getSalesPersonTotalSoldPackages" />
+  </wsdl:message>
+  <wsdl:message name="getSalesPersonTotalSoldPackagesSoapOut">
+    <wsdl:part name="parameters" element="tns:getSalesPersonTotalSoldPackagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIDSalesPersonSoapIn">
+    <wsdl:part name="parameters" element="tns:getSalesIDSalesPerson" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIDSalesPersonSoapOut">
+    <wsdl:part name="parameters" element="tns:getSalesIDSalesPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="createSalesPersonSoapIn">
+    <wsdl:part name="parameters" element="tns:createSalesPerson" />
+  </wsdl:message>
+  <wsdl:message name="createSalesPersonSoapOut">
+    <wsdl:part name="parameters" element="tns:createSalesPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteSalesPersonSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteSalesPerson" />
+  </wsdl:message>
+  <wsdl:message name="deleteSalesPersonSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteSalesPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentMethodsSoapIn">
+    <wsdl:part name="parameters" element="tns:getShipmentMethods" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentMethodsSoapOut">
+    <wsdl:part name="parameters" element="tns:getShipmentMethodsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAgreementSoapIn">
+    <wsdl:part name="parameters" element="tns:getAgreement" />
+  </wsdl:message>
+  <wsdl:message name="getAgreementSoapOut">
+    <wsdl:part name="parameters" element="tns:getAgreementResponse" />
+  </wsdl:message>
+  <wsdl:message name="approveAgreementSoapIn">
+    <wsdl:part name="parameters" element="tns:approveAgreement" />
+  </wsdl:message>
+  <wsdl:message name="approveAgreementSoapOut">
+    <wsdl:part name="parameters" element="tns:approveAgreementResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkAvailableSalesPersonQuotaSoapIn">
+    <wsdl:part name="parameters" element="tns:checkAvailableSalesPersonQuota" />
+  </wsdl:message>
+  <wsdl:message name="checkAvailableSalesPersonQuotaSoapOut">
+    <wsdl:part name="parameters" element="tns:checkAvailableSalesPersonQuotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getStartPageSoapIn">
+    <wsdl:part name="parameters" element="tns:getStartPage" />
+  </wsdl:message>
+  <wsdl:message name="getStartPageSoapOut">
+    <wsdl:part name="parameters" element="tns:getStartPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPackingImageSoapIn">
+    <wsdl:part name="parameters" element="tns:getPackingImage" />
+  </wsdl:message>
+  <wsdl:message name="getPackingImageSoapOut">
+    <wsdl:part name="parameters" element="tns:getPackingImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIDStatisticsSoapIn">
+    <wsdl:part name="parameters" element="tns:getSalesIDStatistics" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIDStatisticsSoapOut">
+    <wsdl:part name="parameters" element="tns:getSalesIDStatisticsResponse" />
+  </wsdl:message>
+  <wsdl:message name="setSalesPersonPaymentReceivedSoapIn">
+    <wsdl:part name="parameters" element="tns:setSalesPersonPaymentReceived" />
+  </wsdl:message>
+  <wsdl:message name="setSalesPersonPaymentReceivedSoapOut">
+    <wsdl:part name="parameters" element="tns:setSalesPersonPaymentReceivedResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkSalesIdOrderExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:checkSalesIdOrderExists" />
+  </wsdl:message>
+  <wsdl:message name="checkSalesIdOrderExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:checkSalesIdOrderExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getContactInformationSoapIn">
+    <wsdl:part name="parameters" element="tns:getContactInformation" />
+  </wsdl:message>
+  <wsdl:message name="getContactInformationSoapOut">
+    <wsdl:part name="parameters" element="tns:getContactInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:sendOrder" />
+  </wsdl:message>
+  <wsdl:message name="sendOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:sendOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="getWebUserAccountBankAccountNoSoapIn">
+    <wsdl:part name="parameters" element="tns:getWebUserAccountBankAccountNo" />
+  </wsdl:message>
+  <wsdl:message name="getWebUserAccountBankAccountNoSoapOut">
+    <wsdl:part name="parameters" element="tns:getWebUserAccountBankAccountNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIDStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:getSalesIDStatus" />
+  </wsdl:message>
+  <wsdl:message name="getSalesIDStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:getSalesIDStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="setAdditionalOrderModeSoapIn">
+    <wsdl:part name="parameters" element="tns:setAdditionalOrderMode" />
+  </wsdl:message>
+  <wsdl:message name="setAdditionalOrderModeSoapOut">
+    <wsdl:part name="parameters" element="tns:setAdditionalOrderModeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentMethodsSingleSoapIn">
+    <wsdl:part name="parameters" element="tns:getShipmentMethodsSingle" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentMethodsSingleSoapOut">
+    <wsdl:part name="parameters" element="tns:getShipmentMethodsSingleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SalesIDServiceSoap">
+    <wsdl:operation name="getSalesID">
+      <wsdl:input message="tns:getSalesIDSoapIn" />
+      <wsdl:output message="tns:getSalesIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProducts">
+      <wsdl:input message="tns:getProductsSoapIn" />
+      <wsdl:output message="tns:getProductsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getItemCategories">
+      <wsdl:input message="tns:getItemCategoriesSoapIn" />
+      <wsdl:output message="tns:getItemCategoriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsumers">
+      <wsdl:input message="tns:getConsumersSoapIn" />
+      <wsdl:output message="tns:getConsumersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="createConsumer">
+      <wsdl:input message="tns:createConsumerSoapIn" />
+      <wsdl:output message="tns:createConsumerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateConsumer">
+      <wsdl:input message="tns:updateConsumerSoapIn" />
+      <wsdl:output message="tns:updateConsumerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteConsumer">
+      <wsdl:input message="tns:deleteConsumerSoapIn" />
+      <wsdl:output message="tns:deleteConsumerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerSales">
+      <wsdl:input message="tns:getConsumerSalesSoapIn" />
+      <wsdl:output message="tns:getConsumerSalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getHistoryConsumerSales">
+      <wsdl:input message="tns:getHistoryConsumerSalesSoapIn" />
+      <wsdl:output message="tns:getHistoryConsumerSalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIdConsumerSales">
+      <wsdl:input message="tns:getSalesIdConsumerSalesSoapIn" />
+      <wsdl:output message="tns:getSalesIdConsumerSalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIdHistoryConsumerSales">
+      <wsdl:input message="tns:getSalesIdHistoryConsumerSalesSoapIn" />
+      <wsdl:output message="tns:getSalesIdHistoryConsumerSalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addToCart">
+      <wsdl:input message="tns:addToCartSoapIn" />
+      <wsdl:output message="tns:addToCartSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="removeFromCart">
+      <wsdl:input message="tns:removeFromCartSoapIn" />
+      <wsdl:output message="tns:removeFromCartSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getWebUserAccountSalesIDs">
+      <wsdl:input message="tns:getWebUserAccountSalesIDsSoapIn" />
+      <wsdl:output message="tns:getWebUserAccountSalesIDsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIdConsumers">
+      <wsdl:input message="tns:getSalesIdConsumersSoapIn" />
+      <wsdl:output message="tns:getSalesIdConsumersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addConsumerToSalesId">
+      <wsdl:input message="tns:addConsumerToSalesIdSoapIn" />
+      <wsdl:output message="tns:addConsumerToSalesIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="removeConsumerFromSalesId">
+      <wsdl:input message="tns:removeConsumerFromSalesIdSoapIn" />
+      <wsdl:output message="tns:removeConsumerFromSalesIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="releaseCart">
+      <wsdl:input message="tns:releaseCartSoapIn" />
+      <wsdl:output message="tns:releaseCartSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMessages">
+      <wsdl:input message="tns:getMessagesSoapIn" />
+      <wsdl:output message="tns:getMessagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllMessages">
+      <wsdl:input message="tns:getAllMessagesSoapIn" />
+      <wsdl:output message="tns:getAllMessagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDSalesPersons">
+      <wsdl:input message="tns:getSalesIDSalesPersonsSoapIn" />
+      <wsdl:output message="tns:getSalesIDSalesPersonsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="userProfile_authenticate">
+      <wsdl:input message="tns:userProfile_authenticateSoapIn" />
+      <wsdl:output message="tns:userProfile_authenticateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTotalSoldPackages">
+      <wsdl:input message="tns:getTotalSoldPackagesSoapIn" />
+      <wsdl:output message="tns:getTotalSoldPackagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSalesPersonTotalSoldPackages">
+      <wsdl:input message="tns:getSalesPersonTotalSoldPackagesSoapIn" />
+      <wsdl:output message="tns:getSalesPersonTotalSoldPackagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDSalesPerson">
+      <wsdl:input message="tns:getSalesIDSalesPersonSoapIn" />
+      <wsdl:output message="tns:getSalesIDSalesPersonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="createSalesPerson">
+      <wsdl:input message="tns:createSalesPersonSoapIn" />
+      <wsdl:output message="tns:createSalesPersonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteSalesPerson">
+      <wsdl:input message="tns:deleteSalesPersonSoapIn" />
+      <wsdl:output message="tns:deleteSalesPersonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentMethods">
+      <wsdl:input message="tns:getShipmentMethodsSoapIn" />
+      <wsdl:output message="tns:getShipmentMethodsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAgreement">
+      <wsdl:input message="tns:getAgreementSoapIn" />
+      <wsdl:output message="tns:getAgreementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="approveAgreement">
+      <wsdl:input message="tns:approveAgreementSoapIn" />
+      <wsdl:output message="tns:approveAgreementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailableSalesPersonQuota">
+      <wsdl:input message="tns:checkAvailableSalesPersonQuotaSoapIn" />
+      <wsdl:output message="tns:checkAvailableSalesPersonQuotaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getStartPage">
+      <wsdl:input message="tns:getStartPageSoapIn" />
+      <wsdl:output message="tns:getStartPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPackingImage">
+      <wsdl:input message="tns:getPackingImageSoapIn" />
+      <wsdl:output message="tns:getPackingImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDStatistics">
+      <wsdl:input message="tns:getSalesIDStatisticsSoapIn" />
+      <wsdl:output message="tns:getSalesIDStatisticsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setSalesPersonPaymentReceived">
+      <wsdl:input message="tns:setSalesPersonPaymentReceivedSoapIn" />
+      <wsdl:output message="tns:setSalesPersonPaymentReceivedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkSalesIdOrderExists">
+      <wsdl:input message="tns:checkSalesIdOrderExistsSoapIn" />
+      <wsdl:output message="tns:checkSalesIdOrderExistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getContactInformation">
+      <wsdl:input message="tns:getContactInformationSoapIn" />
+      <wsdl:output message="tns:getContactInformationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendOrder">
+      <wsdl:input message="tns:sendOrderSoapIn" />
+      <wsdl:output message="tns:sendOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getWebUserAccountBankAccountNo">
+      <wsdl:input message="tns:getWebUserAccountBankAccountNoSoapIn" />
+      <wsdl:output message="tns:getWebUserAccountBankAccountNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDStatus">
+      <wsdl:input message="tns:getSalesIDStatusSoapIn" />
+      <wsdl:output message="tns:getSalesIDStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setAdditionalOrderMode">
+      <wsdl:input message="tns:setAdditionalOrderModeSoapIn" />
+      <wsdl:output message="tns:setAdditionalOrderModeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentMethodsSingle">
+      <wsdl:input message="tns:getShipmentMethodsSingleSoapIn" />
+      <wsdl:output message="tns:getShipmentMethodsSingleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SalesIDServiceSoap" type="tns:SalesIDServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSalesID">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProducts">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemCategories">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getItemCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumers">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getConsumers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createConsumer">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/createConsumer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateConsumer">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/updateConsumer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteConsumer">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/deleteConsumer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerSales">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getConsumerSales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHistoryConsumerSales">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getHistoryConsumerSales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIdConsumerSales">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIdConsumerSales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIdHistoryConsumerSales">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIdHistoryConsumerSales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addToCart">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/addToCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeFromCart">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/removeFromCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWebUserAccountSalesIDs">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getWebUserAccountSalesIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIdConsumers">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIdConsumers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addConsumerToSalesId">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/addConsumerToSalesId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeConsumerFromSalesId">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/removeConsumerFromSalesId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="releaseCart">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/releaseCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMessages">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllMessages">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getAllMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDSalesPersons">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIDSalesPersons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userProfile_authenticate">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/userProfile_authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTotalSoldPackages">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getTotalSoldPackages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesPersonTotalSoldPackages">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesPersonTotalSoldPackages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDSalesPerson">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIDSalesPerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createSalesPerson">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/createSalesPerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSalesPerson">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/deleteSalesPerson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentMethods">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getShipmentMethods" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAgreement">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getAgreement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="approveAgreement">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/approveAgreement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailableSalesPersonQuota">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/checkAvailableSalesPersonQuota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStartPage">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getStartPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPackingImage">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getPackingImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDStatistics">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIDStatistics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setSalesPersonPaymentReceived">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/setSalesPersonPaymentReceived" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkSalesIdOrderExists">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/checkSalesIdOrderExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getContactInformation">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getContactInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendOrder">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/sendOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWebUserAccountBankAccountNo">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getWebUserAccountBankAccountNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDStatus">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIDStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setAdditionalOrderMode">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/setAdditionalOrderMode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentMethodsSingle">
+      <soap:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getShipmentMethodsSingle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SalesIDServiceSoap12" type="tns:SalesIDServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSalesID">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProducts">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getProducts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemCategories">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getItemCategories" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumers">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getConsumers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createConsumer">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/createConsumer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateConsumer">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/updateConsumer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteConsumer">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/deleteConsumer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerSales">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getConsumerSales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHistoryConsumerSales">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getHistoryConsumerSales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIdConsumerSales">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIdConsumerSales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIdHistoryConsumerSales">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIdHistoryConsumerSales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addToCart">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/addToCart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeFromCart">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/removeFromCart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWebUserAccountSalesIDs">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getWebUserAccountSalesIDs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIdConsumers">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIdConsumers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addConsumerToSalesId">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/addConsumerToSalesId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeConsumerFromSalesId">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/removeConsumerFromSalesId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="releaseCart">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/releaseCart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMessages">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getMessages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllMessages">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getAllMessages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDSalesPersons">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIDSalesPersons" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userProfile_authenticate">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/userProfile_authenticate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTotalSoldPackages">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getTotalSoldPackages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesPersonTotalSoldPackages">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesPersonTotalSoldPackages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDSalesPerson">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIDSalesPerson" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createSalesPerson">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/createSalesPerson" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSalesPerson">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/deleteSalesPerson" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentMethods">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getShipmentMethods" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAgreement">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getAgreement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="approveAgreement">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/approveAgreement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkAvailableSalesPersonQuota">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/checkAvailableSalesPersonQuota" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStartPage">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getStartPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPackingImage">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getPackingImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDStatistics">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIDStatistics" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setSalesPersonPaymentReceived">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/setSalesPersonPaymentReceived" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkSalesIdOrderExists">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/checkSalesIdOrderExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getContactInformation">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getContactInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendOrder">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/sendOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWebUserAccountBankAccountNo">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getWebUserAccountBankAccountNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSalesIDStatus">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getSalesIDStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setAdditionalOrderMode">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/setAdditionalOrderMode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentMethodsSingle">
+      <soap12:operation soapAction="http://infojet.navipro.se/newbody/partnerportal/getShipmentMethodsSingle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SalesIDService">
+    <wsdl:port name="SalesIDServiceSoap" binding="tns:SalesIDServiceSoap">
+      <soap:address location="http://hera/NewbodyInfojetWebService/SalesID/SalesIdService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SalesIDServiceSoap12" binding="tns:SalesIDServiceSoap12">
+      <soap12:address location="http://hera/NewbodyInfojetWebService/SalesID/SalesIdService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,104 @@
+﻿@model Navipro.Backoffice.Web.Models.Case
+
+@{
+    ViewBag.Title = Model.subject;
+}
+
+@using (Html.BeginForm("EditDescription", "Case", FormMethod.Post))
+
+{
+    @Html.AntiForgeryToken()
+
+
+
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(model => model.no)
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-9">
+            <h2>Redigera beskrivning för ärende @Model.no</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">Hem</a>
+                </li>
+                <li class="active">
+                    <a href="@Url.Action("List", "Case")">Ärenden</a>
+                </li>
+                <li class="active">
+                    <a href="@Url.Action("Details", "Case", new { @id = Model.no })">@Model.subject</a>
+                </li>
+                <li class="active">
+                    <strong>Redigera beskrivning</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-sm-3">
+            <div class="title-action">
+                <input type="submit" value="Spara" class="btn btn-primary" />
+                @Html.ActionLink("Tillbaka", "Details", new { @id = Model.no }, new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        @if (ViewBag.errorMessage != null)
+        {
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-danger alert-dismissable">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        @ViewBag.errorMessage
+                    </div>
+                </div>
+            </div>
+        }
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox-content no-padding">
+                    @Html.TextAreaFor(model => model.description, new { @id = "description" })
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+}
+
+@section Styles {
+    @Styles.Render("~/Content/plugins/chosen/chosenStyles")
+    @Styles.Render("~/plugins/dataPickerStyles")
+    @Styles.Render("~/plugins/summernoteStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/chosen")
+    @Scripts.Render("~/plugins/typehead")
+    @Scripts.Render("~/plugins/dataPicker")
+    @Scripts.Render("~/plugins/summernote")
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+  
+            $('#description').summernote({
+                height: 600,   //set editable area's height
+                placeholder: "Beskrivning...",
+                });
+
+  
+
+        });
+
+
+
+
+    </script>
+}

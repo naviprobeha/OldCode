@@ -1,0 +1,5 @@
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\Swedbank.Pay.Api\bin\Debug\Swedbank.Pay.Api.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\Swedbank.Pay.Api\bin\Debug\Swedbank.Pay.Api.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\Swedbank.Pay.Api\bin\Debug\Newtonsoft.Json.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\Swedbank.Pay.Api\obj\Debug\Swedbank.Pay.Api.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\Swedbank.Pay.Api\obj\Debug\Swedbank.Pay.Api.pdb

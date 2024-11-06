@@ -1,0 +1,9 @@
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartCore\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartCore\obj\Debug\Navipro.SmartSystems.SmartCore.StartForm.resources
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartCore\obj\Debug\SmartCore.csproj.GenerateResource.Cache
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartCore\bin\Debug\SmartCore.dll
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartCore\bin\Debug\SmartCore.pdb
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartCore\bin\Debug\SmartLibrary.dll
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartCore\bin\Debug\SmartLibrary.pdb
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartCore\obj\Debug\SmartCore.dll
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartCore\obj\Debug\SmartCore.pdb

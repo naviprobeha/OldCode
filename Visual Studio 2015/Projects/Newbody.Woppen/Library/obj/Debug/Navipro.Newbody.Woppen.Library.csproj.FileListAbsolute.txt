@@ -1,0 +1,7 @@
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Debug\Navipro.Newbody.Woppen.Library.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Debug\Navipro.Newbody.Woppen.Library.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Debug\InfojetLib.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Debug\InfojetLib.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\obj\Debug\Navipro.Newbody.Woppen.Library.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\obj\Debug\Navipro.Newbody.Woppen.Library.pdb

@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="ServiceRequest.asmx.cs" Class="Navipro.CashJet.WebService.ServiceRequest" %>

@@ -1,0 +1,169 @@
+﻿
+@section Title {
+    @ViewBag.PageTitle
+}
+@section Header {
+}
+
+@section PageHeading {
+
+}
+
+<div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="card mb-g rounded-top">
+            <div class="row row-grid">
+                <div class="col-12" style="text-align: center;">
+                    <img src="/home/ReceiptImage/@ViewBag.ID" border="0" class="img-responsive" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (ViewBag.ShowRegistrationForm)
+    {
+        <div class="col-sm-8 col-md-8 col-lg-8">
+
+            <!--Basic tables-->
+            <!--Basic tables-->
+            <form class="needs-validation" method="post" novalidate>
+
+                <div id="panel-1" class="panel">
+
+                    <div class="panel-container show">
+                        <div class="panel-content">
+
+                            <h4 class="card-title"><b>@ViewBag.FormTitle</b></h4>
+
+                            <p class="card-text">@ViewBag.FormHelpText</p>
+
+                            @foreach (SmyckaReceiptService.Models.FormField formfield in ViewBag.FormFieldList)
+                            {
+                                string required = "";
+                                if (formfield.required)
+                                {
+                                    required = "required";
+                                }
+
+                                if (formfield.type == 0)
+                                {
+                                    if (formfield.connectionField == "email")
+                                    {
+
+
+                                        <div class="form-group">
+                                            <label class="form-label" for="@formfield.code">
+                                                @formfield.description
+                                                @if (formfield.required)
+                                                {
+                                                    <span class="text-danger">*</span>
+                                                }
+                                            </label>
+                                            <input type="email" id="@formfield.code" name="@formfield.code" class="form-control" placeholder="@formfield.description" @required>
+                                            <div class="invalid-feedback">
+                                                Fältet är obligatoriskt.
+                                            </div>
+
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="form-group">
+                                            <label class="form-label" for="@formfield.code">
+                                                @formfield.description
+                                                @if (formfield.required)
+                                                {
+                                                    <span class="text-danger">*</span>
+                                                }
+                                            </label>
+                                            <input type="text" id="@formfield.code" class="form-control" name="@formfield.code" placeholder="@formfield.description" @required>
+                                            <div class="invalid-feedback">
+                                                Fältet är obligatoriskt.
+                                            </div>
+
+                                        </div>
+                                    }
+                                }
+                                if (formfield.type == 2)
+                                {
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="@formfield.code" @required>
+                                        <label class="custom-control-label" for="@formfield.code">
+                                            @formfield.description
+                                            @if (formfield.required)
+                                            {
+                                                <span class="text-danger">*</span>
+                                            }
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Du måste kryssa i för att komma vidare.
+                                        </div>
+                                    </div>
+                                }
+
+                            }
+
+
+
+                        </div>
+                        <div class="panel-content border-faded border-left-0 border-right-0 border-bottom-0 d-flex flex-row align-items-center">
+                            <button class="btn btn-primary ml-auto" type="submit">@ViewBag.FormSubmitButton</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    }
+</div>
+
+
+
+
+
+
+@section Scripts {
+    <script type="text/javascript">
+
+        // DO NOT REMOVE : GLOBAL FUNCTIONS!
+
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+
+        (function () {
+
+            'use strict';
+
+            window.addEventListener('load', function () {
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+
+                var forms = document.getElementsByClassName('needs-validation');
+
+                // Loop over them and prevent submission
+
+                var validation = Array.prototype.filter.call(forms, function (form) {
+
+                    form.addEventListener('submit', function (event) {
+
+                        if (form.checkValidity() === false) {
+
+                            event.preventDefault();
+
+                            event.stopPropagation();
+
+                        }
+
+                        form.classList.add('was-validated');
+
+                    }, false);
+
+                });
+
+            }, false);
+
+        })();
+
+
+
+    </script>
+}

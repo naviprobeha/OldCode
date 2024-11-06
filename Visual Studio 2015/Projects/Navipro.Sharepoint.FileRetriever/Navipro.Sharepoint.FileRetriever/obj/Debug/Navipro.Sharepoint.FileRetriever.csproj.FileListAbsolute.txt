@@ -1,0 +1,5 @@
+C:\Visual Studio\VS2008\Projects\Navipro.Sharepoint.FileRetriever\Navipro.Sharepoint.FileRetriever\bin\Debug\Navipro.Sharepoint.FileRetriever.exe
+C:\Visual Studio\VS2008\Projects\Navipro.Sharepoint.FileRetriever\Navipro.Sharepoint.FileRetriever\bin\Debug\Navipro.Sharepoint.FileRetriever.pdb
+C:\Visual Studio\VS2008\Projects\Navipro.Sharepoint.FileRetriever\Navipro.Sharepoint.FileRetriever\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Navipro.Sharepoint.FileRetriever\Navipro.Sharepoint.FileRetriever\obj\Debug\Navipro.Sharepoint.FileRetriever.exe
+C:\Visual Studio\VS2008\Projects\Navipro.Sharepoint.FileRetriever\Navipro.Sharepoint.FileRetriever\obj\Debug\Navipro.Sharepoint.FileRetriever.pdb

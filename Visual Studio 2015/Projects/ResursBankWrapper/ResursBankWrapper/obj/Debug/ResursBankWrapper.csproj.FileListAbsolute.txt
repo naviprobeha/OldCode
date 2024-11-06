@@ -1,0 +1,11 @@
+H:\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\bin\Debug\ResursBankWrapper.dll
+H:\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\bin\Debug\ResursBankWrapper.pdb
+H:\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\obj\Debug\ResursBankWrapper.dll
+H:\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\obj\Debug\ResursBankWrapper.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\bin\Debug\ResursBankWrapper.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\bin\Debug\ResursBankWrapper.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\bin\Debug\ResursBankWrapper.tlb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\obj\Debug\ResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\obj\Debug\ResursBankWrapper.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\ResursBankWrapper\ResursBankWrapper\obj\Debug\ResursBankWrapper.pdb

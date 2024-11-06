@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nav>
+  <type>customers</type>
+  <method>CREATE</method>
+  <filter />
+  <id>0</id>
+  <data>
+    <customer>
+      <email>mikael.granlund@bygg.org</email>
+      <first_name>Sveriges Byggindustrier</first_name>
+      <last_name />
+      <username>12052V</username>
+      <billing_address>
+        <first_name>Sveriges Byggindustrier</first_name>
+        <last_name />
+        <company />
+        <address_1>KundID PBI2001</address_1>
+        <address_2>FE535</address_2>
+        <city>Stockholm</city>
+        <state />
+        <postcode>105 69</postcode>
+        <country />
+        <email>mikael.granlund@bygg.org</email>
+        <phone>040-352641</phone>
+      </billing_address>
+      <shipping_address>
+        <first_name>Sveriges Byggindustrier</first_name>
+        <last_name />
+        <company />
+        <address_1>KundID PBI2001</address_1>
+        <address_2>FE535</address_2>
+        <city>Stockholm</city>
+        <state />
+        <postcode>105 69</postcode>
+        <country />
+      </shipping_address>
+    </customer>
+  </data>
+</nav>

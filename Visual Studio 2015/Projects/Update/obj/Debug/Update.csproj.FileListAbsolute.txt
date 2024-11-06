@@ -1,0 +1,8 @@
+C:\Visual Studio\VS2008\Projects\Update\obj\Debug\Update.exe
+C:\Visual Studio\VS2008\Projects\Update\obj\Debug\Update.pdb
+C:\Visual Studio\VS2008\Projects\Update\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Update\obj\Debug\Update.Update.resources
+C:\Visual Studio\VS2008\Projects\Update\obj\Debug\Update.csproj.GenerateResource.Cache
+C:\Visual Studio\VS2008\Projects\Update\bin\Debug\update.xml
+C:\Visual Studio\VS2008\Projects\Update\bin\Debug\Update.exe
+C:\Visual Studio\VS2008\Projects\Update\bin\Debug\Update.pdb

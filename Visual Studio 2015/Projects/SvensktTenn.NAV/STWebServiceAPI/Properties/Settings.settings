@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="STWebServiceAPI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="STWebServiceAPI_STWebService_STWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.222.14:82/STWebService/STWebService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

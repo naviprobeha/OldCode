@@ -1,0 +1,9 @@
+H:\Visual Studio\VS2008\Projects\CleanCashWrapper\CleanCashWrapper\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\CleanCashWrapper\CleanCashWrapper\bin\Debug\CleanCashWrapper.dll
+H:\Visual Studio\VS2008\Projects\CleanCashWrapper\CleanCashWrapper\bin\Debug\CleanCashWrapper.pdb
+H:\Visual Studio\VS2008\Projects\CleanCashWrapper\CleanCashWrapper\obj\Debug\CleanCashWrapper.dll
+H:\Visual Studio\VS2008\Projects\CleanCashWrapper\CleanCashWrapper\obj\Debug\CleanCashWrapper.pdb
+H:\Visual Studio\VS2008\Projects\CleanCashWrapper\CleanCashWrapper\bin\Debug\NaviPro.CleanCashWrapper.dll
+H:\Visual Studio\VS2008\Projects\CleanCashWrapper\CleanCashWrapper\bin\Debug\NaviPro.CleanCashWrapper.pdb
+H:\Visual Studio\VS2008\Projects\CleanCashWrapper\CleanCashWrapper\obj\Debug\NaviPro.CleanCashWrapper.dll
+H:\Visual Studio\VS2008\Projects\CleanCashWrapper\CleanCashWrapper\obj\Debug\NaviPro.CleanCashWrapper.pdb

@@ -1,0 +1,221 @@
+﻿@model Navipro.Backoffice.Web.Models.Case
+
+@{
+    ViewBag.Title = Model.subject;
+}
+
+@using (Html.BeginForm("Edit", "Case", FormMethod.Post))
+
+{
+    @Html.AntiForgeryToken()
+
+
+
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(model => model.no)
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-9">
+            <h2>Redigera ärende @Model.no</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">Hem</a>
+                </li>
+                <li class="active">
+                    <a href="@Url.Action("List", "Case")">Ärenden</a>
+                </li>
+                <li class="active">
+                    <a href="@Url.Action("Details", "Case", new { @id = Model.no })">@Model.subject</a>
+                </li>
+                <li class="active">
+                    <strong>Redigera</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-sm-3">
+            <div class="title-action">
+                @Html.ActionLink("Beskrivning", "EditDescription", new { @id = Model.no }, new { @class = "btn btn-default" })
+                <input type="submit" value="Spara" class="btn btn-primary" />
+                @Html.ActionLink("Tillbaka", "Details", new { @id = Model.no }, new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        @if (ViewBag.errorMessage != null)
+        {
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-danger alert-dismissable">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        @ViewBag.errorMessage
+                    </div>
+                </div>
+            </div>
+        }
+
+    <div class="row">
+        <div class="col-lg-7">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Allmänt</h5>
+                </div>
+
+                <div class="ibox-content">
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.subject, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.EditorFor(model => model.subject)
+                            @Html.ValidationMessageFor(model => model.subject)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ordererEmail, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.EditorFor(model => model.ordererEmail, new { @id = "ordererEmail" })
+                            @Html.ValidationMessageFor(model => model.ordererEmail)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ordererName, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.EditorFor(model => model.ordererName, new { @id = "ordererName" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.jobNo, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.DropDownListFor(model => model.jobNo, ((IEnumerable<SelectListItem>)ViewBag.jobList), new { @class = "chosen-select", @id = "jobNo" })
+                            @Html.ValidationMessageFor(model => model.jobNo)
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Leverans</h5>
+                </div>
+
+                <div class="ibox-content">
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.activityTypeCode, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.DropDownListFor(model => model.activityCommisionCode, ((IEnumerable<SelectListItem>)ViewBag.activityTypeList), new { @class = "chosen-select", @id = "activityType" })
+                            @Html.ValidationMessageFor(model => model.activityCommisionCode)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.caseStatusCode, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.DropDownListFor(model => model.caseStatusCode, ((IEnumerable<SelectListItem>)ViewBag.statusList), new { @class = "chosen-select", @id = "statusCode" })
+                            @Html.ValidationMessageFor(model => model.caseStatusCode)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.estimatedEndingDate, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            <div class="input-group date">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>@Html.EditorFor(model => model.estimatedEndingDateText)
+                            </div>
+                            @Html.ValidationMessageFor(model => model.estimatedEndingDateText)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.responsibleResource, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.DropDownListFor(model => model.responsibleResource, ((IEnumerable<SelectListItem>)ViewBag.responsibleResources), new { @class = "chosen-select", @id = "responsibleResource" })
+                            @Html.ValidationMessageFor(model => model.responsibleResource)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.assignedResourcesList, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.DropDownList("resourceList", ((IEnumerable<SelectListItem>)ViewBag.resources), new { @class = "chosen-select", @id = "assignedResources", @multiple = "multiple" })
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox-content">
+                    @Html.Raw(Model.description)
+
+                </div>
+            </div>
+        </div>
+
+ </div>
+
+}
+
+@section Styles {
+    @Styles.Render("~/Content/plugins/chosen/chosenStyles")
+    @Styles.Render("~/plugins/dataPickerStyles")    
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/chosen")
+    @Scripts.Render("~/plugins/typehead")
+    @Scripts.Render("~/plugins/dataPicker")
+    @Scripts.Render("~/plugins/summernote")
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            $('.input-group.date').datepicker({
+                minViewMode: 0,
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true,
+                todayHighlight: true,
+                format: 'yyyy-mm-dd'
+            });
+
+ 
+            $('#jobNo').chosen({ width: "100%", forceParse: true });
+            $('#statusCode').chosen({ width: "100%", forceParse: true });
+            $('#activityType').chosen({ width: "100%", forceParse: true });
+            $('#assignedResources').chosen({ width: "100%", forceParse: true });
+            $('#responsibleResource').chosen({ width: "100%", forceParse: true });
+
+            var ordererListDataUrl = '@Url.Action("getOrdererList", "Case")';
+
+            $.get(ordererListDataUrl, function (data) {
+                $("#ordererEmail").typeahead({ source: data.email });
+            }, 'json');
+
+            $('#ordererEmail').change(function () {
+
+                var ordererDataUrl = '@Url.Action("getOrderer", "Case")' + '?email=' + $("#ordererEmail").val();
+
+                $.get(ordererDataUrl, function (orderer) {
+
+                    $("#ordererName").val(orderer.name);
+                    $('#ordererName').attr('readonly', 'true');
+                }, 'json');
+            });
+
+        });
+
+
+
+
+   </script>
+}

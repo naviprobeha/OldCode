@@ -1,0 +1,12 @@
+<publishData>
+  <publishTarget publishUrl="\\gro\c$\WebSites\default\OutnorthSDWebService2\">
+    <file relUrl="WebSiteService.asmx" publishTime="04/29/2013 21:38:31" />
+    <file relUrl="bin/Navipro.Infojet.WebService.dll" publishTime="11/29/2013 14:17:58" />
+    <file relUrl="bin/Navipro.Infojet.Lib.dll" publishTime="11/29/2013 10:11:02" />
+    <file relUrl="Web.config" publishTime="11/29/2013 14:16:52" />
+    <file relUrl="bin/Navipro.Infojet.Lib.pdb" publishTime="11/29/2013 10:11:02" />
+    <file relUrl="InfojetServiceRequest.asmx" publishTime="04/22/2010 07:04:25" />
+    <file relUrl="WebCheckoutService.asmx" publishTime="09/16/2013 20:47:51" />
+    <file relUrl="bin/Navipro.Infojet.WebService.pdb" publishTime="11/29/2013 14:17:58" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,10 @@
+H:\My Documents\Visual Studio 2008\Projects\Navipro.Base\Common\obj\Debug\ResolveAssemblyReference.cache
+H:\My Documents\Visual Studio 2008\Projects\Navipro.Base\Common\bin\Debug\Common.dll
+H:\My Documents\Visual Studio 2008\Projects\Navipro.Base\Common\bin\Debug\Common.pdb
+H:\My Documents\Visual Studio 2008\Projects\Navipro.Base\Common\obj\Debug\Common.dll
+H:\My Documents\Visual Studio 2008\Projects\Navipro.Base\Common\obj\Debug\Common.pdb
+C:\Visual Studio\VS2008\Projects\Navipro.Base\Common\bin\Debug\Common.dll
+C:\Visual Studio\VS2008\Projects\Navipro.Base\Common\bin\Debug\Common.pdb
+C:\Visual Studio\VS2008\Projects\Navipro.Base\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Navipro.Base\Common\obj\Debug\Common.dll
+C:\Visual Studio\VS2008\Projects\Navipro.Base\Common\obj\Debug\Common.pdb

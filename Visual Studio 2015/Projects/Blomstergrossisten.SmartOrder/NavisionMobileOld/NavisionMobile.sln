@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NavisionMobile", "http://demo.navipro.se/NavisionMobile/NavisionMobile.csproj", "{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Debug|Default.ActiveCfg = Debug|.NET
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Debug|Default.Build.0 = Debug|.NET
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Release|Default.ActiveCfg = Release|.NET
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Release|Default.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

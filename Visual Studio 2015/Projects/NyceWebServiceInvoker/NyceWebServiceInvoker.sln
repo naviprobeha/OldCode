@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyceWebServiceInvoker", "NyceWebServiceInvoker\NyceWebServiceInvoker.csproj", "{6BB4A293-F3AB-41E4-A58E-0DDD0A63ADEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlCombiner", "XmlCombiner\XmlCombiner.csproj", "{48891F10-58FC-4D5D-9026-71E228C09A76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BB4A293-F3AB-41E4-A58E-0DDD0A63ADEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB4A293-F3AB-41E4-A58E-0DDD0A63ADEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB4A293-F3AB-41E4-A58E-0DDD0A63ADEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB4A293-F3AB-41E4-A58E-0DDD0A63ADEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48891F10-58FC-4D5D-9026-71E228C09A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48891F10-58FC-4D5D-9026-71E228C09A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48891F10-58FC-4D5D-9026-71E228C09A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48891F10-58FC-4D5D-9026-71E228C09A76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

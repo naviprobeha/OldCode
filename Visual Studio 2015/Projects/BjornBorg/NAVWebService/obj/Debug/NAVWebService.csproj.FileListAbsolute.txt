@@ -1,0 +1,5 @@
+C:\Visual Studio\VS2008\Projects\BjornBorg\NAVWebService\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\BjornBorg\NAVWebService\bin\NAVWebService.dll
+C:\Visual Studio\VS2008\Projects\BjornBorg\NAVWebService\bin\NAVWebService.pdb
+C:\Visual Studio\VS2008\Projects\BjornBorg\NAVWebService\obj\Debug\NAVWebService.dll
+C:\Visual Studio\VS2008\Projects\BjornBorg\NAVWebService\obj\Debug\NAVWebService.pdb

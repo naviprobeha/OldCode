@@ -1,0 +1,266 @@
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\csc.exe
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\System.Collections.Immutable.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\System.Reflection.Metadata.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\vbc.exe
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\VBCSCompiler.exe
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\roslyn\VBCSCompiler.exe.config
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Api.dll.config
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Api.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Api.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Antlr3.Runtime.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\EntityFramework.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\EntityFramework.SqlServer.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.Agent.Intercept.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.DependencyCollector.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.Web.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.WindowsServer.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.ApplicationInsights.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Core.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Cookies.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Facebook.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Google.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.OAuth.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Twitter.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Web.Infrastructure.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Newtonsoft.Json.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Owin.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Net.Http.Formatting.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Helpers.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.Owin.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.WebHost.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Mvc.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Optimization.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Razor.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Deployment.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Razor.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\WebGrease.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.DependencyCollector.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.Web.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.WindowsServer.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.ApplicationInsights.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Newtonsoft.Json.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Net.Http.Formatting.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Helpers.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.WebHost.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Mvc.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Optimization.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Razor.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Deployment.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Razor.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Antlr3.Runtime.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\EntityFramework.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\EntityFramework.SqlServer.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Core.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Facebook.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Cookies.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.OAuth.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Google.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Twitter.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.Owin.xml
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\obj\Debug\Api.dll
+\\workanywhere.net\navipro$\home\navipro_beha\visual studio 2015\Projects\Sandberg.Api\Api\obj\Debug\Api.pdb
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\csc.exe
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\System.Collections.Immutable.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\System.Reflection.Metadata.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\vbc.exe
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\VBCSCompiler.exe
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\VBCSCompiler.exe.config
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Api.dll.config
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Api.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Api.pdb
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Antlr3.Runtime.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\EntityFramework.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\EntityFramework.SqlServer.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.Agent.Intercept.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.DependencyCollector.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.Web.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.WindowsServer.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.ApplicationInsights.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Core.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Cookies.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Facebook.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Google.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.OAuth.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Twitter.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Web.Infrastructure.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Newtonsoft.Json.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Owin.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Net.Http.Formatting.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Helpers.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.Owin.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.WebHost.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Mvc.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Optimization.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Razor.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Deployment.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Razor.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\WebGrease.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.DependencyCollector.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.Web.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.WindowsServer.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.ApplicationInsights.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Newtonsoft.Json.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Net.Http.Formatting.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Helpers.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.WebHost.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Mvc.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Optimization.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Razor.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Deployment.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Razor.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Antlr3.Runtime.pdb
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\EntityFramework.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\EntityFramework.SqlServer.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Core.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Facebook.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Cookies.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.OAuth.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Google.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Twitter.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.Owin.xml
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\obj\Debug\Api.dll
+H:\Visual Studio\VS2015\Projects\Sandberg.Api\Api\obj\Debug\Api.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\csc.exe
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.CSharp.Core.targets
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\System.Collections.Immutable.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\System.Reflection.Metadata.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\vbc.exe
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\VBCSCompiler.exe
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\roslyn\VBCSCompiler.exe.config
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Api.dll.config
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Api.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Api.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Antlr3.Runtime.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\EntityFramework.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\EntityFramework.SqlServer.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.Agent.Intercept.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.DependencyCollector.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.PerfCounterCollector.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.Web.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.WindowsServer.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.ApplicationInsights.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Core.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Owin.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Cookies.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Facebook.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Google.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.OAuth.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Twitter.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Web.Infrastructure.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Newtonsoft.Json.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Owin.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Net.Http.Formatting.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Helpers.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.Owin.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.WebHost.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Mvc.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Optimization.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Razor.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Deployment.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Razor.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\WebGrease.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.DependencyCollector.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.Web.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AI.WindowsServer.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.ApplicationInsights.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Newtonsoft.Json.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Net.Http.Formatting.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Helpers.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.WebHost.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Mvc.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Optimization.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Razor.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Deployment.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.WebPages.Razor.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Antlr3.Runtime.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\EntityFramework.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\EntityFramework.SqlServer.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Core.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.Owin.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Facebook.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Cookies.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.OAuth.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Google.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.Twitter.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\bin\System.Web.Http.Owin.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\obj\Debug\Api.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\obj\Debug\Api.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Sandberg.Api\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache

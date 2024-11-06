@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://tempuri.org/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="getUnSentFactoryLineJournals">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUnSentFactoryLineJournalsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUnSentFactoryLineJournalsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLineJournalOrders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineJournalEntryNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLineJournalOrdersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLineJournalOrdersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLineOrderContainers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineOrderEntryNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLineOrderContainersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLineOrderContainersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getContainerEntry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="containerNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getContainerEntryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getContainerEntryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setLineJournalAsSent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineJournalEntryNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setLineJournalAsSentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="setLineOrderContainerWeight">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineOrderEntryNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="containerNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="weight" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="scaledDateTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setLineOrderContainerWeightResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getScaleEntries">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getScaleEntriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getScaleEntriesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createScaleEntry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="transactionDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createScaleEntryResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="createScaleEntry2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="transactionDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="transactionSubDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="createScaleEntry2Response">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMissingScaleEntries">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMissingScaleEntriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMissingScaleEntriesResult" type="s0:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getUnfinishedScaleEntries">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUnfinishedScaleEntriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUnfinishedScaleEntriesResult" type="s0:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getContainersToScale">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getContainersToScaleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getContainersToScaleResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLineOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineOrderEntry" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLineOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLineOrderResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLineJournal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineJournalEntry" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="factoryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLineJournalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLineJournalResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setContainerAsSent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineOrderEntryNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="lineOrderContainerEntryNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setContainerAsSentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getLineJournalEntries">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineJournalEntryNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLineJournalEntriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLineJournalEntriesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="getUnSentFactoryLineJournalsSoapIn">
+    <part name="parameters" element="s0:getUnSentFactoryLineJournals" />
+  </message>
+  <message name="getUnSentFactoryLineJournalsSoapOut">
+    <part name="parameters" element="s0:getUnSentFactoryLineJournalsResponse" />
+  </message>
+  <message name="getLineJournalOrdersSoapIn">
+    <part name="parameters" element="s0:getLineJournalOrders" />
+  </message>
+  <message name="getLineJournalOrdersSoapOut">
+    <part name="parameters" element="s0:getLineJournalOrdersResponse" />
+  </message>
+  <message name="getLineOrderContainersSoapIn">
+    <part name="parameters" element="s0:getLineOrderContainers" />
+  </message>
+  <message name="getLineOrderContainersSoapOut">
+    <part name="parameters" element="s0:getLineOrderContainersResponse" />
+  </message>
+  <message name="getContainerEntrySoapIn">
+    <part name="parameters" element="s0:getContainerEntry" />
+  </message>
+  <message name="getContainerEntrySoapOut">
+    <part name="parameters" element="s0:getContainerEntryResponse" />
+  </message>
+  <message name="setLineJournalAsSentSoapIn">
+    <part name="parameters" element="s0:setLineJournalAsSent" />
+  </message>
+  <message name="setLineJournalAsSentSoapOut">
+    <part name="parameters" element="s0:setLineJournalAsSentResponse" />
+  </message>
+  <message name="setLineOrderContainerWeightSoapIn">
+    <part name="parameters" element="s0:setLineOrderContainerWeight" />
+  </message>
+  <message name="setLineOrderContainerWeightSoapOut">
+    <part name="parameters" element="s0:setLineOrderContainerWeightResponse" />
+  </message>
+  <message name="getScaleEntriesSoapIn">
+    <part name="parameters" element="s0:getScaleEntries" />
+  </message>
+  <message name="getScaleEntriesSoapOut">
+    <part name="parameters" element="s0:getScaleEntriesResponse" />
+  </message>
+  <message name="createScaleEntrySoapIn">
+    <part name="parameters" element="s0:createScaleEntry" />
+  </message>
+  <message name="createScaleEntrySoapOut">
+    <part name="parameters" element="s0:createScaleEntryResponse" />
+  </message>
+  <message name="createScaleEntry2SoapIn">
+    <part name="parameters" element="s0:createScaleEntry2" />
+  </message>
+  <message name="createScaleEntry2SoapOut">
+    <part name="parameters" element="s0:createScaleEntry2Response" />
+  </message>
+  <message name="getMissingScaleEntriesSoapIn">
+    <part name="parameters" element="s0:getMissingScaleEntries" />
+  </message>
+  <message name="getMissingScaleEntriesSoapOut">
+    <part name="parameters" element="s0:getMissingScaleEntriesResponse" />
+  </message>
+  <message name="getUnfinishedScaleEntriesSoapIn">
+    <part name="parameters" element="s0:getUnfinishedScaleEntries" />
+  </message>
+  <message name="getUnfinishedScaleEntriesSoapOut">
+    <part name="parameters" element="s0:getUnfinishedScaleEntriesResponse" />
+  </message>
+  <message name="getContainersToScaleSoapIn">
+    <part name="parameters" element="s0:getContainersToScale" />
+  </message>
+  <message name="getContainersToScaleSoapOut">
+    <part name="parameters" element="s0:getContainersToScaleResponse" />
+  </message>
+  <message name="getLineOrderSoapIn">
+    <part name="parameters" element="s0:getLineOrder" />
+  </message>
+  <message name="getLineOrderSoapOut">
+    <part name="parameters" element="s0:getLineOrderResponse" />
+  </message>
+  <message name="getLineJournalSoapIn">
+    <part name="parameters" element="s0:getLineJournal" />
+  </message>
+  <message name="getLineJournalSoapOut">
+    <part name="parameters" element="s0:getLineJournalResponse" />
+  </message>
+  <message name="setContainerAsSentSoapIn">
+    <part name="parameters" element="s0:setContainerAsSent" />
+  </message>
+  <message name="setContainerAsSentSoapOut">
+    <part name="parameters" element="s0:setContainerAsSentResponse" />
+  </message>
+  <message name="getLineJournalEntriesSoapIn">
+    <part name="parameters" element="s0:getLineJournalEntries" />
+  </message>
+  <message name="getLineJournalEntriesSoapOut">
+    <part name="parameters" element="s0:getLineJournalEntriesResponse" />
+  </message>
+  <portType name="ScaleRunnerSoap">
+    <operation name="getUnSentFactoryLineJournals">
+      <input message="s0:getUnSentFactoryLineJournalsSoapIn" />
+      <output message="s0:getUnSentFactoryLineJournalsSoapOut" />
+    </operation>
+    <operation name="getLineJournalOrders">
+      <input message="s0:getLineJournalOrdersSoapIn" />
+      <output message="s0:getLineJournalOrdersSoapOut" />
+    </operation>
+    <operation name="getLineOrderContainers">
+      <input message="s0:getLineOrderContainersSoapIn" />
+      <output message="s0:getLineOrderContainersSoapOut" />
+    </operation>
+    <operation name="getContainerEntry">
+      <input message="s0:getContainerEntrySoapIn" />
+      <output message="s0:getContainerEntrySoapOut" />
+    </operation>
+    <operation name="setLineJournalAsSent">
+      <input message="s0:setLineJournalAsSentSoapIn" />
+      <output message="s0:setLineJournalAsSentSoapOut" />
+    </operation>
+    <operation name="setLineOrderContainerWeight">
+      <input message="s0:setLineOrderContainerWeightSoapIn" />
+      <output message="s0:setLineOrderContainerWeightSoapOut" />
+    </operation>
+    <operation name="getScaleEntries">
+      <input message="s0:getScaleEntriesSoapIn" />
+      <output message="s0:getScaleEntriesSoapOut" />
+    </operation>
+    <operation name="createScaleEntry">
+      <input message="s0:createScaleEntrySoapIn" />
+      <output message="s0:createScaleEntrySoapOut" />
+    </operation>
+    <operation name="createScaleEntry2">
+      <input message="s0:createScaleEntry2SoapIn" />
+      <output message="s0:createScaleEntry2SoapOut" />
+    </operation>
+    <operation name="getMissingScaleEntries">
+      <input message="s0:getMissingScaleEntriesSoapIn" />
+      <output message="s0:getMissingScaleEntriesSoapOut" />
+    </operation>
+    <operation name="getUnfinishedScaleEntries">
+      <input message="s0:getUnfinishedScaleEntriesSoapIn" />
+      <output message="s0:getUnfinishedScaleEntriesSoapOut" />
+    </operation>
+    <operation name="getContainersToScale">
+      <input message="s0:getContainersToScaleSoapIn" />
+      <output message="s0:getContainersToScaleSoapOut" />
+    </operation>
+    <operation name="getLineOrder">
+      <input message="s0:getLineOrderSoapIn" />
+      <output message="s0:getLineOrderSoapOut" />
+    </operation>
+    <operation name="getLineJournal">
+      <input message="s0:getLineJournalSoapIn" />
+      <output message="s0:getLineJournalSoapOut" />
+    </operation>
+    <operation name="setContainerAsSent">
+      <input message="s0:setContainerAsSentSoapIn" />
+      <output message="s0:setContainerAsSentSoapOut" />
+    </operation>
+    <operation name="getLineJournalEntries">
+      <input message="s0:getLineJournalEntriesSoapIn" />
+      <output message="s0:getLineJournalEntriesSoapOut" />
+    </operation>
+  </portType>
+  <binding name="ScaleRunnerSoap" type="s0:ScaleRunnerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="getUnSentFactoryLineJournals">
+      <soap:operation soapAction="http://tempuri.org/getUnSentFactoryLineJournals" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLineJournalOrders">
+      <soap:operation soapAction="http://tempuri.org/getLineJournalOrders" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLineOrderContainers">
+      <soap:operation soapAction="http://tempuri.org/getLineOrderContainers" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getContainerEntry">
+      <soap:operation soapAction="http://tempuri.org/getContainerEntry" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setLineJournalAsSent">
+      <soap:operation soapAction="http://tempuri.org/setLineJournalAsSent" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setLineOrderContainerWeight">
+      <soap:operation soapAction="http://tempuri.org/setLineOrderContainerWeight" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getScaleEntries">
+      <soap:operation soapAction="http://tempuri.org/getScaleEntries" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createScaleEntry">
+      <soap:operation soapAction="http://tempuri.org/createScaleEntry" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createScaleEntry2">
+      <soap:operation soapAction="http://tempuri.org/createScaleEntry2" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getMissingScaleEntries">
+      <soap:operation soapAction="http://tempuri.org/getMissingScaleEntries" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getUnfinishedScaleEntries">
+      <soap:operation soapAction="http://tempuri.org/getUnfinishedScaleEntries" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getContainersToScale">
+      <soap:operation soapAction="http://tempuri.org/getContainersToScale" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLineOrder">
+      <soap:operation soapAction="http://tempuri.org/getLineOrder" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLineJournal">
+      <soap:operation soapAction="http://tempuri.org/getLineJournal" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setContainerAsSent">
+      <soap:operation soapAction="http://tempuri.org/setContainerAsSent" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLineJournalEntries">
+      <soap:operation soapAction="http://tempuri.org/getLineJournalEntries" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ScaleRunner">
+    <port name="ScaleRunnerSoap" binding="s0:ScaleRunnerSoap">
+      <soap:address location="http://dev1.navipro.se/SantaMonica/ScaleRunner.asmx" />
+    </port>
+  </service>
+</definitions>

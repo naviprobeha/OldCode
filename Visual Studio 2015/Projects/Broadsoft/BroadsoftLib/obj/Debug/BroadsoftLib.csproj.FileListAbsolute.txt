@@ -1,0 +1,6 @@
+C:\Visual Studio\VS2008\Projects\Broadsoft\BroadsoftLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Broadsoft\BroadsoftLib\bin\Debug\BroadsoftLib.dll
+C:\Visual Studio\VS2008\Projects\Broadsoft\BroadsoftLib\bin\Debug\BroadsoftLib.pdb
+C:\Visual Studio\VS2008\Projects\Broadsoft\BroadsoftLib\obj\Debug\BroadsoftLib.dll
+C:\Visual Studio\VS2008\Projects\Broadsoft\BroadsoftLib\obj\Debug\BroadsoftLib.pdb
+C:\Visual Studio\VS2008\Projects\Broadsoft\BroadsoftLib\bin\Debug\BroadsoftLib.tlb

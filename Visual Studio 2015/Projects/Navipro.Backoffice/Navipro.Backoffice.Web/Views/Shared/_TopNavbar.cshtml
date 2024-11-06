@@ -1,0 +1,37 @@
+﻿<div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            
+            @using (Html.BeginForm("Search", "Home", FormMethod.Post, new { @role = "search", @class = "navbar-form-custom" }))
+
+            {
+                @Html.AntiForgeryToken()
+
+
+
+                @Html.ValidationSummary(true)
+
+
+                <div class="form-group">
+                    <input type="text" placeholder="Sök efter något intressant..." class="form-control" name="searchQuery" id="top-search">
+                </div>
+            }
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li>
+                <span class="m-r-sm text-muted welcome-message" data-i18n="topnav.welcometext">&nbsp;</span>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" href="@Url.Action("Index", "PhoneLog")">
+                    <i class="fa fa-bell"></i>  <span class="label label-danger" id="missedCalls"></span>
+                </a>
+            <li>
+                <a href="@Url.Action("Logout", "Login")">
+                    <i class="fa fa-sign-out"></i> Logga ut
+                </a>
+            </li>
+ 
+        </ul>
+    </nav>
+</div>

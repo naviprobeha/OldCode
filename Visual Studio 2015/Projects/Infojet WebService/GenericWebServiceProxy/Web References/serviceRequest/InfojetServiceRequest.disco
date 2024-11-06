@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://hera/HappySocksServiceRequest/InfojetServiceRequest.asmx?wsdl" docRef="http://hera/HappySocksServiceRequest/InfojetServiceRequest.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://hera/HappySocksServiceRequest/InfojetServiceRequest.asmx" xmlns:q1="http://infojet.workanywhere.se/" binding="q1:InfojetServiceRequestSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://hera/HappySocksServiceRequest/InfojetServiceRequest.asmx" xmlns:q2="http://infojet.workanywhere.se/" binding="q2:InfojetServiceRequestSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

@@ -1,0 +1,157 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAdmin", "http://dev1.navipro.se/WebAdmin/WebAdmin.csproj", "{AB09EF75-AEB7-4F1A-A9D7-0773308F7545}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavisionConnector", "NavisionConnector\NavisionConnector.csproj", "{7BBEAA0C-93BF-4222-B088-CC9A82EA690E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataConversion", "DataConversion\DataConversion.csproj", "{9BC4FF23-FE38-40BB-A8C8-84F72964BC97}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaMonicaCommonLib", "SantaMonicaCommonLib\SantaMonicaCommonLib.csproj", "{F55275C4-0FA0-4E4D-9FA3-A276637EF592}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldfingerLib", "GoldfingerLib\GoldfingerLib.csproj", "{D80C7632-C91C-4012-8C46-C25261FC0818}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavisionConnectorService", "NavisionConnectorService\NavisionConnectorService.csproj", "{52290819-31B3-4ED3-BA6A-B32F456C4C8E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "NavisionConnectorSetup", "NavisionConnectorSetup\NavisionConnectorSetup.vdproj", "{AE506CA0-D144-473D-8A9A-DE9D6CE5616E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{20D4826A-C6FA-45DB-90F4-C717570B9F32}") = "Update", "Update\Update.csdproj", "{E13B207B-87A6-4505-9F13-830CC18DD5C8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{20D4826A-C6FA-45DB-90F4-C717570B9F32}") = "Felicia", "Felicia\Felicia.csdproj", "{4F667D2A-4133-4EE6-99D6-11466BDEE51B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaMonica", "http://dev1.navipro.se/SantaMonica/SantaMonica.csproj", "{D5DE994F-B0EA-44A3-BEED-F4AFF144007C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobEngine", "JobEngine\JobEngine.csproj", "{8F0DC094-F386-46AC-94B2-D77A1C51DD9A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobEngineConsole", "JobEngineConsole\JobEngineConsole.csproj", "{4FD75E43-689A-4BB8-B40D-E711FD93B4D7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSLocation", "GPSLocation\GPSLocation.csproj", "{D8233E5E-E8C7-4F16-ADCF-E7F7F402D736}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaleControl", "ScaleControl\ScaleControl.csproj", "{A302875F-70D3-4266-AC9F-80FF9EFF0AD5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaleControleConsole", "ScaleControleConsole\ScaleControleConsole.csproj", "{EC29D0DC-4C14-4589-BF12-FAFC6589C558}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaleControlService", "ScaleControlService\ScaleControlService.csproj", "{9CED7CBF-17C7-4984-A791-CA975B894D76}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ScaleControlSetup", "ScaleControlSetup\ScaleControlSetup.vdproj", "{F5E7F7EF-76FB-4752-97B1-AB49525CD3CE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sltcustomer", "http://dev1.navipro.se/sltcustomer/sltcustomer.csproj", "{1E95FB3E-0E77-4063-BC4E-1FF0502AA833}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{AB09EF75-AEB7-4F1A-A9D7-0773308F7545}.Debug.ActiveCfg = Debug|.NET
+		{AB09EF75-AEB7-4F1A-A9D7-0773308F7545}.Debug.Build.0 = Debug|.NET
+		{AB09EF75-AEB7-4F1A-A9D7-0773308F7545}.Release.ActiveCfg = Release|.NET
+		{AB09EF75-AEB7-4F1A-A9D7-0773308F7545}.Release.Build.0 = Release|.NET
+		{7BBEAA0C-93BF-4222-B088-CC9A82EA690E}.Debug.ActiveCfg = Debug|.NET
+		{7BBEAA0C-93BF-4222-B088-CC9A82EA690E}.Debug.Build.0 = Debug|.NET
+		{7BBEAA0C-93BF-4222-B088-CC9A82EA690E}.Release.ActiveCfg = Release|.NET
+		{7BBEAA0C-93BF-4222-B088-CC9A82EA690E}.Release.Build.0 = Release|.NET
+		{9BC4FF23-FE38-40BB-A8C8-84F72964BC97}.Debug.ActiveCfg = Debug|.NET
+		{9BC4FF23-FE38-40BB-A8C8-84F72964BC97}.Debug.Build.0 = Debug|.NET
+		{9BC4FF23-FE38-40BB-A8C8-84F72964BC97}.Release.ActiveCfg = Release|.NET
+		{9BC4FF23-FE38-40BB-A8C8-84F72964BC97}.Release.Build.0 = Release|.NET
+		{F55275C4-0FA0-4E4D-9FA3-A276637EF592}.Debug.ActiveCfg = Debug|.NET
+		{F55275C4-0FA0-4E4D-9FA3-A276637EF592}.Debug.Build.0 = Debug|.NET
+		{F55275C4-0FA0-4E4D-9FA3-A276637EF592}.Release.ActiveCfg = Release|.NET
+		{F55275C4-0FA0-4E4D-9FA3-A276637EF592}.Release.Build.0 = Release|.NET
+		{D80C7632-C91C-4012-8C46-C25261FC0818}.Debug.ActiveCfg = Debug|.NET
+		{D80C7632-C91C-4012-8C46-C25261FC0818}.Debug.Build.0 = Debug|.NET
+		{D80C7632-C91C-4012-8C46-C25261FC0818}.Release.ActiveCfg = Release|.NET
+		{D80C7632-C91C-4012-8C46-C25261FC0818}.Release.Build.0 = Release|.NET
+		{52290819-31B3-4ED3-BA6A-B32F456C4C8E}.Debug.ActiveCfg = Debug|.NET
+		{52290819-31B3-4ED3-BA6A-B32F456C4C8E}.Debug.Build.0 = Debug|.NET
+		{52290819-31B3-4ED3-BA6A-B32F456C4C8E}.Release.ActiveCfg = Release|.NET
+		{52290819-31B3-4ED3-BA6A-B32F456C4C8E}.Release.Build.0 = Release|.NET
+		{AE506CA0-D144-473D-8A9A-DE9D6CE5616E}.Debug.ActiveCfg = Debug
+		{AE506CA0-D144-473D-8A9A-DE9D6CE5616E}.Release.ActiveCfg = Release
+		{E13B207B-87A6-4505-9F13-830CC18DD5C8}.Debug.ActiveCfg = Debug|Pocket PC
+		{E13B207B-87A6-4505-9F13-830CC18DD5C8}.Debug.Build.0 = Debug|Pocket PC
+		{E13B207B-87A6-4505-9F13-830CC18DD5C8}.Debug.Deploy.0 = Debug|Pocket PC
+		{E13B207B-87A6-4505-9F13-830CC18DD5C8}.Release.ActiveCfg = Release|Pocket PC
+		{E13B207B-87A6-4505-9F13-830CC18DD5C8}.Release.Build.0 = Release|Pocket PC
+		{E13B207B-87A6-4505-9F13-830CC18DD5C8}.Release.Deploy.0 = Release|Pocket PC
+		{4F667D2A-4133-4EE6-99D6-11466BDEE51B}.Debug.ActiveCfg = Debug|Pocket PC
+		{4F667D2A-4133-4EE6-99D6-11466BDEE51B}.Debug.Build.0 = Debug|Pocket PC
+		{4F667D2A-4133-4EE6-99D6-11466BDEE51B}.Debug.Deploy.0 = Debug|Pocket PC
+		{4F667D2A-4133-4EE6-99D6-11466BDEE51B}.Release.ActiveCfg = Release|Pocket PC
+		{4F667D2A-4133-4EE6-99D6-11466BDEE51B}.Release.Build.0 = Release|Pocket PC
+		{4F667D2A-4133-4EE6-99D6-11466BDEE51B}.Release.Deploy.0 = Release|Pocket PC
+		{D5DE994F-B0EA-44A3-BEED-F4AFF144007C}.Debug.ActiveCfg = Debug|.NET
+		{D5DE994F-B0EA-44A3-BEED-F4AFF144007C}.Debug.Build.0 = Debug|.NET
+		{D5DE994F-B0EA-44A3-BEED-F4AFF144007C}.Release.ActiveCfg = Release|.NET
+		{D5DE994F-B0EA-44A3-BEED-F4AFF144007C}.Release.Build.0 = Release|.NET
+		{8F0DC094-F386-46AC-94B2-D77A1C51DD9A}.Debug.ActiveCfg = Debug|.NET
+		{8F0DC094-F386-46AC-94B2-D77A1C51DD9A}.Debug.Build.0 = Debug|.NET
+		{8F0DC094-F386-46AC-94B2-D77A1C51DD9A}.Release.ActiveCfg = Release|.NET
+		{8F0DC094-F386-46AC-94B2-D77A1C51DD9A}.Release.Build.0 = Release|.NET
+		{4FD75E43-689A-4BB8-B40D-E711FD93B4D7}.Debug.ActiveCfg = Debug|.NET
+		{4FD75E43-689A-4BB8-B40D-E711FD93B4D7}.Debug.Build.0 = Debug|.NET
+		{4FD75E43-689A-4BB8-B40D-E711FD93B4D7}.Release.ActiveCfg = Release|.NET
+		{4FD75E43-689A-4BB8-B40D-E711FD93B4D7}.Release.Build.0 = Release|.NET
+		{D8233E5E-E8C7-4F16-ADCF-E7F7F402D736}.Debug.ActiveCfg = Debug|.NET
+		{D8233E5E-E8C7-4F16-ADCF-E7F7F402D736}.Debug.Build.0 = Debug|.NET
+		{D8233E5E-E8C7-4F16-ADCF-E7F7F402D736}.Release.ActiveCfg = Release|.NET
+		{D8233E5E-E8C7-4F16-ADCF-E7F7F402D736}.Release.Build.0 = Release|.NET
+		{A302875F-70D3-4266-AC9F-80FF9EFF0AD5}.Debug.ActiveCfg = Debug|.NET
+		{A302875F-70D3-4266-AC9F-80FF9EFF0AD5}.Debug.Build.0 = Debug|.NET
+		{A302875F-70D3-4266-AC9F-80FF9EFF0AD5}.Release.ActiveCfg = Release|.NET
+		{A302875F-70D3-4266-AC9F-80FF9EFF0AD5}.Release.Build.0 = Release|.NET
+		{EC29D0DC-4C14-4589-BF12-FAFC6589C558}.Debug.ActiveCfg = Debug|.NET
+		{EC29D0DC-4C14-4589-BF12-FAFC6589C558}.Debug.Build.0 = Debug|.NET
+		{EC29D0DC-4C14-4589-BF12-FAFC6589C558}.Release.ActiveCfg = Release|.NET
+		{EC29D0DC-4C14-4589-BF12-FAFC6589C558}.Release.Build.0 = Release|.NET
+		{9CED7CBF-17C7-4984-A791-CA975B894D76}.Debug.ActiveCfg = Debug|.NET
+		{9CED7CBF-17C7-4984-A791-CA975B894D76}.Debug.Build.0 = Debug|.NET
+		{9CED7CBF-17C7-4984-A791-CA975B894D76}.Release.ActiveCfg = Release|.NET
+		{9CED7CBF-17C7-4984-A791-CA975B894D76}.Release.Build.0 = Release|.NET
+		{F5E7F7EF-76FB-4752-97B1-AB49525CD3CE}.Debug.ActiveCfg = Debug
+		{F5E7F7EF-76FB-4752-97B1-AB49525CD3CE}.Release.ActiveCfg = Release
+		{1E95FB3E-0E77-4063-BC4E-1FF0502AA833}.Debug.ActiveCfg = Debug|.NET
+		{1E95FB3E-0E77-4063-BC4E-1FF0502AA833}.Debug.Build.0 = Debug|.NET
+		{1E95FB3E-0E77-4063-BC4E-1FF0502AA833}.Release.ActiveCfg = Release|.NET
+		{1E95FB3E-0E77-4063-BC4E-1FF0502AA833}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

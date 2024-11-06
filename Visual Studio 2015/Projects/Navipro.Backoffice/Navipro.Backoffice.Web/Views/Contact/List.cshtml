@@ -1,0 +1,255 @@
+﻿@model List<Navipro.Backoffice.Web.Models.CaseMember>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>@ViewBag.Title</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("Index", "Home")">Hem</a>
+            </li>
+            <li>
+                Kontakter
+            </li>
+            <li class="active">
+                <strong>@ViewBag.Title</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInUp">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Kontaktlista</h5>
+                    <div class="ibox-tools">
+                        <input type="button" value="Ny kontakt" class = "btn btn-primary btn-xs" id="createContact"/>
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <form class="form-inline">
+                        <div class="row">
+
+                            <div class="col-md-4">
+
+                                <p class="font-bold">
+                                    Kund
+                                </p>
+
+                                <select data-placeholder="Välj en kund" class="chosen-select" tabindex="2" name="customerNoFilter" id="customerNoFilter" onchange="updateContactList()">
+                                    <option value="">Välj en kund</option>
+                                    @foreach (var item in ViewBag.customerList)
+                                    {
+                                        <option value="@item.no">@item.no - @item.name</option>
+                                    }
+                                </select>
+                            </div>
+ 
+                        </div>
+                    </form>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="row m-b-sm m-t-sm">
+ 
+                    </div>
+
+                    <div class="project-list">
+
+                            <input type="text" class="form-control input-sm m-b-xs" id="filter" placeholder="Sök bland kontakterna">
+
+                            <table class="footable table table-hover" data-filter=#filter data-page-size="600">
+                                <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>Namn</th>
+                                        <th data-hide="phone,table">E-post</th>
+                                        <th data-hide="phone,table">Telefonnr</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableBody">
+    
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Create Contact Modal HTML -->
+<div id="createContactWindow" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Details", "Customer", FormMethod.Post, new { @id = "createContactForm" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Skapa kontakt</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger alert-dismissable" id="errorMessage" style="display: none;">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                    </div>
+                    <p>E-post:</p>
+                    <div class="form-group">
+                        <input type="text" name="email" class="text-box single-line" id="email" maxlength="100" />
+                    </div>
+                    <p>Namn:</p>
+                    <div class="form-group">
+                        <input type="text" name="name" class="text-box single-line" id="name" maxlength="50" />
+                    </div>
+                    <p>Telefonnr:</p>
+                    <div class="form-group">
+                        <input type="text" name="phoneNo" class="text-box single-line" id="phoneNo" maxlength="30" />
+                    </div>
+                    <p>Mobiltelefonnr:</p>
+                    <div class="form-group">
+                        <input type="text" name="cellPhoneNo" class="text-box single-line" id="cellPhoneNo" maxlength="30" />
+                    </div>
+                    <p>Kundnr:</p>
+                    <select data-placeholder="Välj kund" class="chosen-select" tabindex="2" name="customerNo" id="customerNo">
+                        <option value="">Välj kund</option>
+                        @foreach (var item in ViewBag.customerList)
+                        {
+                            <option value="@item.no">@item.no - @item.name</option>
+                        }
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                    <button type="button" class="btn btn-primary" id="createContactSubmit">Spara</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+@section Styles {
+    @Styles.Render("~/plugins/footableStyles")
+    @Styles.Render("~/Content/plugins/chosen/chosenStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/footable")
+    @Scripts.Render("~/plugins/chosen")
+
+<script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            updateContactList();
+            $('.footable').footable();
+            $('#customerNoFilter').chosen({ width: "100%", forceParse: true });
+            $('#customerNo').chosen({ width: "100%", forceParse: true });
+
+            $("#createContact").click(function () {
+                $('#createContactWindow').modal('show');
+            });
+
+            $("#createContactSubmit").click(function () {
+                var errorMessage = "";
+                if ($("#customerNo").val() == "") {
+                    errorMessage = "Kund måste väljas.";
+                }
+                if ($("#name").val() == "") {
+                    errorMessage = "Namn måste fyllas i.";
+                }
+                if ($("#email").val() == "") {
+                    errorMessage = "E-post måste fyllas i.";
+                }
+
+                if (errorMessage != "") {
+                    $("#errorMessage").append("<span>").html(errorMessage);
+                    $("#errorMessage").show();
+                    return;
+                }
+
+                $("#errorMessage").hide();
+
+
+                createNewContact($("#email").val(), $("#name").val(), $("#phoneNo").val(), $("#cellPhoneNo").val(), $("#customerNo").val());
+
+            });
+        });
+
+        function updateContactList() {
+            // Creat JSON url to controller
+            var contactDataUrl = '@Url.Action("getContactList", "Contact")' + '?customerNoFilter=' + $("#customerNoFilter").val() + '&dataView=@ViewBag.dataView';
+
+            // Ajax call for table data
+            $.ajax({
+                url: contactDataUrl,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    var divBody = $('#tableBody');
+                    divBody.empty();
+
+                    var div = $('#tableBody');
+
+
+                    $.each(data, function (i, item) {
+                        div.append(
+                            $('<tr>')
+                                .append($('<td>').html('<i class="fa fa-user fa-2x" />')).append($('<td>').html('<b><a href="@Url.Action("Details", "Contact")?email=' + item.email + '">' + item.name + '</a></b><br/><small>'+item.customerName+'</small>')).append($('<td>').html('<a href="mailto:' + item.email + '">' + item.email + '</a>')).append($('<td>').html('<a href="tel:' + item.phoneNo + '">' + item.phoneNo + '</a>')).append($('<td>').html('<a href="@Url.Action("Details", "Contact")?email='+item.email+'" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> Visa </a>'))
+                            );
+                    })
+                }
+            });
+        }
+
+    function createNewContact(email, name, phoneNo, cellPhoneNo, customerNo) {
+        // Create JSON url to controller
+
+
+        var contactUrl = '@Url.Action("createContact", "Contact")' + '?email=' + email + '&name=' + name + '&phoneNo=' + phoneNo + '&cellPhoneNo=' + cellPhoneNo + '&customerNo=' + customerNo + '&t=' + new Date().getTime();
+
+
+        // Ajax call for table data
+        $.ajax({
+            url: contactUrl,
+            cashe: false,
+            method: 'GET',
+            contentType: "application/x-javascript; charset:ISO-8859-1",
+            dataType: 'json',
+            success: function (data) {
+
+                if (data == false) {
+
+                    $("#errorMessage").append("<span>").html("E-postadressen finns redan.");
+                    $("#errorMessage").show();
+
+                }
+                else {
+                    window.location.replace('@Url.Action("Details", "Contact")?email='+email);
+                }
+
+            }
+        });
+
+    }
+
+
+</script>
+
+}

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://maps.workanywhere.se/MapServer" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://maps.workanywhere.se/MapServer" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://maps.workanywhere.se/MapServer">
+      <s:element name="setUserSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameter1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameter2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setUserSessionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMapData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webServiceType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMapDataResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="level" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="width" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="height" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMapResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="setUserSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:setUserSession" />
+  </wsdl:message>
+  <wsdl:message name="setUserSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:setUserSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMapDataSoapIn">
+    <wsdl:part name="parameters" element="tns:getMapData" />
+  </wsdl:message>
+  <wsdl:message name="getMapDataSoapOut">
+    <wsdl:part name="parameters" element="tns:getMapDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMapSoapIn">
+    <wsdl:part name="parameters" element="tns:getMap" />
+  </wsdl:message>
+  <wsdl:message name="getMapSoapOut">
+    <wsdl:part name="parameters" element="tns:getMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="setUserSessionHttpGetIn">
+    <wsdl:part name="accountNo" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="sessionId" type="s:string" />
+    <wsdl:part name="parameter1" type="s:string" />
+    <wsdl:part name="parameter2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="setUserSessionHttpGetOut" />
+  <wsdl:message name="getMapDataHttpGetIn">
+    <wsdl:part name="accountNo" type="s:string" />
+    <wsdl:part name="sessionId" type="s:string" />
+    <wsdl:part name="webServiceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getMapDataHttpGetOut" />
+  <wsdl:message name="getMapHttpGetIn">
+    <wsdl:part name="x" type="s:string" />
+    <wsdl:part name="y" type="s:string" />
+    <wsdl:part name="level" type="s:string" />
+    <wsdl:part name="width" type="s:string" />
+    <wsdl:part name="height" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getMapHttpGetOut" />
+  <wsdl:message name="setUserSessionHttpPostIn">
+    <wsdl:part name="accountNo" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="sessionId" type="s:string" />
+    <wsdl:part name="parameter1" type="s:string" />
+    <wsdl:part name="parameter2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="setUserSessionHttpPostOut" />
+  <wsdl:message name="getMapDataHttpPostIn">
+    <wsdl:part name="accountNo" type="s:string" />
+    <wsdl:part name="sessionId" type="s:string" />
+    <wsdl:part name="webServiceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getMapDataHttpPostOut" />
+  <wsdl:message name="getMapHttpPostIn">
+    <wsdl:part name="x" type="s:string" />
+    <wsdl:part name="y" type="s:string" />
+    <wsdl:part name="level" type="s:string" />
+    <wsdl:part name="width" type="s:string" />
+    <wsdl:part name="height" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getMapHttpPostOut" />
+  <wsdl:portType name="MapServerSoap">
+    <wsdl:operation name="setUserSession">
+      <wsdl:input message="tns:setUserSessionSoapIn" />
+      <wsdl:output message="tns:setUserSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMapData">
+      <wsdl:input message="tns:getMapDataSoapIn" />
+      <wsdl:output message="tns:getMapDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMap">
+      <wsdl:input message="tns:getMapSoapIn" />
+      <wsdl:output message="tns:getMapSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MapServerHttpGet">
+    <wsdl:operation name="setUserSession">
+      <wsdl:input message="tns:setUserSessionHttpGetIn" />
+      <wsdl:output message="tns:setUserSessionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMapData">
+      <wsdl:input message="tns:getMapDataHttpGetIn" />
+      <wsdl:output message="tns:getMapDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMap">
+      <wsdl:input message="tns:getMapHttpGetIn" />
+      <wsdl:output message="tns:getMapHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MapServerHttpPost">
+    <wsdl:operation name="setUserSession">
+      <wsdl:input message="tns:setUserSessionHttpPostIn" />
+      <wsdl:output message="tns:setUserSessionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMapData">
+      <wsdl:input message="tns:getMapDataHttpPostIn" />
+      <wsdl:output message="tns:getMapDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMap">
+      <wsdl:input message="tns:getMapHttpPostIn" />
+      <wsdl:output message="tns:getMapHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MapServerSoap" type="tns:MapServerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="setUserSession">
+      <soap:operation soapAction="http://maps.workanywhere.se/MapServer/setUserSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMapData">
+      <soap:operation soapAction="http://maps.workanywhere.se/MapServer/getMapData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMap">
+      <soap:operation soapAction="http://maps.workanywhere.se/MapServer/getMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MapServerSoap12" type="tns:MapServerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    <wsdl:operation name="setUserSession">
+      <soap12:operation soapAction="http://maps.workanywhere.se/MapServer/setUserSession" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMapData">
+      <soap12:operation soapAction="http://maps.workanywhere.se/MapServer/getMapData" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMap">
+      <soap12:operation soapAction="http://maps.workanywhere.se/MapServer/getMap" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MapServerHttpGet" type="tns:MapServerHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="setUserSession">
+      <http:operation location="/setUserSession" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getMapData">
+      <http:operation location="/getMapData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getMap">
+      <http:operation location="/getMap" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MapServerHttpPost" type="tns:MapServerHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="setUserSession">
+      <http:operation location="/setUserSession" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getMapData">
+      <http:operation location="/getMapData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getMap">
+      <http:operation location="/getMap" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MapServer">
+    <wsdl:port name="MapServerSoap" binding="tns:MapServerSoap">
+      <soap:address location="http://maps.workanywhere.se/MapServer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MapServerSoap12" binding="tns:MapServerSoap12">
+      <soap12:address location="http://maps.workanywhere.se/MapServer.asmx" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    </wsdl:port>
+    <wsdl:port name="MapServerHttpGet" binding="tns:MapServerHttpGet">
+      <http:address location="http://maps.workanywhere.se/MapServer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MapServerHttpPost" binding="tns:MapServerHttpPost">
+      <http:address location="http://maps.workanywhere.se/MapServer.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

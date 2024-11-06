@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<nav>
+  <type>products</type>
+  <method>GET</method>
+  <filter>filter[limit]=400&amp;filter[post_status]=published</filter>
+  <!--<filter>filter[limit]=400&amp;filter[post_status]=draft</filter>-->
+</nav>

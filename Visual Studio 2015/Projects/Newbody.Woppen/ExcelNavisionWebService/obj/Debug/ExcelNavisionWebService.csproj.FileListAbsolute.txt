@@ -1,0 +1,12 @@
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\bin\Debug\ExcelNavisionWebService.dll.config
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\bin\Debug\ExcelNavisionWebService.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\bin\Debug\ExcelNavisionWebService.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\bin\Debug\ExcelNavisionWebService.dll.manifest
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\bin\Debug\ExcelNavisionWebService.vsto
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\bin\Debug\Template.xlsx
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\obj\Debug\ExcelNavisionWebService.Properties.Resources.resources
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\obj\Debug\ExcelNavisionWebService.csproj.GenerateResource.Cache
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\obj\Debug\ExcelNavisionWebService.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\obj\Debug\ExcelNavisionWebService.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelNavisionWebService\obj\Debug\ExcelNavisionWebService.WebServiceRibbon.resources

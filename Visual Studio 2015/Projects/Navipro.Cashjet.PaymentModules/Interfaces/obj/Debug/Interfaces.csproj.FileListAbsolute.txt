@@ -1,0 +1,15 @@
+D:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\bin\Debug\Navipro.Cashjet.PaymentModules.Interfaces.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\bin\Debug\Navipro.Cashjet.PaymentModules.Interfaces.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\obj\Debug\Navipro.Cashjet.PaymentModules.Interfaces.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\obj\Debug\Navipro.Cashjet.PaymentModules.Interfaces.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\bin\Debug\Navipro.Cashjet.PaymentModules.Interfaces.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\bin\Debug\Navipro.Cashjet.PaymentModules.Interfaces.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\obj\Debug\Navipro.Cashjet.PaymentModules.Interfaces.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\obj\Debug\Navipro.Cashjet.PaymentModules.Interfaces.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\bin\Debug\Navipro.Cashjet.PaymentModules.Interfaces.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\bin\Debug\Navipro.Cashjet.PaymentModules.Interfaces.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\obj\Debug\ResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\obj\Debug\Navipro.Cashjet.PaymentModules.Interfaces.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2008\Projects\Navipro.Cashjet.PaymentModules\Interfaces\obj\Debug\Navipro.Cashjet.PaymentModules.Interfaces.pdb

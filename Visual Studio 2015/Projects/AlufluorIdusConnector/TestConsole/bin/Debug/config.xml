@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <bcOdataUrl>https://proxyone.workanywhere.se/alfodataprod/odata/Company('AluFluor AB')</bcOdataUrl>
+  <bcSoapUrl>https://proxyone.workanywhere.se/ALUFLUORPROD/WS/Alufluor%20AB/Codeunit/IdusServiceHandler</bcSoapUrl>
+  <bcUserName>navipro_alufluor</bcUserName>
+  <bcPassword>J&amp;@jy!K)rc0A7MZG</bcPassword>
+  <idusUrl>https://alufluor.idus.se:8443/datasnap/rest/TEXTMethods</idusUrl>
+  <idusApiUserName>APIUSER_SYOC_MIIG1</idusApiUserName>
+  <idusUserName>BCCOM</idusUserName>
+  <idusPassword>fanny92</idusPassword>
+  <intervalMinutes>1</intervalMinutes>
+</configuration>

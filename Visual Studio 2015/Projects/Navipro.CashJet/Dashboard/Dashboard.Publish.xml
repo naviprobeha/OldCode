@@ -1,0 +1,32 @@
+<publishData>
+  <publishTarget publishUrl="\\challenger\Websites2\cashjet.workanywhere.se\demo\">
+    <file relUrl="_assets/img/play.gif" publishTime="11/30/2010 16:14:38" />
+    <file relUrl="_assets/img/homescreen.png" publishTime="11/30/2010 16:14:19" />
+    <file relUrl="bin/Library.dll" publishTime="04/20/2015 21:19:04" />
+    <file relUrl="_assets/img/navlinkleft.png" publishTime="11/30/2010 16:14:33" />
+    <file relUrl="bin/Dashboard.pdb" publishTime="04/20/2015 21:19:05" />
+    <file relUrl="_assets/img/radiobutton.png" publishTime="11/30/2010 16:14:40" />
+    <file relUrl="Web.config" publishTime="03/13/2014 11:23:00" />
+    <file relUrl="bin/Library.pdb" publishTime="04/20/2015 21:19:04" />
+    <file relUrl="default_full.aspx" publishTime="11/14/2013 14:18:36" />
+    <file relUrl="_assets/img/navbuttonblack.png" publishTime="11/30/2010 16:14:29" />
+    <file relUrl="_assets/img/navleft.png" publishTime="11/30/2010 16:14:32" />
+    <file relUrl="_assets/img/background.png" publishTime="11/30/2010 16:14:24" />
+    <file relUrl="_assets/img/startup.png" publishTime="11/30/2010 16:14:49" />
+    <file relUrl="_assets/img/navbutton.png" publishTime="11/30/2010 16:14:28" />
+    <file relUrl="bin/Dashboard.dll" publishTime="04/20/2015 21:19:05" />
+    <file relUrl="_assets/img/searchfield.png" publishTime="11/30/2010 16:14:41" />
+    <file relUrl="_assets/img/navbuttonblue.png" publishTime="11/30/2010 16:14:30" />
+    <file relUrl="_assets/img/checkbox.png" publishTime="11/30/2010 16:14:25" />
+    <file relUrl="_assets/js/functions.js" publishTime="05/25/2012 14:25:44" />
+    <file relUrl="bin/System.Web.DataVisualization.dll" publishTime="08/25/2008 16:56:20" />
+    <file relUrl="_assets/img/arrow.png" publishTime="11/30/2010 16:14:22" />
+    <file relUrl="bin/System.Web.DataVisualization.Design.dll" publishTime="08/25/2008 16:56:20" />
+    <file relUrl="Default.aspx" publishTime="11/14/2013 14:05:01" />
+    <file relUrl="_assets/img/navright.png" publishTime="11/30/2010 16:14:36" />
+    <file relUrl="_assets/css/style.css" publishTime="05/27/2012 18:40:30" />
+    <file relUrl="_assets/img/home.png" publishTime="11/30/2010 16:14:26" />
+    <file relUrl="_assets/img/navlinkright.png" publishTime="11/30/2010 16:14:35" />
+    <file relUrl="_assets/img/tributton.png" publishTime="11/30/2010 16:14:43" />
+  </publishTarget>
+</publishData>

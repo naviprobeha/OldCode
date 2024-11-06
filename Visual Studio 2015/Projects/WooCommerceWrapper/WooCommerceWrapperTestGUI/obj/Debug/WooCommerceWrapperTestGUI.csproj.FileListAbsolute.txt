@@ -1,0 +1,13 @@
+C:\Projects\WooCommerceWrapperTestGUI\bin\Debug\WooCommerceWrapperTestGUI.exe.config
+C:\Projects\WooCommerceWrapperTestGUI\obj\Debug\WooCommerceWrapperTestGUI.csprojResolveAssemblyReference.cache
+C:\Projects\WooCommerceWrapperTestGUI\obj\Debug\WooCommerceWrapperTestGUI.Form1.resources
+C:\Projects\WooCommerceWrapperTestGUI\obj\Debug\WooCommerceWrapperTestGUI.Properties.Resources.resources
+C:\Projects\WooCommerceWrapperTestGUI\obj\Debug\WooCommerceWrapperTestGUI.csproj.GenerateResource.Cache
+C:\Projects\WooCommerceWrapperTestGUI\bin\Debug\WooCommerceWrapperTestGUI.exe
+C:\Projects\WooCommerceWrapperTestGUI\bin\Debug\WooCommerceWrapperTestGUI.pdb
+C:\Projects\WooCommerceWrapperTestGUI\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\WooCommerceWrapperTestGUI\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\WooCommerceWrapperTestGUI\obj\Debug\WooCommerceWrapperTestGUI.exe
+C:\Projects\WooCommerceWrapperTestGUI\obj\Debug\WooCommerceWrapperTestGUI.pdb
+C:\Projects\WooCommerceWrapperTestGUI\bin\Debug\WooCommerceWrapper.dll
+C:\Projects\WooCommerceWrapperTestGUI\bin\Debug\WooCommerceWrapper.pdb

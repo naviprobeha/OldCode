@@ -1,0 +1,573 @@
+﻿@model Navipro.Backoffice.Web.Models.TimeReportEntry
+@{
+
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>@ViewBag.Title</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="/">Hem</a>
+            </li>
+            <li class="active">
+                <strong>@ViewBag.Title</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Filtrera</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <form class="form-inline">
+                        <div class="row">
+
+                            <div class="col-md-3">
+
+                                <p class="font-bold">
+                                    Datum
+                                </p>
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" id="dateFilter" value="@System.DateTime.Today.ToString("yyyy-MM-dd")" onchange="updateTimeReportList()">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3">
+
+                                <p class="font-bold">
+                                    Rapporterad tid
+                                </p>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="sumReportedTime" value="" readonly="readonly"/>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+
+                                <p class="font-bold">
+                                    Verifierad tid
+                                </p>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="sumVerifiedTime" value="" readonly="readonly"/>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3">
+
+                                <p class="font-bold">
+                                    Bokförd tid
+                                </p>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="sumPostedTime" value="" readonly="readonly"/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>@ViewBag.Title</h5>
+                    <div class="ibox-tools">
+                        <a href="#activityTemplateModal" data-toggle="modal" class="btn btn-primary btn-xs">Aktivitetsmall</a>
+                        <a href="#" data-toggle="modal" class="btn btn-primary btn-xs" onclick="verifyTimeReport()">Verifiera tidrapport</a>
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+
+                    <table class="footable table table-hover" id="ajaxTable" data-filter=#filter data-page-size="40">
+                        <thead>
+                            <tr>
+                                <th>@Html.DisplayNameFor(model => model.jobNo)</th>
+                                <th>@Html.DisplayNameFor(model => model.no)</th>
+                                <th>@Html.DisplayNameFor(model => model.commisionTypeCode)</th>
+                                <th>@Html.DisplayNameFor(model => model.activityTypeCode)</th>
+                                <th>@Html.DisplayNameFor(model => model.description)</th>
+                                <th data-hide="phone,table" style="text-align: right;">@Html.DisplayNameFor(model => model.quantity)</th>
+                                <th data-hide="phone,table" style="text-align: right;">@Html.DisplayNameFor(model => model.realQuantity)</th>
+                                <th style="text-align: right;">@Html.DisplayNameFor(model => model.amount)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+ 
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Mina ärenden</h5>
+                    <div class="ibox-tools">
+                        @Html.ActionLink("Nytt ärende", "Create", "Case", null, new { @class = "btn btn-primary btn-xs" })
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+
+                    <table class="footable table table-hover" id="ajaxTable" data-filter=#filter data-page-size="400">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>Nr</th>
+                                <th>Beskrivning</th>
+                                <th data-hide="phone,table">Aktivitetstyp</th>
+                                <th data-hide="phone,table">Beställare</th>
+                                <th>Status</th>
+                                <th data-hide="phone,table" nowrap="nowrap">Mottaget</th>
+                                <th data-hide="phone,table" nowrap="nowrap">Senaste aktivitet</th>
+                                <th data-hide="phone,table">Tilldelade resurser</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+
+                            @foreach (Navipro.Backoffice.Web.Models.Case caseItem in ViewBag.caseList)
+                            {
+
+                                <tr>
+                                    <td><i class="fa @caseItem.lastActivityIcon" /><span style="visibility: hidden">@caseItem.lastActivity</span></td>
+                                    <td>@caseItem.no</td>
+                                    <td><a href="@Url.Action("Details", "Case")/@caseItem.no">@caseItem.subject</a></td>
+                                    <td>@caseItem.activityTypeCode</td>
+                                    <td>@caseItem.ordererName</td>
+                                    <td>@caseItem.caseStatusCode</td>
+                                    <td>@caseItem.receivedDateText</td>
+                                    <td>@caseItem.assignedResources</td>
+                                    <td><a href="#" onclick="showAddCaseModal('@caseItem.no')" class="btn btn-primary btn-xs">Tidrapportera</a></td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Assign Qty Modal HTML -->
+<div id="assignQuantityModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        @using (Html.BeginForm("Index", "TimeReport", FormMethod.Post, new { id = "assignQty" }))
+
+        {
+            @Html.AntiForgeryToken()
+
+
+
+            @Html.ValidationSummary(true)
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Ändra antal</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="entryNo" value="" id="entryNo" />
+                    <p>Fyll i antal timmar nedan.</p>
+                    <div class="form-group">
+                        <label>Antal:</label>
+                        <input type="number" name="quantity" value="" maxlength ="3" class="text-box single-line" id="quantity" />
+                    </div>
+                    <div class="form-group">
+                        <label>Verkligt antal:</label>
+                        <input type="number" name="realQuantity" value="" maxlength="3" class="text-box single-line" id="realQuantity" />
+                    </div>
+                    <div class="form-group">
+                        <label>A-pris:</label>
+                        <input type="number" name="unitPrice" value="" maxlength="4" class="text-box single-line" id="unitPrice" />
+                    </div>
+                    <div class="form-group">
+                        <label>Belopp:</label>
+                        <input type="number" name="amount" value="" class="text-box single-line" id="amount" readonly="readonly"/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" id="deleteLine">Ta bort</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="assignQtySave">Spara</button>
+                </div>
+        }
+        </div>
+    </div>
+</div>
+
+<!-- Message Modal HTML -->
+<div id="messageModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Meddelande</h4>
+            </div>
+            <div class="modal-body">
+                <p id="message"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="assignQtySave">OK</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Add Template Modal HTML -->
+<div id="activityTemplateModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Index", "TimeReport", FormMethod.Post, new { id = "activityTemplate" }))
+
+            {
+                @Html.AntiForgeryToken()
+
+
+
+                @Html.ValidationSummary(true)
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Aktivitetsmall</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Välj aktivitetsmall och fyll i antal timmar nedan.</p>
+
+                    <div class="form-group">
+                        <label>Aktivitetsmall:</label>
+
+                        <select data-placeholder="Välj aktivitetsmall" class="chosen-select" tabindex="2" name="templateCode" id="templateCode">
+                            <option value="">Välj aktivitetsmall</option>
+
+                            @foreach (var item in ViewBag.activityTemplateList)
+                            {
+                                <option value="@item.code">@item.description</option>
+
+                            }
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Antal:</label>
+                        <input type="number" name="templateQuantity" value="0" maxlength="3" class="text-box single-line" id="templateQuantity" />
+                    </div>
+                    <div class="form-group">
+                        <label>Verkligt antal:</label>
+                        <input type="number" name="templateRealQuantity" value="0" maxlength="3" class="text-box single-line" id="templateRealQuantity" />
+                    </div>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="addTemplate">Lägg till</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+<!-- Add Case Modal HTML -->
+<div id="addCaseModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Index", "TimeReport", FormMethod.Post, new { id = "addCaseToTimeReportForm" }))
+
+            {
+                @Html.AntiForgeryToken()
+
+
+
+                @Html.ValidationSummary(true)
+            
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Tidrapportera ärende</h4>
+                    </div>
+                    <input type="hidden" name="caseNo" value="" id="caseNo" />
+                    <div class="modal-body">
+                        <p>Fyll i en kommentar för ärendet nedan:</p>
+
+                        <div class="form-group">                            
+                            <input type="text" name="caseComment" value="" maxlength="250" class="text-box single-line" id="caseComment" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="addCase">Spara</button>
+                    </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+@section Styles {
+    @Styles.Render("~/plugins/footableStyles")
+    @Styles.Render("~/Content/plugins/chosen/chosenStyles")
+    @Styles.Render("~/plugins/dataPickerStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/footable")
+    @Scripts.Render("~/plugins/chosen")
+    @Scripts.Render("~/plugins/typehead")
+    @Scripts.Render("~/plugins/dataPicker")
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            $('.input-group.date').datepicker({
+                minViewMode: 0,
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true,
+                todayHighlight: true,
+                format: 'yyyy-mm-dd'
+            });
+
+            updateTimeReportList();
+
+            $('.footable').footable();
+            $('#templateCode').chosen({ width: "100%", forceParse: true });
+
+            $('#quantity').change(function () {
+                $('#realQuantity').val($(this).val());
+                $('#amount').val($(this).val() * $('#unitPrice').val());
+            });
+            $('#unitPrice').change(function () {
+                $('#amount').val($(this).val() * $('#quantity').val());
+            });
+            $('#templateQuantity').change(function () {
+                $('#templateRealQuantity').val($(this).val());
+            });
+
+            $('#deleteLine').click(function () {
+                saveAssignedQuantities($('#entryNo').val(), 0, 0, 0);
+            });
+            $('#assignQtySave').click(function () {
+                saveAssignedQuantities($('#entryNo').val(), $('#quantity').val(), $('#realQuantity').val(), $('#unitPrice').val());
+            });
+
+            $('#addTemplate').click(function () {
+                addTemplateToTimeReport($('#templateCode').val(), $('#templateQuantity').val(), $('#templateRealQuantity').val());
+            });
+            $('#addCase').click(function () {
+                addCaseToTimeReport($('#caseNo').val(), $('#caseComment').val());
+            });
+        });
+
+        function updateTimeReportList() {
+            // Creat JSON url to controller
+            var listDataUrl = '@Url.Action("getTimeReportList", "TimeReport")' + '?date=' + $("#dateFilter").val();
+
+            // Ajax call for table data
+            $.ajax({
+                url: listDataUrl,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    var divBody = $('#tableBody');
+                    divBody.empty();
+
+                    var div = $('#tableBody');
+
+
+                    $.each(data, function (i, item) {
+                        div.append(
+                            $('<tr>')
+                                .append($('<td>').html(item.jobNo)).append($('<td>').html('<b><a href="@Url.Action("Details", "Case")/' + item.no + '">' + item.no + '</a></b>')).append($('<td>').html(item.commisionTypeCode)).append($('<td>').html(item.activityTypeCode)).append($('<td>').html(item.description)).append($('<td align="right">').html(item.quantity + '&nbsp;&nbsp;<a href="#" onclick="showAssignQtyModal(' + item.entryNo + ',' + item.quantity + ',' + item.realQuantity + ',' + item.unitPrice + ')"><i class="fa fa-plus-square-o" /></a>')).append($('<td align="right">').html(item.realQuantity + '&nbsp;&nbsp;<a href="#" onclick="showAssignQtyModal(' + item.entryNo + ',' + item.quantity + ',' + item.realQuantity + ',' + item.unitPrice + ')"><i class="fa fa-plus-square-o" /></a>')).append($('<td align="right">').html(item.amount.toFixed(2)))
+                            );
+                    })
+                }
+            });
+
+            updateTimeReportTotals();
+        }
+
+        function updateTimeReportTotals() {
+            // Creat JSON url to controller
+            var listDataUrl = '@Url.Action("getTimeReportTotals", "TimeReport")' + '?date=' + $("#dateFilter").val();
+
+            // Ajax call for table data
+            $.ajax({
+                url: listDataUrl,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    $('#sumReportedTime').val(data[0]);
+                    $('#sumVerifiedTime').val(data[1]);
+                    $('#sumPostedTime').val(data[2]);
+
+ 
+                }
+            });
+        }
+        function showAssignQtyModal(entryNo, quantity, realQuantity, unitPrice)
+        {
+            $('#entryNo').val(entryNo);
+            $('#quantity').val(quantity);
+            $('#realQuantity').val(realQuantity);
+            $('#unitPrice').val(unitPrice);
+            $('#amount').val(unitPrice*quantity);
+
+            $('#assignQuantityModal').modal('show');
+        }
+
+        function showAddCaseModal(caseNo) {
+            $('#caseNo').val(caseNo);
+
+            $('#addCaseModal').modal('show');
+        }
+        function showMessageModal(messageStr) {
+            $('#message').html(messageStr);
+
+            $('#messageModal').modal('show');
+        }
+
+        function saveAssignedQuantities(entryNo, quantity, realQuantity, unitPrice) {
+            // Creat JSON url to controller
+            var saveDataUrl = '@Url.Action("saveTimeReportQuantity", "TimeReport")' + '?date=' + $("#dateFilter").val() + '&entryNo=' + entryNo + '&quantity=' + quantity + '&realQuantity=' + realQuantity + '&unitPrice=' + unitPrice;
+
+            // Ajax call for table data
+            $.ajax({
+                url: saveDataUrl,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    if (data != "OK") showMessageModal(data);
+                    updateTimeReportList();
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(thrownError);
+                }
+
+            });
+        }
+
+        function addTemplateToTimeReport(templateCode, quantity, realQuantity) {
+            // Creat JSON url to controller
+            var saveDataUrl = '@Url.Action("addTemplateToTimeReport", "TimeReport")' + '?date=' + $("#dateFilter").val() + '&templateCode=' + templateCode + '&quantity=' + quantity + '&realQuantity=' + realQuantity;
+
+            // Ajax call for table data
+            $.ajax({
+                url: saveDataUrl,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    if (data != "OK") showMessageModal(data);
+                    updateTimeReportList();
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(thrownError);
+                }
+
+            });
+        }
+
+        function addCaseToTimeReport(caseNo, comment) {
+            // Creat JSON url to controller
+            var saveDataUrl = '@Url.Action("addCaseToTimeReport", "TimeReport")' + '?date=' + $("#dateFilter").val() + '&caseNo=' + caseNo + '&comment=' + encodeURIComponent(comment);
+
+
+            // Ajax call for table data
+            $.ajax({
+                url: saveDataUrl,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    if (data != "OK") showMessageModal(data);
+                    updateTimeReportList();
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(thrownError);
+                }
+
+            });
+        }
+
+        function verifyTimeReport() {
+            // Creat JSON url to controller
+            var saveDataUrl = '@Url.Action("verifyTimeReport", "TimeReport")' + '?date=' + $("#dateFilter").val();
+
+            // Ajax call for table data
+            $.ajax({
+                url: saveDataUrl,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    showMessageModal(data);
+                    updateTimeReportList();
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(thrownError);
+                }
+
+            });
+        }
+    </script>
+
+}

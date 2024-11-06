@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientConsoleApp\\ClientConsoleApp.csproj": {}
+  },
+  "projects": {
+    "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientConsoleApp\\ClientConsoleApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientConsoleApp\\ClientConsoleApp.csproj",
+        "projectName": "ClientConsoleApp",
+        "projectPath": "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientConsoleApp\\ClientConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\navipro_beha.WORKANYWHERE\\.nuget\\packages\\",
+        "outputPath": "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientConsoleApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\navipro_beha.WORKANYWHERE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientLibrary\\ClientLibrary.csproj": {
+                "projectPath": "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientLibrary\\ClientLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientLibrary\\ClientLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientLibrary\\ClientLibrary.csproj",
+        "projectName": "ClientLibrary",
+        "projectPath": "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientLibrary\\ClientLibrary.csproj",
+        "packagesPath": "C:\\Users\\navipro_beha.WORKANYWHERE\\.nuget\\packages\\",
+        "outputPath": "D:\\Local Projects\\VS2019\\Navipro.Anyware.CloudPrinting\\ClientLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\navipro_beha.WORKANYWHERE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<publishData>
+  <publishTarget publishUrl="\\hera\websites\default\CashJetWebService\">
+    <file relUrl="ServiceRequest.asmx" publishTime="04/13/2012 11:04:11" />
+    <file relUrl="bin/WebService.dll" publishTime="06/11/2013 22:39:20" />
+    <file relUrl="bin/WebService.pdb" publishTime="06/11/2013 22:39:20" />
+    <file relUrl="Web.config" publishTime="05/19/2013 20:54:24" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<nav>  
+  <type>ITEM</type>
+  <method>ADD</method>
+  <filter></filter>
+  <data>
+    <id>123</id>
+    <description>123</description>
+    <itemCategory>DIABETES</itemCategory>
+    <productGroupCode>EXTEND</productGroupCode>
+    <unitOfMeasure>PCS</unitOfMeasure>
+    <qtyPerPack>1</qtyPerPack>
+    <weight>115 g</weight>
+    <active>Yes</active>
+    <variants>
+      <variant>
+        <code>GUL</code>
+        <EAN>122345754</EAN>
+        <stock>8</stock>
+      </variant>
+      <variant>
+        <code>RÖD</code>
+        <EAN>122345888</EAN>
+        <stock>15</stock>
+      </variant>
+    </variants>
+    <prices>
+      <price>
+        <currency>SEK</currency>
+        <value>125</value>
+        <vat>25</vat>
+        <vatPercentage>25</vatPercentage>
+      </price>
+      <price>
+        <currency>EUR</currency>
+        <value>13</value>
+        <vat>2.6</vat>
+        <vatPercentage>25</vatPercentage>
+      </price>
+    </prices>
+    <translations>
+      <translation>
+        <code>SE</code>
+        <name>Extend Crisp Provpack</name>
+        <shortDescription>Extend Crisps är ett mellanmål som har utvecklats särskilt för människor</shortDescription>
+        <longDescription>Extend Crisps är ett mellanmål som har utvecklats särskilt för människor med diabetes...</longDescription>
+        <metaTitle>Extend Crisp Provpack</metaTitle>
+        <metaDescription>Extend Crisps är ett mellanmål som har utvecklats särskilt för människor med diabetes.</metaDescription>
+        <metaTags>Extend Crisp, diabetes</metaTags>
+      </translation>
+      <translation>
+        <code>US</code>
+        <name>Extend Crisp Provpack</name>
+        <shortDescription>Extend Crisps are a snack that has been developed specifically for people</shortDescription>
+        <longDescription>Extend Crisps are a snack that has been developed specifically for people with diabetes ...</longDescription>
+        <metaTitle>Extend Crisp Provpack</metaTitle>
+        <metaDescription>Extend Crisps are a snack that has been developed specifically for people with diabetes ...</metaDescription>
+        <metaTags>Extend Crisp, diabetes</metaTags>
+      </translation>
+    </translations>
+  </data>
+</nav>

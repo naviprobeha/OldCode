@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SantaMonica">
+</Property><Property Name="Solution File" Value="D:\Visual Studio\VS2008\WebSites\Konvex.SantaMonica\webservice\SantaMonica.sln">
+</Property><Property Name="Date" Value="den 16 oktober 2013">
+</Property><Property Name="Time" Value="21:11:16">
+</Property></Properties><Event ErrorLevel="0" Project="SantaMonica" Source="SantaMonica.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SantaMonica.csproj" Source="SantaMonica.csproj" Description="The IIS Web server is not installed on this computer.">
+</Event><Event ErrorLevel="3" Project="SantaMonica" Source="SantaMonica.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SantaMonica" Source="SantaMonica.csproj" Description="You have completed the first step in converting your Visual Studio .NET 2003 web project. To complete the conversion, please select your project in the Solution Explorer and choose the 'Convert to Web Application' context menu item.">
+</Event></UpgradeLog>

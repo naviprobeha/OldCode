@@ -1,0 +1,7 @@
+C:\Visual Studio\VS2008\Projects\OSGi\TestAssembly\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\OSGi\TestAssembly\bin\Debug\TestAssembly.dll
+C:\Visual Studio\VS2008\Projects\OSGi\TestAssembly\bin\Debug\TestAssembly.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\TestAssembly\bin\Debug\Navipro.OSGi.Interfaces.dll
+C:\Visual Studio\VS2008\Projects\OSGi\TestAssembly\bin\Debug\Navipro.OSGi.Interfaces.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\TestAssembly\obj\Debug\TestAssembly.dll
+C:\Visual Studio\VS2008\Projects\OSGi\TestAssembly\obj\Debug\TestAssembly.pdb

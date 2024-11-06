@@ -1,0 +1,69 @@
+﻿<SequentialWorkflowActivity x:Class="ConfirmUserInput.ConfirmUserInputWorkflow" x:Name="ConfirmUserInputWorkflow" xmlns:ns0="clr-namespace:Microsoft.Rtc.Workflow.Activities;Assembly=Microsoft.Rtc.Workflow, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<ns0:AcceptCallActivity x:Name="answerCall" />
+	<ns0:CommunicationsSequenceActivity CallProvider="{ActivityBind answerCall,Path=CallProvider}" x:Name="rootCSA">
+		<ns0:SpeechStatementActivity IsDataTrackingEnabled="False" x:Name="welcome" MainPrompt="Welcome to the Confirm User Input sample application." />
+		<ns0:CommunicationsSequenceActivity CallProvider="{ActivityBind answerCall,Path=CallProvider}" x:Name="getPinCSA">
+			<ns0:SpeechQuestionAnswerActivity TurnStarting="GetPin_TurnStarting" Prompts="EscalatedNoRecognitionPrompt=I still did not understand you. Please enter your 4 digit pin.;EscalatedSilencePrompt=I still did not hear you. Please enter your 4 digit pin.;MainPrompt=Please enter your 4 digit pin.;NoRecognitionPrompt=I did not understand you. Please enter your 4 digit pin.;SilencePrompt=I did not hear you. Please enter your 4 digit pin." x:Name="getPin" Grammars="" PreFlushDtmf="False" IsDataTrackingEnabled="False" CanBargeIn="True" InitialSilenceTimeout="00:00:03" DtmfGrammars="" CompleteTimeout="00:00:00.5000000" IncompleteTimeout="00:00:01" />
+			<ns0:SpeechQuestionAnswerActivity TurnStarting="ConfirmPin_TurnStarting" Prompts="" x:Name="confirmPin" Grammars="" PreFlushDtmf="False" IsDataTrackingEnabled="False" CanBargeIn="True" InitialSilenceTimeout="00:00:03" DtmfGrammars="" CompleteTimeout="00:00:00.5000000" IncompleteTimeout="00:00:01" />
+			<IfElseActivity x:Name="checkPinConfirmed">
+				<IfElseBranchActivity x:Name="pinConfirmed">
+					<IfElseBranchActivity.Condition>
+						<RuleConditionReference ConditionName="pinConfirmed" />
+					</IfElseBranchActivity.Condition>
+				</IfElseBranchActivity>
+				<IfElseBranchActivity x:Name="pinNotConfirmed">
+					<ns0:GoToActivity x:Name="goToGetPinFromPinNotConfirmed" TargetActivityName="getPin" />
+				</IfElseBranchActivity>
+			</IfElseActivity>
+			<ns0:CommunicationsEventsActivity x:Name="getPinEvents">
+				<ns0:ConsecutiveNoRecognitionsSpeechEventActivity CallProvider="{x:Null}" x:Name="getPinConsecutiveNoRecognitionsSpeechEvent">
+					<ns0:SpeechStatementActivity IsDataTrackingEnabled="False" x:Name="askPinNoRecos" MainPrompt="I am sorry, but I cannot help you." />
+					<ns0:GoToActivity x:Name="gotoGoodbyeFromGetPinNoRecos" TargetActivityName="goodbye" />
+				</ns0:ConsecutiveNoRecognitionsSpeechEventActivity>
+				<ns0:ConsecutiveSilencesSpeechEventActivity CallProvider="{x:Null}" x:Name="getPinConsecutiveSilencesSpeechEvent" MaximumSilences="7">
+					<ns0:SpeechStatementActivity IsDataTrackingEnabled="False" x:Name="askPinSilences" MainPrompt="I am sorry, but I cannot help you." />
+					<ns0:GoToActivity x:Name="gotoGoodbyeFromGetPinSilences" TargetActivityName="goodbye" />
+				</ns0:ConsecutiveSilencesSpeechEventActivity>
+			</ns0:CommunicationsEventsActivity>
+		</ns0:CommunicationsSequenceActivity>
+		<ns0:CommunicationsSequenceActivity CallProvider="{ActivityBind answerCall,Path=CallProvider}" x:Name="getTrackingNumberCSA">
+			<ns0:SpeechQuestionAnswerActivity TurnStarting="GetTrackingNumber_TurnStarting" Prompts="EscalatedNoRecognitionPrompt=I still did not understand you. Please enter your 6 digit tracking number.;EscalatedSilencePrompt=I still did not hear you. Please enter your 6 digit tracking number.;MainPrompt=Please enter your 6 digit tracking number.;NoRecognitionPrompt=I did not understand you. Please enter your 6 digit tracking number.;SilencePrompt=I did not hear you. Please enter your 6 digit tracking number." x:Name="getTrackingNumber" Grammars="" PreFlushDtmf="False" IsDataTrackingEnabled="False" CanBargeIn="True" InitialSilenceTimeout="00:00:03" DtmfGrammars="" CompleteTimeout="00:00:00.5000000" IncompleteTimeout="00:00:01" />
+			<ns0:SpeechQuestionAnswerActivity TurnStarting="ConfirmTrackingNumber_TurnStarting" Prompts="" x:Name="confirmTrackingNumber" Grammars="" PreFlushDtmf="False" IsDataTrackingEnabled="False" CanBargeIn="True" InitialSilenceTimeout="00:00:03" DtmfGrammars="" CompleteTimeout="00:00:00.5000000" IncompleteTimeout="00:00:01" />
+			<IfElseActivity x:Name="checkTrackingNumberConfirmed">
+				<IfElseBranchActivity x:Name="trackingNumberConfirmed">
+					<IfElseBranchActivity.Condition>
+						<RuleConditionReference ConditionName="trackingNumberConfirmed" />
+					</IfElseBranchActivity.Condition>
+				</IfElseBranchActivity>
+				<IfElseBranchActivity x:Name="trackingNumberNotConfirmed">
+					<ns0:GoToActivity x:Name="gotoGetTrackingNumberFromTrackingNumberNotConfirmed" TargetActivityName="getTrackingNumber" />
+				</IfElseBranchActivity>
+			</IfElseActivity>
+			<ns0:CommunicationsEventsActivity x:Name="getTrackingNumberEvents">
+				<ns0:ConsecutiveNoRecognitionsSpeechEventActivity CallProvider="{x:Null}" x:Name="getTrackingNumberNoRecoEvent">
+					<ns0:SpeechStatementActivity IsDataTrackingEnabled="False" x:Name="askTrackingNumberNoRecos" MainPrompt="I am sorry, but I cannot help you." />
+					<ns0:GoToActivity x:Name="gotoGoodbyeFromGetTrackingNumberRoReco" TargetActivityName="goodbye" />
+				</ns0:ConsecutiveNoRecognitionsSpeechEventActivity>
+				<ns0:ConsecutiveSilencesSpeechEventActivity CallProvider="{x:Null}" x:Name="getTrackingNumberSilencesEvent">
+					<ns0:SpeechStatementActivity IsDataTrackingEnabled="False" x:Name="askTrackingNumberSilence" MainPrompt="I am sorry, but I cannot help you." />
+					<ns0:GoToActivity x:Name="gotoGoodbyeFromTrackingNumberSilences" TargetActivityName="goodbye" />
+				</ns0:ConsecutiveSilencesSpeechEventActivity>
+			</ns0:CommunicationsEventsActivity>
+			<ns0:CommandsActivity x:Name="commandsActivity1" />
+		</ns0:CommunicationsSequenceActivity>
+		<ns0:SpeechStatementActivity IsDataTrackingEnabled="False" x:Name="trackingInfo" MainPrompt="You will receive your order in 3 days. Thank you." />
+		<ns0:SpeechStatementActivity IsDataTrackingEnabled="False" x:Name="goodbye" MainPrompt="Goodbye." />
+		<ns0:DisconnectCallActivity x:Name="disconnectCall" />
+		<ns0:CommunicationsEventsActivity x:Name="communicationsEventsActivity1">
+			<ns0:CallDisconnectedEventActivity x:Name="callDisconnectedEventActivity1">
+				<CodeActivity x:Name="callDisconnectedCodeActivity" ExecuteCode="HandleCallDisconnectedEvent" />
+			</ns0:CallDisconnectedEventActivity>
+		</ns0:CommunicationsEventsActivity>
+	</ns0:CommunicationsSequenceActivity>
+	<FaultHandlersActivity x:Name="topLevelFaultHandlers">
+		<FaultHandlerActivity x:Name="generalFaultHandler" FaultType="{x:Type p7:Exception}" xmlns:p7="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+			<CodeActivity x:Name="generalFaultHandler_CodeActivity" ExecuteCode="HandleGeneralFault" />
+			<ns0:DisconnectCallActivity x:Name="generalFaultHandler_DisconnectCall" />
+		</FaultHandlerActivity>
+	</FaultHandlersActivity>
+</SequentialWorkflowActivity>

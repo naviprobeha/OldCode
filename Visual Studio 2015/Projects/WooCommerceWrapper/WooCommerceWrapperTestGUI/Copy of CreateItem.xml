@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nav>
+  <type>addresses</type>
+  <method>UPDATE</method>
+  <filter />
+  <id>65</id>
+  <data>
+    <address>
+      <account_number>LR002</account_number>
+      <billing_company_1>LR, kommunf&amp;#246;rening i Skurup</billing_company_1>
+      <billing_company_2>c/o Rutgerskolan</billing_company_2>
+      <billing_address_1 />
+      <billing_address_2>Vaktgatan 4</billing_address_2>
+      <billing_city>Skurup</billing_city>
+      <billing_state />
+      <billing_postcode>274 54</billing_postcode>
+      <billing_country>SE</billing_country>
+      <currency>SEK</currency>
+      <language>SV-SE</language>
+    </address>
+  </data>
+</nav>

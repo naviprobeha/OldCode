@@ -1,0 +1,202 @@
+﻿@model Navipro.Backoffice.Web.Models.Case
+@{
+
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>@ViewBag.Title</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="/">Hem</a>
+            </li>
+            <li>
+                <a>Ärenden</a>
+            </li>
+            <li class="active">
+                <strong>@ViewBag.Title</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Filtrera</h5>
+                    <div class="ibox-tools">                        
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <form class="form-inline">
+                        <div class="row">
+
+                            <div class="col-md-4">
+
+                                <p class="font-bold">
+                                    År
+                                </p>
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" id="yearFilter" value="@System.DateTime.Today.Year" onchange="updateCaseList()">
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <p class="font-bold">
+                                    Projekt
+                                </p>
+
+                                <select data-placeholder="Välj ett projekt" class="chosen-select" tabindex="2" name="jobNoFilter" id="jobNoFilter" onchange="updateCaseList()">
+                                    <option value="">Välj ett projekt</option>
+                                    @foreach (var item in ViewBag.jobList)
+                                    {
+                                        <option value="@item.no">@item.no - @item.description</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+
+                                <p class="font-bold">
+                                    Status
+                                </p>
+
+                                <select data-placeholder="Välj en status" class="chosen-select" tabindex="2" name="statusFilter" id="statusFilter" onchange="updateCaseList()">
+                                    <option value="">Välj en status</option>
+                                    @foreach (var item in ViewBag.statusList)
+                                    {
+                                        <option value="@item.sortOrder">@item.code</option>
+                                    }
+                                </select>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>@ViewBag.Title</h5>
+                    <div class="ibox-tools">
+                        @Html.ActionLink("Nytt ärende", "Create", null, new { @class = "btn btn-primary btn-xs" })
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+
+                    <input type="text" class="form-control input-sm m-b-xs" id="filter"
+                            placeholder="Sök bland ärenden">
+
+                    <table class="footable table table-hover" id="ajaxTable" data-filter=#filter data-page-size="40">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>@Html.DisplayNameFor(model => model.no)</th>
+                                <th>@Html.DisplayNameFor(model => model.subject)</th>
+                                <th data-hide="phone,table">@Html.DisplayNameFor(model => model.activityTypeCode)</th>
+                                <th data-hide="phone,table">@Html.DisplayNameFor(model => model.ordererName)</th>
+                                <th>@Html.DisplayNameFor(model => model.caseStatusCode)</th>
+                                <th data-hide="phone,table" nowrap="nowrap">@Html.DisplayNameFor(model => model.receivedDate)</th>
+                                <th data-hide="phone,table" nowrap="nowrap">@Html.DisplayNameFor(model => model.lastActivityDateTimeText)</th>
+                                <th data-hide="phone,table">@Html.DisplayNameFor(model => model.assignedResources)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@section Styles {
+    @Styles.Render("~/plugins/footableStyles")
+    @Styles.Render("~/Content/plugins/chosen/chosenStyles")
+    @Styles.Render("~/plugins/dataPickerStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/footable")
+    @Scripts.Render("~/plugins/chosen")
+    @Scripts.Render("~/plugins/typehead")
+    @Scripts.Render("~/plugins/dataPicker")
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            $('.input-group.date').datepicker({
+                minViewMode: 2,
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true,
+                todayHighlight: true,
+                format: 'yyyy'
+            });
+
+            updateCaseList();
+
+            $('.footable').footable();
+            $('#jobNoFilter').chosen({ width: "100%", forceParse: true });
+            $('#statusFilter').chosen({ width: "100%", forceParse: true });
+        });
+
+        function updateCaseList()
+        {
+            // Creat JSON url to controller
+            var caseDataUrl = '@Url.Action("getCaseList", "Case")' + '?jobNoFilter=' + $("#jobNoFilter").val() + '&statusFilter=' + $("#statusFilter").val() + '&yearFilter=' + $("#yearFilter").val() + '&dataView=@ViewBag.dataView';
+
+            // Ajax call for table data
+            $.ajax({
+                url: caseDataUrl,
+                method: 'GET',
+                contentType:"application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    var divBody = $('#tableBody');
+                    divBody.empty();
+
+                    var div = $('#tableBody');
+
+
+                    $.each(data, function (i, item) {
+                        div.append(
+                            $('<tr>')
+                                .append($('<td>').html('<i class="fa ' + item.icon + '"/>')).append($('<td>').html(item.no)).append($('<td>').html('<b><a href="@Url.Action("Details", "Case")/' + item.no + '">' + item.subject + '</a></b><br/><small>' + item.jobPresentation + '</small>')).append($('<td>').html(item.activityTypeCode)).append($('<td>').html(item.ordererName)).append($('<td>').html(item.caseStatusCode)).append($('<td>').html(item.receivedDateText)).append($('<td>').html(item.lastActivityDateTimeText)).append($('<td>').html(item.assignedResources))
+                            );
+                    })
+                }
+            });
+        }
+
+
+    </script>
+
+}

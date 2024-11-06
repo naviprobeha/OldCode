@@ -1,0 +1,10 @@
+C:\Visual Studio\VS2008\Projects\Navipro.Base\Common\obj\Release\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Navipro.Base\Common\bin\Release\Navipro.Base.Common.dll
+C:\Visual Studio\VS2008\Projects\Navipro.Base\Common\bin\Release\Navipro.Base.Common.pdb
+C:\Visual Studio\VS2008\Projects\Navipro.Base\Common\obj\Release\Navipro.Base.Common.dll
+C:\Visual Studio\VS2008\Projects\Navipro.Base\Common\obj\Release\Navipro.Base.Common.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.Base\Common\bin\Release\Navipro.Base.Common.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Base\Common\bin\Release\Navipro.Base.Common.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.Base\Common\obj\Release\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Navipro.Base\Common\obj\Release\Navipro.Base.Common.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Base\Common\obj\Release\Navipro.Base.Common.pdb

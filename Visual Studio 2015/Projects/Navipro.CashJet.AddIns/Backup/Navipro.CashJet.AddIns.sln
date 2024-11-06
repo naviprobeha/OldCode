@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddIns", "ButtonPanel\AddIns.csproj", "{A1CB2D9C-3CB0-4630-BF64-9D1A3627EEB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRetain24", "TestRetain24\TestRetain24.csproj", "{FAEB804C-E852-4BFB-877C-F9B00ED06E20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1CB2D9C-3CB0-4630-BF64-9D1A3627EEB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1CB2D9C-3CB0-4630-BF64-9D1A3627EEB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1CB2D9C-3CB0-4630-BF64-9D1A3627EEB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1CB2D9C-3CB0-4630-BF64-9D1A3627EEB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAEB804C-E852-4BFB-877C-F9B00ED06E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAEB804C-E852-4BFB-877C-F9B00ED06E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAEB804C-E852-4BFB-877C-F9B00ED06E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAEB804C-E852-4BFB-877C-F9B00ED06E20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

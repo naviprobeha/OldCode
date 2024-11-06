@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{20D4826A-C6FA-45DB-90F4-C717570B9F32}") = "SmartShipment", "SmartShipment\SmartShipment.csdproj", "{D78D7DF8-50D5-404D-A291-1D0794BF1067}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavisionMobile", "http://192.168.5.22:/NavisionMobile/NavisionMobile.csproj", "{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Debug.ActiveCfg = Debug|Pocket PC
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Debug.Build.0 = Debug|Pocket PC
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Debug.Deploy.0 = Debug|Pocket PC
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Release.ActiveCfg = Release|Pocket PC
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Release.Build.0 = Release|Pocket PC
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Release.Deploy.0 = Release|Pocket PC
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Debug.ActiveCfg = Debug|.NET
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Debug.Build.0 = Debug|.NET
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Release.ActiveCfg = Release|.NET
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

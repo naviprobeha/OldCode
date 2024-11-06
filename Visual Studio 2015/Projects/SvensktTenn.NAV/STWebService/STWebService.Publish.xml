@@ -1,0 +1,8 @@
+<publishData>
+  <publishTarget publishUrl="\\192.168.222.14\Websites\dev2.navipro.se\STWebService\">
+    <file relUrl="bin/STWebService.pdb" publishTime="04/24/2011 21:04:39" />
+    <file relUrl="STWebService.asmx" publishTime="04/25/2011 19:49:31" />
+    <file relUrl="bin/STWebService.dll" publishTime="04/24/2011 21:04:39" />
+    <file relUrl="Web.config" publishTime="04/24/2011 21:04:36" />
+  </publishTarget>
+</publishData>

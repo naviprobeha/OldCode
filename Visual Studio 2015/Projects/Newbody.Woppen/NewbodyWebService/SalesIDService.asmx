@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="SalesIDService.asmx.cs" Class="NewbodyWebService.Service1" %>

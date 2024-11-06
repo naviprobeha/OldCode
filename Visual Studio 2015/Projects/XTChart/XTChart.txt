@@ -1,0 +1,184 @@
+OBJECT Codeunit [DELETEME]75550 XT Chart Util
+{
+  OBJECT-PROPERTIES
+  {
+    Date=04/02/10;
+    Time=07:43:21;
+    Modified=Yes;
+    Version List=XTChart;
+  }
+  PROPERTIES
+  {
+    OnRun=VAR
+            TestCust@1000 : Record 18;
+            TestResult@1001 : Text[1024];
+          BEGIN
+          END;
+
+  }
+  CODE
+  {
+    VAR
+      XMLDoc@1002 : Automation "{F5078F18-C551-11D3-89B9-0000F81FE221} 4.0:{F6D90F11-9C73-11D3-B32E-00C04F990BB4}:'Microsoft XML, v4.0'.DOMDocument";
+      XMLNode@1003 : Automation "{F5078F18-C551-11D3-89B9-0000F81FE221} 4.0:{2933BF80-7B36-11D2-B20E-00C04F983E60}:'Microsoft XML, v4.0'.IXMLDOMNode";
+      BeginDate@1000 : Date;
+      i@1001 : Integer;
+
+    PROCEDURE CustPointsChart@1(Customer@1000 : Record 18) ReturnTxt : Text[1024];
+    BEGIN
+      ReturnTxt := '';
+      BeginDate := CALCDATE('-5M',WORKDATE);
+
+      InitXMLDoc(1);
+
+      WITH Customer DO BEGIN
+        FOR i := 1 TO 6 DO BEGIN
+          BeginDate := CALCDATE('-1M+CM+1D',BeginDate);
+          SETRANGE("Date Filter",BeginDate,CALCDATE('CM',BeginDate));
+          CALCFIELDS("Sales (LCY)");
+          AddNode(XMLNode,FORMAT(BeginDate,0,'<Month Text,3>'), FORMAT("Sales (LCY)"));
+          ReturnTxt := XMLDoc.xml;
+          BeginDate := CALCDATE('1M',BeginDate);
+        END;
+      END;
+
+      IF STRLEN(ReturnTxt) <> 0 THEN
+        ReturnTxt := COPYSTR(ReturnTxt,1,STRLEN(ReturnTxt) - 1);
+
+      LogInfo;
+
+      EXIT(ReturnTxt);
+    END;
+
+    PROCEDURE CustDoughnutChart@6(Customer@1001 : Record 18) ReturnTxt : Text[1024];
+    VAR
+      ChartLimit@1002 : Decimal;
+      ChartBalance@1003 : Decimal;
+    BEGIN
+      ReturnTxt := '';
+
+      WITH Customer DO BEGIN
+
+        IF "Credit Limit (LCY)" <> 0 THEN BEGIN
+          ChartLimit := "Balance (LCY)" / "Credit Limit (LCY)" * 100;
+          IF ChartLimit < 100 THEN
+            ChartBalance := 100 - ChartLimit
+          ELSE BEGIN
+            ChartLimit := 0;
+            ChartBalance := 100;
+          END;
+        END ELSE BEGIN
+          ChartLimit := 0;
+          ChartBalance := "Balance (LCY)";
+        END;
+
+        InitXMLDoc(2);
+        CALCFIELDS("Balance (LCY)");
+        AddNode(XMLNode,'Balance',FORMAT(ChartBalance));
+        AddNode(XMLNode,'CreditLimit',FORMAT(ChartLimit));
+        ReturnTxt := XMLDoc.xml;
+      END;
+
+      LogInfo;
+
+      EXIT(ReturnTxt);
+    END;
+
+    PROCEDURE ItemPointsChart@2(Item@1000 : Record 27) ReturnTxt : Text[250];
+    BEGIN
+      ReturnTxt := '';
+      BeginDate := CALCDATE('-5M',WORKDATE);
+
+      InitXMLDoc(1);
+
+      WITH Item DO BEGIN
+        FOR i := 1 TO 6 DO BEGIN
+          BeginDate := CALCDATE('-1M+CM+1D',BeginDate);
+          SETRANGE("Date Filter",BeginDate,CALCDATE('CM',BeginDate));
+          CALCFIELDS("Sales (LCY)");
+          AddNode(XMLNode,FORMAT(BeginDate,0,'<Month Text,3>'), FORMAT("Sales (LCY)"));
+          ReturnTxt := XMLDoc.xml;
+          BeginDate := CALCDATE('1M',BeginDate);
+        END;
+      END;
+
+      IF STRLEN(ReturnTxt) <> 0 THEN
+        ReturnTxt := COPYSTR(ReturnTxt,1,STRLEN(ReturnTxt) - 1);
+
+      LogInfo;
+
+      EXIT(ReturnTxt);
+    END;
+
+    PROCEDURE InitXMLDoc@9(Type@1000 : Integer);
+    BEGIN
+      IF NOT ISCLEAR(XMLDoc) THEN
+        CLEAR(XMLDoc);
+
+      CREATE(XMLDoc);
+      XMLDoc.async(FALSE);
+      XMLDoc.loadXML('<Chart/>');
+
+      XMLNode := XMLDoc.lastChild;
+      AddNode(XMLNode,'ChartType',FORMAT(Type));
+      AddNode(XMLNode,'Data','');
+      XMLNode := XMLDoc.selectSingleNode('Chart/Data');
+    END;
+
+    PROCEDURE AddNode@11(VAR ToNode@1000 : Automation "{F5078F18-C551-11D3-89B9-0000F81FE221} 4.0:{2933BF80-7B36-11D2-B20E-00C04F983E60}:'Microsoft XML, v4.0'.IXMLDOMNode";NodeName@1002 : Text[30];NodeValue@1003 : Text[30]);
+    VAR
+      NewNode@1001 : Automation "{F5078F18-C551-11D3-89B9-0000F81FE221} 4.0:{2933BF80-7B36-11D2-B20E-00C04F983E60}:'Microsoft XML, v4.0'.IXMLDOMNode";
+    BEGIN
+      NewNode := XMLDoc.createNode(1,NodeName,'');
+      ToNode.appendChild(NewNode);
+      ToNode := ToNode.lastChild;
+      NewNode := XMLDoc.createTextNode(NodeValue);
+      ToNode.appendChild(NewNode);
+      ToNode := ToNode.parentNode;
+    END;
+
+    PROCEDURE LogInfo@4();
+    VAR
+      Debug@1000 : Boolean;
+      DebugFileName@1001 : Text[120];
+    BEGIN
+      //Debug := TRUE;
+      DebugFileName := 'c:\tmp\Data.xml';
+      IF NOT Debug THEN
+        EXIT;
+
+      XMLDoc.save(DebugFileName);
+    END;
+
+    EVENT XMLDoc@1002::ondataavailable@198();
+    BEGIN
+    END;
+
+    EVENT XMLDoc@1002::onreadystatechange@-609();
+    BEGIN
+    END;
+
+    BEGIN
+    {
+      Chart Types:
+        1: Line
+        2: Donought
+
+
+      Sample xml document
+      - <Chart>
+        <ChartType>1</ChartType>
+      - <Data>
+          <Jan>1,499.02</Jan>
+          <Dec>501.8</Dec>
+          <Nov>111.51</Nov>
+          <Oct>0</Oct>
+          <Sep>334.53</Sep>
+          <Aug>446.04</Aug>
+        </Data>
+        </Chart>
+    }
+    END.
+  }
+}
+

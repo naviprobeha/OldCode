@@ -1,0 +1,8 @@
+<publishData>
+  <publishTarget publishUrl="\\192.168.5.22\websites\dev1.navipro.se\BaxiWebService\">
+    <file relUrl="ServiceRequest.asmx" publishTime="01/27/2010 11:31:35" />
+    <file relUrl="bin/NAVWebService.dll" publishTime="01/27/2010 11:08:21" />
+    <file relUrl="bin/NAVWebService.pdb" publishTime="01/27/2010 11:08:21" />
+    <file relUrl="Web.config" publishTime="01/27/2010 11:27:57" />
+  </publishTarget>
+</publishData>

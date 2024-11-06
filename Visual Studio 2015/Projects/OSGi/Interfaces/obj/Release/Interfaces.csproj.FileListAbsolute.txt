@@ -1,0 +1,5 @@
+C:\Visual Studio\VS2008\Projects\OSGi\Interfaces\bin\Release\Navipro.OSGi.Interfaces.dll
+C:\Visual Studio\VS2008\Projects\OSGi\Interfaces\bin\Release\Navipro.OSGi.Interfaces.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\Interfaces\obj\Release\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\OSGi\Interfaces\obj\Release\Navipro.OSGi.Interfaces.dll
+C:\Visual Studio\VS2008\Projects\OSGi\Interfaces\obj\Release\Navipro.OSGi.Interfaces.pdb

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Navipro.Infojet.WebService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Navipro_Infojet_WebService_net_workanywhere_sirius_ServiceRequestWebService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://sirius.workanywhere.net:7087/OUTNORTH2009R2/WS/ReplaceWithAPercentEncodedCompanyName/Codeunit/ServiceRequestWebService</Value>
+    </Setting>
+    <Setting Name="Navipro_Infojet_WebService_net_workanywhere_servicerequest_ServiceRequest" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sirius:7117/HS2009R2/WS/Happy%20Socks%20AB/Codeunit/ServiceRequest</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

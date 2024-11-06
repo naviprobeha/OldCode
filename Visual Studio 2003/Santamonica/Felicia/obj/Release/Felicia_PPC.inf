@@ -1,0 +1,140 @@
+[Version]
+Signature="$Windows NT$"
+Provider="Navipro"
+CESignature="$Windows CE$"
+
+[CEStrings]
+AppName="SmartOrder"
+InstallDir=%CE1%\Felicia
+
+[CEDevice]
+VersionMin=3.00
+VersionMax=4.99
+
+[DefaultInstall]
+CEShortcuts=Shortcuts
+CopyFiles=Files.Common
+
+[DefaultInstall.ARMV4]
+CopyFiles=Files.ARMV4
+CESetupDLL=vsd_setup.dll
+
+[DefaultInstall.ARM]
+CopyFiles=Files.ARM
+CESetupDLL=vsd_setup.dll
+
+[DefaultInstall.SH3]
+CopyFiles=Files.SH3
+CESetupDLL=vsd_setup.dll
+
+[DefaultInstall.MIPS]
+CopyFiles=Files.MIPS
+CESetupDLL=vsd_setup.dll
+
+[DefaultInstall.X86]
+CopyFiles=Files.X86
+CESetupDLL=vsd_setup.dll
+
+[DefaultInstall.WCE420X86]
+CopyFiles=Files.WCE420X86
+CESetupDLL=vsd_setup.dll
+
+[SourceDisksNames]
+1=,"Common1",,"H:\My Documents\Visual Studio Projects\Santamonica\Felicia\obj\Release\"
+2=,"Common2",,"H:\My Documents\Visual Studio Projects\Santamonica\Felicia\"
+3=,"Common3",,"H:\My Documents\Visual Studio Projects\Santamonica\GPSLocation\obj\Release\"
+
+[SourceDisksNames.ARMV4]
+4=,"ARMV44",,"H:\My Documents\Visual Studio Projects\Santamonica\Felicia\obj\Release\"
+5=,"ARMV4_Setup",,"C:\Program\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE\wce300\ARMV4\"
+
+[SourceDisksNames.ARM]
+6=,"ARM6",,"H:\My Documents\Visual Studio Projects\Santamonica\Felicia\obj\Release\"
+7=,"ARM_Setup",,"C:\Program\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE\wce300\ARM\"
+
+[SourceDisksNames.SH3]
+8=,"SH38",,"H:\My Documents\Visual Studio Projects\Santamonica\Felicia\obj\Release\"
+9=,"SH3_Setup",,"C:\Program\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE\wce300\SH3\"
+
+[SourceDisksNames.MIPS]
+10=,"MIPS10",,"H:\My Documents\Visual Studio Projects\Santamonica\Felicia\obj\Release\"
+11=,"MIPS_Setup",,"C:\Program\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE\wce300\MIPS\"
+
+[SourceDisksNames.X86]
+12=,"X8612",,"H:\My Documents\Visual Studio Projects\Santamonica\Felicia\obj\Release\"
+13=,"X86_Setup",,"C:\Program\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE\wce300\X86\"
+
+[SourceDisksNames.WCE420X86]
+14=,"WCE420X8614",,"H:\My Documents\Visual Studio Projects\Santamonica\Felicia\obj\Release\"
+15=,"WCE420X86_Setup",,"C:\Program\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE\wce300\WCE420X86\"
+
+[SourceDisksFiles]
+Felicia.exe=1
+SerialNET.dll=2
+GPSLocation.dll=3
+
+[SourceDisksFiles.ARMV4]
+vsd_config.txt.ARMV4=4
+vsd_setup.dll=5
+
+[SourceDisksFiles.ARM]
+vsd_config.txt.ARM=6
+vsd_setup.dll=7
+
+[SourceDisksFiles.SH3]
+vsd_config.txt.SH3=8
+vsd_setup.dll=9
+
+[SourceDisksFiles.MIPS]
+vsd_config.txt.MIPS=10
+vsd_setup.dll=11
+
+[SourceDisksFiles.X86]
+vsd_config.txt.X86=12
+vsd_setup.dll=13
+
+[SourceDisksFiles.WCE420X86]
+vsd_config.txt.WCE420X86=14
+vsd_setup.dll=15
+
+[DestinationDirs]
+Files.Common=0,%InstallDir%
+Shortcuts=0,%CE2%\Start Menu
+Files.ARMV4=0,%InstallDir%
+Files.ARM=0,%InstallDir%
+Files.SH3=0,%InstallDir%
+Files.MIPS=0,%InstallDir%
+Files.X86=0,%InstallDir%
+Files.WCE420X86=0,%InstallDir%
+
+[Files.Common]
+Felicia.exe,,,0
+SerialNET.dll,,,0
+GPSLocation.dll,,,0
+
+[Files.ARMV4]
+vsd_config.txt,vsd_config.txt.ARMV4,,0
+vsd_setup.dll,,,0
+
+[Files.ARM]
+vsd_config.txt,vsd_config.txt.ARM,,0
+vsd_setup.dll,,,0
+
+[Files.SH3]
+vsd_config.txt,vsd_config.txt.SH3,,0
+vsd_setup.dll,,,0
+
+[Files.MIPS]
+vsd_config.txt,vsd_config.txt.MIPS,,0
+vsd_setup.dll,,,0
+
+[Files.X86]
+vsd_config.txt,vsd_config.txt.X86,,0
+vsd_setup.dll,,,0
+
+[Files.WCE420X86]
+vsd_config.txt,vsd_config.txt.WCE420X86,,0
+vsd_setup.dll,,,0
+
+[Shortcuts]
+SmartOrder,0,Felicia.exe,%CE17%

@@ -1,0 +1,61 @@
+﻿@model List<Navipro.Backoffice.Web.Models.SearchResult>
+
+@{
+    ViewBag.Title = "Sökresultat";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Sökresultat</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("Index", "Home")">Hem</a>
+            </li>
+            <li class="active">
+                <strong>Sökresultat</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <h2>
+                        @Model.Count resultat hittades för: <span class="text-navy">@ViewBag.searchQuery</span>
+                    </h2>
+                    <small>Tidsåtgång: @ViewBag.duration sekunder</small>
+
+                    <div class="search-form">
+                        <form action="@Url.Action("Search", "Home")" method="post">
+                            <div class="input-group">
+                                <input type="text" placeholder="Sök på något intressant" name="searchQuery" class="form-control input-lg">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-lg btn-primary" type="submit">
+                                        Sök
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    
+                    @foreach (var item in Model)
+                    {
+                        <div class="hr-line-dashed"></div>
+                        <div class="search-result">
+                            <h3><a href="@item.url">@item.caption</a></h3>
+                            <a href="@item.url" class="search-link">@item.url</a>
+                            <p>
+                                @item.description
+                            </p>
+                        </div>
+                    }
+                    <div class="hr-line-dashed"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

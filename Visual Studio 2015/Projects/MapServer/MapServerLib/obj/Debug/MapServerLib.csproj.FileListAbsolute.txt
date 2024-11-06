@@ -1,0 +1,8 @@
+C:\Visual Studio 2008\Projects\MapServer\MapServerLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio 2008\Projects\MapServer\MapServerLib\bin\Debug\MapServerLib.dll
+C:\Visual Studio 2008\Projects\MapServer\MapServerLib\bin\Debug\MapServerLib.pdb
+C:\Visual Studio 2008\Projects\MapServer\MapServerLib\bin\Debug\GpsToolsNET.200.dll
+C:\Visual Studio 2008\Projects\MapServer\MapServerLib\bin\Debug\Common.pdb
+C:\Visual Studio 2008\Projects\MapServer\MapServerLib\obj\Debug\MapServerLib.dll
+C:\Visual Studio 2008\Projects\MapServer\MapServerLib\obj\Debug\MapServerLib.pdb
+C:\Visual Studio 2008\Projects\MapServer\MapServerLib\bin\Debug\Common.dll

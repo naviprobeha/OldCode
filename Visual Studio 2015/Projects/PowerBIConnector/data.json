@@ -1,0 +1,47 @@
+{
+    "rows": [
+        {
+"Transaction No": "123",
+"Sales Type": 1,
+"Sales No": "A123",
+"Variant Code": "123",
+"Description": "Hej",
+"Description 2": "Hopp",
+"Color Code": "12",
+"Color Description": "Svart",
+"Size Code": "54",
+"Unit Of Measure Code": "ST",
+"Item Category Code": "A",
+"Product Group Code": "B",
+"Quantity": 10,
+"Unit Price": 10,
+"Unit Price Incl VAT": 10,
+"Line Discount Amount": 10,
+"VAT Amount": 10,
+"Amount": 10,
+"Amount Incl VAT": 10,
+"Voucher Type Code": "",
+"Return Receipt No": "",
+"Return Reason Code": "",
+"Return Reason Description": "",
+"Total Discount Amount": 0,
+"Discount Code": "",
+"Store Code": "A",
+"POS Device Code": "1",
+"Store Name": "A",
+"Store Post Code": "",
+"Store City": "",
+"Store Country Code": "",
+"Salesperson Code": "",
+"Salesperson Name": "",
+"Gen. Prod. Posting Group": "",
+"VAT Prod. Posting Group": "",
+"Mix Match": false,
+"Registered Date": "2017-12-01",
+"Registered Hour": 0,
+"Location Code": "",
+"Member No": ""
+        }
+    ]
+}
+

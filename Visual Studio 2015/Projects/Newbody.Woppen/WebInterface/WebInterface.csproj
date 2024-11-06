@@ -1,0 +1,602 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD0590BA-7488-4BE3-AACC-4D232761ABF3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebInterface</RootNamespace>
+    <AssemblyName>WebInterface</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InfojetLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Infojet 2010\InfojetLib\bin\Debug\InfojetLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adminLogin.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="intra_standard.aspx" />
+    <Content Include="order_sp.aspx" />
+    <Content Include="intra_standard2.aspx" />
+    <Content Include="product_slide.aspx" />
+    <Content Include="_assets\img\arrow_left.gif" />
+    <Content Include="_assets\img\arrow_right.gif" />
+    <Content Include="_taglib\ForgotPassword_STANDARD.ascx" />
+    <Content Include="_taglib\GenericControl.ascx" />
+    <Content Include="_taglib\HistoryOrderList_INFOPAGE.ascx" />
+    <Content Include="_taglib\UserDefined_INFODETAILS.ascx" />
+    <Content Include="_taglib\UserDefined_INFOSALESPERSONS.ascx" />
+    <Content Include="_taglib\UserDefined_INFOSHOWCASE.ascx" />
+    <Content Include="_taglib\UserDefined_KPSPINFO.ascx" />
+    <Content Include="_taglib\UserDefined_ORDERRESPONSE.ascx" />
+    <Content Include="_taglib\UserDefined_PROFILEREORDER.ascx" />
+    <Content Include="_taglib\UserDefined_PROGRESS.ascx" />
+    <Content Include="_taglib\UserDefined_REORDER.ascx" />
+    <Content Include="_taglib\UserDefined_SALESIDUSERS.ascx" />
+    <Content Include="_taglib\UserDefined_SENDORDERS_DELIVERY.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="_assets\css\design.css" />
+    <Content Include="_assets\css\design_intra.css" />
+    <Content Include="_assets\css\visuals.css" />
+    <Content Include="_taglib\Campain_NORMAL.ascx" />
+    <Content Include="_taglib\Campain_WIDE.ascx" />
+    <Content Include="_taglib\Cart_STANDARD.ascx" />
+    <Content Include="_taglib\ChangePassword_STANDARD.ascx" />
+    <Content Include="_taglib\Content.ascx" />
+    <Content Include="_taglib\Form.ascx" />
+    <Content Include="_taglib\HistoryCrMemoList_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryCrMemo_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryCustomerLedger_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryInvoice_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryInvoiceList_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryOrderList_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryOrder_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryShipmentList_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryShipment_STANDARD.ascx" />
+    <Content Include="_taglib\Language.ascx" />
+    <Content Include="_taglib\Login_STANDARD.ascx" />
+    <Content Include="_taglib\Menu_LINE.ascx" />
+    <Content Include="_taglib\MyProfile_STANDARD.ascx" />
+    <Content Include="_taglib\ProductCategory_STANDARD.ascx" />
+    <Content Include="_taglib\ProductDetails_STANDARD.ascx" />
+    <Content Include="_taglib\ProductList_LIST.ascx" />
+    <Content Include="_taglib\ProductTree_TREE.ascx" />
+    <Content Include="_taglib\Text.ascx" />
+    <Content Include="_taglib\Translate.ascx" />
+    <Content Include="_taglib\UserDefined_HEADER.ascx" />
+    <Content Include="_taglib\UserDefined_KPSALESIDPRODUCTS.ascx" />
+    <Content Include="_taglib\UserDefined_ORDERPREVIEW.ascx" />
+    <Content Include="_taglib\UserDefined_SALESIDINFO.ascx" />
+    <Content Include="_taglib\UserDefined_SALESID.ascx" />
+    <Content Include="_taglib\UserDefined_SALESIDPRODUCTS.ascx" />
+    <Content Include="_taglib\UserDefined_SALESIDS.ascx" />
+    <Content Include="_taglib\UserDefined_SALESIDSALESPERSON.ascx" />
+    <Content Include="_taglib\UserDefined_SENDORDERS_OVERVIEW.ascx" />
+    <Content Include="_taglib\UserDefined_SENDORDERS_SALESID.ascx" />
+    <Content Include="_taglib\UserDefined_SENDORDERS_SHOWCASE.ascx" />
+    <Content Include="_taglib\UserDefined_SHOWCASE.ascx" />
+    <Content Include="_taglib\UserDefined_SPSUB.ascx" />
+    <Content Include="_taglib\UserDefined_STARTORDER.ascx" />
+    <Content Include="_taglib\UserDefined_TOPLIST.ascx" />
+    <Content Include="_taglib\UserDefined_USERREG.ascx" />
+    <Content Include="_taglib\UserDefined_VIEWSHOWCASE.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminLogin.aspx.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminLogin.aspx.designer.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="intra_standard.aspx.cs">
+      <DependentUpon>intra_standard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="intra_standard.aspx.designer.cs">
+      <DependentUpon>intra_standard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order_sp.aspx.cs">
+      <DependentUpon>order_sp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order_sp.aspx.designer.cs">
+      <DependentUpon>order_sp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="intra_standard2.aspx.cs">
+      <DependentUpon>intra_standard2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="intra_standard2.aspx.designer.cs">
+      <DependentUpon>intra_standard2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product_slide.aspx.cs">
+      <DependentUpon>product_slide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product_slide.aspx.designer.cs">
+      <DependentUpon>product_slide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_taglib\ForgotPassword_STANDARD.ascx.cs">
+      <DependentUpon>ForgotPassword_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ForgotPassword_STANDARD.ascx.designer.cs">
+      <DependentUpon>ForgotPassword_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\GenericControl.ascx.cs">
+      <DependentUpon>GenericControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\GenericControl.ascx.designer.cs">
+      <DependentUpon>GenericControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryOrderList_INFOPAGE.ascx.cs">
+      <DependentUpon>HistoryOrderList_INFOPAGE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryOrderList_INFOPAGE.ascx.designer.cs">
+      <DependentUpon>HistoryOrderList_INFOPAGE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_INFODETAILS.ascx.cs">
+      <DependentUpon>UserDefined_INFODETAILS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_INFODETAILS.ascx.designer.cs">
+      <DependentUpon>UserDefined_INFODETAILS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_INFOSALESPERSONS.ascx.cs">
+      <DependentUpon>UserDefined_INFOSALESPERSONS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_INFOSALESPERSONS.ascx.designer.cs">
+      <DependentUpon>UserDefined_INFOSALESPERSONS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_INFOSHOWCASE.ascx.cs">
+      <DependentUpon>UserDefined_INFOSHOWCASE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_INFOSHOWCASE.ascx.designer.cs">
+      <DependentUpon>UserDefined_INFOSHOWCASE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_KPSPINFO.ascx.cs">
+      <DependentUpon>UserDefined_KPSPINFO.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_KPSPINFO.ascx.designer.cs">
+      <DependentUpon>UserDefined_KPSPINFO.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_ORDERRESPONSE.ascx.cs">
+      <DependentUpon>UserDefined_ORDERRESPONSE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_ORDERRESPONSE.ascx.designer.cs">
+      <DependentUpon>UserDefined_ORDERRESPONSE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_PROFILEREORDER.ascx.cs">
+      <DependentUpon>UserDefined_PROFILEREORDER.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_PROFILEREORDER.ascx.designer.cs">
+      <DependentUpon>UserDefined_PROFILEREORDER.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_PROGRESS.ascx.cs">
+      <DependentUpon>UserDefined_PROGRESS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_PROGRESS.ascx.designer.cs">
+      <DependentUpon>UserDefined_PROGRESS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_REORDER.ascx.cs">
+      <DependentUpon>UserDefined_REORDER.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_REORDER.ascx.designer.cs">
+      <DependentUpon>UserDefined_REORDER.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESIDUSERS.ascx.cs">
+      <DependentUpon>UserDefined_SALESIDUSERS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESIDUSERS.ascx.designer.cs">
+      <DependentUpon>UserDefined_SALESIDUSERS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SENDORDERS_DELIVERY.ascx.cs">
+      <DependentUpon>UserDefined_SENDORDERS_DELIVERY.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SENDORDERS_DELIVERY.ascx.designer.cs">
+      <DependentUpon>UserDefined_SENDORDERS_DELIVERY.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Campain_NORMAL.ascx.cs">
+      <DependentUpon>Campain_NORMAL.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Campain_NORMAL.ascx.designer.cs">
+      <DependentUpon>Campain_NORMAL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Campain_WIDE.ascx.cs">
+      <DependentUpon>Campain_WIDE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Campain_WIDE.ascx.designer.cs">
+      <DependentUpon>Campain_WIDE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Cart_STANDARD.ascx.cs">
+      <DependentUpon>Cart_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Cart_STANDARD.ascx.designer.cs">
+      <DependentUpon>Cart_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ChangePassword_STANDARD.ascx.cs">
+      <DependentUpon>ChangePassword_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ChangePassword_STANDARD.ascx.designer.cs">
+      <DependentUpon>ChangePassword_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Content.ascx.cs">
+      <DependentUpon>Content.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Content.ascx.designer.cs">
+      <DependentUpon>Content.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Form.ascx.cs">
+      <DependentUpon>Form.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Form.ascx.designer.cs">
+      <DependentUpon>Form.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryCrMemoList_STANDARD.ascx.cs">
+      <DependentUpon>HistoryCrMemoList_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryCrMemoList_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryCrMemoList_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryCrMemo_STANDARD.ascx.cs">
+      <DependentUpon>HistoryCrMemo_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryCrMemo_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryCrMemo_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryCustomerLedger_STANDARD.ascx.cs">
+      <DependentUpon>HistoryCustomerLedger_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryCustomerLedger_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryCustomerLedger_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryInvoice_STANDARD.ascx.cs">
+      <DependentUpon>HistoryInvoice_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryInvoice_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryInvoice_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryInvoiceList_STANDARD.ascx.cs">
+      <DependentUpon>HistoryInvoiceList_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryInvoiceList_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryInvoiceList_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryOrderList_STANDARD.ascx.cs">
+      <DependentUpon>HistoryOrderList_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryOrderList_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryOrderList_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryOrder_STANDARD.ascx.cs">
+      <DependentUpon>HistoryOrder_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryOrder_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryOrder_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryShipmentList_STANDARD.ascx.cs">
+      <DependentUpon>HistoryShipmentList_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryShipmentList_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryShipmentList_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryShipment_STANDARD.ascx.cs">
+      <DependentUpon>HistoryShipment_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryShipment_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryShipment_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Language.ascx.cs">
+      <DependentUpon>Language.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Language.ascx.designer.cs">
+      <DependentUpon>Language.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Login_STANDARD.ascx.cs">
+      <DependentUpon>Login_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Login_STANDARD.ascx.designer.cs">
+      <DependentUpon>Login_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Menu_LINE.ascx.cs">
+      <DependentUpon>Menu_LINE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Menu_LINE.ascx.designer.cs">
+      <DependentUpon>Menu_LINE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\MyProfile_STANDARD.ascx.cs">
+      <DependentUpon>MyProfile_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\MyProfile_STANDARD.ascx.designer.cs">
+      <DependentUpon>MyProfile_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ProductCategory_STANDARD.ascx.cs">
+      <DependentUpon>ProductCategory_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ProductCategory_STANDARD.ascx.designer.cs">
+      <DependentUpon>ProductCategory_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ProductDetails_STANDARD.ascx.cs">
+      <DependentUpon>ProductDetails_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ProductDetails_STANDARD.ascx.designer.cs">
+      <DependentUpon>ProductDetails_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ProductList_LIST.ascx.cs">
+      <DependentUpon>ProductList_LIST.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ProductList_LIST.ascx.designer.cs">
+      <DependentUpon>ProductList_LIST.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ProductTree_TREE.ascx.cs">
+      <DependentUpon>ProductTree_TREE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ProductTree_TREE.ascx.designer.cs">
+      <DependentUpon>ProductTree_TREE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Text.ascx.cs">
+      <DependentUpon>Text.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Text.ascx.designer.cs">
+      <DependentUpon>Text.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Translate.ascx.cs">
+      <DependentUpon>Translate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Translate.ascx.designer.cs">
+      <DependentUpon>Translate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_HEADER.ascx.cs">
+      <DependentUpon>UserDefined_HEADER.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_HEADER.ascx.designer.cs">
+      <DependentUpon>UserDefined_HEADER.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_KPSALESIDPRODUCTS.ascx.cs">
+      <DependentUpon>UserDefined_KPSALESIDPRODUCTS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_KPSALESIDPRODUCTS.ascx.designer.cs">
+      <DependentUpon>UserDefined_KPSALESIDPRODUCTS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_ORDERPREVIEW.ascx.cs">
+      <DependentUpon>UserDefined_ORDERPREVIEW.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_ORDERPREVIEW.ascx.designer.cs">
+      <DependentUpon>UserDefined_ORDERPREVIEW.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESIDINFO.ascx.cs">
+      <DependentUpon>UserDefined_SALESIDINFO.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESIDINFO.ascx.designer.cs">
+      <DependentUpon>UserDefined_SALESIDINFO.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESID.ascx.cs">
+      <DependentUpon>UserDefined_SALESID.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESID.ascx.designer.cs">
+      <DependentUpon>UserDefined_SALESID.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESIDPRODUCTS.ascx.cs">
+      <DependentUpon>UserDefined_SALESIDPRODUCTS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESIDPRODUCTS.ascx.designer.cs">
+      <DependentUpon>UserDefined_SALESIDPRODUCTS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESIDS.ascx.cs">
+      <DependentUpon>UserDefined_SALESIDS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESIDS.ascx.designer.cs">
+      <DependentUpon>UserDefined_SALESIDS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESIDSALESPERSON.ascx.cs">
+      <DependentUpon>UserDefined_SALESIDSALESPERSON.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SALESIDSALESPERSON.ascx.designer.cs">
+      <DependentUpon>UserDefined_SALESIDSALESPERSON.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SENDORDERS_OVERVIEW.ascx.cs">
+      <DependentUpon>UserDefined_SENDORDERS_OVERVIEW.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SENDORDERS_OVERVIEW.ascx.designer.cs">
+      <DependentUpon>UserDefined_SENDORDERS_OVERVIEW.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SENDORDERS_SALESID.ascx.cs">
+      <DependentUpon>UserDefined_SENDORDERS_SALESID.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SENDORDERS_SALESID.ascx.designer.cs">
+      <DependentUpon>UserDefined_SENDORDERS_SALESID.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SENDORDERS_SHOWCASE.ascx.cs">
+      <DependentUpon>UserDefined_SENDORDERS_SHOWCASE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SENDORDERS_SHOWCASE.ascx.designer.cs">
+      <DependentUpon>UserDefined_SENDORDERS_SHOWCASE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SHOWCASE.ascx.cs">
+      <DependentUpon>UserDefined_SHOWCASE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SHOWCASE.ascx.designer.cs">
+      <DependentUpon>UserDefined_SHOWCASE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SPSUB.ascx.cs">
+      <DependentUpon>UserDefined_SPSUB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_SPSUB.ascx.designer.cs">
+      <DependentUpon>UserDefined_SPSUB.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_STARTORDER.ascx.cs">
+      <DependentUpon>UserDefined_STARTORDER.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_STARTORDER.ascx.designer.cs">
+      <DependentUpon>UserDefined_STARTORDER.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_TOPLIST.ascx.cs">
+      <DependentUpon>UserDefined_TOPLIST.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_TOPLIST.ascx.designer.cs">
+      <DependentUpon>UserDefined_TOPLIST.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_USERREG.ascx.cs">
+      <DependentUpon>UserDefined_USERREG.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_USERREG.ascx.designer.cs">
+      <DependentUpon>UserDefined_USERREG.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_VIEWSHOWCASE.ascx.cs">
+      <DependentUpon>UserDefined_VIEWSHOWCASE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\UserDefined_VIEWSHOWCASE.ascx.designer.cs">
+      <DependentUpon>UserDefined_VIEWSHOWCASE.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Navipro.Newbody.Woppen.Library.csproj">
+      <Project>{D87DB0A6-FF73-4D70-A4E4-6F944CD0C5DC}</Project>
+      <Name>Navipro.Newbody.Woppen.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="_assets\img_cache\" />
+    <Folder Include="_assets\img_update\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52540</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

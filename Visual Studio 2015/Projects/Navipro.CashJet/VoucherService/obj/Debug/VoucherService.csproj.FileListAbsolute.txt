@@ -1,0 +1,5 @@
+H:\Visual Studio\VS2008\Projects\Navipro.CashJet\VoucherService\bin\VoucherService.dll
+H:\Visual Studio\VS2008\Projects\Navipro.CashJet\VoucherService\bin\VoucherService.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.CashJet\VoucherService\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Navipro.CashJet\VoucherService\obj\Debug\VoucherService.dll
+H:\Visual Studio\VS2008\Projects\Navipro.CashJet\VoucherService\obj\Debug\VoucherService.pdb

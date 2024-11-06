@@ -1,0 +1,6 @@
+D:\Visual Studio\VS2008\Projects\Navipro.SFTPWrapper\Navipro.SFTPWrapper\bin\Debug\Navipro.SFTPWrapper.dll
+D:\Visual Studio\VS2008\Projects\Navipro.SFTPWrapper\Navipro.SFTPWrapper\bin\Debug\Navipro.SFTPWrapper.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.SFTPWrapper\Navipro.SFTPWrapper\bin\Debug\ChilkatDotNet2.dll
+D:\Visual Studio\VS2008\Projects\Navipro.SFTPWrapper\Navipro.SFTPWrapper\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Navipro.SFTPWrapper\Navipro.SFTPWrapper\obj\Debug\Navipro.SFTPWrapper.dll
+D:\Visual Studio\VS2008\Projects\Navipro.SFTPWrapper\Navipro.SFTPWrapper\obj\Debug\Navipro.SFTPWrapper.pdb

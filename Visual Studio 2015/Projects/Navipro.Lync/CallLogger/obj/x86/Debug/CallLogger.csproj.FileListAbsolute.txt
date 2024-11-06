@@ -1,0 +1,17 @@
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\bin\Debug\CallLogger.exe
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\bin\Debug\CallLogger.pdb
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\obj\x86\Debug\CallLogger.Properties.Resources.resources
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\obj\x86\Debug\CallLogger.csproj.GenerateResource.Cache
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\obj\x86\Debug\CallLogger.exe
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\obj\x86\Debug\CallLogger.pdb
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\obj\x86\Debug\CallLogger.csprojResolveAssemblyReference.cache
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\obj\x86\Debug\Navipro.Lync.CallLogger.StartForm.resources
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\bin\Debug\LyncUtility.dll
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\bin\Debug\Microsoft.Lync.Model.dll
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\bin\Debug\Microsoft.Office.Uc.dll
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\bin\Debug\LyncUtility.pdb
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\bin\Debug\Microsoft.Lync.Model.xml
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\CallLogger\bin\Debug\CallLogger.exe.config
+H:\Visual Studio\VS2015\Projects\Navipro.Lync\CallLogger\bin\Debug\CallLogger.exe.config
+H:\Visual Studio\VS2015\Projects\Navipro.Lync\CallLogger\obj\x86\Debug\CallLogger.exe
+H:\Visual Studio\VS2015\Projects\Navipro.Lync\CallLogger\obj\x86\Debug\CallLogger.pdb

@@ -1,0 +1,7 @@
+C:\Visual Studio\VS2008\Projects\SmartSystems\SystemCore\bin\Debug\SystemCore.dll
+C:\Visual Studio\VS2008\Projects\SmartSystems\SystemCore\bin\Debug\SystemCore.pdb
+C:\Visual Studio\VS2008\Projects\SmartSystems\SystemCore\bin\Debug\Common.dll
+C:\Visual Studio\VS2008\Projects\SmartSystems\SystemCore\bin\Debug\Common.pdb
+C:\Visual Studio\VS2008\Projects\SmartSystems\SystemCore\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\SmartSystems\SystemCore\obj\Debug\SystemCore.dll
+C:\Visual Studio\VS2008\Projects\SmartSystems\SystemCore\obj\Debug\SystemCore.pdb

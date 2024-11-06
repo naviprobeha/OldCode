@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://infojet.workanywhere.se/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://infojet.workanywhere.se/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://infojet.workanywhere.se/">
+      <s:element name="performservice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="performserviceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="performserviceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="submitOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orderNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="webCartHeader" type="tns:WebCartHeader" />
+            <s:element minOccurs="0" maxOccurs="1" name="webCartLinesDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WebCartHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="webCheckoutCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="customerNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="userAccountNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToName2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToPostCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billToCountryCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="addShipToAddress" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToName2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToPostCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipToCountryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="customerOrderNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="noteOfGoods" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="clientIpAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="clientUserAgent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="currencyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="webPaymentMethodCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="webShipmentMethodCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="salesTermsConfirmed" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="paymentReference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="paymentOrderNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentServiceCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipmentMethodCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentServiceDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="webSiteCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="languageCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAdvice" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="shipmentDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="freightFee" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="adminFee" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="campaignCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="pricesInclVat" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="webShipmentMethod" type="tns:WebShipmentMethod" />
+          <s:element minOccurs="0" maxOccurs="1" name="webPaymentMethod" type="tns:WebPaymentMethod" />
+          <s:element minOccurs="0" maxOccurs="1" name="extraFields" type="tns:ArrayOfWebCartField" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebShipmentMethod">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="webSiteCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipmentMethodCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shippingAgentServiceCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="levelType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="active" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="text" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="defaultValue" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="defaultText" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="amountInclVat" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="formatedAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="formatedAmountInclVat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="glAccountNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="vatProdPostingGroup" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="specifyCheckouts" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebPaymentMethod" />
+      <s:complexType name="ArrayOfWebCartField">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WebCartField" nillable="true" type="tns:WebCartField" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebCartField">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="webFormCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fieldCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="transferToOrderTextLine" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="submitOrderResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="performserviceSoapIn">
+    <wsdl:part name="parameters" element="tns:performservice" />
+  </wsdl:message>
+  <wsdl:message name="performserviceSoapOut">
+    <wsdl:part name="parameters" element="tns:performserviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:submitOrder" />
+  </wsdl:message>
+  <wsdl:message name="submitOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:submitOrderResponse" />
+  </wsdl:message>
+  <wsdl:portType name="InfojetServiceRequestSoap">
+    <wsdl:operation name="performservice">
+      <wsdl:input message="tns:performserviceSoapIn" />
+      <wsdl:output message="tns:performserviceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="submitOrder">
+      <wsdl:input message="tns:submitOrderSoapIn" />
+      <wsdl:output message="tns:submitOrderSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InfojetServiceRequestSoap" type="tns:InfojetServiceRequestSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="performservice">
+      <soap:operation soapAction="http://infojet.workanywhere.se/performservice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submitOrder">
+      <soap:operation soapAction="http://infojet.workanywhere.se/submitOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="InfojetServiceRequestSoap12" type="tns:InfojetServiceRequestSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="performservice">
+      <soap12:operation soapAction="http://infojet.workanywhere.se/performservice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submitOrder">
+      <soap12:operation soapAction="http://infojet.workanywhere.se/submitOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InfojetServiceRequest">
+    <wsdl:port name="InfojetServiceRequestSoap" binding="tns:InfojetServiceRequestSoap">
+      <soap:address location="http://hera/DemoInfojetWebService/InfojetServiceRequest.asmx" />
+    </wsdl:port>
+    <wsdl:port name="InfojetServiceRequestSoap12" binding="tns:InfojetServiceRequestSoap12">
+      <soap12:address location="http://hera/DemoInfojetWebService/InfojetServiceRequest.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

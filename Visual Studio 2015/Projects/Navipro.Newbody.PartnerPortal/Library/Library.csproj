@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B17F05F4-C33F-4BD5-BCDA-3413FFE5380F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Navipro.Newbody.PartnerPortal.Library</RootNamespace>
+    <AssemblyName>Navipro.Newbody.PartnerPortal.Library</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Navipro.Infojet.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Infojet 2012\InfojetLib\bin\Debug\Navipro.Infojet.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankDetails.cs" />
+    <Compile Include="BOMComponent.cs" />
+    <Compile Include="Consumer.cs" />
+    <Compile Include="ConsumerSale.cs" />
+    <Compile Include="DatabaseSetup.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="DocumentCollection.cs" />
+    <Compile Include="GiftVoucher.cs" />
+    <Compile Include="GlobalCache.cs" />
+    <Compile Include="ItemCategory.cs" />
+    <Compile Include="OrderItem.cs" />
+    <Compile Include="OrderItemCollection.cs" />
+    <Compile Include="PackingImage.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductCollection.cs" />
+    <Compile Include="ProductGroup.cs" />
+    <Compile Include="ProductSku.cs" />
+    <Compile Include="SalesID.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesIDAgreementCollection.cs" />
+    <Compile Include="SalesIDAgreementLine.cs" />
+    <Compile Include="SalesIDCollection.cs" />
+    <Compile Include="SalesIDSalesPerson.cs" />
+    <Compile Include="SalesIDSalesPersonCollection.cs" />
+    <Compile Include="SalesIDSetup.cs" />
+    <Compile Include="SalesIDStatistics.cs" />
+    <Compile Include="TopListCollection.cs" />
+    <Compile Include="TopListItem.cs" />
+    <Compile Include="WebInfoMessageHeader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

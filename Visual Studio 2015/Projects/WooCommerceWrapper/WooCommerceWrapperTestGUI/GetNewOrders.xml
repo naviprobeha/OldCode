@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nav>
+  <type>orders</type>
+  <method>GET</method>
+  <!--<filter>filter[meta]=true&amp;filter[status]=processing</filter>-->
+  <filter>filter[status]=processing,processing_b2b&amp;filter[meta]=true</filter>
+</nav>
+

@@ -1,0 +1,6 @@
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\SvensktTenn.Pick\PickByLight\bin\Debug\PickByLight.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\SvensktTenn.Pick\PickByLight\bin\Debug\PickByLight.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\SvensktTenn.Pick\PickByLight\bin\Debug\Microsoft.Dynamics.Framework.UI.Extensibility.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\SvensktTenn.Pick\PickByLight\obj\Debug\PickByLight.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\SvensktTenn.Pick\PickByLight\obj\Debug\PickByLight.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\SvensktTenn.Pick\PickByLight\obj\Debug\PickByLight.csprojResolveAssemblyReference.cache

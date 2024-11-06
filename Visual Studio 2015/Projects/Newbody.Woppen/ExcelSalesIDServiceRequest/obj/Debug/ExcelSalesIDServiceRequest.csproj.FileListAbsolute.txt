@@ -1,0 +1,11 @@
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Debug\ExcelSalesIDServiceRequest.Properties.Resources.resources
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Debug\ExcelSalesIDServiceRequest.SalesIDRibbon.resources
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Debug\ExcelSalesIDServiceRequest.csproj.GenerateResource.Cache
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Debug\ExcelSalesIDServiceRequest.dll.config
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Debug\ExcelSalesIDServiceRequest.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Debug\ExcelSalesIDServiceRequest.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Debug\ExcelSalesIDServiceRequest.dll.manifest
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Debug\ExcelSalesIDServiceRequest.vsto
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Debug\ExcelSalesIDServiceRequest.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Debug\ExcelSalesIDServiceRequest.pdb

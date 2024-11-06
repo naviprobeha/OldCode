@@ -1,0 +1,276 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\controllers\\appapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\models\\usage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\controllers\\erpapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\helpers\\subscriptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\models\\customerhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\data\\systemdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E2E8520-01FA-4438-B9F9-8606279E5B8E}|LicenseService\\LicenseService.csproj|\\\\workanywhere.net\\navipro$\\home\\navipro_beha\\visual studio\\vs2019\\projects\\navipro.anyware.licensing\\licenseservice\\helpers\\customerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Subscription.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Models\\Subscription.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Models\\Subscription.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Models\\Subscription.cs",
+              "RelativeToolTip": "LicenseService\\Models\\Subscription.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T16:21:34.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Program.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Program.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Program.cs",
+              "RelativeToolTip": "LicenseService\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T08:51:52.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerHistory.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Models\\CustomerHistory.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Models\\CustomerHistory.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Models\\CustomerHistory.cs",
+              "RelativeToolTip": "LicenseService\\Models\\CustomerHistory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T08:34:46.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\appsettings.json",
+              "RelativeDocumentMoniker": "LicenseService\\appsettings.json",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\appsettings.json",
+              "RelativeToolTip": "LicenseService\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-16T06:35:25.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Models\\Product.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Models\\Product.cs",
+              "RelativeToolTip": "LicenseService\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAEAAAAAIAawBYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T18:24:08.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Models\\Customer.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Models\\Customer.cs",
+              "RelativeToolTip": "LicenseService\\Models\\Customer.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwCQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T18:17:05.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SystemDatabase.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Data\\SystemDatabase.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Data\\SystemDatabase.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Data\\SystemDatabase.cs",
+              "RelativeToolTip": "LicenseService\\Data\\SystemDatabase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T19:01:29.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ERPAPIController.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Controllers\\ERPAPIController.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Controllers\\ERPAPIController.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Controllers\\ERPAPIController.cs",
+              "RelativeToolTip": "LicenseService\\Controllers\\ERPAPIController.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAkwLoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T10:32:22.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Startup.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Startup.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Startup.cs",
+              "RelativeToolTip": "LicenseService\\Startup.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T08:51:56.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "nlog.config",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\nlog.config",
+              "RelativeDocumentMoniker": "LicenseService\\nlog.config",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\nlog.config",
+              "RelativeToolTip": "LicenseService\\nlog.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-16T09:03:09.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usage.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Models\\Usage.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Models\\Usage.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Models\\Usage.cs",
+              "RelativeToolTip": "LicenseService\\Models\\Usage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T18:53:45.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "APPAPIController.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Controllers\\APPAPIController.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Controllers\\APPAPIController.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Controllers\\APPAPIController.cs",
+              "RelativeToolTip": "LicenseService\\Controllers\\APPAPIController.cs",
+              "ViewState": "AQIAALgAAAAAAAAAAAAswNsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T18:28:18.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubscriptionController.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Controllers\\SubscriptionController.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Controllers\\SubscriptionController.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Controllers\\SubscriptionController.cs",
+              "RelativeToolTip": "LicenseService\\Controllers\\SubscriptionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T10:46:41.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SubscriptionHelper.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Helpers\\SubscriptionHelper.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Helpers\\SubscriptionHelper.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Helpers\\SubscriptionHelper.cs",
+              "RelativeToolTip": "LicenseService\\Helpers\\SubscriptionHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T12:00:05.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomerHelper.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Helpers\\CustomerHelper.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Helpers\\CustomerHelper.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Helpers\\CustomerHelper.cs",
+              "RelativeToolTip": "LicenseService\\Helpers\\CustomerHelper.cs",
+              "ViewState": "AQIAABYAAADAzMzMzOwwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T08:36:53.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "LicenseService\\Controllers\\CustomerController.cs",
+              "ToolTip": "\\\\workanywhere.net\\navipro$\\Home\\navipro_beha\\Visual Studio\\VS2019\\Projects\\Navipro.Anyware.Licensing\\LicenseService\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "LicenseService\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAC0AAAAAmZmZmRktwD8AAAB4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T08:36:33.322Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

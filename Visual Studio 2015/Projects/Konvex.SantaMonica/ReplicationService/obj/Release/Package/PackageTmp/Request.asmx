@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Request.asmx.cs" Class="Konvex.SmartShipping.ReplicationService.Request" %>

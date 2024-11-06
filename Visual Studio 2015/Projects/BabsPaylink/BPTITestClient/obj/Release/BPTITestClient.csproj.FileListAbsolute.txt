@@ -1,0 +1,4 @@
+C:\Visual Studio\VS2008\Projects\BabsPaylink\BPTITestClient\obj\Release\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\BabsPaylink\BPTITestClient\obj\Release\BPTITestClient.Properties.Resources.resources
+C:\Visual Studio\VS2008\Projects\BabsPaylink\BPTITestClient\obj\Release\BpTiSharpClient.WinForm.resources
+C:\Visual Studio\VS2008\Projects\BabsPaylink\BPTITestClient\obj\Release\BPTITestClient.csproj.GenerateResource.Cache

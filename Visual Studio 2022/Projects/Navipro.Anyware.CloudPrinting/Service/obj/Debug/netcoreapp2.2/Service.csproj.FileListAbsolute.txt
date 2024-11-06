@@ -1,0 +1,14 @@
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\bin\Debug\netcoreapp2.2\Service.deps.json
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\bin\Debug\netcoreapp2.2\Service.runtimeconfig.json
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\bin\Debug\netcoreapp2.2\Service.runtimeconfig.dev.json
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\bin\Debug\netcoreapp2.2\Service.dll
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\obj\Debug\netcoreapp2.2\Service.csproj.CoreCompileInputs.cache
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\obj\Debug\netcoreapp2.2\Service.RazorAssemblyInfo.cache
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\obj\Debug\netcoreapp2.2\Service.RazorAssemblyInfo.cs
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\obj\Debug\netcoreapp2.2\Service.AssemblyInfoInputs.cache
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\obj\Debug\netcoreapp2.2\Service.AssemblyInfo.cs
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\obj\Debug\netcoreapp2.2\Service.RazorTargetAssemblyInfo.cache
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\bin\Debug\netcoreapp2.2\Service.pdb
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\obj\Debug\netcoreapp2.2\Service.dll
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\obj\Debug\netcoreapp2.2\Service.pdb
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\Service\obj\Debug\netcoreapp2.2\Service.csprojAssemblyReference.cache

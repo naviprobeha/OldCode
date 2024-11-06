@@ -1,0 +1,6 @@
+C:\Visual Studio\VS2008\Projects\DynamicDrawing\DynamicDrawingLib\bin\Debug\DynamicDrawingLib.dll
+C:\Visual Studio\VS2008\Projects\DynamicDrawing\DynamicDrawingLib\bin\Debug\DynamicDrawingLib.pdb
+C:\Visual Studio\VS2008\Projects\DynamicDrawing\DynamicDrawingLib\bin\Debug\DynamicDrawingLib.tlb
+C:\Visual Studio\VS2008\Projects\DynamicDrawing\DynamicDrawingLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\DynamicDrawing\DynamicDrawingLib\obj\Debug\DynamicDrawingLib.dll
+C:\Visual Studio\VS2008\Projects\DynamicDrawing\DynamicDrawingLib\obj\Debug\DynamicDrawingLib.pdb

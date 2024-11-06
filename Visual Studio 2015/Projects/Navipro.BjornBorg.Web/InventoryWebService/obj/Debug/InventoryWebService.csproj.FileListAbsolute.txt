@@ -1,0 +1,5 @@
+H:\Visual Studio\VS2008\Projects\Navipro.BjornBorg.Web\InventoryWebService\bin\InventoryWebService.dll
+H:\Visual Studio\VS2008\Projects\Navipro.BjornBorg.Web\InventoryWebService\bin\InventoryWebService.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.BjornBorg.Web\InventoryWebService\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Navipro.BjornBorg.Web\InventoryWebService\obj\Debug\InventoryWebService.dll
+H:\Visual Studio\VS2008\Projects\Navipro.BjornBorg.Web\InventoryWebService\obj\Debug\InventoryWebService.pdb

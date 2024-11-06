@@ -1,0 +1,58 @@
+﻿<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <span>
+                        <i class="fa fa-user fa-3x"></i>
+                    </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">@ViewBag.user.name</strong>
+                            </span><span class="text-muted text-xs block">@ViewBag.user.customerName<b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="@Url.Action("Profile", "AppViews")">Profile</a></li>
+                        <li><a href="@Url.Action("Contacts", "AppViews")">Contacts</a></li>
+                        <li><a href="@Url.Action("Inbox", "Mailbox")">Mailbox</a></li>
+                       <li class="divider"></li>
+                        <li><a href="@Url.Action("Logout", "Login")">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+
+            @{int j = 0;}
+            @foreach (Navipro.Backoffice.Web.Models.ProfileMenuItem menuItem in ViewBag.menuItems)
+            {
+                j++;
+
+                <li class="@Html.IsSelected(controller: menuItem.controller)">
+                    <a href="@Url.Action(menuItem.action, menuItem.controller)?@menuItem.parameters"><i class="fa @menuItem.icon"></i> <span class="nav-label">@menuItem.caption</span> <span class="fa arrow"></span></a>
+                    
+                    @{int k = 0;}
+                    @if (menuItem.subMenuItems.Count > 0)
+                    {
+                        <ul class="nav nav-second-level collapse @Html.IsSelected(controller: menuItem.controller, cssClass: "in")">
+                            @foreach (Navipro.Backoffice.Web.Models.ProfileMenuItem subMenuItem in menuItem.subMenuItems)
+                            {
+                                k++;
+
+                                <li class="@Html.IsSelected(action: subMenuItem.action)" style="font-size: 12px;"><a href="@Url.Action(subMenuItem.action, subMenuItem.controller)?@subMenuItem.parameters">@subMenuItem.caption</a></li>
+
+                            }
+                        </ul>
+                    }
+                </li>
+            }
+
+            <li class="special_link @Html.IsSelected(controller: " Json")">
+                <a href="@Url.Action("Index", "TimeReport")"><i class="fa fa-clock-o"></i> <span class="nav-label">Tidrapportering</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>

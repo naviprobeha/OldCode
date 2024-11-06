@@ -1,0 +1,9 @@
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\TestConsole\bin\Debug\TestConsole.exe.config
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\TestConsole\bin\Debug\TestConsole.exe
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\TestConsole\bin\Debug\TestConsole.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\TestConsole\bin\Debug\Swedbank.Pay.Api.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\TestConsole\bin\Debug\Newtonsoft.Json.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\TestConsole\bin\Debug\Swedbank.Pay.Api.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\TestConsole\obj\Debug\TestConsole.exe
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Swedbank.Pay.Api\TestConsole\obj\Debug\TestConsole.pdb

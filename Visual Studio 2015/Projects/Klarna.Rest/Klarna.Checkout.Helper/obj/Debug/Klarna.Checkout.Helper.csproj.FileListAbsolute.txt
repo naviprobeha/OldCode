@@ -1,0 +1,9 @@
+H:\Visual Studio\VS2015\Projects\Klarna.Rest\Klarna.Checkout.Helper\bin\Debug\Klarna.Checkout.Helper.dll
+H:\Visual Studio\VS2015\Projects\Klarna.Rest\Klarna.Checkout.Helper\bin\Debug\Klarna.Checkout.Helper.pdb
+H:\Visual Studio\VS2015\Projects\Klarna.Rest\Klarna.Checkout.Helper\bin\Debug\Klarna.Rest.dll
+H:\Visual Studio\VS2015\Projects\Klarna.Rest\Klarna.Checkout.Helper\bin\Debug\Newtonsoft.Json.dll
+H:\Visual Studio\VS2015\Projects\Klarna.Rest\Klarna.Checkout.Helper\bin\Debug\Klarna.Rest.pdb
+H:\Visual Studio\VS2015\Projects\Klarna.Rest\Klarna.Checkout.Helper\bin\Debug\Newtonsoft.Json.xml
+H:\Visual Studio\VS2015\Projects\Klarna.Rest\Klarna.Checkout.Helper\obj\Debug\Klarna.Checkout.Helper.csprojResolveAssemblyReference.cache
+H:\Visual Studio\VS2015\Projects\Klarna.Rest\Klarna.Checkout.Helper\obj\Debug\Klarna.Checkout.Helper.dll
+H:\Visual Studio\VS2015\Projects\Klarna.Rest\Klarna.Checkout.Helper\obj\Debug\Klarna.Checkout.Helper.pdb

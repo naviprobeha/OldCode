@@ -1,0 +1,5 @@
+H:\Visual Studio\VS2008\Projects\NyceWebServiceInvoker\XmlCombiner\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\NyceWebServiceInvoker\XmlCombiner\bin\XmlCombiner.dll
+H:\Visual Studio\VS2008\Projects\NyceWebServiceInvoker\XmlCombiner\bin\XmlCombiner.pdb
+H:\Visual Studio\VS2008\Projects\NyceWebServiceInvoker\XmlCombiner\obj\Debug\XmlCombiner.dll
+H:\Visual Studio\VS2008\Projects\NyceWebServiceInvoker\XmlCombiner\obj\Debug\XmlCombiner.pdb

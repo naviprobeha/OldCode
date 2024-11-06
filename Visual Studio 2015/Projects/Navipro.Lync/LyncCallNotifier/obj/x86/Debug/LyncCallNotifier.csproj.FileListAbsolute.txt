@@ -1,0 +1,10 @@
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncCallNotifier\bin\Debug\LyncCallNotifier.exe
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncCallNotifier\bin\Debug\LyncCallNotifier.pdb
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncCallNotifier\bin\Debug\LyncUtility.dll
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncCallNotifier\bin\Debug\Microsoft.Lync.Model.dll
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncCallNotifier\bin\Debug\Microsoft.Office.Uc.dll
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncCallNotifier\bin\Debug\LyncUtility.pdb
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncCallNotifier\bin\Debug\Microsoft.Lync.Model.xml
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncCallNotifier\obj\x86\Debug\LyncCallNotifier.csprojResolveAssemblyReference.cache
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncCallNotifier\obj\x86\Debug\LyncCallNotifier.exe
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncCallNotifier\obj\x86\Debug\LyncCallNotifier.pdb

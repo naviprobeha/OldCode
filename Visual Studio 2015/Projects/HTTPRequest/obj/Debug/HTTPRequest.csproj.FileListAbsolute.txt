@@ -1,0 +1,7 @@
+D:\Visual Studio\VS2008\Projects\HTTPRequest\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\HTTPRequest\bin\Debug\HTTPRequest.dll.config
+D:\Visual Studio\VS2008\Projects\HTTPRequest\bin\Debug\HTTPRequest.dll
+D:\Visual Studio\VS2008\Projects\HTTPRequest\bin\Debug\HTTPRequest.pdb
+D:\Visual Studio\VS2008\Projects\HTTPRequest\bin\Debug\HTTPRequest.tlb
+D:\Visual Studio\VS2008\Projects\HTTPRequest\obj\Debug\HTTPRequest.dll
+D:\Visual Studio\VS2008\Projects\HTTPRequest\obj\Debug\HTTPRequest.pdb

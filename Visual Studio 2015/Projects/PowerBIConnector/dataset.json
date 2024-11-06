@@ -1,0 +1,179 @@
+{
+	"name": "Cashjet Sales",
+	"tables": [
+		{
+			"name": "Sales Transaction",
+			"columns": [
+				{
+					"name": "Transaction No",
+					"dataType": "String"
+				},
+				{
+					"name": "Sales Type",
+					"dataType": "Int64"
+                },
+				{
+					"name": "Sales No",
+					"dataType": "String"
+                },
+                {
+					"name": "Variant Code",
+					"dataType": "String"
+                },
+                {
+					"name": "Description",
+					"dataType": "String"
+                },
+                {
+					"name": "Description 2",
+					"dataType": "String"
+                },
+                {
+					"name": "Color Code",
+					"dataType": "String"
+                },
+                {
+					"name": "Color Description",
+					"dataType": "String"
+                },
+                {
+					"name": "Size Code",
+					"dataType": "String"
+                },
+                {
+					"name": "Unit Of Measure Code",
+					"dataType": "String"
+                }, 
+                {
+					"name": "Item Category Code",
+					"dataType": "String"
+                },  
+                {
+					"name": "Product Group Code",
+					"dataType": "String"
+                },  
+                {
+					"name": "Quantity",
+					"dataType": "Int64"
+                },  
+                {
+					"name": "Unit Price",
+					"dataType": "Int64"
+                },  
+                {
+					"name": "Unit Price Incl VAT",
+					"dataType": "Int64"
+				},                                 
+                {
+					"name": "Line Discount Amount",
+					"dataType": "Int64"
+				},                                 
+                {
+					"name": "VAT Amount",
+					"dataType": "Int64"
+                }, 
+                {
+					"name": "Amount",
+					"dataType": "Int64"
+				},                                 
+                {
+					"name": "Amount Incl VAT",
+					"dataType": "Int64"
+				},  
+				{
+					"name": "Unit Cost",
+					"dataType": "Int64"
+				}, 
+				{
+					"name": "Cost Amount",
+					"dataType": "Int64"
+				},  				 				                               
+                {
+					"name": "Voucher Type Code",
+					"dataType": "String"
+				},                                 
+                {
+					"name": "Return Receipt No",
+					"dataType": "String"
+				},                                 
+                {
+					"name": "Return Reason Code",
+					"dataType": "String"
+				},                                 
+                {
+					"name": "Return Reason Description",
+					"dataType": "String"
+                },     
+                {
+					"name": "Total Discount Amount",
+					"dataType": "Int64"
+                }, 
+                {
+					"name": "Discount Code",
+					"dataType": "String"
+                },   
+                {
+					"name": "Store Code",
+					"dataType": "String"
+                },               
+                {
+					"name": "POS Device Code",
+					"dataType": "String"
+                },
+                {
+					"name": "Store Name",
+					"dataType": "String"
+                }, 
+                {
+					"name": "Store Post Code",
+					"dataType": "String"
+                },                               
+                {
+					"name": "Store City",
+					"dataType": "String"
+                },
+                {
+					"name": "Store Country Code",
+					"dataType": "String"
+                },  
+                {
+					"name": "Salesperson Code",
+					"dataType": "String"
+                }, 
+                {
+					"name": "Salesperson Name",
+					"dataType": "String"
+                },   
+                {
+					"name": "Gen. Prod. Posting Group",
+					"dataType": "String"
+                },       
+                {
+					"name": "VAT Prod. Posting Group",
+					"dataType": "String"
+                },                                                                                       
+                {
+					"name": "Mix Match",
+					"dataType": "Boolean"
+                },    
+                {
+					"name": "Registered Date",
+                    "dataType": "Datetime"                    
+                },                         
+                {
+					"name": "Registered Hour",
+					"dataType": "Int64"
+                },  
+                {
+					"name": "Location Code",
+					"dataType": "String"
+                },    
+                {
+					"name": "Member No",
+					"dataType": "String"
+				}                                                 
+			]
+		}
+	]
+}
+

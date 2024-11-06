@@ -1,0 +1,13 @@
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Release\ExcelSalesIDServiceRequest.dll.config
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Release\ExcelSalesIDServiceRequest.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Release\ExcelSalesIDServiceRequest.XmlSerializers.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Release\ExcelSalesIDServiceRequest.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Release\ExcelSalesIDServiceRequest.dll.manifest
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\bin\Release\ExcelSalesIDServiceRequest.vsto
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Release\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Release\ExcelSalesIDServiceRequest.Properties.Resources.resources
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Release\ExcelSalesIDServiceRequest.SalesIDRibbon.resources
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Release\ExcelSalesIDServiceRequest.csproj.GenerateResource.Cache
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Release\ExcelSalesIDServiceRequest.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Release\ExcelSalesIDServiceRequest.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\ExcelSalesIDServiceRequest\obj\Release\ExcelSalesIDServiceRequest.XmlSerializers.dll

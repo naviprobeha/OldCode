@@ -1,0 +1,5 @@
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebService\bin\STWebService.dll
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebService\bin\STWebService.pdb
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebService\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebService\obj\Debug\STWebService.dll
+C:\Visual Studio\VS2008\Projects\SvensktTenn.NAV\STWebService\obj\Debug\STWebService.pdb

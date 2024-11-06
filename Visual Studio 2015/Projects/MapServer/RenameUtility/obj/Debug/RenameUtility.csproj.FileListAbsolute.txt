@@ -1,0 +1,5 @@
+C:\Visual Studio 2008\Projects\MapServer\RenameUtility\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio 2008\Projects\MapServer\RenameUtility\bin\Debug\RenameUtility.exe
+C:\Visual Studio 2008\Projects\MapServer\RenameUtility\bin\Debug\RenameUtility.pdb
+C:\Visual Studio 2008\Projects\MapServer\RenameUtility\obj\Debug\RenameUtility.exe
+C:\Visual Studio 2008\Projects\MapServer\RenameUtility\obj\Debug\RenameUtility.pdb

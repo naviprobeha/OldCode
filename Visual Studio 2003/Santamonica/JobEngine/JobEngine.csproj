@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F0DC094-F386-46AC-94B2-D77A1C51DD9A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>JobEngine</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>JobEngine</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SantaMonicaCommonLib\SantaMonicaCommonLib.csproj">
+      <Name>SantaMonicaCommonLib</Name>
+      <Project>{F55275C4-0FA0-4E4D-9FA3-A276637EF592}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="BroadWorksLib">
+      <Name>BroadWorksLib</Name>
+      <HintPath>..\..\BoradWorks\BroadWorksLib\bin\Release\BroadWorksLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CallHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerQueueHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataRoute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryInventoryHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FactoryOrderManagement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JobEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineOrderAssigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LineOrderManagement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OperatorCallClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Optimization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlannedRoute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RouteOptimizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMSHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMSItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/MagentoWSHandler" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/MagentoWSHandler" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/MagentoWSHandler" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="ProcessMagentoRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="method" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="secret" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="xmlMessage" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ProcessMagentoRequest_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="ProcessMagentoRequest">
+    <part name="parameters" element="tns:ProcessMagentoRequest" />
+  </message>
+  <message name="ProcessMagentoRequest_Result">
+    <part name="parameters" element="tns:ProcessMagentoRequest_Result" />
+  </message>
+  <portType name="MagentoWSHandler_Port">
+    <operation name="ProcessMagentoRequest">
+      <input name="ProcessMagentoRequest" message="tns:ProcessMagentoRequest" />
+      <output name="ProcessMagentoRequest_Result" message="tns:ProcessMagentoRequest_Result" />
+    </operation>
+  </portType>
+  <binding name="MagentoWSHandler_Binding" type="tns:MagentoWSHandler_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="ProcessMagentoRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/MagentoWSHandler:ProcessMagentoRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ProcessMagentoRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ProcessMagentoRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="MagentoWSHandler">
+    <port name="MagentoWSHandler_Port" binding="tns:MagentoWSHandler_Binding">
+      <address location="http://52.21.85.109:7047/DW2015TEST/WS/TEST%20Daniel%20Wellington%20AB/Codeunit/MagentoWSHandler?wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

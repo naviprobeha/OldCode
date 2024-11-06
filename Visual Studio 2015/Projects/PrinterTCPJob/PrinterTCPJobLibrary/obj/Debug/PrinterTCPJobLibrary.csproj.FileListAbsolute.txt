@@ -1,0 +1,4 @@
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrinterTCPJobLibrary\bin\Debug\PrinterTCPJobLibrary.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrinterTCPJobLibrary\bin\Debug\PrinterTCPJobLibrary.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrinterTCPJobLibrary\obj\Debug\PrinterTCPJobLibrary.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\PrinterTCPJob\PrinterTCPJobLibrary\obj\Debug\PrinterTCPJobLibrary.pdb

@@ -1,0 +1,752 @@
+﻿@model Navipro.Backoffice.Web.Models.Case
+@{
+    ViewBag.Title = Model.subject;
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-9">
+        <h2>@Model.subject</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="/">Hem</a>
+            </li>
+            <li class="active">
+                <a href="@Url.Action("List", "Case")">Ärenden</a>
+            </li>
+            <li class="active">
+                <strong>@Model.subject</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-sm-1">&nbsp;</div>
+    <div class="col-sm-1">
+        <div class="title-action" style="text-align: left;">
+
+            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Åtgärder <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="@Url.Action("Reply", "Case")/@Model.no" class="font-bold">Svara</a></li>
+                <li><a href="#commentWindow" data-toggle="modal">Kommentera</a></li>
+                <li><a href="#tagWindow" data-toggle="modal">Tagga</a></li>
+                <li class="divider"></li>
+                <li><a href="@Url.Action("Edit", "Case")/@Model.no">Redigera</a></li>
+                <li class="divider"></li>
+                <li><a href="#assignWindow" data-toggle="modal">Tilldela</a></li>
+                <li><a href="#statusWindow" data-toggle="modal">Ändra status</a></li>
+                <li class="divider"></li>
+                <li><a href="#confirmDeleteCaseModal" data-toggle="modal">Ta bort</a></li>
+                <li class="divider"></li>
+                <li><a href="#closeCase" data-toggle="modal">Slutför</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-9">
+        <div class="wrapper wrapper-content animated fadeInUp">
+            @if (ViewBag.errorMessage != null)
+            {
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-danger alert-dismissable">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            @ViewBag.errorMessage
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <dl class="dl-horizontal">
+                                <dt>Status:</dt>
+                                <dd><span class="label label-primary">@Model.caseStatusCode</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <dl class="dl-horizontal">
+
+                                <dt>Nr:</dt>
+                                <dd>@Model.no</dd>
+                                <dt>Kund:</dt>
+                                <dd>@Model.customerNo - @Model.customerName</dd>
+                                <dt>Projekt:</dt>
+                                <dd>@Model.jobNo - @Model.jobDescription</dd>
+                                <dt>Uppföljningskod:</dt>
+                                <dd>@Model.reasonCode</dd>
+                            </dl>
+                        </div>
+                        <div class="col-lg-5" id="cluster_info">
+                            <dl class="dl-horizontal">
+
+                                <dt>Aktivitetstyp:</dt>
+                                <dd>@Model.activityTypeCode</dd>
+                                <dt>Uppdragstyp:</dt>
+                                <dd>@Model.commisionTypeCode</dd>
+                                <dt>Ansvarig:</dt>
+                                <dd>@Model.responsibleResource</dd>
+                                <dt>Tilldelade resurser:</dt>
+                                <dd>@Model.assignedResources</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <dl class="dl-horizontal">
+                                <dt>Beställare:</dt>
+                                <dd><a href="mailto:@Model.ordererEmail">@Model.ordererName</a></dd>
+                                <dt>Avsändare:</dt>
+                                <dd><a href="mailto:@Model.ordererEmail">@Model.authorName</a></dd>
+
+                            </dl>
+                        </div>
+                        <div class="col-lg-5" id="cluster_info">
+                            <dl class="dl-horizontal">
+
+                                <dt>Mottaget datum:</dt>
+                                <dd>@Model.receivedDateText</dd>
+                                <dt>Uppskattat slutdatum:</dt>
+                                <dd>@Model.estimatedEndingDateText</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="row m-t-sm">
+                        <div class="col-lg-12">
+                            <div class="panel blank-panel">
+                                <div class="panel-heading">
+                                    <div class="panel-options">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#tab-1" data-toggle="tab">Kommunikation</a></li>
+                                            <li class=""><a href="#tab-2" data-toggle="tab">Logg</a></li>
+                                            <li class=""><a href="#tab-3" data-toggle="tab">Objekt</a></li>
+                                            <li class=""><a href="#tab-4" data-toggle="tab">Teknik</a></li>
+                                            <li class=""><a href="#tab-5" data-toggle="tab">Berörda</a></li>
+                                            <li class=""><a href="#tab-6" data-toggle="tab">Bilagor</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab-1">
+                                            <div class="feed-activity-list">
+
+                                                @foreach (var item in Model.caseLineList)
+                                                {
+
+                                                    <div class="feed-element">
+                                                        <div class="ibox resizable" style="@item.border">
+
+                                                            <div class="ibox-title" style="border-top: 0px;">
+                                                                <span class="pull-left">
+                                                                    <i class="fa fa-user fa-3x"></i>&nbsp;&nbsp;
+                                                                </span>
+                                                                <strong>@item.fromName</strong> skrev gällande <strong>@item.subject</strong>:<br>
+                                                                <small class="text-muted">@item.dateTime.ToString("yyyy-MM-dd HH:mm")</small>
+                                                                <div class="ibox-tools" style="float: right; vertical-align: top;">
+                                                                    <small>@item.whileAgo</small>
+                                                                    <a class="collapse-link">
+                                                                        <i class="fa fa-chevron-up"></i>
+                                                                    </a>
+                                                                    <a class="fullscreen-link">
+                                                                        <i class="fa fa-expand"></i>
+                                                                    </a>
+                                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                                        <i class="fa fa-wrench"></i>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dropdown-user">
+                                                                        <li><a href="@Url.Action("Reply", "Case")/@Model.no" class="font-bold">Svara</a></li>
+                                                                        <li><a href="#commentWindow" data-toggle="modal">Kommentera</a></li>
+                                                                        <li class="divider"></li>
+                                                                        <li><a href="#" data-id="@item.lineNo" data-toggle="modal" class="confirmDelete">Ta bort</a></li>
+                                                                    </ul>
+                                                                    <span class="pull-left label @item.emailStatusIcon" style="margin-right: 5px; margin-top: 1px;">@item.emailStatusText</span>
+                                                                </div>
+                                                            </div>
+
+
+                                                            @if (item.externalComment != null)
+                                                            {
+                                                                <div class="ibox-content">
+                                                                    @Html.Raw(item.externalComment)
+
+                                                                </div>
+                                                            }
+                                                            @if (item.internalComment != null)
+                                                            {
+                                                                <div class="alert alert-warning">
+                                                                    @item.internalComment
+                                                                </div>
+
+                                                            }
+
+                                                        </div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="tab-pane" id="tab-2">
+
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Typ</th>
+                                                        <th>Beskrivning</th>
+                                                        <th>Datum och klockslag</th>
+                                                        <th>Användare</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (Navipro.Backoffice.Web.Models.CaseTransactionLogEntry item in ViewBag.caseTransactionLogList)
+                                                    {
+                                                        <tr>
+                                                            <td><span class="label label-primary"><i class="fa fa-check"></i> @item.type</span></td>
+                                                            <td>@item.description</td>
+                                                            <td>@item.transactionDateTimeText</td>
+                                                            <td>@item.userId</td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                        <div class="tab-pane" id="tab-3">
+
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Typ</th>
+                                                        <th>Nr</th>
+                                                        <th>Namn</th>
+                                                        <th>Kommentar</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="tab-pane" id="tab-4">
+
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Avdelning</th>
+                                                        <th>Kod</th>
+                                                        <th>Text</th>
+                                                        <th>Senast uppdaterad</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var item in ViewBag.assetSiteComments)
+                                                    {
+
+                                                        <tr>
+                                                            <td>
+                                                                <strong>@item.name</strong>
+                                                            </td>
+                                                            <td>
+                                                                @item.code
+                                                            </td>
+                                                            <td>
+                                                                @item.text
+                                                            </td>
+                                                            <td>
+                                                                @item.lastUpdatedDate.ToString("yyyy-MM-dd")
+                                                            </td>
+
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                        <div class="tab-pane" id="tab-5">
+
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>E-postadress</th>
+                                                        <th>Namn</th>
+                                                        <th>Typ</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var item in ViewBag.caseEmailReceiverList)
+                                                    {
+
+                                                        <tr>
+                                                            <td>
+                                                                @item.email
+                                                            </td>
+                                                            <td>
+                                                                @item.name
+                                                            </td>
+                                                            <td>
+                                                                @item.typeText
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                        <div class="tab-pane" id="tab-6">
+
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Datum &amp; klockslag</th>
+                                                        <th>Avsändare</th>
+                                                        <th>Filnamn</th>
+                                                        <th>Felmeddelande</th>
+                                                        <th>&nbsp;</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var item in ViewBag.caseAttachmentList)
+                                                    {
+
+                                                        <tr>
+                                                            <td>
+                                                                @item.createdDateTime.ToString("yyyy-MM-dd HH:mm")
+                                                            </td>
+                                                            <td><a href="mailto:@item.fromEmail">@item.fromName</a></td>
+                                                            <td>
+                                                                @item.fileName
+                                                            </td>
+                                                            <td>
+                                                                @item.errorMessage
+                                                            </td>
+                                                            <td><a target="_blank" href="/Case/getAttachment?caseNo=@item.caseNo&caseLogLineNo=@item.caseLogLineNo&entryNo=@item.entryNo"><span class="label label-primary"><i class="fa fa-file-o"></i> Visa</span></a></td>
+
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ibox" id="description">
+                <div class="ibox-title">
+                    <h5>Beskrivning av ärendet</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="fullscreen-link">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content" style="height: 100%; overflow:hidden;">
+                    <p>
+                        @Html.Raw(Model.description)
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-3">
+        <div class="wrapper wrapper-content project-manager">
+            <h4>Taggar</h4>
+            <ul class="tag-list" style="padding: 0">
+                @foreach (Navipro.Backoffice.Web.Models.CaseTagLink item in (List<Navipro.Backoffice.Web.Models.CaseTagLink>)ViewBag.caseTagLinkList)
+                {
+                    <li><a href=""><i class="fa fa-tag"></i> @item.caseTagCode</a></li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Status Modal HTML -->
+<div id="statusWindow" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        @using (Html.BeginForm("Details", "Case", FormMethod.Post, new { id = "statusForm" }))
+
+        {
+            @Html.AntiForgeryToken()
+
+
+
+            @Html.ValidationSummary(true)
+
+
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Ändra status</h4>
+            </div>
+            <div class="modal-body">
+                <p>Ändra status genom att välja önskad status i listan nedan.</p>
+                <input type="hidden" name="mode" value="changeStatus" />
+                <input type="hidden" name="no" value="@Model.no" />
+
+                <select data-placeholder="Välj en status" class="chosen-select" tabindex="2" name="caseStatusCode" id="status">
+                    <option value="">Välj en status</option>
+                    @foreach (var item in ViewBag.statusList)
+                    {
+                        if (Model.caseStatusCode == item.code)
+                        {
+                            <option value="@item.code" selected>@item.code</option>
+                        }
+                        else
+                        {
+                            <option value="@item.code">@item.code</option>
+                        }
+                    }
+                </select>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                <button type="submit" class="btn btn-primary">Spara</button>
+            </div>
+        }
+        </div>
+    </div>
+</div>
+
+<!-- Close Case Modal HTML -->
+<div id="closeCase" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Details", "Case", FormMethod.Post, new { id = "closeForm" }))
+
+            {
+                @Html.AntiForgeryToken()
+
+
+
+                @Html.ValidationSummary(true)
+
+
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Slutför ärendet</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Välj en status att slutföra ärendet med nedan.</p>
+                    <input type="hidden" name="mode" value="closeCase" />
+                    <input type="hidden" name="no" value="@Model.no" />
+
+                    <select data-placeholder="Välj en status" class="chosen-select" tabindex="2" name="caseStatusCode" id="status2">
+                        <option value="">Välj en status</option>
+                        @foreach (var item in ViewBag.statusList)
+                        {
+                            if (item.allowClosing == true)
+                            {
+                                if (Model.caseStatusCode == item.code)
+                                {
+                                <option value="@item.code" selected>@item.code</option>
+                                }
+                                else
+                                {
+                                <option value="@item.code">@item.code</option>
+                                }
+                            }
+                        }
+                    </select>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                    <button type="submit" class="btn btn-primary">Slutför</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Assign Modal HTML -->
+<div id="assignWindow" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        @using (Html.BeginForm("Details", "Case", FormMethod.Post, new { id = "assignForm" }))
+
+        {
+            @Html.AntiForgeryToken()
+
+
+
+            @Html.ValidationSummary(true)
+
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Tilldela resurs</h4>
+            </div>
+            <div class="modal-body">
+                <p>Tilldela en ansvarig resurs genom att välja i listan nedan.</p>
+                <input type="hidden" name="mode" value="assignRespResource" />
+                <input type="hidden" name="assignType" id="assignType" value="" />
+                <input type="hidden" name="no" value="@Model.no" />
+
+                <select data-placeholder="Välj en resurs" class="chosen-select" tabindex="2" name="responsibleResource" id="resource">
+                    <option value="">Välj en resurs</option>
+                    @foreach (var item in ViewBag.resourceList)
+                    {
+                        if (Model.responsibleResource == item.resourceNo)
+                        {
+                                    <option value="@item.resourceNo" selected>@item.resourceNo @item.name</option>
+                                }
+                        else
+                        {
+                                    <option value="@item.resourceNo">@item.resourceNo @item.name</option>
+                                }
+                    }
+                </select>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                <button type="button" class="btn btn-primary" id="assignMeBtn">Tilldela Mig</button>
+                <button type="submit" class="btn btn-primary">Tilldela</button>
+            </div>
+        }
+        </div>
+    </div>
+</div>
+
+
+<!-- Comment Modal HTML -->
+<div id="commentWindow" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Details", "Case", FormMethod.Post))
+
+            {
+                @Html.AntiForgeryToken()
+
+
+
+                @Html.ValidationSummary(true)
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Kommentera</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Gör en kommentar genom att fylla i textrutan nedan.</p>
+                    <input type="hidden" name="mode" value="createComment"/>
+                    <input type="hidden" name="no" value="@Model.no" />
+                    <input type="hidden" name="subject" value="@Model.subject" />
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.newComment, new { @class = "text-box single-line", @id = "comment", @maxlength = "250" })
+                        @Html.ValidationMessageFor(model => model.newComment)
+                    </div>
+
+
+                    <p>Inkludera i tidrapport:</p>
+                    <div class="onoffswitch">
+                        <input type="checkbox" checked class="onoffswitch-checkbox" name="includeInTimeReport" id="includeInTimeReport">
+                        <label class="onoffswitch-label" for="includeInTimeReport">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                    <br/><br/>
+
+                    <p>Välj status nedan.</p>
+
+                    <select data-placeholder="Välj en status" class="chosen-select" tabindex="2" name="caseStatusCode" id="commentStatus">
+                        <option value="">Välj en status</option>
+                        @foreach (var item in ViewBag.statusList)
+                        {
+                            if (Model.caseStatusCode == item.code)
+                            {
+                                <option value="@item.code" selected>@item.code</option>
+                            }
+                            else
+                            {
+                                <option value="@item.code">@item.code</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>                
+                    <button type="submit" class="btn btn-primary" id="commentSubmit">Spara</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Tag Modal HTML -->
+<div id="tagWindow" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        @using (Html.BeginForm("Details", "Case", FormMethod.Post))
+
+        {
+            @Html.AntiForgeryToken()
+
+
+
+            @Html.ValidationSummary(true)
+
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Tagga</h4>
+            </div>
+            <div class="modal-body">
+                <p>Tagga ärendet med olika egenskaper nedan.</p>
+                <input type="hidden" name="mode" value="submitTags" />
+                <input type="hidden" name="no" value="@Model.no" />
+
+                @Html.DropDownList("caseTags", ((IEnumerable<SelectListItem>)ViewBag.caseTagList), new { @class = "chosen-select", @id = "caseTags", @multiple = "multiple" })
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                <button type="button" class="btn btn-primary">Spara</button>
+            </div>
+        }
+        </div>
+    </div>
+</div>
+
+<!-- Confirm Delete Modal HTML -->
+<div id="confirmDeleteModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+           @using (Html.BeginForm("Details", "Case", FormMethod.Post))
+
+           {
+                @Html.AntiForgeryToken()
+
+
+
+                @Html.ValidationSummary(true)
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Ta bort svar</h4>
+                <input type="hidden" name="mode" value="deleteComment" />
+                <input type="hidden" name="no" value="@Model.no" />
+                <input type="hidden" name="lineNo" value="" id="lineNo"/>
+            </div>
+            <div class="modal-body">
+                <p>Du kommer att ta bort det angivna svaret/kommentaren. Är du säker?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                <button type="submit" class="btn btn-primary">Ta bort</button>
+            </div>
+           }
+        </div>
+    </div>
+</div>
+
+<!-- Confirm Delete Case Modal HTML -->
+<div id="confirmDeleteCaseModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Details", "Case", FormMethod.Post))
+
+            {
+                @Html.AntiForgeryToken()
+
+
+
+                @Html.ValidationSummary(true)
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Ta bort svar</h4>
+                    <input type="hidden" name="mode" value="deleteCase" />
+                    <input type="hidden" name="no" value="@Model.no" />
+                </div>
+                <div class="modal-body">
+                    <p>Du kommer att ta bort hela ärendet. Är du säker?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                    <button type="submit" class="btn btn-primary">Ta bort</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+@section Styles {
+    @Styles.Render("~/Content/plugins/chosen/chosenStyles")
+    @Styles.Render("~/plugins/summernoteStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/chosen")
+    @Scripts.Render("~/plugins/summernote")
+
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            $('#status').chosen({ width: "100%", forceParse: true });
+            $('#status2').chosen({ width: "100%", forceParse: true });
+            $('#commentStatus').chosen({ width: "100%", forceParse: true });
+            $('#resource').chosen({ width: "100%", forceParse: true });
+            $('#receiver').chosen({ width: "100%", forceParse: true });
+            $('#caseTags').chosen({ width: "100%", forceParse: true });
+            
+
+            $('#replyMessage').summernote({
+                height: 250,   //set editable area's height
+                placeholder: "Svara här...",
+            });
+
+            $("#assignMeBtn").click(function () {
+                $("#assignType").val("assignMe");
+                $("#assignForm").submit();
+            });
+
+            $(".confirmDelete").click(function () {
+                $('#lineNo').val($(this).data('id'));
+                $('#confirmDeleteModal').modal('show');
+            });
+
+
+        });
+
+
+    </script>
+
+}

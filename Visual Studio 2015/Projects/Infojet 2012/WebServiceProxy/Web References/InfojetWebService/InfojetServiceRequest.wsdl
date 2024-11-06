@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://infojet.workanywhere.se/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://infojet.workanywhere.se/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://infojet.workanywhere.se/">
+      <s:element name="performservice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="performserviceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="performserviceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="performserviceSoapIn">
+    <wsdl:part name="parameters" element="tns:performservice" />
+  </wsdl:message>
+  <wsdl:message name="performserviceSoapOut">
+    <wsdl:part name="parameters" element="tns:performserviceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="InfojetServiceRequestSoap">
+    <wsdl:operation name="performservice">
+      <wsdl:input message="tns:performserviceSoapIn" />
+      <wsdl:output message="tns:performserviceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InfojetServiceRequestSoap" type="tns:InfojetServiceRequestSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="performservice">
+      <soap:operation soapAction="http://infojet.workanywhere.se/performservice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="InfojetServiceRequestSoap12" type="tns:InfojetServiceRequestSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="performservice">
+      <soap12:operation soapAction="http://infojet.workanywhere.se/performservice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InfojetServiceRequest">
+    <wsdl:port name="InfojetServiceRequestSoap" binding="tns:InfojetServiceRequestSoap">
+      <soap:address location="http://192.168.222.27/NaviproInfojetWebService/InfojetServiceRequest.asmx" />
+    </wsdl:port>
+    <wsdl:port name="InfojetServiceRequestSoap12" binding="tns:InfojetServiceRequestSoap12">
+      <soap12:address location="http://192.168.222.27/NaviproInfojetWebService/InfojetServiceRequest.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

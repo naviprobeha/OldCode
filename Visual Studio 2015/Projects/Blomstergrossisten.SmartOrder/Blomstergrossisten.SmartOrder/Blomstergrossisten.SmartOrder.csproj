@@ -1,0 +1,283 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A27D3155-8CC8-49FB-B874-6FA6CCF45C2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartOrder</RootNamespace>
+    <AssemblyName>SmartOrder</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>Blomstergrossisten.SmartOrder</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>Navision.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="SerialNET, Version=2.0.0.1, Culture=neutral, PublicKeyToken=d529d3eaea61b0c3">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\SerialNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AckSynckEntry.cs" />
+    <Compile Include="Agent.cs" />
+    <Compile Include="CustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerList.Designer.cs">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="DataCollection.cs" />
+    <Compile Include="DataColor.cs" />
+    <Compile Include="DataColors.cs" />
+    <Compile Include="DataCustomer.cs" />
+    <Compile Include="DataCustomers.cs" />
+    <Compile Include="DataDeliveryAddress.cs" />
+    <Compile Include="DataDeliveryAddresses.cs" />
+    <Compile Include="DataInventoryItem.cs" />
+    <Compile Include="DataInvoiceNo.cs" />
+    <Compile Include="DataItem.cs" />
+    <Compile Include="DataItemCategories.cs" />
+    <Compile Include="DataItemCategory.cs" />
+    <Compile Include="DataItemColor.cs" />
+    <Compile Include="DataItemColors.cs" />
+    <Compile Include="DataItemCrossReference.cs" />
+    <Compile Include="DataItemCrossReferences.cs" />
+    <Compile Include="DataItemPrice.cs" />
+    <Compile Include="DataItemPrices.cs" />
+    <Compile Include="DataItems.cs" />
+    <Compile Include="DataItemSize.cs" />
+    <Compile Include="DataItemSize2.cs" />
+    <Compile Include="DataItemSizes.cs" />
+    <Compile Include="DataItemSizes2.cs" />
+    <Compile Include="DataItemVariant.cs" />
+    <Compile Include="DataItemVariantDim.cs" />
+    <Compile Include="DataItemVariantDims.cs" />
+    <Compile Include="DataItemVariants.cs" />
+    <Compile Include="DataLineDiscount.cs" />
+    <Compile Include="DataLineDiscounts.cs" />
+    <Compile Include="DataOrders.cs" />
+    <Compile Include="DataPaymentMethod.cs" />
+    <Compile Include="DataPaymentMethods.cs" />
+    <Compile Include="DataProductGroup.cs" />
+    <Compile Include="DataProductGroups.cs" />
+    <Compile Include="DataSalesHeader.cs" />
+    <Compile Include="DataSalesHeaders.cs" />
+    <Compile Include="DataSalesLine.cs" />
+    <Compile Include="DataSalesLines.cs" />
+    <Compile Include="DataSalesPerson.cs" />
+    <Compile Include="DataSalesPersons.cs" />
+    <Compile Include="DataSeason.cs" />
+    <Compile Include="DataSeasons.cs" />
+    <Compile Include="DataSetup.cs" />
+    <Compile Include="DataSize.cs" />
+    <Compile Include="DataSize2.cs" />
+    <Compile Include="DataSizes.cs" />
+    <Compile Include="DataSizes2.cs" />
+    <Compile Include="DataUserReference.cs" />
+    <Compile Include="DataUserReferences.cs" />
+    <Compile Include="DataVisitList.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="InventoryJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryJournal.Designer.cs">
+      <DependentUpon>InventoryJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemList.Designer.cs">
+      <DependentUpon>ItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderItem.Designer.cs">
+      <DependentUpon>OrderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PriceScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PriceScan.Designer.cs">
+      <DependentUpon>PriceScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuantityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuantityForm.Designer.cs">
+      <DependentUpon>QuantityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup.Designer.cs">
+      <DependentUpon>Setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Header.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Printing.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomerList.resx">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryJournal.resx">
+      <DependentUpon>InventoryJournal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemList.resx">
+      <DependentUpon>ItemList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItem.resx">
+      <DependentUpon>OrderItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriceScan.resx">
+      <DependentUpon>PriceScan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuantityForm.resx">
+      <DependentUpon>QuantityForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup.resx">
+      <DependentUpon>Setup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sync.resx">
+      <DependentUpon>Sync.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Publication.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="ServiceArgument.cs" />
+    <Compile Include="ServiceRequest.cs" />
+    <Compile Include="ServiceResponse.cs" />
+    <Compile Include="SmartDatabase.cs" />
+    <Compile Include="Sound.cs" />
+    <Compile Include="StringConverter.cs" />
+    <Compile Include="Sync.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sync.Designer.cs">
+      <DependentUpon>Sync.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Navision.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

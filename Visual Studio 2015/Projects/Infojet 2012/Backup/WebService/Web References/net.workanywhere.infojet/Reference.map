@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://royal.workanywhere.net:7047/WACKES2013R2TESTNY/WS/wackes2013R2test/Codeunit/webRequestService" filename="webRequestService.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

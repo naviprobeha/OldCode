@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE7E5263-40D5-4553-856D-B8B85B733699}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Navipro.Infojet.WebInterface</RootNamespace>
+    <AssemblyName>WebInterface</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_taglib\Checkout_4_STANDARD.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="_assets\css\visuals.css" />
+    <Content Include="_assets\img\cms_arrow.gif" />
+    <Content Include="_assets\img\collapse.gif" />
+    <Content Include="_assets\img\grey_bg.jpg" />
+    <Content Include="_assets\img\left_bg.jpg" />
+    <Content Include="_assets\img\red_bg.jpg" />
+    <Content Include="_taglib\Campain_NORMAL.ascx" />
+    <Content Include="_taglib\Campain_WIDE.ascx" />
+    <Content Include="_taglib\Cart_STANDARD.ascx" />
+    <Content Include="_taglib\ChangePassword_STANDARD.ascx" />
+    <Content Include="_taglib\Checkout_1_STANDARD.ascx" />
+    <Content Include="_taglib\Checkout_2_STANDARD.ascx" />
+    <Content Include="_taglib\Checkout_3_STANDARD.ascx" />
+    <Content Include="_taglib\Checkout_CUSTOMER_STANDARD.ascx" />
+    <Content Include="_taglib\Content.ascx" />
+    <Content Include="_assets\css\design.css" />
+    <Content Include="_assets\img\black_box.jpg" />
+    <Content Include="_assets\img\campain_bg.gif" />
+    <Content Include="_assets\img\campain_wide_bg.gif" />
+    <Content Include="_assets\img\cart_bg.gif" />
+    <Content Include="_assets\img\CC.jpg" />
+    <Content Include="_assets\img\compress.gif" />
+    <Content Include="_assets\img\divider.gif" />
+    <Content Include="_assets\img\dotted_line.gif" />
+    <Content Include="_assets\img\expand.gif" />
+    <Content Include="_assets\img\INV.jpg" />
+    <Content Include="_assets\img\INVOICE.jpg" />
+    <Content Include="_assets\img\login_button.gif" />
+    <Content Include="_assets\img\main_bg.jpg" />
+    <Content Include="_assets\img\menu_item.gif" />
+    <Content Include="_assets\img\menu_item_sub.gif" />
+    <Content Include="_assets\img\menu_item_sub2.gif" />
+    <Content Include="_assets\img\no_image.jpg" />
+    <Content Include="_assets\img\PF.jpg" />
+    <Content Include="_assets\img\producttree_bg.gif" />
+    <Content Include="_assets\img\product_item.gif" />
+    <Content Include="_assets\img\sub copy.gif" />
+    <Content Include="_assets\img\sub.gif" />
+    <Content Include="_assets\img\top_bg.jpg" />
+    <Content Include="_assets\img\user_profile_bg.jpg" />
+    <Content Include="_taglib\ForgotPassword_STANDARD.ascx" />
+    <Content Include="_taglib\Form.ascx" />
+    <Content Include="_taglib\GenericControl.ascx" />
+    <Content Include="_taglib\HistoryCrMemoList_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryCrMemo_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryCustomerLedger_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryInvoiceList_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryInvoice_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryOrderList_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryOrder_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryShipmentList_STANDARD.ascx" />
+    <Content Include="_taglib\HistoryShipment_STANDARD.ascx" />
+    <Content Include="_taglib\Image.ascx" />
+    <Content Include="_taglib\Login_STANDARD.ascx" />
+    <Content Include="_taglib\Menu_LINE.ascx" />
+    <Content Include="_taglib\Menu_TREE.ascx" />
+    <Content Include="_taglib\MyProfile_STANDARD.ascx" />
+    <Content Include="_taglib\NewsEntry_STANDARD.ascx" />
+    <Content Include="_taglib\NewsFlow_STANDARD.ascx" />
+    <Content Include="_taglib\ProductCategory_STANDARD.ascx" />
+    <Content Include="_taglib\ProductDetailsModel_MATRIX.ascx" />
+    <Content Include="_taglib\ProductDetailsModel_STANDARD.ascx" />
+    <Content Include="_taglib\ProductDetails_STANDARD.ascx" />
+    <Content Include="_taglib\ProductList_LIST.ascx" />
+    <Content Include="_taglib\ProductTree_TREE.ascx" />
+    <Content Include="_taglib\SearchEngine_STANDARD.ascx" />
+    <Content Include="_taglib\Text.ascx" />
+    <Content Include="_taglib\Language.ascx" />
+    <Content Include="_taglib\Translate.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_taglib\Checkout_4_STANDARD.ascx.cs">
+      <DependentUpon>Checkout_4_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Checkout_4_STANDARD.ascx.designer.cs">
+      <DependentUpon>Checkout_4_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_taglib\Campain_NORMAL.ascx.cs">
+      <DependentUpon>Campain_NORMAL.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Campain_NORMAL.ascx.designer.cs">
+      <DependentUpon>Campain_NORMAL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Campain_WIDE.ascx.cs">
+      <DependentUpon>Campain_WIDE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Campain_WIDE.ascx.designer.cs">
+      <DependentUpon>Campain_WIDE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Cart_STANDARD.ascx.cs">
+      <DependentUpon>Cart_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Cart_STANDARD.ascx.designer.cs">
+      <DependentUpon>Cart_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ChangePassword_STANDARD.ascx.cs">
+      <DependentUpon>ChangePassword_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ChangePassword_STANDARD.ascx.designer.cs">
+      <DependentUpon>ChangePassword_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Checkout_1_STANDARD.ascx.cs">
+      <DependentUpon>Checkout_1_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Checkout_1_STANDARD.ascx.designer.cs">
+      <DependentUpon>Checkout_1_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Checkout_2_STANDARD.ascx.cs">
+      <DependentUpon>Checkout_2_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Checkout_2_STANDARD.ascx.designer.cs">
+      <DependentUpon>Checkout_2_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Checkout_3_STANDARD.ascx.cs">
+      <DependentUpon>Checkout_3_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Checkout_3_STANDARD.ascx.designer.cs">
+      <DependentUpon>Checkout_3_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Checkout_CUSTOMER_STANDARD.ascx.cs">
+      <DependentUpon>Checkout_CUSTOMER_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Checkout_CUSTOMER_STANDARD.ascx.designer.cs">
+      <DependentUpon>Checkout_CUSTOMER_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Content.ascx.cs">
+      <DependentUpon>Content.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Content.ascx.designer.cs">
+      <DependentUpon>Content.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ForgotPassword_STANDARD.ascx.cs">
+      <DependentUpon>ForgotPassword_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ForgotPassword_STANDARD.ascx.designer.cs">
+      <DependentUpon>ForgotPassword_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Form.ascx.cs">
+      <DependentUpon>Form.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Form.ascx.designer.cs">
+      <DependentUpon>Form.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\GenericControl.ascx.cs">
+      <DependentUpon>GenericControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\GenericControl.ascx.designer.cs">
+      <DependentUpon>GenericControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryCrMemoList_STANDARD.ascx.cs">
+      <DependentUpon>HistoryCrMemoList_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryCrMemoList_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryCrMemoList_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryCrMemo_STANDARD.ascx.cs">
+      <DependentUpon>HistoryCrMemo_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryCrMemo_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryCrMemo_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryCustomerLedger_STANDARD.ascx.cs">
+      <DependentUpon>HistoryCustomerLedger_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryCustomerLedger_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryCustomerLedger_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryInvoiceList_STANDARD.ascx.cs">
+      <DependentUpon>HistoryInvoiceList_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryInvoiceList_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryInvoiceList_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryInvoice_STANDARD.ascx.cs">
+      <DependentUpon>HistoryInvoice_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryInvoice_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryInvoice_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryOrderList_STANDARD.ascx.cs">
+      <DependentUpon>HistoryOrderList_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryOrderList_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryOrderList_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryOrder_STANDARD.ascx.cs">
+      <DependentUpon>HistoryOrder_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryOrder_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryOrder_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryShipmentList_STANDARD.ascx.cs">
+      <DependentUpon>HistoryShipmentList_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryShipmentList_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryShipmentList_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\HistoryShipment_STANDARD.ascx.cs">
+      <DependentUpon>HistoryShipment_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\HistoryShipment_STANDARD.ascx.designer.cs">
+      <DependentUpon>HistoryShipment_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Image.ascx.cs">
+      <DependentUpon>Image.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Image.ascx.designer.cs">
+      <DependentUpon>Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Login_STANDARD.ascx.cs">
+      <DependentUpon>Login_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Login_STANDARD.ascx.designer.cs">
+      <DependentUpon>Login_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Menu_LINE.ascx.cs">
+      <DependentUpon>Menu_LINE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Menu_LINE.ascx.designer.cs">
+      <DependentUpon>Menu_LINE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Menu_TREE.ascx.cs">
+      <DependentUpon>Menu_TREE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Menu_TREE.ascx.designer.cs">
+      <DependentUpon>Menu_TREE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\MyProfile_STANDARD.ascx.cs">
+      <DependentUpon>MyProfile_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\MyProfile_STANDARD.ascx.designer.cs">
+      <DependentUpon>MyProfile_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\NewsEntry_STANDARD.ascx.cs">
+      <DependentUpon>NewsEntry_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\NewsEntry_STANDARD.ascx.designer.cs">
+      <DependentUpon>NewsEntry_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\NewsFlow_STANDARD.ascx.cs">
+      <DependentUpon>NewsFlow_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\NewsFlow_STANDARD.ascx.designer.cs">
+      <DependentUpon>NewsFlow_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ProductCategory_STANDARD.ascx.cs">
+      <DependentUpon>ProductCategory_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ProductCategory_STANDARD.ascx.designer.cs">
+      <DependentUpon>ProductCategory_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ProductDetailsModel_MATRIX.ascx.cs">
+      <DependentUpon>ProductDetailsModel_MATRIX.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ProductDetailsModel_MATRIX.ascx.designer.cs">
+      <DependentUpon>ProductDetailsModel_MATRIX.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ProductDetailsModel_STANDARD.ascx.cs">
+      <DependentUpon>ProductDetailsModel_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ProductDetailsModel_STANDARD.ascx.designer.cs">
+      <DependentUpon>ProductDetailsModel_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ProductDetails_STANDARD.ascx.cs">
+      <DependentUpon>ProductDetails_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ProductDetails_STANDARD.ascx.designer.cs">
+      <DependentUpon>ProductDetails_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ProductList_LIST.ascx.cs">
+      <DependentUpon>ProductList_LIST.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ProductList_LIST.ascx.designer.cs">
+      <DependentUpon>ProductList_LIST.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\ProductTree_TREE.ascx.cs">
+      <DependentUpon>ProductTree_TREE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\ProductTree_TREE.ascx.designer.cs">
+      <DependentUpon>ProductTree_TREE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\SearchEngine_STANDARD.ascx.cs">
+      <DependentUpon>SearchEngine_STANDARD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\SearchEngine_STANDARD.ascx.designer.cs">
+      <DependentUpon>SearchEngine_STANDARD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Text.ascx.cs">
+      <DependentUpon>Text.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Text.ascx.designer.cs">
+      <DependentUpon>Text.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Language.ascx.cs">
+      <DependentUpon>Language.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Language.ascx.designer.cs">
+      <DependentUpon>Language.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_taglib\Translate.ascx.cs">
+      <DependentUpon>Translate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_taglib\Translate.ascx.designer.cs">
+      <DependentUpon>Translate.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InfojetLib\InfojetLib.csproj">
+      <Project>{7843B615-E659-45B6-A6CE-F4689596A0ED}</Project>
+      <Name>InfojetLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="_assets\editor\" />
+    <Folder Include="_assets\img_cache\" />
+    <Folder Include="_assets\img_update\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50350</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

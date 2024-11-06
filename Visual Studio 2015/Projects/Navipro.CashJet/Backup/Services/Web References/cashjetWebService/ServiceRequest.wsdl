@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://cashjet.navipro.se/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://cashjet.navipro.se/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://cashjet.navipro.se/">
+      <s:element name="performService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="performServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="performServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="performServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:performService" />
+  </wsdl:message>
+  <wsdl:message name="performServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:performServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceRequestSoap">
+    <wsdl:operation name="performService">
+      <wsdl:input message="tns:performServiceSoapIn" />
+      <wsdl:output message="tns:performServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceRequestSoap" type="tns:ServiceRequestSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="performService">
+      <soap:operation soapAction="http://cashjet.navipro.se/performService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceRequestSoap12" type="tns:ServiceRequestSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="performService">
+      <soap12:operation soapAction="http://cashjet.navipro.se/performService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceRequest">
+    <wsdl:port name="ServiceRequestSoap" binding="tns:ServiceRequestSoap">
+      <soap:address location="http://hera/CashJetWebService/ServiceRequest.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceRequestSoap12" binding="tns:ServiceRequestSoap12">
+      <soap12:address location="http://hera/CashJetWebService/ServiceRequest.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

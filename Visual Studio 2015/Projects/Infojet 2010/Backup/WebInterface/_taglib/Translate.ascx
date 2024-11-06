@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Translate.ascx.cs" Inherits="Navipro.Infojet.WebInterface._taglib.Translate" %>
+<asp:Literal ID="translationLiteral" runat="server"></asp:Literal>

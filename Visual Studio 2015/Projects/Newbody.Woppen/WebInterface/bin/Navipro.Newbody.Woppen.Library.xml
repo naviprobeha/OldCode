@@ -1,0 +1,1165 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Navipro.Newbody.Woppen.Library</name>
+    </assembly>
+    <members>
+        <member name="T:Navipro.Newbody.Woppen.Library.BOMComponent">
+            <summary>
+            BOMComponent motsvarar en artikel som ingår i ett sortiment. Klassen speglar en post i tabellen med samma namn.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.BOMComponent.#ctor(Navipro.Infojet.Lib.Database,System.Data.DataRow)">
+            <summary>
+            Konstruktor som initierar en post utifrån ett dataset från tabellen.
+            </summary>
+            <param name="database">En instans till databas-objektet. Fås ifrån infojet-instansen, egenskapen systemDatabase.</param>
+            <param name="dataRow">En specifik rad i datasetet.</param>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.SalesIDSalesPersonCollection">
+            <summary>
+            En lista av ett antal SalesIDSalesPerson-objekt.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPersonCollection.Add(Navipro.Newbody.Woppen.Library.SalesIDSalesPerson)">
+            <summary>
+            Lägger till ett SalesIDSalesPerson-objekt i listan.
+            </summary>
+            <param name="salesIdSalesPerson">Ett SalesIDSalesPerson-objekt.</param>
+            <returns>Returnerar positionen i listan.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPersonCollection.IndexOf(Navipro.Newbody.Woppen.Library.SalesIDSalesPerson)">
+            <summary>
+            Returnerar positionen i listan för ett givet SalesIDSalesPerson-objekt.
+            </summary>
+            <param name="salesIdSalesPerson">Ett SalesIDSalesPerson-objekt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPersonCollection.Insert(System.Int32,Navipro.Newbody.Woppen.Library.SalesIDSalesPerson)">
+            <summary>
+            Lägger in ett SalesIDSalesPerson-objekt på en given position i listan.
+            </summary>
+            <param name="index">Position.</param>
+            <param name="salesIdSalesPerson">SalesIDSalesPerson-objekt att lägga till i listan.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPersonCollection.Remove(Navipro.Newbody.Woppen.Library.SalesIDSalesPerson)">
+            <summary>
+            Tar bort ett SalesIDSalesPerson-objekt ur listan.
+            </summary>
+            <param name="salesIdSalesPerson">SalesIDSalesPerson-objekt att radera.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPersonCollection.Contains(Navipro.Newbody.Woppen.Library.SalesIDSalesPerson)">
+            <summary>
+            Kontrollerar om listan innehåller ett givet SalesIDSalesPerson-objekt.
+            </summary>
+            <param name="salesIdSalesPerson">SalesIDSalesPerson-objekt att lesa efter.</param>
+            <returns>Returnerar true eller false beroende på om objektet finns i listan eller inte.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPersonCollection.setPageUrl(System.String)">
+            <summary>
+            Sätter länken på samtliga säljare i listan till deras resp. detaljsidor.
+            </summary>
+            <param name="pageUrl">Länk.</param>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPersonCollection.Item(System.Int32)">
+            <summary>
+            Returnerar indexerat objekt.
+            </summary>
+            <param name="index">Anger vilken position i listan som skall returneras.</param>
+            <returns>Returnerar ett SalesIDSalesPerson-objekt.</returns>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.BOMComponents">
+            <summary>
+            BOMComponents används för att hämta ut sortiment ifrån tabellen med samma namn. Innehåller främst funktioner som tar ut listor och dataset.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.BOMComponents.#ctor">
+            <summary>
+            Konstruktor. Tar inga parametrar.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.BOMComponents.getProductGroups(Navipro.Infojet.Lib.Database,System.String)">
+            <summary>
+            Hämtar ut produktgrupper ifrån ett givet sortiment. Artiklarna som ingår i sortimentet grupperas efter produktgrupper.
+            </summary>
+            <param name="database">En instans till databas-objektet. Fås ifrån infojet-instansen, egenskapen systemDatabase.</param>
+            <param name="parentItemNo">Sortimentskod.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.BOMComponents.getProducts(Navipro.Infojet.Lib.Database,System.String)">
+            <summary>
+            Hämtar ut produkter i ett givet sortiment. 
+            </summary>
+            <param name="database">En instans till databas-objektet. Fås ifrån infojet-instansen, egenskapen systemDatabase.</param>
+            <param name="parentItemNo">Sortimentskod.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.BOMComponents.countProducts(Navipro.Infojet.Lib.Database,System.String)">
+            <summary>
+            Räknar fram antalet produkter i ett givet sortiment.
+            </summary>
+            <param name="database">En instans till databas-objektet. Fås ifrån infojet-instansen, egenskapen systemDatabase.</param>
+            <param name="parentItemNo">Sortimentskod.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.BOMComponents.getItemQuantity(Navipro.Infojet.Lib.Database,System.String,System.String)">
+            <summary>
+            Räknar fram antalet för en given artikel som ingår i ett givet sortiment.
+            </summary>
+            <param name="database">En instans till databas-objektet. Fås ifrån infojet-instansen, egenskapen systemDatabase.</param>
+            <param name="parentItemNo">Sortimentskod.</param>
+            <param name="itemNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.SalesIDs">
+            <summary>
+            Klassen innehåller funktioner som returnerar ett eller flera försäljnings-ID'n, antingen som dataset eller som SalesIDCollection-objekt.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDs.#ctor">
+            <summary>
+            Blank konstruktor.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDs.searchSalesIdCollection(Navipro.Infojet.Lib.Infojet,System.String)">
+            <summary>
+            Sökfunktion som söker på kundnr eller del av kundnr. Returnerar ett SalesIDCollection-objekt med försäljnings-ID'n som matchar sökningen.
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <param name="customerNoFilter">Kundnrfilter, helt kundnr eller del av kundnr.</param>
+            <returns>En hårt typad lista av SalesID-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDs.getContactSalesIds(Navipro.Infojet.Lib.Database,Navipro.Infojet.Lib.WebUserAccount)">
+            <summary>
+            Returnerar ett dataset med försäljnings-ID'n där kontaktpersonen matchar sökningen. (Föråldrad. Bör ej användas.)
+            </summary>
+            <param name="database">Referens till databas-objektet i Infojet-klassen.</param>
+            <param name="webUserAccount">Kontaktpersonens användarkonto.</param>
+            <returns>Dataset</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDs.getContactSalesIdCollection(Navipro.Infojet.Lib.Infojet,Navipro.Infojet.Lib.WebUserAccount)">
+            <summary>
+            Returnerar ett SalesIDCollection-objekt med försäljnings-ID'n där kontaktpersonen matchar sökningen.
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <param name="webUserAccount">Kontaktpersonens användarkonto.</param>
+            <returns>En hårt typad lista av SalesID-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDs.getSalesIdsPerStartDate(Navipro.Infojet.Lib.Infojet,System.DateTime)">
+            <summary>
+            Returnerar ett SalesIDCollection-objekt med försäljnings-ID'n där startdatum matchar sökningen.
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <param name="startDate">Startdatum.</param>
+            <returns>En hårt typad lista av SalesID-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDs.getSalesPersonSalesId(Navipro.Infojet.Lib.Infojet,Navipro.Infojet.Lib.WebUserAccount)">
+            <summary>
+            Returnerar det försäljnings-ID som en säljare är kopplad till.
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <param name="webUserAccount">Kontaktpersonens användarkonto.</param>
+            <returns>Ett SalesID-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDs.getUserRegSalesId(Navipro.Infojet.Lib.Infojet,Navipro.Infojet.Lib.WebUserAccount)">
+            <summary>
+            Returnerar det försäljnings-ID som angivet registreringskonto är kopplad till.
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <param name="webUserAccount">Registeringskontot.</param>
+            <returns>Ett SalesID-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDs.checkCartLines(Navipro.Infojet.Lib.Infojet,Navipro.Newbody.Woppen.Library.SalesIDCollection)">
+            <summary>
+            Kontrollerar samtliga orderrader så att dessa ingår i något försäljnings-ID i listan.
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <param name="salesIdList">Lista på försäljnings-ID'n.</param>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.TopListItem">
+            <summary>
+            Klass som illustrerar en post i 10-i-topp-listan över säljare och deras sålda paket.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.TopListItem.#ctor">
+            <summary>
+            Blank konstruktor.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.TopListItem.rank">
+            <summary>
+            Indikerar position/rankning i listan.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.TopListItem.name">
+            <summary>
+            Namn på säljaren.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.TopListItem.soldPackages">
+            <summary>
+            Antal sålda paket.
+            </summary>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.TopListCollection">
+            <summary>
+            En lista av ett antal TopListItem-objekt.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.TopListCollection.Add(Navipro.Newbody.Woppen.Library.TopListItem)">
+            <summary>
+            Lägger till ett TopListItem-objekt i listan.
+            </summary>
+            <param name="topListItem">Ett TopListItem-objekt.</param>
+            <returns>Returnerar positionen i listan.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.TopListCollection.IndexOf(Navipro.Newbody.Woppen.Library.TopListItem)">
+            <summary>
+            Returnerar positionen i listan för ett givet TopListItem-objekt.
+            </summary>
+            <param name="topListItem">Ett TopListItem-objekt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.TopListCollection.Insert(System.Int32,Navipro.Newbody.Woppen.Library.TopListItem)">
+            <summary>
+            Lägger in ett TopListItem-objekt på en given position i listan.
+            </summary>
+            <param name="index">Position.</param>
+            <param name="topListItem">TopListItem-objekt att lägga till i listan.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.TopListCollection.Remove(Navipro.Newbody.Woppen.Library.TopListItem)">
+            <summary>
+            Tar bort ett TopListItem-objekt ur listan.
+            </summary>
+            <param name="topListItem">TopListItem-objekt att radera.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.TopListCollection.Contains(Navipro.Newbody.Woppen.Library.TopListItem)">
+            <summary>
+            Kontrollerar om listan innehåller ett givet TopListItem-objekt.
+            </summary>
+            <param name="topListItem">TopListItem-objekt att lesa efter.</param>
+            <returns>Returnerar true eller false beroende på om objektet finns i listan eller inte.</returns>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.TopListCollection.Item(System.Int32)">
+            <summary>
+            Returnerar indexerat objekt.
+            </summary>
+            <param name="index">Anger vilken position i listan som skall returneras.</param>
+            <returns>Returnerar ett TopListItem-objekt.</returns>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.SalesIdShowCase">
+            <summary>
+            Klassen används som bufferklass i samband med inrapportering av återstående visningspaket, beställning av packmaterial samt val av avräkningsmetod.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIdShowCase.#ctor(Navipro.Infojet.Lib.Database,System.Data.DataRow)">
+            <summary>
+            Konstruktor som initierar klassen utifrån en rad i ett dataset.
+            </summary>
+            <param name="database">Referens till databas-objektet i Infojet-klassen.</param>
+            <param name="dataRow">En rad i ett dataset.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIdShowCase.#ctor(Navipro.Infojet.Lib.Database,System.String,System.String)">
+            <summary>
+            Konstruktor som initierar klassen ufifrån ett försäljnings-ID samt artikelnr.
+            </summary>
+            <param name="database">Referens till databas-objektet i Infojet-klassen.</param>
+            <param name="salesId">Försäljnings-ID.</param>
+            <param name="itemNo">Artikelnr.</param>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.ProductGroup">
+            <summary>
+            ProductGroup motsvarar en post i tabellen med samma namn. Klassen illustrerar en produktgrupp.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.ProductGroup.#ctor(Navipro.Infojet.Lib.Database,System.Data.DataRow)">
+            <summary>
+            Konstruktor som skapar en instans av klassen utifrån ett dataset.
+            </summary>
+            <param name="database">En instans till databas-objektet. Fås ifrån infojet-instansen, egenskapen systemDatabase.</param>
+            <param name="dataRow">Ett dataset innehållande kod och beskrivning.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.ProductGroup.getItemCategory">
+            <summary>
+            Returnerar tillhörande artikelkategori-objekt.
+            </summary>
+            <returns>Artikelkategori.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.ProductGroup.getPrice">
+            <summary>
+            Returnerar enhetspris för artiklar som ingår i aktuell produktgrupp.
+            </summary>
+            <returns>Enhetspris.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.ProductGroup.getProducts(Navipro.Infojet.Lib.Database,System.String)">
+            <summary>
+            Returnerar ett dataset med artiklar som ingår i aktuell produktgrupp ur ett givet sortiment.
+            </summary>
+            <param name="database">En instans till databas-objektet. Fås ifrån infojet-instansen, egenskapen systemDatabase.</param>
+            <param name="parentItemNo">Sortimentskod.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.ProductGroup.code">
+            <summary>
+            Produktgruppskod.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.ProductGroup.itemCategoryCode">
+            <summary>
+            Tillhörande artikelkategorikod.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.ProductGroup.description">
+            <summary>
+            Beskrivning av produktgruppen.
+            </summary>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.OrderItemCollection">
+            <summary>
+            En lista av ett antal OrderItem-objekt.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.OrderItemCollection.Add(Navipro.Newbody.Woppen.Library.OrderItem)">
+            <summary>
+            Lägger till ett OrderItem-objekt i listan.
+            </summary>
+            <param name="orderItem">Ett OrderItem-objekt.</param>
+            <returns>Returnerar positionen i listan.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.OrderItemCollection.IndexOf(Navipro.Newbody.Woppen.Library.OrderItem)">
+            <summary>
+            Returnerar positionen i listan för ett givet OrderItem-objekt.
+            </summary>
+            <param name="orderItem">Ett OrderItem-objekt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.OrderItemCollection.Insert(System.Int32,Navipro.Newbody.Woppen.Library.OrderItem)">
+            <summary>
+            Lägger in ett OrderItem-objekt på en given position i listan.
+            </summary>
+            <param name="index">Position.</param>
+            <param name="orderItem">OrderItem-objekt att lägga till i listan.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.OrderItemCollection.Remove(Navipro.Newbody.Woppen.Library.OrderItem)">
+            <summary>
+            Tar bort ett OrderItem-objekt ur listan.
+            </summary>
+            <param name="orderItem">OrderItem-objekt att radera.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.OrderItemCollection.Contains(Navipro.Newbody.Woppen.Library.OrderItem)">
+            <summary>
+            Kontrollerar om listan innehåller ett givet OrderItem-objekt.
+            </summary>
+            <param name="orderItem">OrderItem-objekt att lesa efter.</param>
+            <returns>Returnerar true eller false beroende på om objektet finns i listan eller inte.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.OrderItemCollection.setSalesId(System.String)">
+            <summary>
+            Märker listan med ett givet försäljnings-id.
+            </summary>
+            <param name="salesId">Försäljnings-id att märka listan med.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.OrderItemCollection.toDOM(System.Xml.XmlDocument)">
+            <summary>
+            Skapar ett XML-dokument av listan.
+            </summary>
+            <param name="xmlDoc">XML-dokument att använda som fabrik.</param>
+            <returns>Returnerar ett XML-element innehållande listan i XML-form.</returns>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItemCollection.Item(System.Int32)">
+            <summary>
+            Returnerar indexerat objekt.
+            </summary>
+            <param name="index">Anger vilken position i listan som skall returneras.</param>
+            <returns>Returnerar ett OrderItem-objekt.</returns>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.SalesIDSetup">
+            <summary>
+            SalesIDSetup motsvarar tabellen med samma namn och innehåller inställningar av olika slag. Styr mestadels vilka webbsidor som skall visas i olika lägen.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSetup.#ctor(Navipro.Infojet.Lib.Database)">
+            <summary>
+            Konstruktor som läser upp inställningarna från databasen. 
+            </summary>
+            <param name="database">En instans till databas-objektet. Fås ifrån infojet-instansen, egenskapen systemDatabase.</param>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.SalesID">
+            <summary>
+            Klassen SalesID motsvarar tabellen "FörsäljningsID" i Navision, och håller inkapslad information om säljare i gruppen, antal paket, kollektioner mm. Den information som exponeras som properties cachas upp. Samma databasfrågor ställs alltså aldrig fler än en gång mot databasen så länge man arbetar med de properties som finns.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.#ctor(Navipro.Infojet.Lib.Infojet,System.String)">
+            <summary>
+            Konstruktor som initierar ett försäljnings-ID. Grundinformationen hämtas från databasen och klassen populeras med data.
+            </summary>
+            <param name="infojetContext">En referens till Infojet-klassen.</param>
+            <param name="code">Nr på försäljnings-ID't.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.#ctor(Navipro.Infojet.Lib.Infojet,System.Data.DataRow)">
+            <summary>
+            Konstruktor som initierar ett försäljnings-ID utifrån en rad i ett dataset från samma tabell. Ingen information hämtas från databasen.
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <param name="dataRow">En rad ur ett dataset.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.#ctor(Navipro.Infojet.Lib.Infojet,System.Data.SqlClient.SqlDataReader)">
+            <summary>
+            Konstruktor som initierar ett försäljnings-ID utifrån en datareader. 
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <param name="dataReader">En öppen datareader från samma tabell.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getContact">
+            <summary>
+            Returnerar användarkontot för kontaktpersonen i det aktuella försäljnings-ID't.
+            </summary>
+            <returns>WebUserAccount-klassen i Infojet. Representerar ett användarkonto.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getProductGroups">
+            <summary>
+            Returnerar ett dataset innehållande produktgrupper ifrån sortimentet assosierad med försäljnings-ID't.
+            </summary>
+            <returns>Ett dataset.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getItemInfo(Navipro.Infojet.Lib.Infojet)">
+            <summary>
+            Returnerar en hash-tabell med artikelinformation (lagersaldon och priser) för samtliga artiklar i det aktuella sortimentet.
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <returns>En hash-tabell. Nykeln i tabellen är artikelnr.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getItemSize(System.String)">
+            <summary>
+            Returnerar storleken för en given artikel.
+            </summary>
+            <param name="itemNo">Artikelnr</param>
+            <returns>Storlek</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getSalesPersons(Navipro.Infojet.Lib.Infojet)">
+            <summary>
+            Returnerar samtliga säljare i det aktuella försäljnings-ID't. 
+            </summary>
+            <param name="infojet">Referens till Infojet-klassen.</param>
+            <returns>En hårt typad lista som består av SalesIDSalesPerson-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getActiveSalesPersons(Navipro.Infojet.Lib.Infojet)">
+            <summary>
+            Returnerar endast aktiva säljare i det aktuella försäljnings-ID't. 
+            </summary>
+            <param name="infojet">Referens till Infojet-klassen.</param>
+            <returns>En hårt typad lista som består av SalesIDSalesPerson-objekt.</returns>       
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getFirstAvailableSalesPerson(Navipro.Infojet.Lib.Infojet)">
+            <summary>
+            Returnerar första bästa aktiva säljare i det aktuella försäljnings-ID't.
+            </summary>
+            <param name="infojet">Referens till Infojet-klassen.</param>
+            <returns>Säljaren i form av ett SalesIDSalesPerson-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.checkReleasedCart(System.String)">
+            <summary>
+            Kontrollerar om varukorgen för en given säljare är klarmarkerad.
+            </summary>
+            <param name="webUserAccountNo">Användarkontonr för säljaren.</param>
+            <returns>True eller False</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getRanking(Navipro.Newbody.Woppen.Library.SalesIDSalesPersonCollection,System.String,System.Collections.Hashtable)">
+            <summary>
+            Kalkylerar rankningen för en given säljare i försäljnings-ID't. 
+            </summary>
+            <param name="webUserAccountNo">Användarkontonr för säljaren.</param>
+            <returns>Ett heltal där 1 har sålt flest paket.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getSalesIdCartLines(System.Single@,System.Single@)">
+            <summary>
+            Returnerar en lista innehållande samtliga orderrader för försäljnings-ID't. Räknar även ut totalt antal sålda paket samt motsvarande orderbelopp. Visningspaket är ej avräknade.
+            </summary>
+            <param name="totalQuantity">Totalt antal sålda paket.</param>
+            <param name="totalAmount">Orderbelopp för de sålda paketen.</param>
+            <returns>En hårt typad lista bestående av OrderItem-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getSalesIdSentCartLines(System.Single@,System.Single@)">
+            <summary>
+            Returnerar en lista innehållande samtliga inskickade orderrader för aktuellt försäljnings-ID. Räknar även ut totalt antal sålda paket samt motsvarande orderbelopp. Visningspaket avräknas ej.
+            </summary>
+            <param name="totalQuantity">Totalt antal sålda paket.</param>
+            <param name="totalAmount">Orderbelopp för de sålda paketen.</param>
+            <returns>En hårt typad lista bestående av OrderItem-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getSalesIdHistoryLines(System.Single@,System.Single@,System.Single@)">
+            <summary>
+            Returnerar en lista på fakturerade orderrader för aktuellt försäljnings-ID. Totalt antal paket samt orderbelopp beräknas också. Visningspaket är avräknade. 
+            </summary>
+            <param name="totalQuantity">Totalt antal fakturerade paket.</param>
+            <param name="totalAmount">Fakturerat belopp.</param>
+            <returns>En hårt typad lista bestående av OrderItem-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.applySessionIdToSalesIdCart(System.String)">
+            <summary>
+            Uppdaterar samtliga orderrader i varukorgen med aktuellt sessions-id inför sändnings av ordern.
+            </summary>
+            <param name="sessionId">Aktuellt sessions-id.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.deleteCartLines">
+            <summary>
+            Raderar samtliga orderrader i varukorgen för aktuellt försäljnings-ID.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getShowCaseItems(System.Boolean)">
+            <summary>
+            Returnerar en lista på visningspaket assosierade med aktuellt försäljnings-ID.
+            </summary>
+            <param name="includeReceivedQty">Anger om hänsyn skall tas till inrapporterade visningspaket från kontaktpersonen.</param>
+            <returns>En hårt typad lista bestående av OrderItem-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getHistoryShowCaseItems">
+            <summary>
+            Returnerar en lista på ej sålda visningspaket för aktuellt försäljnings-I baserat på insänd order.
+            </summary>
+            <returns>En hårt typad lista bestående av OrderItem-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getShowCaseItemForReporting">
+            <summary>
+            Returnerar en lista med samtliga levererade visningspaket kompletterad med information som KP rapporterat. Listan används som underlag för KP att rapportera in gruppens visningspaket.
+            </summary>
+            <returns>En hårt typad lista i form av OrderItem-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getSoldShowCaseItems">
+            <summary>
+            Returnerar en lista på sålda visningspaket.
+            </summary>
+            <returns>En hårt typad lista bestående av OrderItem-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.countShowCaseItems">
+            <summary>
+            Beräknar totalt antal levererade visningspaket.
+            </summary>
+            <returns>Ett heltal i form av ett flyttal.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.countHistoryItems(System.Int32)">
+            <summary>
+            Beräknar totalt antal fakturerade paket för en viss artikelstatus..
+            </summary>
+            <param name="itemStatus">Artikelstatus, heltal.</param>
+            <returns>Ett heltal.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.countHistoryItems">
+            <summary>
+            Returnerar summan av totalt antal sålda paket för aktuellt försäljnings-ID, inkl. ej inskickade order.
+            </summary>
+            <returns>Heltal.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.checkAllReleased(Navipro.Infojet.Lib.Infojet)">
+            <summary>
+            Kontrollerar om samtliga säljare klarmarkerat deras orderrader.
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <returns>True eller False</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.countReleased(Navipro.Infojet.Lib.Infojet)">
+            <summary>
+            Returnerar antalet orderrader som är klarmarkerade för aktuellt försäljnings-ID.
+            </summary>
+            <param name="infojetContext">Referens till Infojet-klassen.</param>
+            <returns>Heltal.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.setSelected(System.Boolean)">
+            <summary>
+            Markerar aktuellt försäljnings-ID.
+            </summary>
+            <param name="selected">True eller False.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.checkShowCaseCalculationMethod">
+            <summary>
+            Kontrollerar om kontaktpersonen har valt avräkningsmetod för visningspaketen. Returnerar True eller False.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getTopList(System.String)">
+            <summary>
+            Returnerar en 10-i-topp-lista i form av en lista. Endast aktuell säljare presenteras med namn.
+            </summary>
+            <param name="webUserAccountNo">Användarkontonr för aktuell säljare</param>
+            <returns>En hårt typad lista i form av TopListItem-objekt.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.countRegisteredSalesPersons">
+            <summary>
+            Räknar antalet registrerade/aktiva säljare.
+            </summary>
+            <returns>Ett heltal.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getCartLines(System.String)">
+            <summary>
+            Returnerar en given säljares varukorg i form av ett dataset.
+            </summary>
+            <param name="webUserAccountNo">Användarkontonr för säljaren.</param>
+            <returns>Ett dataset.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getSentCartLines(System.String)">
+            <summary>
+            Returnerar en given säljares insända orderrader i form av ett dataset.
+            </summary>
+            <param name="webUserAccountNo">Användarkontonr för säljaren.</param>
+            <returns>Ett dataset.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.isContactPerson(System.String)">
+            <summary>
+            Kontrollerar om ett givet användarkontonr är kontaktperson eller grupp-kontaktperson för aktuellt försäljnings-ID.
+            </summary>
+            <param name="webUserAccountNo">Användarkontonr.</param>
+            <returns>True eller False.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.isSubContactPerson(System.String)">
+            <summary>
+            Kontrollerar om ett givet användarkontonr är grupp-kontaktperson för det aktuella försäljnings-ID't.
+            </summary>
+            <param name="webUserAccountNo">Användarkontonr.</param>
+            <returns>True eller False.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.isPrimaryContactPerson(System.String)">
+            <summary>
+            Kontrollerar om ett givet användarkontonr är huvud-kontaktperson för det aktuella försäljnings-ID't.
+            </summary>
+            <param name="webUserAccountNo">Användarkontonr.</param>
+            <returns>True eller False.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.checkReorderingFreeFreight">
+            <summary>
+            Genomför kontroller mot ett antal kriterier om gruppen är berättigad till fri frakt eller inte.
+            </summary>
+            <returns>True eller False.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.checkPreliminaryCatalog">
+            <summary>
+            Kontrollerar om artikelsortimentet för det aktuella försäljnings-ID't är ett primärt sortiment eller inte.
+            </summary>
+            <returns>True eller False</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesID.getGiftCardItems(Navipro.Infojet.Lib.Infojet)">
+            <summary>
+            Hämtar en lista med samtliga presentkort samt antalet motsvarande paket.
+            </summary>
+            <returns>Hashtable</returns>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.code">
+            <summary>
+            Nr för aktuellt försäljnins-ID.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.salesConcept">
+            <summary>
+            Försäljningskoncept.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.noOfSalesPersons">
+            <summary>
+            Antal allokerade säljare i gruppen.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.showCase">
+            <summary>
+            Visningspaketsortiment.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.itemSelection">
+            <summary>
+            Artikelsortiment.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.orderWeek">
+            <summary>
+            Ordervecka då slutordern förväntas.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.closingDate">
+            <summary>
+            Stängningsdatum.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.description">
+            <summary>
+            Beskrivning av gruppen.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.customerNo">
+            <summary>
+            Kundnr.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.contactWebUserAccountNo">
+            <summary>
+            Avändarkontonr för kontaktpersonen.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.userRegWebUserAccountNo">
+            <summary>
+            Användarkontonr för kontot som används då säljare registrerar sig.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.soldPackages">
+            <summary>
+            Antal sålda, ej inskickade, paket i gruppen.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.showCasePackages">
+            <summary>
+            Antal visningspaket.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.returnPackages">
+            <summary>
+            Antal ej sålda visningspaket.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.packagesToSend">
+            <summary>
+            Antal paket att skicka in vid nästa orderläggning.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.soldShowCaseItems">
+            <summary>
+            Lista över sålda visningspaket.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.totalQuantity">
+            <summary>
+            Totalt antal sålda paket på aktuell order.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.totalAmount">
+            <summary>
+            Totalt orderbelopp.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.totalHistoryQuantity">
+            <summary>
+            Totalt antal paket på fakturerade order.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.totalHistoryAmount">
+            <summary>
+            Totalt orderbelopp på fakturerade order.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.totalSentQuantity">
+            <summary>
+            Totalt antal paket på insända order.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.totalSentAmount">
+            <summary>
+            Totalt orderbelopp på insända order.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.nextOrderType">
+            <summary>
+            Nästa förväntade ordertyp.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.subContWebUserAccountNo">
+            <summary>
+            Användarkontonr för grupp-kontaktperson.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.notSoldShowCaseItems">
+            <summary>
+            Lista över ej sålda visningspaket på aktuell order. Gäller endast slutorder.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.notSoldHistoryShowCaseItems">
+            <summary>
+            Lista över ej sålda visningspaket på insända order.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.contactName">
+            <summary>
+            Kontaktpersonens namn.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.contactUserId">
+            <summary>
+            Kontaktpersonens användar-ID.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.contactPassword">
+            <summary>
+            Kontaktpersonens lösenord.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.additionalOrder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.activeSalesPersons">
+            <summary>
+            Lista över aktiva säljare.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.allSalesPersons">
+            <summary>
+            Lista över samtliga säljare.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.historyPackages">
+            <summary>
+            Antal fakturerade paket.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.historyProfit">
+            <summary>
+            Vinst baserat på fakturerade paket.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.cartLines">
+            <summary>
+            Orderrader i varukorgen för aktuell order.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.sentLines">
+            <summary>
+            Insända orderrader.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.historyLines">
+            <summary>
+            Fakturerade orderrader.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesID.profit">
+            <summary>
+            Vinst baserad på varukorgen på aktuell order.
+            </summary>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson">
+            <summary>
+            Klassen motsvarar en säljare som är medlem i ett försäljnings-ID.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.#ctor(Navipro.Infojet.Lib.Database,System.String,System.String)">
+            <summary>
+            Konstruktor som initierar en säljare utifrån försäljnings-ID samt användarkonto.
+            </summary>
+            <param name="database">Referens till databas-objektet i Infojet-klassen.</param>
+            <param name="salesId">Försäljnings-ID</param>
+            <param name="webUserAccountNo">Användarkontonr</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.#ctor(Navipro.Infojet.Lib.Database,System.Data.DataRow)">
+            <summary>
+            Konstruktor som initierar en säljare utifrån en rad i ett dataset.
+            </summary>
+            <param name="database">Referens till databas-objektet i Infojet-klassen.</param>
+            <param name="dataRow">En rad i ett dataset.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.#ctor(Navipro.Infojet.Lib.Database,System.Data.SqlClient.SqlDataReader)">
+            <summary>
+            Konstruktor som initierar en säljare utifrån en öppen datareader.
+            </summary>
+            <param name="database">Referens till databas-objektet i Infojet-klassen.</param>
+            <param name="dataReader">En öppen datareader.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.getStatus">
+            <summary>
+            Kontrollerar samtliga orderrader och returnerar en status 0, 1 eller 2 beroende på om raderna är klarmarkerade eller inte.
+            </summary>
+            <returns>0: Försäljning pågår, 1: Försäljning ej påbörjad, 2: Klarmarkerad</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.setTranslationHelper(Navipro.Infojet.Lib.Infojet)">
+            <summary>
+            Sätter en referens till Infojet-objektet för att nyttja översättningsfunktionerna i Infojet.
+            </summary>
+            <param name="infojet">Referens till Infojet-klassen.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.getStatusText">
+            <summary>
+            Returnerar en översatt statustext motsvarande resultatet från getStatus.
+            </summary>
+            <returns>En översatt textsträng.</returns>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.salesId">
+            <summary>
+            Försäljnings-ID.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.webUserAccountNo">
+            <summary>
+            Användarkontonr på säljaren.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.pageUrl">
+            <summary>
+            Länk till detaljsidan för säljaren, om satt.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.name">
+            <summary>
+            Säljarens namn.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.released">
+            <summary>
+            Översatt textsträng motsvarande aktuell status.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.soldPackages">
+            <summary>
+            Antal sålda paket för aktuell säljare.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.historyPackages">
+            <summary>
+            Antal fakturerade paket för aktuell säljare.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.soldGiftCards">
+            <summary>
+            Antal sålda presentkort för aktuell säljare.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.historyGiftCards">
+            <summary>
+            Antal fakturerade presentkort för aktuell säljare.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDSalesPerson.totalPackages">
+            <summary>
+            Totalt antal paket (sålda + fakturerade) för aktuell säljare.
+            </summary>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.SalesIDCollection">
+            <summary>
+            En lista av ett antal SalesID-objekt.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.Add(Navipro.Newbody.Woppen.Library.SalesID)">
+            <summary>
+            Lägger till ett SalesID-objekt i listan.
+            </summary>
+            <param name="salesId">Ett SalesID-objekt.</param>
+            <returns>Returnerar positionen i listan.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.IndexOf(Navipro.Newbody.Woppen.Library.SalesID)">
+            <summary>
+            Returnerar positionen i listan för ett givet SalesID-objekt.
+            </summary>
+            <param name="salesId">Ett SalesID-objekt.</param>
+            <returns>Heltal.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.Insert(System.Int32,Navipro.Newbody.Woppen.Library.SalesID)">
+            <summary>
+            Lägger in ett SalesID-objekt på en given position i listan.
+            </summary>
+            <param name="index">Position.</param>
+            <param name="salesId">SalesID-objekt att lägga till i listan.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.Remove(Navipro.Newbody.Woppen.Library.SalesID)">
+            <summary>
+            Tar bort ett SalesID-objekt ur listan.
+            </summary>
+            <param name="salesId">SalesID-objekt att radera.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.Contains(Navipro.Newbody.Woppen.Library.SalesID)">
+            <summary>
+            Kontrollerar om listan innehåller ett givet SalesID-objekt.
+            </summary>
+            <param name="salesId">SalesID-objekt att lesa efter.</param>
+            <returns>Returnerar true eller false beroende på om objektet finns i listan eller inte.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.setPageUrl(System.String)">
+            <summary>
+            Märker upp samtliga SalesID-objekt i listan med rätt URL till resp. detaljsida.
+            </summary>
+            <param name="pageUrl">Länk</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.calcPackages">
+            <summary>
+            Räknar ut det totala antalet paket att beställa (sålda paket - visningspaket + ej sålda visningspaket) för samtliga försäljnings-ID'n i listan. Funktionen tar inte hänsyn till visningspaketen på artikelnivå. (Föråldrad. Bör ej användas.)
+            </summary>
+            <returns>Ett heltal</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.calcSoldPackages">
+            <summary>
+            Räknar ut det toala antalet sålda paket för samtliga försäljnings-ID'n i listan.
+            </summary>
+            <returns>Ett heltal.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.calcPackagesToOrder">
+            <summary>
+            Räknar ut det totala antalet paket att beställa för samtliga försäljnings-ID'n i listan. Beräkningen räknar bort visningspaket på artikelnivå.
+            </summary>
+            <returns>Ett heltal.</returns>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.calcAmount(System.Single@,System.Single@)">
+            <summary>
+            Räknar ut det totala orderbelopp samt orderantalet inkl. sålda visningspaket för samtliga försäljnings-ID'n i listan.
+            </summary>
+            <param name="quantity">Totalt orderantal.</param>
+            <param name="amount">Totalt orderbelopp.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.calcProfit(System.Single@)">
+            <summary>
+            Räknar ut den totala vinsten för samtliga försäljnings-ID'n i listan.
+            </summary>
+            <param name="profit">Vinsten.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.calcHistoryAmount(System.Single@,System.Single@)">
+            <summary>
+            Räknar ut det totala fakturerade orderantalet samt orderbeloppet för samtliga försäljnings-ID'n i listan.
+            </summary>
+            <param name="quantity">Totalt orderantal.</param>
+            <param name="amount">Totalt orderbelopp.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.calcHistoryProfit(System.Single@)">
+            <summary>
+            Räknar ut den totala, fakturerade, vinsten för samtliga försäljnings-ID'n i listan.
+            </summary>
+            <param name="profit">Vinsten.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.SalesIDCollection.calcSentAmount(System.Single@,System.Single@)">
+            <summary>
+            Räknar ut det totala, inskickade, orderantalet och orderbeloppet för samtliga försäljnings-ID'n i listan. Gäller fakturerat som ej fakturerat.
+            </summary>
+            <param name="quantity">Totalt orderantal.</param>
+            <param name="amount">Totalt orderbelopp.</param>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.SalesIDCollection.Item(System.Int32)">
+            <summary>
+            Returnerar indexerat objekt.
+            </summary>
+            <param name="index">Anger vilken position i listan som skall returneras.</param>
+            <returns>Returnerar ett SalesID-objekt.</returns>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.OrderItem">
+            <summary>
+            OrderItem illustrerar en post i varukorgen i olika lägen. Varukorgen läses ut i OrderItems ifrån klassen SalesId.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.OrderItem.#ctor(Navipro.Infojet.Lib.WebCartLine)">
+            <summary>
+            Konstruktor som bygger upp en post utifrån en rad i varukorgen.
+            </summary>
+            <param name="webCartLine">Motsvarar en rad i varukorgen.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.OrderItem.#ctor">
+            <summary>
+            Tom konstruktor.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.OrderItem.setTextLength(System.Int32)">
+            <summary>
+            Sätter maximal textlängd på beskrivningsfältet.
+            </summary>
+            <param name="length"></param>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.lineNo">
+            <summary>
+            Radnr i varukorgen.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.itemNo">
+            <summary>
+            Artikelnr.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.description">
+            <summary>
+            Beskrivning.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.unitPrice">
+            <summary>
+            Enhetspris.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.quantity">
+            <summary>
+            Antal.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.quantity2">
+            <summary>
+            Ytterligare antal. Ex. antal förpackningsmaterial.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.quantity3">
+            <summary>
+            Ytterligare antal. Ex. antal förpackningsmaterial.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.method">
+            <summary>
+            Fördelningsmetod.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.amount">
+            <summary>
+            Belopp.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.quantityShowCase">
+            <summary>
+            Antal visningspaket.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.quantityToOrder">
+            <summary>
+            Antal att beställa.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.soldQuantity">
+            <summary>
+            Antal sålda paket.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.remainingQuantity">
+            <summary>
+            Återstående antal.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.salesId">
+            <summary>
+            Försäljnings-ID.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.formatedQuantityShowCase">
+            <summary>
+            Antal visningspaket formaterat som text.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.formatedQuantityToOrder">
+            <summary>
+            Antal att beställa, formaterat som text.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.formatedSoldQuantity">
+            <summary>
+            Antal sålda paket, formaterat som text.
+            </summary>
+        </member>
+        <member name="P:Navipro.Newbody.Woppen.Library.OrderItem.formatedRemainingQuantity">
+            <summary>
+            Återstående antal, formaterat som text.
+            </summary>
+        </member>
+        <member name="T:Navipro.Newbody.Woppen.Library.ItemCategory">
+            <summary>
+            ItemCategory motsvarar en post i tabellen med samma namn. Klassen illustrerar en artikelkategori.
+            </summary>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.ItemCategory.#ctor(Navipro.Infojet.Lib.Database,System.Data.DataRow)">
+            <summary>
+            Konstruktor som skapar en instans av klassen utifrån ett dataset.
+            </summary>
+            <param name="database">En instans till databas-objektet. Fås ifrån infojet-instansen, egenskapen systemDatabase.</param>
+            <param name="dataRow">Ett dataset innehållande kod och beskrivning.</param>
+        </member>
+        <member name="M:Navipro.Newbody.Woppen.Library.ItemCategory.#ctor(Navipro.Infojet.Lib.Database,System.String)">
+            <summary>
+            Konstruktor som skapar en instans av klassen utifrån en kategorikod.
+            </summary>
+            <param name="database">En instans till databas-objektet. Fås ifrån infojet-instansen, egenskapen systemDatabase.</param>
+            <param name="code">Artikelkategorikod.</param>
+        </member>
+    </members>
+</doc>

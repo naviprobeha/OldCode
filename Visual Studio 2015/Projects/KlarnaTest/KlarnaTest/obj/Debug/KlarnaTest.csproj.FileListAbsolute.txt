@@ -1,0 +1,7 @@
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\KlarnaTest\KlarnaTest\bin\Debug\KlarnaTest.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\KlarnaTest\KlarnaTest\bin\Debug\KlarnaTest.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\KlarnaTest\KlarnaTest\bin\Debug\Klarna.Rest.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\KlarnaTest\KlarnaTest\bin\Debug\Newtonsoft.Json.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\KlarnaTest\KlarnaTest\bin\Debug\Newtonsoft.Json.xml
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\KlarnaTest\KlarnaTest\obj\Debug\KlarnaTest.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\KlarnaTest\KlarnaTest\obj\Debug\KlarnaTest.pdb

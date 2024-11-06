@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="NyceMethodInvoker.asmx.cs" Class="NyceMethodInvoker.NyceMethodInvoker" %>

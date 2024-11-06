@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STWebService", "STWebService\STWebService.csproj", "{14FABC3B-83C0-426D-8D97-B4BDA25E47B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STWebServiceAPI", "STWebServiceAPI\STWebServiceAPI.csproj", "{AAF5CBA5-D66A-4AA6-83AB-9C89AA84818A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "STWebServiceAPISetup", "STWebServiceAPISetup\STWebServiceAPISetup.vdproj", "{2916CCD8-9E42-4258-8DAC-A65B68B39123}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14FABC3B-83C0-426D-8D97-B4BDA25E47B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FABC3B-83C0-426D-8D97-B4BDA25E47B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FABC3B-83C0-426D-8D97-B4BDA25E47B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FABC3B-83C0-426D-8D97-B4BDA25E47B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF5CBA5-D66A-4AA6-83AB-9C89AA84818A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF5CBA5-D66A-4AA6-83AB-9C89AA84818A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF5CBA5-D66A-4AA6-83AB-9C89AA84818A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF5CBA5-D66A-4AA6-83AB-9C89AA84818A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2916CCD8-9E42-4258-8DAC-A65B68B39123}.Debug|Any CPU.ActiveCfg = Debug
+		{2916CCD8-9E42-4258-8DAC-A65B68B39123}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

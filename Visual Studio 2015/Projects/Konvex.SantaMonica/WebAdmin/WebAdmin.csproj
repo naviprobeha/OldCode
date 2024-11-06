@@ -1,0 +1,1332 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB09EF75-AEB7-4F1A-A9D7-0773308F7545}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>WebAdmin</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebAdmin</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <ProjectReference Include="SantaMonicaCommonLib">
+      <Name>SantaMonicaCommonLib</Name>
+      <Project>{F55275C4-0FA0-4E4D-9FA3-A276637EF592}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="agents.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="agent_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="authorize.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="callLog.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="callLog_admin.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="consumerCapacity.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="consumerCapacity_generate.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="consumerCapacity_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="consumerFactoryOrders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="consumerInventory.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="consumerInventoryView.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="consumerInventory_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="containers.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="containers_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="containers_service.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="containers_service_log.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="containers_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="customers.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="customers_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="customers_orders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="customers_search.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="customers_shipAddress_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="customers_shipments.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="customers_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="default.htm" />
+    <Content Include="factoryCapacity.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryCapacity_generate.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryCapacity_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryInventory.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOperation.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOperation_container.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOperation_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOrders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOrders_admin.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOrders_assign.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOrders_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOrders_plan.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOrders_shipReport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOrders_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="factoryOrders_waittime.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="getAgents.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="getAgentTransactions.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="getCustomers.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="getLineOrders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="getShipOrders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="items.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="items_sample.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="items_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="linejournals.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="linejournals_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="linejournals_reported.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="linejournals_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="linejournals_waittime.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="lineorders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="lineorders_assign.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="lineorders_future.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="lineorders_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="lineorders_move_cont.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="lineorders_shipment.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="lineorders_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="logoff.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="lyncLog.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="map.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="map_consumer.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="map_factory.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="menu.asp" />
+    <Content Include="messages.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="messages_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="mobileusers.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="mobileusers_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders.aspx" />
+    <Content Include="orders_assign.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_assign_multi.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_id.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_id_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_items.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_items_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_modify_full.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_move.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_sms.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_unverified.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_unverified_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="orders_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="reason_lineOrders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="reportViewer.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="samples.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="samples_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="scaleEntries.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="scaleEntries_missing.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="scaleEntries_newMonth.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="scaleEntries_unscaled.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="scheduled_orders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="scheduled_orders_convert.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="scheduled_orders_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shipments.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shipments_print.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shipments_samples.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shipments_special1.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shipments_summary.aspx" />
+    <Content Include="shipments_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingCustomerFactoryOrders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingCustomerLineOrders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingCustomers.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingCustomers_addTransport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingCustomers_lineOrders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingCustomers_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingCustomers_schedules_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingCustomers_users_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingCustomers_view.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingForm.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingForm_factory_modify.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingForm_factory_print.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="shippingForm_print.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="showMap.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="status.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="status_nonLoadedContainers.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="status_nonScaledContainers.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="status_unScaledContainers.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="test.aspx" />
+    <Content Include="Web.config" />
+    <Compile Include="agents.aspx.cs">
+      <DependentUpon>agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agent_view.aspx.cs">
+      <DependentUpon>agent_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="authorize.aspx.cs">
+      <DependentUpon>authorize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callLog.aspx.cs">
+      <DependentUpon>callLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callLog_admin.aspx.cs">
+      <DependentUpon>callLog_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consumerCapacity.aspx.cs">
+      <DependentUpon>consumerCapacity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consumerCapacity_generate.aspx.cs">
+      <DependentUpon>consumerCapacity_generate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consumerCapacity_modify.aspx.cs">
+      <DependentUpon>consumerCapacity_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consumerFactoryOrders.aspx.cs">
+      <DependentUpon>consumerFactoryOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consumerInventory.aspx.cs">
+      <DependentUpon>consumerInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consumerInventoryView.aspx.cs">
+      <DependentUpon>consumerInventoryView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consumerInventory_modify.aspx.cs">
+      <DependentUpon>consumerInventory_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="containers.aspx.cs">
+      <DependentUpon>containers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="containers_modify.aspx.cs">
+      <DependentUpon>containers_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="containers_service.aspx.cs">
+      <DependentUpon>containers_service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="containers_service_log.aspx.cs">
+      <DependentUpon>containers_service_log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="containers_view.aspx.cs">
+      <DependentUpon>containers_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers.aspx.cs">
+      <DependentUpon>customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers_modify.aspx.cs">
+      <DependentUpon>customers_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers_orders.aspx.cs">
+      <DependentUpon>customers_orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers_search.aspx.cs">
+      <DependentUpon>customers_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers_shipAddress_modify.aspx.cs">
+      <DependentUpon>customers_shipAddress_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers_shipments.aspx.cs">
+      <DependentUpon>customers_shipments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers_view.aspx.cs">
+      <DependentUpon>customers_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryCapacity.aspx.cs">
+      <DependentUpon>factoryCapacity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryCapacity_generate.aspx.cs">
+      <DependentUpon>factoryCapacity_generate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryCapacity_modify.aspx.cs">
+      <DependentUpon>factoryCapacity_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryInventory.aspx.cs">
+      <DependentUpon>factoryInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOperation.aspx.cs">
+      <DependentUpon>factoryOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOperation_container.aspx.cs">
+      <DependentUpon>factoryOperation_container.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOperation_view.aspx.cs">
+      <DependentUpon>factoryOperation_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOrders.aspx.cs">
+      <DependentUpon>factoryOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOrders_admin.aspx.cs">
+      <DependentUpon>factoryOrders_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOrders_assign.aspx.cs">
+      <DependentUpon>factoryOrders_assign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOrders_modify.aspx.cs">
+      <DependentUpon>factoryOrders_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOrders_plan.aspx.cs">
+      <DependentUpon>factoryOrders_plan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOrders_shipReport.aspx.cs">
+      <DependentUpon>factoryOrders_shipReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOrders_view.aspx.cs">
+      <DependentUpon>factoryOrders_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factoryOrders_waittime.aspx.cs">
+      <DependentUpon>factoryOrders_waittime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getAgents.aspx.cs">
+      <DependentUpon>getAgents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getAgentTransactions.aspx.cs">
+      <DependentUpon>getAgentTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getCustomers.aspx.cs">
+      <DependentUpon>getCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getLineOrders.aspx.cs">
+      <DependentUpon>getLineOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getShipOrders.aspx.cs">
+      <DependentUpon>getShipOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HTMLHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="items.aspx.cs">
+      <DependentUpon>items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="items_sample.aspx.cs">
+      <DependentUpon>items_sample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="items_view.aspx.cs">
+      <DependentUpon>items_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="linejournals.aspx.cs">
+      <DependentUpon>linejournals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="linejournals_modify.aspx.cs">
+      <DependentUpon>linejournals_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="linejournals_reported.aspx.cs">
+      <DependentUpon>linejournals_reported.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="linejournals_view.aspx.cs">
+      <DependentUpon>linejournals_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="linejournals_waittime.aspx.cs">
+      <DependentUpon>linejournals_waittime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lineorders.aspx.cs">
+      <DependentUpon>lineorders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lineorders_assign.aspx.cs">
+      <DependentUpon>lineorders_assign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lineorders_future.aspx.cs">
+      <DependentUpon>lineorders_future.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lineorders_modify.aspx.cs">
+      <DependentUpon>lineorders_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lineorders_move_cont.aspx.cs">
+      <DependentUpon>lineorders_move_cont.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lineorders_shipment.aspx.cs">
+      <DependentUpon>lineorders_shipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lineorders_view.aspx.cs">
+      <DependentUpon>lineorders_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logoff.aspx.cs">
+      <DependentUpon>logoff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lyncLog.aspx.cs">
+      <DependentUpon>lyncLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map.aspx.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map_consumer.aspx.cs">
+      <DependentUpon>map_consumer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map_factory.aspx.cs">
+      <DependentUpon>map_factory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="messages.aspx.cs">
+      <DependentUpon>messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="messages_modify.aspx.cs">
+      <DependentUpon>messages_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobileusers.aspx.cs">
+      <DependentUpon>mobileusers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobileusers_modify.aspx.cs">
+      <DependentUpon>mobileusers_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders.aspx.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_assign.aspx.cs">
+      <DependentUpon>orders_assign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_assign_multi.aspx.cs">
+      <DependentUpon>orders_assign_multi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_id.aspx.cs">
+      <DependentUpon>orders_id.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_id_modify.aspx.cs">
+      <DependentUpon>orders_id_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_items.aspx.cs">
+      <DependentUpon>orders_items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_items_modify.aspx.cs">
+      <DependentUpon>orders_items_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_modify.aspx.cs">
+      <DependentUpon>orders_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_modify_full.aspx.cs">
+      <DependentUpon>orders_modify_full.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_move.aspx.cs">
+      <DependentUpon>orders_move.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_sms.aspx.cs">
+      <DependentUpon>orders_sms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_unverified.aspx.cs">
+      <DependentUpon>orders_unverified.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_unverified_view.aspx.cs">
+      <DependentUpon>orders_unverified_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders_view.aspx.cs">
+      <DependentUpon>orders_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reason_lineOrders.aspx.cs">
+      <DependentUpon>reason_lineOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportViewer.aspx.cs">
+      <DependentUpon>reportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="samples.aspx.cs">
+      <DependentUpon>samples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="samples_view.aspx.cs">
+      <DependentUpon>samples_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scaleEntries.aspx.cs">
+      <DependentUpon>scaleEntries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scaleEntries_missing.aspx.cs">
+      <DependentUpon>scaleEntries_missing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scaleEntries_newMonth.aspx.cs">
+      <DependentUpon>scaleEntries_newMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scaleEntries_unscaled.aspx.cs">
+      <DependentUpon>scaleEntries_unscaled.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scheduled_orders.aspx.cs">
+      <DependentUpon>scheduled_orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scheduled_orders_convert.aspx.cs">
+      <DependentUpon>scheduled_orders_convert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scheduled_orders_modify.aspx.cs">
+      <DependentUpon>scheduled_orders_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shipments.aspx.cs">
+      <DependentUpon>shipments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shipments_print.aspx.cs">
+      <DependentUpon>shipments_print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shipments_samples.aspx.cs">
+      <DependentUpon>shipments_samples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shipments_special1.aspx.cs">
+      <DependentUpon>shipments_special1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shipments_summary.aspx.cs">
+      <DependentUpon>shipments_summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shipments_view.aspx.cs">
+      <DependentUpon>shipments_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingCustomerFactoryOrders.aspx.cs">
+      <DependentUpon>shippingCustomerFactoryOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingCustomerLineOrders.aspx.cs">
+      <DependentUpon>shippingCustomerLineOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingCustomers.aspx.cs">
+      <DependentUpon>shippingCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingCustomers_addTransport.aspx.cs">
+      <DependentUpon>shippingCustomers_addTransport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingCustomers_lineOrders.aspx.cs">
+      <DependentUpon>shippingCustomers_lineOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingCustomers_modify.aspx.cs">
+      <DependentUpon>shippingCustomers_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingCustomers_schedules_modify.aspx.cs">
+      <DependentUpon>shippingCustomers_schedules_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingCustomers_users_modify.aspx.cs">
+      <DependentUpon>shippingCustomers_users_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingCustomers_view.aspx.cs">
+      <DependentUpon>shippingCustomers_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingForm.aspx.cs">
+      <DependentUpon>shippingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingForm_factory_modify.aspx.cs">
+      <DependentUpon>shippingForm_factory_modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingForm_factory_print.aspx.cs">
+      <DependentUpon>shippingForm_factory_print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shippingForm_print.aspx.cs">
+      <DependentUpon>shippingForm_print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showMap.aspx.cs">
+      <DependentUpon>showMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="status.aspx.cs">
+      <DependentUpon>status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="status_nonLoadedContainers.aspx.cs">
+      <DependentUpon>status_nonLoadedContainers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="status_nonScaledContainers.aspx.cs">
+      <DependentUpon>status_nonScaledContainers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="status_unScaledContainers.aspx.cs">
+      <DependentUpon>status_unScaledContainers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <EmbeddedResource Include="agents.aspx.resx">
+      <DependentUpon>agents.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agent_view.aspx.resx">
+      <DependentUpon>agent_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="authorize.aspx.resx">
+      <DependentUpon>authorize.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="callLog.aspx.resx">
+      <DependentUpon>callLog.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="callLog_admin.aspx.resx">
+      <DependentUpon>callLog_admin.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consumerCapacity.aspx.resx">
+      <DependentUpon>consumerCapacity.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consumerCapacity_generate.aspx.resx">
+      <DependentUpon>consumerCapacity_generate.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consumerCapacity_modify.aspx.resx">
+      <DependentUpon>consumerCapacity_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consumerFactoryOrders.aspx.resx">
+      <DependentUpon>consumerFactoryOrders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consumerInventory.aspx.resx">
+      <DependentUpon>consumerInventory.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consumerInventoryView.aspx.resx">
+      <DependentUpon>consumerInventoryView.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consumerInventory_modify.aspx.resx">
+      <DependentUpon>consumerInventory_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="containers.aspx.resx">
+      <DependentUpon>containers.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="containers_modify.aspx.resx">
+      <DependentUpon>containers_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="containers_service.aspx.resx">
+      <DependentUpon>containers_service.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="containers_service_log.aspx.resx">
+      <DependentUpon>containers_service_log.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="containers_view.aspx.resx">
+      <DependentUpon>containers_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers.aspx.resx">
+      <DependentUpon>customers.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers_modify.aspx.resx">
+      <DependentUpon>customers_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers_orders.aspx.resx">
+      <DependentUpon>customers_orders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers_search.aspx.resx">
+      <DependentUpon>customers_search.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers_shipAddress_modify.aspx.resx">
+      <DependentUpon>customers_shipAddress_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers_shipments.aspx.resx">
+      <DependentUpon>customers_shipments.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers_view.aspx.resx">
+      <DependentUpon>customers_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryCapacity.aspx.resx">
+      <DependentUpon>factoryCapacity.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryCapacity_generate.aspx.resx">
+      <DependentUpon>factoryCapacity_generate.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryCapacity_modify.aspx.resx">
+      <DependentUpon>factoryCapacity_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryInventory.aspx.resx">
+      <DependentUpon>factoryInventory.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOperation.aspx.resx">
+      <DependentUpon>factoryOperation.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOperation_container.aspx.resx">
+      <DependentUpon>factoryOperation_container.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOperation_view.aspx.resx">
+      <DependentUpon>factoryOperation_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOrders.aspx.resx">
+      <DependentUpon>factoryOrders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOrders_admin.aspx.resx">
+      <DependentUpon>factoryOrders_admin.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOrders_assign.aspx.resx">
+      <DependentUpon>factoryOrders_assign.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOrders_modify.aspx.resx">
+      <DependentUpon>factoryOrders_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOrders_plan.aspx.resx">
+      <DependentUpon>factoryOrders_plan.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOrders_shipReport.aspx.resx">
+      <DependentUpon>factoryOrders_shipReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOrders_view.aspx.resx">
+      <DependentUpon>factoryOrders_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factoryOrders_waittime.aspx.resx">
+      <DependentUpon>factoryOrders_waittime.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getAgents.aspx.resx">
+      <DependentUpon>getAgents.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getAgentTransactions.aspx.resx">
+      <DependentUpon>getAgentTransactions.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getCustomers.aspx.resx">
+      <DependentUpon>getCustomers.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getLineOrders.aspx.resx">
+      <DependentUpon>getLineOrders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getShipOrders.aspx.resx">
+      <DependentUpon>getShipOrders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="items.aspx.resx">
+      <DependentUpon>items.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="items_sample.aspx.resx">
+      <DependentUpon>items_sample.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="items_view.aspx.resx">
+      <DependentUpon>items_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="linejournals.aspx.resx">
+      <DependentUpon>linejournals.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="linejournals_modify.aspx.resx">
+      <DependentUpon>linejournals_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="linejournals_reported.aspx.resx">
+      <DependentUpon>linejournals_reported.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="linejournals_view.aspx.resx">
+      <DependentUpon>linejournals_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="linejournals_waittime.aspx.resx">
+      <DependentUpon>linejournals_waittime.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lineorders.aspx.resx">
+      <DependentUpon>lineorders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lineorders_assign.aspx.resx">
+      <DependentUpon>lineorders_assign.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lineorders_future.aspx.resx">
+      <DependentUpon>lineorders_future.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lineorders_modify.aspx.resx">
+      <DependentUpon>lineorders_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lineorders_move_cont.aspx.resx">
+      <DependentUpon>lineorders_move_cont.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lineorders_shipment.aspx.resx">
+      <DependentUpon>lineorders_shipment.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lineorders_view.aspx.resx">
+      <DependentUpon>lineorders_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logoff.aspx.resx">
+      <DependentUpon>logoff.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lyncLog.aspx.resx">
+      <DependentUpon>lyncLog.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map.aspx.resx">
+      <DependentUpon>map.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map_consumer.aspx.resx">
+      <DependentUpon>map_consumer.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map_factory.aspx.resx">
+      <DependentUpon>map_factory.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages.aspx.resx">
+      <DependentUpon>messages.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages_modify.aspx.resx">
+      <DependentUpon>messages_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mobileusers.aspx.resx">
+      <DependentUpon>mobileusers.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mobileusers_modify.aspx.resx">
+      <DependentUpon>mobileusers_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders.aspx.resx">
+      <DependentUpon>orders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_assign.aspx.resx">
+      <DependentUpon>orders_assign.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_assign_multi.aspx.resx">
+      <DependentUpon>orders_assign_multi.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_id.aspx.resx">
+      <DependentUpon>orders_id.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_id_modify.aspx.resx">
+      <DependentUpon>orders_id_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_items.aspx.resx">
+      <DependentUpon>orders_items.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_items_modify.aspx.resx">
+      <DependentUpon>orders_items_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_modify.aspx.resx">
+      <DependentUpon>orders_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_modify_full.aspx.resx">
+      <DependentUpon>orders_modify_full.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_move.aspx.resx">
+      <DependentUpon>orders_move.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_sms.aspx.resx">
+      <DependentUpon>orders_sms.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_unverified.aspx.resx">
+      <DependentUpon>orders_unverified.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_unverified_view.aspx.resx">
+      <DependentUpon>orders_unverified_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders_view.aspx.resx">
+      <DependentUpon>orders_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reason_lineOrders.aspx.resx">
+      <DependentUpon>reason_lineOrders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportViewer.aspx.resx">
+      <DependentUpon>reportViewer.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="samples.aspx.resx">
+      <DependentUpon>samples.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="samples_view.aspx.resx">
+      <DependentUpon>samples_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scaleEntries.aspx.resx">
+      <DependentUpon>scaleEntries.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scaleEntries_missing.aspx.resx">
+      <DependentUpon>scaleEntries_missing.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scaleEntries_newMonth.aspx.resx">
+      <DependentUpon>scaleEntries_newMonth.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scaleEntries_unscaled.aspx.resx">
+      <DependentUpon>scaleEntries_unscaled.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scheduled_orders.aspx.resx">
+      <DependentUpon>scheduled_orders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scheduled_orders_convert.aspx.resx">
+      <DependentUpon>scheduled_orders_convert.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scheduled_orders_modify.aspx.resx">
+      <DependentUpon>scheduled_orders_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipments.aspx.resx">
+      <DependentUpon>shipments.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipments_print.aspx.resx">
+      <DependentUpon>shipments_print.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipments_samples.aspx.resx">
+      <DependentUpon>shipments_samples.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipments_special1.aspx.resx">
+      <DependentUpon>shipments_special1.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipments_summary.aspx.resx">
+      <DependentUpon>shipments_summary.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipments_view.aspx.resx">
+      <DependentUpon>shipments_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingCustomerFactoryOrders.aspx.resx">
+      <DependentUpon>shippingCustomerFactoryOrders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingCustomerLineOrders.aspx.resx">
+      <DependentUpon>shippingCustomerLineOrders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingCustomers.aspx.resx">
+      <DependentUpon>shippingCustomers.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingCustomers_addTransport.aspx.resx">
+      <DependentUpon>shippingCustomers_addTransport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingCustomers_lineOrders.aspx.resx">
+      <DependentUpon>shippingCustomers_lineOrders.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingCustomers_modify.aspx.resx">
+      <DependentUpon>shippingCustomers_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingCustomers_schedules_modify.aspx.resx">
+      <DependentUpon>shippingCustomers_schedules_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingCustomers_users_modify.aspx.resx">
+      <DependentUpon>shippingCustomers_users_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingCustomers_view.aspx.resx">
+      <DependentUpon>shippingCustomers_view.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingForm.aspx.resx">
+      <DependentUpon>shippingForm.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingForm_factory_modify.aspx.resx">
+      <DependentUpon>shippingForm_factory_modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingForm_factory_print.aspx.resx">
+      <DependentUpon>shippingForm_factory_print.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shippingForm_print.aspx.resx">
+      <DependentUpon>shippingForm_print.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showMap.aspx.resx">
+      <DependentUpon>showMap.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="status.aspx.resx">
+      <DependentUpon>status.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="status_nonLoadedContainers.aspx.resx">
+      <DependentUpon>status_nonLoadedContainers.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="status_nonScaledContainers.aspx.resx">
+      <DependentUpon>status_nonScaledContainers.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="status_unScaledContainers.aspx.resx">
+      <DependentUpon>status_unScaledContainers.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.aspx.resx">
+      <DependentUpon>test.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55548</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://dev1.navipro.se/WebAdmin</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

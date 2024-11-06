@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nav>
+  <type>products</type>
+  <method>UPDATE</method>
+  <filter />
+  <id>128</id>
+  <data>
+    <product>
+      <title>SYV Dampik&amp;#233; vit</title>
+      <sku>LR-102</sku>
+      <catalog_visibility>visible</catalog_visibility>
+      <regular_price>120</regular_price>
+      <managing_stock>false</managing_stock>
+      <stock_quantity>20</stock_quantity>
+      <in_stock>true</in_stock>
+      <type>variable</type>
+      <attributes>
+        <name>size</name>
+        <slug>size</slug>
+        <position>1</position>
+        <visible>true</visible>
+        <variation>true</variation>
+        <options>Large</options>
+        <options>Medium</options>
+        <options>Small</options>
+        <options>XL</options>
+        <options>XX-Large</options>
+      </attributes>
+    </product>
+  </data>
+</nav>

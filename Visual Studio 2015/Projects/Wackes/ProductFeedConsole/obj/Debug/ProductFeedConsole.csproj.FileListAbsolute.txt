@@ -1,0 +1,9 @@
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\ProductFeedConsole\bin\Debug\ProductFeedConsole.exe.config
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\ProductFeedConsole\bin\Debug\ProductFeedConsole.exe
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\ProductFeedConsole\bin\Debug\ProductFeedConsole.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\ProductFeedConsole\bin\Debug\BoschProductFeed.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\ProductFeedConsole\bin\Debug\Newtonsoft.Json.dll
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\ProductFeedConsole\bin\Debug\BoschProductFeed.pdb
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\ProductFeedConsole\obj\Debug\ProductFeedConsole.csprojResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\ProductFeedConsole\obj\Debug\ProductFeedConsole.exe
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Wackes\ProductFeedConsole\obj\Debug\ProductFeedConsole.pdb

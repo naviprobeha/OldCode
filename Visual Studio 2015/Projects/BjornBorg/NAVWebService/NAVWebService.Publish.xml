@@ -1,0 +1,21 @@
+<publishData>
+  <publishTarget publishUrl="\\independence\Websites\extranet.navipro.se\BBWebService\">
+    <file relUrl="ServiceRequest.asmx" publishTime="12/11/2009 16:24:44" />
+    <file relUrl="OrderHistoryService.asmx" publishTime="05/26/2010 13:44:06" />
+    <file relUrl="bin/NAVWebService.dll" publishTime="12/08/2010 13:27:08" />
+    <file relUrl="bin/NAVWebService.pdb" publishTime="12/08/2010 13:27:08" />
+    <file relUrl="Web.config" publishTime="12/08/2010 13:24:23" />
+  </publishTarget>
+  <publishTarget publishUrl="\\voyager\Websites\dev2.navipro.se\BBWebService\">
+    <file relUrl="ServiceRequest.asmx" publishTime="12/11/2009 16:24:44" />
+    <file relUrl="Web.config" publishTime="12/11/2009 16:21:39" />
+    <file relUrl="bin/NAVWebService.pdb" publishTime="12/14/2009 14:11:09" />
+    <file relUrl="bin/NAVWebService.dll" publishTime="12/14/2009 14:11:09" />
+  </publishTarget>
+  <publishTarget publishUrl="\\192.168.5.22\Websites\dev1.navipro.se\BBWebService\">
+    <file relUrl="ServiceRequest.asmx" publishTime="12/11/2009 16:24:44" />
+    <file relUrl="Web.config" publishTime="12/11/2009 16:21:39" />
+    <file relUrl="bin/NAVWebService.pdb" publishTime="12/11/2009 16:17:31" />
+    <file relUrl="bin/NAVWebService.dll" publishTime="12/11/2009 16:17:31" />
+  </publishTarget>
+</publishData>

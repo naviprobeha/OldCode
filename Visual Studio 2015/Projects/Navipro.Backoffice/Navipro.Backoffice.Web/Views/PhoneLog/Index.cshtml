@@ -1,0 +1,353 @@
+﻿@model Navipro.Backoffice.Web.Models.PhoneEntry
+@{
+
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Samtalslogg</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="/">Hem</a>
+            </li>
+            <li>
+                <a>Samtalslogg</a>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Filtrera</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <form class="form-inline">
+                        <div class="row">
+
+                            <div class="col-md-4">
+
+                                <p class="font-bold">
+                                    Från och med datum
+                                </p>
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" id="fromDate" value="@ViewBag.fromDate.ToString("yyyy-MM-dd")" onchange="updatePhoneLog()">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <p class="font-bold">
+                                    Till och med datum
+                                </p>
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" id="toDate" value="@ViewBag.toDate.ToString("yyyy-MM-dd")" onchange="updatePhoneLog()">
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+
+                                <p class="font-bold">
+                                    Ringgrupp
+                                </p>
+
+                                <select data-placeholder="Vilj en ringgrupp" class="chosen-select" tabindex="2" name="responseGroup" id="responseGroup" onchange="updatePhoneLog()">
+                                    @foreach (var item in ViewBag.responseGroups)
+                                    {
+                                        if (item.uri == ViewBag.responseGroupUri)
+                                        {
+                                            <option value="@item.uri" selected>@item.caption</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@item.uri">@item.caption</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Samtalslogg</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <table class="footable table table-hover" id="ajaxTable" data-page-size="40">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>@Html.DisplayNameFor(model => model.alertDateTime)</th>
+                                <th>@Html.DisplayNameFor(model => model.fromUri)</th>
+                                <th>@Html.DisplayNameFor(model => model.answeredDateTime)</th>
+                                <th>@Html.DisplayNameFor(model => model.answeredBy)</th>
+                                <th>@Html.DisplayNameFor(model => model.hangupDateTime)</th>
+                                <th>@Html.DisplayNameFor(model => model.customerNo)</th>
+                                <th>@Html.DisplayNameFor(model => model.customerName)</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Create Contact Modal HTML -->
+<div id="createContactWindow" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Index", "PhoneLog", FormMethod.Post, new { @id = "createContactForm" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Skapa kontakt</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger alert-dismissable" id="errorMessage" style="display: none;">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>                        
+                    </div>
+                    <p>E-post:</p>
+                    <div class="form-group">
+                        <input type="text" name="email" class="text-box single-line" id="email" maxlength="100"/>
+                    </div>
+                    <p>Namn:</p>
+                    <div class="form-group">
+                        <input type="text" name="name" class="text-box single-line" id="name" maxlength="50" />
+                    </div>
+                    <p>Telefonnr:</p>
+                    <div class="form-group">
+                        <input type="text" name="phoneNo" class="text-box single-line" id="phoneNo" maxlength="30" />
+                    </div>
+                    <p>Mobiltelefonnr:</p>
+                    <div class="form-group">
+                        <input type="text" name="cellPhoneNo" class="text-box single-line" id="cellPhoneNo" maxlength="30" />
+                    </div>
+                    <p>Kundnr:</p>
+                    <select data-placeholder="Välj kund" class="chosen-select" tabindex="2" name="customerNo" id="customerNo">
+                        <option value="">Välj kund</option>
+                        @foreach (var item in ViewBag.customerList)
+                        {
+                            <option value="@item.Value">@item.Text</option>
+                        }
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+                    <button type="button" class="btn btn-primary" id="createContactSubmit">Spara</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    @Styles.Render("~/plugins/footableStyles")
+    @Styles.Render("~/Content/plugins/chosen/chosenStyles")
+    @Styles.Render("~/plugins/dataPickerStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/footable")
+    @Scripts.Render("~/plugins/chosen")
+    @Scripts.Render("~/plugins/typehead")
+    @Scripts.Render("~/plugins/dataPicker")
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            $('.input-group.date').datepicker({
+                minViewMode: 0,
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true,
+                todayHighlight: true,
+                format: 'yyyy-mm-dd'
+            });
+
+            updatePhoneLog();
+
+            $('.footable').footable();
+            $('#responseGroup').chosen({ width: "100%", forceParse: true });
+            $('#customerNo').chosen({ width: "100%", forceParse: true });
+
+            $("#createContactSubmit").click(function () {
+                var errorMessage = "";
+                if ($("#customerNo").val() == "") {
+                    errorMessage = "Kund måste väljas.";
+                }
+                if ($("#name").val() == "") {
+                    errorMessage = "Namn måste fyllas i.";
+                }
+                if ($("#email").val() == "")
+                {
+                    errorMessage = "E-post måste fyllas i.";
+                }
+
+                if (errorMessage != "") {
+                    $("#errorMessage").append("<span>").html(errorMessage);
+                    $("#errorMessage").show();
+                    return;
+                }
+
+                $("#errorMessage").hide();
+
+
+                createNewContact($("#email").val(), $("#name").val(), $("#phoneNo").val(), $("#cellPhoneNo").val(), $("#customerNo").val());
+
+            });
+
+
+
+        });
+
+        function updatePhoneLog() {
+            // Create JSON url to controller
+            var phoneLogDataUrl = '@Url.Action("getPhoneLog", "PhoneLog")' + '?responseGroupUri=' + $("#responseGroup").val() + '&fromDate=' + $("#fromDate").val() + '&toDate=' + $("#toDate").val() + '&t=' + new Date().getTime();
+
+            // Ajax call for table data
+            $.ajax({
+                url: phoneLogDataUrl,
+                cashe: false,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                    var divBody = $('#tableBody');
+                    divBody.empty();
+
+                    var div = $('#tableBody');
+
+
+                    $.each(data, function (i, item) {
+                        createContact = '';
+                        createCase = '';
+                        toggleMissed = '';
+                        if (item.fromEmail == '') createContact = '<li><a data-id="' + item.fromUri + '" href="#" data-toggle="modal" class="createContactLink">Skapa kontakt</a></li>';
+                        if (item.fromEmail != '') createCase = '<li><a href="@Url.Action("Create", "Case")?ordererEmail=' + item.fromEmail + '" class="font-bold">Skapa ärende</a></li>';
+                        if (item.status == 1) toggleMissed = '<li><a href="#" data-id="' + item.alertDateTimeText + '|' + item.fromUri + '|' + item.responseGroupUri + '" onclick="toggleHandled(this)">Sätt till hanterad</a></li>';
+                        if (item.status == 2) toggleMissed = '<li><a href="#" data-id="' + item.alertDateTimeText + '|' + item.fromUri + '|' + item.responseGroupUri + '" onclick="toggleHandled(this)">Sätt till missat</a></li>';
+                        div.append(
+                            $('<tr>')
+                                .append($('<td>').html('<span class="label ' + item.icon + '">' + item.statusText + '</span>')).append($('<td>').html(item.alertDateTimeText)).append($('<td>').html('<a href="tel:' + item.fromUri + '">' + item.fromUri + '</a>')).append($('<td>').html(item.answeredTimeText)).append($('<td>').html(item.answeredBy)).append($('<td>').html(item.hangupTimeText)).append($('<td>').html('<a href="mailto:' + item.fromEmail + '">' + item.fromName + '</a>')).append($('<td>').html(item.customerName)).append($('<td>')
+                                  .html('<div class="btn-group"><button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Åtgärd <span class="caret"></span></button>' +
+                                              '<ul class="dropdown-menu">'+
+                                              createCase+
+                                              createContact +
+                                              '<li class="divider"></li>'+
+                                              toggleMissed +
+                                              '</ul></div>'))
+                            );
+
+                        $(".createContactLink").click(function () {
+                            $('#phoneNo').val($(this).data('id'));
+                            $('#createContactWindow').modal('show');
+                        });
+                    })
+
+
+                }
+            });
+
+        }
+
+
+
+
+        function toggleHandled(object) {
+            // Create JSON url to controller
+
+            var phoneLogDataUrl = '@Url.Action("toggleHandled", "PhoneLog")' + '?data=' + $(object).data('id') +'&t=' + new Date().getTime();
+
+
+            // Ajax call for table data
+            $.ajax({
+                url: phoneLogDataUrl,
+                cashe: false,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+
+                }
+            });
+
+            updatePhoneLog();
+        }
+
+        function createNewContact(email, name, phoneNo, cellPhoneNo, customerNo) {
+            // Create JSON url to controller
+
+            
+            var contactUrl = '@Url.Action("createContact", "Contact")' + '?email=' + email + '&name=' + name + '&phoneNo=' + phoneNo + '&cellPhoneNo=' + cellPhoneNo + '&customerNo=' + customerNo + '&t=' + new Date().getTime();
+
+            
+            // Ajax call for table data
+            $.ajax({
+                url: contactUrl,
+                cashe: false,
+                method: 'GET',
+                contentType: "application/x-javascript; charset:ISO-8859-1",
+                dataType: 'json',
+                success: function (data) {
+                   
+                    if (data == false) {
+                        
+                        $("#errorMessage").append("<span>").html("E-postadressen finns redan.");
+                        $("#errorMessage").show();
+
+                    }
+                    else
+                    {
+                        window.location.replace('@Url.Action("Index", "PhoneLog")');
+                    }
+
+                }
+            });
+
+        }
+
+
+    </script>
+
+}

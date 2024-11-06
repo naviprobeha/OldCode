@@ -1,0 +1,26 @@
+<publishData>
+  <publishTarget publishUrl="\\challenger\websites2\services.workanywhere.se\happysocks\servicerequest\">
+    <file relUrl="bin/WebServiceProxy.dll" publishTime="01/18/2014 21:48:46" />
+    <file relUrl="InfojetServiceRequest.asmx" publishTime="09/11/2011 21:38:07" />
+    <file relUrl="bin/WebServiceProxy.pdb" publishTime="01/18/2014 21:48:46" />
+    <file relUrl="Web.config" publishTime="01/18/2014 21:53:13" />
+  </publishTarget>
+  <publishTarget publishUrl="\\challenger\websites\services.workanywhere.se\happysocks\servicerequest\">
+    <file relUrl="bin/WebServiceProxy.dll" publishTime="01/18/2014 21:48:46" />
+    <file relUrl="InfojetServiceRequest.asmx" publishTime="09/11/2011 21:38:07" />
+    <file relUrl="bin/WebServiceProxy.pdb" publishTime="01/18/2014 21:48:46" />
+    <file relUrl="Web.config" publishTime="01/18/2014 21:45:32" />
+  </publishTarget>
+  <publishTarget publishUrl="\\hera\Websites\default\DemoInfojetWebService\">
+    <file relUrl="bin/WebServiceProxy.dll" publishTime="11/04/2013 11:30:21" />
+    <file relUrl="InfojetServiceRequest.asmx" publishTime="09/11/2011 21:38:07" />
+    <file relUrl="bin/WebServiceProxy.pdb" publishTime="11/04/2013 11:30:21" />
+    <file relUrl="Web.config" publishTime="09/11/2011 20:41:46" />
+  </publishTarget>
+  <publishTarget publishUrl="\\challenger\Websites\infojet.workanywhere.se\ipadWebServiceProxy\">
+    <file relUrl="bin/WebServiceProxy.dll" publishTime="09/11/2011 22:41:18" />
+    <file relUrl="InfojetServiceRequest.asmx" publishTime="09/11/2011 21:38:07" />
+    <file relUrl="bin/WebServiceProxy.pdb" publishTime="09/11/2011 22:41:18" />
+    <file relUrl="Web.config" publishTime="09/11/2011 20:41:46" />
+  </publishTarget>
+</publishData>

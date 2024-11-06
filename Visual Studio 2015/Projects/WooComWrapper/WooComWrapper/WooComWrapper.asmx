@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="WooComWrapper.asmx.cs" Class="WooComWrapper.WooComWrapper" %>

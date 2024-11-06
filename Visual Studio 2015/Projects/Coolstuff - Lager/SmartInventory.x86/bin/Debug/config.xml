@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <webServiceUrl>http://services.workanywhere.se/outnorth/WMS2WebServiceProxy</webServiceUrl>
+  <languageCode>sv</languageCode>
+  <agentId>ON1</agentId>
+  <purchaseOrderNoPrefix>IOR</purchaseOrderNoPrefix>
+</configuration>

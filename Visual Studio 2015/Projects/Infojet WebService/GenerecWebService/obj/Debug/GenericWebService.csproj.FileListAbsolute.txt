@@ -1,0 +1,14 @@
+D:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\bin\Navipro.Infojet.WebService.dll
+D:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\bin\Navipro.Infojet.WebService.pdb
+D:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\bin\Navipro.Infojet.Lib.dll
+D:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\bin\Navipro.Infojet.Lib.pdb
+D:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\obj\Debug\Navipro.Infojet.WebService.dll
+D:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\obj\Debug\Navipro.Infojet.WebService.pdb
+H:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\obj\Debug\Navipro.Infojet.WebService.dll
+H:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\bin\Navipro.Infojet.WebService.dll
+H:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\bin\Navipro.Infojet.WebService.pdb
+H:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\bin\Navipro.Infojet.Lib.dll
+H:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\bin\Navipro.Infojet.Lib.pdb
+H:\Visual Studio\VS2008\Projects\Infojet WebService\GenerecWebService\obj\Debug\Navipro.Infojet.WebService.pdb

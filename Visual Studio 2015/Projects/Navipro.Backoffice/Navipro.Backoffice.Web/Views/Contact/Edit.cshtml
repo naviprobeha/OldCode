@@ -1,0 +1,158 @@
+﻿@model Navipro.Backoffice.Web.Models.CaseMember
+
+@{
+    ViewBag.Title = Model.name;
+}
+
+@using (Html.BeginForm("Edit", "Contact", FormMethod.Post))
+
+{
+    @Html.AntiForgeryToken()
+
+
+
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(model => model.email)
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-9">
+            <h2>Redigera kontakt @Model.name</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">Hem</a>
+                </li>
+                <li class="active">
+                    <a href="@Url.Action("List", "Contact")">Kontakter</a>
+                </li>
+                <li class="active">
+                    <a href="@Url.Action("Details", "Contact", new { @email = Model.email })">@Model.name</a>
+                </li>
+                <li class="active">
+                    <strong>Redigera</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-sm-3">
+            <div class="title-action">
+                <input type="submit" value="Spara" class="btn btn-primary" />
+                @Html.ActionLink("Tillbaka", "Details", new { @email = Model.email }, new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        @if (ViewBag.errorMessage != null)
+        {
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-danger alert-dismissable">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        @ViewBag.errorMessage
+                    </div>
+                </div>
+            </div>
+        }
+
+    <div class="row">
+        <div class="col-lg-7">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Allmänt</h5>
+                </div>
+
+                <div class="ibox-content">
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.email, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            <b>@Html.DisplayFor(model => model.email)</b>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.name, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.EditorFor(model => model.name)
+                            @Html.ValidationMessageFor(model => model.name)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.customerNo, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.DropDownListFor(model => model.customerNo, ((IEnumerable<SelectListItem>)ViewBag.customerList), new { @class = "chosen-select", @id = "customerNo" })
+                            @Html.ValidationMessageFor(model => model.customerNo)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.defaultJobNo, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.DropDownListFor(model => model.defaultJobNo, ((IEnumerable<SelectListItem>)ViewBag.jobList), new { @class = "chosen-select", @id = "defaultJobNo" })
+                            @Html.ValidationMessageFor(model => model.defaultJobNo)
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Kontaktuppgifter</h5>
+                </div>
+
+                <div class="ibox-content">
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.phoneNo, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.EditorFor(model => model.phoneNo, new { @id = "phoneNo" })
+                            @Html.ValidationMessageFor(model => model.phoneNo)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.cellPhoneNo, new { @class = "font-normal", @style = "font-weight: normal;" })
+                        <div>
+                            @Html.EditorFor(model => model.cellPhoneNo, new { @id = "cellPhoneNo" })
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+ 
+
+ </div>
+
+}
+
+@section Styles {
+    @Styles.Render("~/Content/plugins/chosen/chosenStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/chosen")
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+
+            $('#defaultJobNo').chosen({ width: "100%", forceParse: true });
+            $('#customerNo').chosen({ width: "100%", forceParse: true });
+
+
+        });
+
+
+
+
+   </script>
+}

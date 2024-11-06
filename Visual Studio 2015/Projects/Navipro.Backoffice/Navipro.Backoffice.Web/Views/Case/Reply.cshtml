@@ -1,0 +1,313 @@
+﻿@model Navipro.Backoffice.Web.Models.Case
+
+@{
+    ViewBag.Title = Model.subject;
+}
+
+@using (Html.BeginForm("Reply", "Case", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+
+
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(model => model.no)
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-9">
+            <h2>Svara på ärende @Model.no</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">Hem</a>
+                </li>
+                <li class="active">
+                    <a href="@Url.Action("List", "Case")">Ärenden</a>
+                </li>
+                <li class="active">
+                    <a href="@Url.Action("Details", "Case", new { @id = Model.no })">@Model.subject</a>
+                </li>
+                <li class="active">
+                    <strong>Svara</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-sm-3">
+            <div class="title-action">
+                <input type="submit" value="Skicka" class="btn btn-primary" />
+                @Html.ActionLink("Tillbaka", "Details", new { @id = Model.no }, new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        @if (ViewBag.errorMessage != null)
+        {
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-danger alert-dismissable">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        @ViewBag.errorMessage
+                    </div>
+                </div>
+            </div>
+        }
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Mottagare</h5>
+                    </div>
+
+                    <div class="ibox-content">
+
+                        <div class="form-group">
+                            <label class="font-normal" style="font-weight: normal;">Mottagare:</label>
+                            <div>
+                                <select data-placeholder="Välj mottagare" class="chosen-select" multiple tabindex="2" name="receiverList" id="receiver">
+                                    @foreach (var item in ViewBag.receiverList)
+                                    {
+                                        if (Model.ordererEmail == item.email)
+                                        {
+                                            <option value="@item.email" selected>@item.email</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@item.email">@item.email</option>
+                                        }
+                                    }
+                                </select>
+'                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.caseStatusCode, new { @class = "font-normal", @style = "font-weight: normal;" })
+                            <div>
+                                @Html.DropDownListFor(model => model.caseStatusCode, ((IEnumerable<SelectListItem>)ViewBag.statusList), new { @class = "chosen-select", @id = "statusCode" })
+                                @Html.ValidationMessageFor(model => model.caseStatusCode)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-normal" style="font-weight: normal;">Skicka svar som e-post:</label>
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked class="onoffswitch-checkbox" name="sendAsEmail" id="sendAsEmail">
+                                    <label class="onoffswitch-label" for="sendAsEmail">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-normal" style="font-weight: normal;">Stäng ärendet:</label>
+                            <div class="onoffswitch">
+                                <input type="checkbox" class="onoffswitch-checkbox" name="closeCase" id="closeCase">
+                                <label class="onoffswitch-label" for="closeCase">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>
+                        </div>
+
+
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox-content no-padding">
+                    @Html.TextAreaFor(model => model.newComment, new { @id = "message" })
+
+                </div>
+            </div>
+        </div>
+    
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-lg-12">
+                <div class="ibox-content">
+                    <div class="feed-activity-list">
+
+                        @foreach (var item in Model.caseLineList)
+                        {
+
+                            <div class="feed-element">
+                                <div class="ibox resizable" style="@item.border">
+
+                                    <div class="ibox-title" style="border-top: 0px;">
+                                        <span class="pull-left">
+                                            <i class="fa fa-user fa-3x"></i>&nbsp;&nbsp;
+                                        </span>
+                                        <strong>@item.fromName</strong> skrev gällande <strong>@item.subject</strong>:<br>
+                                        <small class="text-muted">@item.dateTime.ToString("yyyy-MM-dd HH:mm")</small>
+                                        <div class="ibox-tools" style="float: right; vertical-align: top;">
+                                            <small>@item.whileAgo</small>
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                            <a class="fullscreen-link">
+                                                <i class="fa fa-expand"></i>
+                                            </a>
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <i class="fa fa-wrench"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-user">
+                                                <li><a href="@Url.Action("Reply", "Case")/@Model.no" class="font-bold">Svara</a></li>
+                                                <li><a href="#commentWindow" data-toggle="modal">Kommentera</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#" data-id="@item.lineNo" data-toggle="modal" class="confirmDelete">Ta bort</a></li>
+                                            </ul>
+                                            <span class="pull-left label @item.emailStatusIcon" style="margin-right: 5px; margin-top: 1px;">@item.emailStatusText</span>
+                                        </div>
+                                    </div>
+
+
+                                    @if (item.externalComment != null)
+                                    {
+                                        <div class="ibox-content">
+                                            @Html.Raw(item.externalComment)
+
+                                        </div>
+                                    }
+                                    @if (item.internalComment != null)
+                                    {
+                                        <div class="alert alert-warning">
+                                            @item.internalComment
+                                        </div>
+
+                                    }
+
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins" id="description">
+                    <div class="ibox-title">
+                        <h5>Beskrivning av ärendet</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="fullscreen-link">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content" style="height: 100%; overflow:hidden;">
+                        <p>
+                            @Html.Raw(Model.description)
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</div>
+}
+
+<!-- Reply-to Details Modal HTML -->
+<div id="replyToDetails" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Reply", "Case", FormMethod.Post, new { id = "replyToDetails" }))
+
+            {
+                @Html.AntiForgeryToken()
+
+
+
+                @Html.ValidationSummary(true)
+
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Kompletterande uppgifter</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Innan ärendet kan bearbetas så behövs kompletterande uppgifter.</p>
+                    <input type="hidden" name="mode" value="replyToDetails" />
+                    <input type="hidden" name="no" value="@Model.no" />
+
+                    <select data-placeholder="Välj ett projekt" class="chosen-select" tabindex="2" name="jobNo" id="jobNo">
+                        <option value="">Välj ett projekt</option>
+                        @foreach (var item in ViewBag.jobList)
+                        {
+                            if (Model.jobNo == item.no)
+                            {
+                                <option value="@item.no" selected>@item.no @item.description</option>
+                            }
+                            else
+                            {
+                                <option value="@item.no">@item.no @item.description</option>
+                            }
+                        }
+                    </select>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Spara</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+@section Styles {
+    @Styles.Render("~/Content/plugins/chosen/chosenStyles")
+    @Styles.Render("~/plugins/dataPickerStyles")
+    @Styles.Render("~/plugins/summernoteStyles")
+}
+
+@section Scripts {
+    @Scripts.Render("~/plugins/chosen")
+    @Scripts.Render("~/plugins/typehead")
+    @Scripts.Render("~/plugins/dataPicker")
+    @Scripts.Render("~/plugins/summernote")
+
+    <script type="text/javascript">
+
+        
+        $(document).ready(function () {
+
+
+
+            $('#message').summernote({
+                height: 250,   //set editable area's height
+                placeholder: "Svara här...",
+                });
+
+            $('#receiver').chosen({ width: "100%", forceParse: true });
+            $('#jobNo').chosen({ width: "100%", forceParse: true });
+            $('#statusCode').chosen({ width: "100%", forceParse: true });
+
+        });
+
+
+
+    </script>
+
+    @{
+        if (Model != null && !Model.validated)
+        {
+            <script>
+                        $(window).load(function() {
+                            $('#replyToDetails').modal('show');
+                        });
+            </script>
+
+        }
+    }
+}

@@ -1,0 +1,6 @@
+<configuration>
+<modules>
+	<module moduleName="Test" assembly="TestAssembly" className="TestAssembly.Test" action="start"/>
+</modules>
+
+</configuration>

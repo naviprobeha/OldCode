@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://fortusinternational.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://fortusinternational.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://fortusinternational.com/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestConnection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestConnectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestConnectionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="customerdata" type="tns:Customer" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="CountryCode">
+        <s:restriction base="s:string">
+          <s:enumeration value="Sweden" />
+          <s:enumeration value="Denmark" />
+          <s:enumeration value="Norway" />
+          <s:enumeration value="Finland" />
+          <s:enumeration value="Suomi" />
+          <s:enumeration value="Deutschland" />
+          <s:enumeration value="Österreich" />
+          <s:enumeration value="UnitedKingdom" />
+          <s:enumeration value="Schweiz" />
+          <s:enumeration value="Nederland" />
+          <s:enumeration value="Ireland" />
+          <s:enumeration value="France" />
+          <s:enumeration value="Italy" />
+          <s:enumeration value="Spain" />
+          <s:enumeration value="Poland" />
+          <s:enumeration value="Europe" />
+          <s:enumeration value="Estonia" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="Customer">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Country" type="tns:CountryCode" />
+          <s:element minOccurs="1" maxOccurs="1" name="RegistrationDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerType" type="tns:CustomerType" />
+          <s:element minOccurs="1" maxOccurs="1" name="CardCustomer" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsInActive" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sex" type="tns:Gender" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryFirstname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryLastname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceFirstname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceLastname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Personalnumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RecievePostOuts" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="UsesDeliveryAddress" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryStreetAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceStreetAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceZipCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryZipCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Other" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Blocked" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Approved" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CustomerType">
+        <s:restriction base="s:string">
+          <s:enumeration value="PrivateCustomer" />
+          <s:enumeration value="BusinessCustomer" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="Gender">
+        <s:restriction base="s:string">
+          <s:enumeration value="Male" />
+          <s:enumeration value="Female" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="CreateUpdateCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateUpdateCustomerResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListCustomers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListCustomersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListCustomersResult" type="tns:ArrayOfCustomer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCustomer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Customer" nillable="true" type="tns:Customer" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LogInCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogInCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LogInCustomerResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="customerid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerResult" type="tns:Customer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerByPersonalNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="personalnumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerByPersonalNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerByPersonalNumberResult" type="tns:Customer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerByEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerByEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerByEmailResult" type="tns:Customer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="arts" type="tns:ArrayOfArticle" />
+            <s:element minOccurs="0" maxOccurs="1" name="cust" type="tns:Customer" />
+            <s:element minOccurs="0" maxOccurs="1" name="payment" type="tns:PaymentAlternative" />
+            <s:element minOccurs="0" maxOccurs="1" name="freight" type="tns:FreightType" />
+            <s:element minOccurs="1" maxOccurs="1" name="sendMail" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfArticle">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Article" nillable="true" type="tns:Article" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Article">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveStorageProfile" type="tns:Storageprofile" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArticleNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArticleStatus" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Created" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveFreightType" type="tns:FreightType" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocalName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PurchasePrice" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RegularPrice" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Weight" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VATtype" type="tns:VATCode" />
+          <s:element minOccurs="1" maxOccurs="1" name="VAT" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Storageprofile">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StorageprofileID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Meta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FreightType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FreightTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FreightTypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FreightCost" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="VATCode">
+        <s:restriction base="s:string">
+          <s:enumeration value="NO_VAT" />
+          <s:enumeration value="TWENTYFIVE_PERCENT" />
+          <s:enumeration value="TWELVE_PERCENT" />
+          <s:enumeration value="SIX_POINT_TWO_PERCENT" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="PaymentAlternative">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PaymentAlternativeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentTypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cost" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateOrderResult" type="tns:Order" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Order">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SubscriptionOrder" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeliveryNoticeSent" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Firstname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Lastname" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderNumber" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderType" type="tns:OrderType" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderStatus" type="tns:OrderStatus" />
+          <s:element minOccurs="0" maxOccurs="1" name="Customer" type="tns:Customer" />
+          <s:element minOccurs="1" maxOccurs="1" name="PaymentType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Created" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeliveryDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DesiredDeliveryDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="UseDeliveryAddress" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentTypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderStatusName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryPostalNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoicePostalNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Country" type="tns:CountryCode" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderValue" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductValue" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ServiceFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="VAT" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PaymentFee" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Currency" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AdministratorOrderNote" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AdministratorPublicOrderNote" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerOrderNote" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderRows" type="tns:ArrayOfOrderRow" />
+          <s:element minOccurs="1" maxOccurs="1" name="FreightType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FreightTypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FreightFee" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="OrderType">
+        <s:restriction base="s:string">
+          <s:enumeration value="NormalOrder" />
+          <s:enumeration value="SplittedOrder" />
+          <s:enumeration value="DividedOrder" />
+          <s:enumeration value="MotherOrder" />
+          <s:enumeration value="ConsignmentOrder" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="OrderStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Abort" />
+          <s:enumeration value="Approved" />
+          <s:enumeration value="AvbrutenOrder" />
+          <s:enumeration value="Blocked" />
+          <s:enumeration value="Delivered" />
+          <s:enumeration value="NotPossible" />
+          <s:enumeration value="OrderError" />
+          <s:enumeration value="Failed" />
+          <s:enumeration value="MD5Keychanged" />
+          <s:enumeration value="OrderCancelled" />
+          <s:enumeration value="Ordered" />
+          <s:enumeration value="Registered" />
+          <s:enumeration value="Reserved" />
+          <s:enumeration value="Shipping" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfOrderRow">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OrderRow" nillable="true" type="tns:OrderRow" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OrderRow">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ArticleNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VAT" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListOrders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="tns:OrderStatus" />
+            <s:element minOccurs="1" maxOccurs="1" name="BatchSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListOrdersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListOrdersResult" type="tns:ArrayOfOrder" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOrder">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="tns:Order" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListNonIntegratedOrders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IntegrationID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="tns:OrderStatus" />
+            <s:element minOccurs="1" maxOccurs="1" name="BatchSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListNonIntegratedOrdersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListNonIntegratedOrdersResult" type="tns:ArrayOfOrder" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderIntegration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IntegrationID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderIntegrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrderIntegrationResult" type="tns:OrderIntegration" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OrderIntegration">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IntegrationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Trans" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Field6" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddTrackingNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderNumber" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TrackingNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTrackingNumberResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SetOrderIntegration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IntegrationValues" type="tns:OrderIntegration" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetOrderIntegrationResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateOrderstatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OrderStatusID" type="tns:OrderStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOrderstatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CreateSubscription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="arts" type="tns:ArrayOfArticle" />
+            <s:element minOccurs="0" maxOccurs="1" name="cust" type="tns:Customer" />
+            <s:element minOccurs="1" maxOccurs="1" name="interval" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="payment" type="tns:PaymentAlternative" />
+            <s:element minOccurs="0" maxOccurs="1" name="freight" type="tns:FreightType" />
+            <s:element minOccurs="1" maxOccurs="1" name="noticedays" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bindingperiod" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="reference" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ExpFee" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampainCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subscriptionname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReadMoreURL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SendMail" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSubscriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateSubscriptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSubscriptionFromProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="1" maxOccurs="1" name="subscriptionid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="cust" type="tns:Customer" />
+            <s:element minOccurs="0" maxOccurs="1" name="CampainCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reference" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SendMail" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSubscriptionFromProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateSubscriptionFromProfileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSubscriptionInfoByCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cust" type="tns:Customer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSubscriptionInfoByCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListSubscriptionInfoByCustomerResult" type="tns:ArrayOfSubscriptionShortInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSubscriptionShortInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SubscriptionShortInfo" nillable="true" type="tns:SubscriptionShortInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SubscriptionShortInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Created" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubscriptionID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Meta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:SubscriptionStatusEnum" />
+          <s:element minOccurs="0" maxOccurs="1" name="SubscriptionReference" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Startdate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="BindingPeriod" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NoticeDays" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="SubscriptionStatusEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="Preparing" />
+          <s:enumeration value="Active" />
+          <s:enumeration value="InActive" />
+          <s:enumeration value="UnderTermination" />
+          <s:enumeration value="TerminatedByCustomer" />
+          <s:enumeration value="Blocked" />
+          <s:enumeration value="Finished" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="UnSubscribe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subscription" type="tns:SubscriptionShortInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnSubscribeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UnSubscribeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListFreighTypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListFreighTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListFreighTypesResult" type="tns:ArrayOfFreightType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFreightType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FreightType" nillable="true" type="tns:FreightType" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListPaymentTypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPaymentTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListPaymentTypesResult" type="tns:ArrayOfPaymentAlternative" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPaymentAlternative">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PaymentAlternative" nillable="true" type="tns:PaymentAlternative" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateUpdateArticle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="art" type="tns:Article" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateArticleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateUpdateArticleResult" type="tns:Article" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="product" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Product">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ProductNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Country" type="tns:CountryCode" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocalName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShortInfoProductlist" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Misc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MoreProductInformation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="URL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Keyword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShortInfoProductdetail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HeadernameProductDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HeadernameMoreInfomation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductManufacturer" type="tns:Manufacturer" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Manufacturer">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ManufactureId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ManufactureName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateUpdateProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateUpdateProductResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListProducts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListProductsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListProductsResult" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProduct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListArticles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListArticlesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListArticlesResult" type="tns:ArrayOfArticle" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListArticlesFromProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="productnumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListArticlesFromProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListArticlesFromProductResult" type="tns:ArrayOfArticle" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="productnumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PlaceProductInTree">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TreeNode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productnumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PlaceProductInTreeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetArticle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="articlenr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArticleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArticleResult" type="tns:Article" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetInventory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ArticleNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetInventoryResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdatePrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="ArticleNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="price" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePriceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateRetailPrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="ArticleNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="price" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRetailPriceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateGroupPrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="country" type="tns:CountryCode" />
+            <s:element minOccurs="0" maxOccurs="1" name="ArticleNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="customergroup" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="price" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateGroupPriceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SetArticleProperty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ArticleNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PropertyMeta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PropertyValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetArticlePropertyResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:TestConnection" />
+  </wsdl:message>
+  <wsdl:message name="TestConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:TestConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUpdateCustomer" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUpdateCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListCustomersSoapIn">
+    <wsdl:part name="parameters" element="tns:ListCustomers" />
+  </wsdl:message>
+  <wsdl:message name="ListCustomersSoapOut">
+    <wsdl:part name="parameters" element="tns:ListCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogInCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:LogInCustomer" />
+  </wsdl:message>
+  <wsdl:message name="LogInCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:LogInCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomer" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerByPersonalNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerByPersonalNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerByPersonalNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerByPersonalNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerByEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerByEmail" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerByEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateOrder" />
+  </wsdl:message>
+  <wsdl:message name="CreateOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListOrdersSoapIn">
+    <wsdl:part name="parameters" element="tns:ListOrders" />
+  </wsdl:message>
+  <wsdl:message name="ListOrdersSoapOut">
+    <wsdl:part name="parameters" element="tns:ListOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListNonIntegratedOrdersSoapIn">
+    <wsdl:part name="parameters" element="tns:ListNonIntegratedOrders" />
+  </wsdl:message>
+  <wsdl:message name="ListNonIntegratedOrdersSoapOut">
+    <wsdl:part name="parameters" element="tns:ListNonIntegratedOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderIntegrationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrderIntegration" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderIntegrationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrderIntegrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTrackingNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTrackingNumber" />
+  </wsdl:message>
+  <wsdl:message name="AddTrackingNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTrackingNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetOrderIntegrationSoapIn">
+    <wsdl:part name="parameters" element="tns:SetOrderIntegration" />
+  </wsdl:message>
+  <wsdl:message name="SetOrderIntegrationSoapOut">
+    <wsdl:part name="parameters" element="tns:SetOrderIntegrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOrderstatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateOrderstatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOrderstatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateOrderstatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateSubscriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSubscription" />
+  </wsdl:message>
+  <wsdl:message name="CreateSubscriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateSubscriptionFromProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSubscriptionFromProfile" />
+  </wsdl:message>
+  <wsdl:message name="CreateSubscriptionFromProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSubscriptionFromProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListSubscriptionInfoByCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:ListSubscriptionInfoByCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ListSubscriptionInfoByCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:ListSubscriptionInfoByCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnSubscribeSoapIn">
+    <wsdl:part name="parameters" element="tns:UnSubscribe" />
+  </wsdl:message>
+  <wsdl:message name="UnSubscribeSoapOut">
+    <wsdl:part name="parameters" element="tns:UnSubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListFreighTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:ListFreighTypes" />
+  </wsdl:message>
+  <wsdl:message name="ListFreighTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:ListFreighTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListPaymentTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:ListPaymentTypes" />
+  </wsdl:message>
+  <wsdl:message name="ListPaymentTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:ListPaymentTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateArticleSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUpdateArticle" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateArticleSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUpdateArticleResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateProductSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUpdateProduct" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateProductSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUpdateProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListProductsSoapIn">
+    <wsdl:part name="parameters" element="tns:ListProducts" />
+  </wsdl:message>
+  <wsdl:message name="ListProductsSoapOut">
+    <wsdl:part name="parameters" element="tns:ListProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListArticlesSoapIn">
+    <wsdl:part name="parameters" element="tns:ListArticles" />
+  </wsdl:message>
+  <wsdl:message name="ListArticlesSoapOut">
+    <wsdl:part name="parameters" element="tns:ListArticlesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListArticlesFromProductSoapIn">
+    <wsdl:part name="parameters" element="tns:ListArticlesFromProduct" />
+  </wsdl:message>
+  <wsdl:message name="ListArticlesFromProductSoapOut">
+    <wsdl:part name="parameters" element="tns:ListArticlesFromProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProduct" />
+  </wsdl:message>
+  <wsdl:message name="GetProductSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="PlaceProductInTreeSoapIn">
+    <wsdl:part name="parameters" element="tns:PlaceProductInTree" />
+  </wsdl:message>
+  <wsdl:message name="PlaceProductInTreeSoapOut">
+    <wsdl:part name="parameters" element="tns:PlaceProductInTreeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetArticleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArticle" />
+  </wsdl:message>
+  <wsdl:message name="GetArticleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArticleResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetInventorySoapIn">
+    <wsdl:part name="parameters" element="tns:SetInventory" />
+  </wsdl:message>
+  <wsdl:message name="SetInventorySoapOut">
+    <wsdl:part name="parameters" element="tns:SetInventoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePriceSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePrice" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePriceSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRetailPriceSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRetailPrice" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRetailPriceSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRetailPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGroupPriceSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateGroupPrice" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGroupPriceSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateGroupPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetArticlePropertySoapIn">
+    <wsdl:part name="parameters" element="tns:SetArticleProperty" />
+  </wsdl:message>
+  <wsdl:message name="SetArticlePropertySoapOut">
+    <wsdl:part name="parameters" element="tns:SetArticlePropertyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="bpo_api_1_0Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestConnection">
+      <wsdl:input message="tns:TestConnectionSoapIn" />
+      <wsdl:output message="tns:TestConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateCustomer">
+      <wsdl:input message="tns:CreateUpdateCustomerSoapIn" />
+      <wsdl:output message="tns:CreateUpdateCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListCustomers">
+      <wsdl:input message="tns:ListCustomersSoapIn" />
+      <wsdl:output message="tns:ListCustomersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LogInCustomer">
+      <wsdl:input message="tns:LogInCustomerSoapIn" />
+      <wsdl:output message="tns:LogInCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomer">
+      <wsdl:input message="tns:GetCustomerSoapIn" />
+      <wsdl:output message="tns:GetCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByPersonalNumber">
+      <wsdl:input message="tns:GetCustomerByPersonalNumberSoapIn" />
+      <wsdl:output message="tns:GetCustomerByPersonalNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByEmail">
+      <wsdl:input message="tns:GetCustomerByEmailSoapIn" />
+      <wsdl:output message="tns:GetCustomerByEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrder">
+      <wsdl:input message="tns:CreateOrderSoapIn" />
+      <wsdl:output message="tns:CreateOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListOrders">
+      <wsdl:input message="tns:ListOrdersSoapIn" />
+      <wsdl:output message="tns:ListOrdersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListNonIntegratedOrders">
+      <wsdl:input message="tns:ListNonIntegratedOrdersSoapIn" />
+      <wsdl:output message="tns:ListNonIntegratedOrdersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderIntegration">
+      <wsdl:input message="tns:GetOrderIntegrationSoapIn" />
+      <wsdl:output message="tns:GetOrderIntegrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTrackingNumber">
+      <wsdl:input message="tns:AddTrackingNumberSoapIn" />
+      <wsdl:output message="tns:AddTrackingNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderIntegration">
+      <wsdl:input message="tns:SetOrderIntegrationSoapIn" />
+      <wsdl:output message="tns:SetOrderIntegrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderstatus">
+      <wsdl:input message="tns:UpdateOrderstatusSoapIn" />
+      <wsdl:output message="tns:UpdateOrderstatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubscription">
+      <wsdl:input message="tns:CreateSubscriptionSoapIn" />
+      <wsdl:output message="tns:CreateSubscriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubscriptionFromProfile">
+      <wsdl:input message="tns:CreateSubscriptionFromProfileSoapIn" />
+      <wsdl:output message="tns:CreateSubscriptionFromProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSubscriptionInfoByCustomer">
+      <wsdl:input message="tns:ListSubscriptionInfoByCustomerSoapIn" />
+      <wsdl:output message="tns:ListSubscriptionInfoByCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnSubscribe">
+      <wsdl:input message="tns:UnSubscribeSoapIn" />
+      <wsdl:output message="tns:UnSubscribeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListFreighTypes">
+      <wsdl:input message="tns:ListFreighTypesSoapIn" />
+      <wsdl:output message="tns:ListFreighTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListPaymentTypes">
+      <wsdl:input message="tns:ListPaymentTypesSoapIn" />
+      <wsdl:output message="tns:ListPaymentTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateArticle">
+      <wsdl:input message="tns:CreateUpdateArticleSoapIn" />
+      <wsdl:output message="tns:CreateUpdateArticleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateProduct">
+      <wsdl:input message="tns:CreateUpdateProductSoapIn" />
+      <wsdl:output message="tns:CreateUpdateProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListProducts">
+      <wsdl:input message="tns:ListProductsSoapIn" />
+      <wsdl:output message="tns:ListProductsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListArticles">
+      <wsdl:input message="tns:ListArticlesSoapIn" />
+      <wsdl:output message="tns:ListArticlesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListArticlesFromProduct">
+      <wsdl:input message="tns:ListArticlesFromProductSoapIn" />
+      <wsdl:output message="tns:ListArticlesFromProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <wsdl:input message="tns:GetProductSoapIn" />
+      <wsdl:output message="tns:GetProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PlaceProductInTree">
+      <wsdl:input message="tns:PlaceProductInTreeSoapIn" />
+      <wsdl:output message="tns:PlaceProductInTreeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArticle">
+      <wsdl:input message="tns:GetArticleSoapIn" />
+      <wsdl:output message="tns:GetArticleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetInventory">
+      <wsdl:input message="tns:SetInventorySoapIn" />
+      <wsdl:output message="tns:SetInventorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrice">
+      <wsdl:input message="tns:UpdatePriceSoapIn" />
+      <wsdl:output message="tns:UpdatePriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRetailPrice">
+      <wsdl:input message="tns:UpdateRetailPriceSoapIn" />
+      <wsdl:output message="tns:UpdateRetailPriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupPrice">
+      <wsdl:input message="tns:UpdateGroupPriceSoapIn" />
+      <wsdl:output message="tns:UpdateGroupPriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetArticleProperty">
+      <wsdl:input message="tns:SetArticlePropertySoapIn" />
+      <wsdl:output message="tns:SetArticlePropertySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="bpo_api_1_0Soap" type="tns:bpo_api_1_0Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://fortusinternational.com/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestConnection">
+      <soap:operation soapAction="http://fortusinternational.com/TestConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateCustomer">
+      <soap:operation soapAction="http://fortusinternational.com/CreateUpdateCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCustomers">
+      <soap:operation soapAction="http://fortusinternational.com/ListCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogInCustomer">
+      <soap:operation soapAction="http://fortusinternational.com/LogInCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomer">
+      <soap:operation soapAction="http://fortusinternational.com/GetCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByPersonalNumber">
+      <soap:operation soapAction="http://fortusinternational.com/GetCustomerByPersonalNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByEmail">
+      <soap:operation soapAction="http://fortusinternational.com/GetCustomerByEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrder">
+      <soap:operation soapAction="http://fortusinternational.com/CreateOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrders">
+      <soap:operation soapAction="http://fortusinternational.com/ListOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListNonIntegratedOrders">
+      <soap:operation soapAction="http://fortusinternational.com/ListNonIntegratedOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderIntegration">
+      <soap:operation soapAction="http://fortusinternational.com/GetOrderIntegration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTrackingNumber">
+      <soap:operation soapAction="http://fortusinternational.com/AddTrackingNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderIntegration">
+      <soap:operation soapAction="http://fortusinternational.com/SetOrderIntegration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderstatus">
+      <soap:operation soapAction="http://fortusinternational.com/UpdateOrderstatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubscription">
+      <soap:operation soapAction="http://fortusinternational.com/CreateSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubscriptionFromProfile">
+      <soap:operation soapAction="http://fortusinternational.com/CreateSubscriptionFromProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSubscriptionInfoByCustomer">
+      <soap:operation soapAction="http://fortusinternational.com/ListSubscriptionInfoByCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSubscribe">
+      <soap:operation soapAction="http://fortusinternational.com/UnSubscribe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListFreighTypes">
+      <soap:operation soapAction="http://fortusinternational.com/ListFreighTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPaymentTypes">
+      <soap:operation soapAction="http://fortusinternational.com/ListPaymentTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateArticle">
+      <soap:operation soapAction="http://fortusinternational.com/CreateUpdateArticle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateProduct">
+      <soap:operation soapAction="http://fortusinternational.com/CreateUpdateProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListProducts">
+      <soap:operation soapAction="http://fortusinternational.com/ListProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListArticles">
+      <soap:operation soapAction="http://fortusinternational.com/ListArticles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListArticlesFromProduct">
+      <soap:operation soapAction="http://fortusinternational.com/ListArticlesFromProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <soap:operation soapAction="http://fortusinternational.com/GetProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlaceProductInTree">
+      <soap:operation soapAction="http://fortusinternational.com/PlaceProductInTree" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArticle">
+      <soap:operation soapAction="http://fortusinternational.com/GetArticle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetInventory">
+      <soap:operation soapAction="http://fortusinternational.com/SetInventory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrice">
+      <soap:operation soapAction="http://fortusinternational.com/UpdatePrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRetailPrice">
+      <soap:operation soapAction="http://fortusinternational.com/UpdateRetailPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupPrice">
+      <soap:operation soapAction="http://fortusinternational.com/UpdateGroupPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetArticleProperty">
+      <soap:operation soapAction="http://fortusinternational.com/SetArticleProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="bpo_api_1_0Soap12" type="tns:bpo_api_1_0Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://fortusinternational.com/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestConnection">
+      <soap12:operation soapAction="http://fortusinternational.com/TestConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateCustomer">
+      <soap12:operation soapAction="http://fortusinternational.com/CreateUpdateCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCustomers">
+      <soap12:operation soapAction="http://fortusinternational.com/ListCustomers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogInCustomer">
+      <soap12:operation soapAction="http://fortusinternational.com/LogInCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomer">
+      <soap12:operation soapAction="http://fortusinternational.com/GetCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByPersonalNumber">
+      <soap12:operation soapAction="http://fortusinternational.com/GetCustomerByPersonalNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByEmail">
+      <soap12:operation soapAction="http://fortusinternational.com/GetCustomerByEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrder">
+      <soap12:operation soapAction="http://fortusinternational.com/CreateOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrders">
+      <soap12:operation soapAction="http://fortusinternational.com/ListOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListNonIntegratedOrders">
+      <soap12:operation soapAction="http://fortusinternational.com/ListNonIntegratedOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderIntegration">
+      <soap12:operation soapAction="http://fortusinternational.com/GetOrderIntegration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTrackingNumber">
+      <soap12:operation soapAction="http://fortusinternational.com/AddTrackingNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderIntegration">
+      <soap12:operation soapAction="http://fortusinternational.com/SetOrderIntegration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrderstatus">
+      <soap12:operation soapAction="http://fortusinternational.com/UpdateOrderstatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubscription">
+      <soap12:operation soapAction="http://fortusinternational.com/CreateSubscription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubscriptionFromProfile">
+      <soap12:operation soapAction="http://fortusinternational.com/CreateSubscriptionFromProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSubscriptionInfoByCustomer">
+      <soap12:operation soapAction="http://fortusinternational.com/ListSubscriptionInfoByCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnSubscribe">
+      <soap12:operation soapAction="http://fortusinternational.com/UnSubscribe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListFreighTypes">
+      <soap12:operation soapAction="http://fortusinternational.com/ListFreighTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPaymentTypes">
+      <soap12:operation soapAction="http://fortusinternational.com/ListPaymentTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateArticle">
+      <soap12:operation soapAction="http://fortusinternational.com/CreateUpdateArticle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateProduct">
+      <soap12:operation soapAction="http://fortusinternational.com/CreateUpdateProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListProducts">
+      <soap12:operation soapAction="http://fortusinternational.com/ListProducts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListArticles">
+      <soap12:operation soapAction="http://fortusinternational.com/ListArticles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListArticlesFromProduct">
+      <soap12:operation soapAction="http://fortusinternational.com/ListArticlesFromProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <soap12:operation soapAction="http://fortusinternational.com/GetProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlaceProductInTree">
+      <soap12:operation soapAction="http://fortusinternational.com/PlaceProductInTree" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArticle">
+      <soap12:operation soapAction="http://fortusinternational.com/GetArticle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetInventory">
+      <soap12:operation soapAction="http://fortusinternational.com/SetInventory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrice">
+      <soap12:operation soapAction="http://fortusinternational.com/UpdatePrice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRetailPrice">
+      <soap12:operation soapAction="http://fortusinternational.com/UpdateRetailPrice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupPrice">
+      <soap12:operation soapAction="http://fortusinternational.com/UpdateGroupPrice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetArticleProperty">
+      <soap12:operation soapAction="http://fortusinternational.com/SetArticleProperty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="bpo_api_1_0">
+    <wsdl:port name="bpo_api_1_0Soap" binding="tns:bpo_api_1_0Soap">
+      <soap:address location="http://www.powerme.se/api/bpo_api_1_0.asmx" />
+    </wsdl:port>
+    <wsdl:port name="bpo_api_1_0Soap12" binding="tns:bpo_api_1_0Soap12">
+      <soap12:address location="http://www.powerme.se/api/bpo_api_1_0.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

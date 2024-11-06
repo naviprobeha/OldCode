@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<profile name="Support Agent">
+  <todo dataView="todo" caption="Ej tilldelade supportärenden"/>
+  <dataViews>
+    <allow code="openSupportCases" />
+    <allow code="closedSupportCases" />
+    <allow code="dueSupportCases" />
+    <allow code="dueTodaySupportCases" />
+    <allow code="mySupportCases" />
+    <allow code="unassignedSupportCases" />
+    <allow code="missedCalls" />
+    <allow code="lastActivitySupportCases" />    
+    <allow code="chart_createdSupportCases" />
+    <allow code="chart_closedSupportCases" />
+    <allow code="allCustomers" />
+    <allow code="allJobs" />
+    <allow code="allContacts" />
+    <allow code="todo" />
+    <allow code="myCases" />
+
+    <allow code="trattenRequests"/>
+    <allow code="trattenQuotes"/>
+    <allow code="trattenConfirmed"/>
+    <allow code="trattenInProgress"/>
+    <allow code="trattenDue"/>
+    <allow code="trattenClosed"/>
+
+    <allow code="openCases" />
+    <allow code="closedCases" />
+    <allow code="dueCases" />    
+
+  </dataViews>
+
+  <defaultDataViews>
+    <dataView type="contact" code="allContacts"/>
+    <dataView type="job" code="allJobs"/>
+    <dataView type="case" code="openSupportCases"/>
+    <dataView type="customer" code="allCustomers"/>
+  </defaultDataViews>
+  
+  <responseGroups>
+    <responseGroup uri="ccdsupport@workanywhere.se" caption="Supportgruppen" primary="true"/>
+    <responseGroup uri="ccdcashjet@workanywhere.se" caption="Cashjet Support"/>
+  </responseGroups>
+  
+  <dashboard>
+    <indicators>
+      <indicator label="Öppna" caption="Öppna supportärenden" dataView="openSupportCases" icon="list" lowerLevel="100" upperLevel="200"/>
+      <indicator label="Förfallna" caption="Förfallna supportärenden" dataView="dueSupportCases" icon="list" lowerLevel="10" upperLevel="20"/>
+      <indicator label="Mina" caption="Mina supportärenden" dataView="mySupportCases" icon="list" lowerLevel="50" upperLevel="100"/>
+      <indicator label="Tilldela" caption="Ej tilldelade supportärenden" dataView="unassignedSupportCases" icon="list" lowerLevel="10" upperLevel="20"/>
+    </indicators>
+
+    <chart label1="Inkomna ärende" label2="Slutförda ärende" dataView1="chart_createdSupportCases" dataView2="chart_closedSupportCases" />
+    <table label="Mina ärenden" dataView="myCases" />
+
+  </dashboard>
+
+  <menu>
+    <item caption="Hem" controller="Home" action="" parameters="" icon="fa-th-large"/>
+    <item caption="Supportärenden" controller="Case" action="List" parameters="" icon="fa-table">
+      <submenu>
+        <item caption="Nytt ärende" controller="Case" action="Create" parameters="commisionType=SUPPORT&amp;activityType=LOPANDE&amp;status=PAGAR" icon="fa-table"/>
+        <item caption="Mina pågående" controller="Case" action="List" parameters="dataView=mySupportCases" icon="fa-table"/>
+        <item caption="Öppna" controller="Case" action="List" parameters="dataView=openSupportCases" icon="fa-table"/>
+        <item caption="Ej tilldelade" controller="Case" action="List" parameters="dataView=unassignedSupportCases" icon="fa-table"/>
+        <item caption="Förfallna" controller="Case" action="List" parameters="dataView=dueSupportCases" icon="fa-table"/>
+        <item caption="Slutförda" controller="Case" action="List" parameters="dataView=closedSupportCases" icon="fa-table"/>
+      </submenu>
+    </item>
+    <item caption="Tratten" controller="Case" action="List" parameters="" icon="fa-table">
+      <submenu>
+        <item caption="Nytt ärende" controller="Case" action="Create" parameters="commisionType=UPPDRAG&amp;activityType=TRATTEN&amp;status=FÖRFRÅGAN" icon="fa-table"/>
+        <item caption="Förfrågan" controller="Case" action="List" parameters="dataView=trattenRequests" icon="fa-table"/>
+        <item caption="Offerter" controller="Case" action="List" parameters="dataView=trattenQuotes" icon="fa-table"/>
+        <item caption="För tilldelning" controller="Case" action="List" parameters="dataView=trattenConfirmed" icon="fa-table"/>
+        <item caption="Pågår" controller="Case" action="List" parameters="dataView=trattenInProgress" icon="fa-table"/>
+        <item caption="Förfallna" controller="Case" action="List" parameters="dataView=trattenDue" icon="fa-table"/>
+        <item caption="Slutförda" controller="Case" action="List" parameters="dataView=trattenClosed" icon="fa-table"/>
+      </submenu>
+    </item>
+    <item caption="Alla ärenden" controller="Case" action="List" parameters="" icon="fa-table">
+      <submenu>
+        <item caption="Nytt ärende" controller="Case" action="Create" parameters="commisionType=UPPDRAG&amp;activityType=LOPANDE&amp;status=PAGAR" icon="fa-table"/>
+        <item caption="Mina pågående" controller="Case" action="List" parameters="dataView=myCases" icon="fa-table"/>
+        <item caption="Öppna" controller="Case" action="List" parameters="dataView=openCases" icon="fa-table"/>
+        <item caption="Förfallna" controller="Case" action="List" parameters="dataView=dueCases" icon="fa-table"/>
+        <item caption="Slutförda" controller="Case" action="List" parameters="dataView=closedCases" icon="fa-table"/>
+      </submenu>
+    </item>
+
+    <item caption="Kunder" controller="Customer" action="List" parameters="dataView=allCustomers" icon="fa-suitcase"/>
+    <item caption="Projekt" controller="Job" action="List" parameters="dataView=allJobs" icon="fa-folder"/>
+    <item caption="Kontakter" controller="Contact" action="List" parameters="dataView=allContacts" icon="fa-user"/>    
+    <item caption="Samtalslogg" controller="PhoneLog" action="" parameters="" icon="fa-phone"/>
+  </menu>
+
+</profile>

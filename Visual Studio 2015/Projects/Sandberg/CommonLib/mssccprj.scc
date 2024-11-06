@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[CommonLib.csproj]
+SCC_Aux_Path = "\\endeavour\Visual Studio Projects\2008"
+SCC_Project_Name = "$/Navipro/Sandberg.root/Sandberg/CommonLib", ONAAAAAA
+
+[SandbergLib.csproj]
+SCC_Aux_Path = "\\endeavour\Visual Studio Projects\2008"
+SCC_Project_Name = "$/Navipro/Sandberg.root/Sandberg/CommonLib", FPAAAAAA

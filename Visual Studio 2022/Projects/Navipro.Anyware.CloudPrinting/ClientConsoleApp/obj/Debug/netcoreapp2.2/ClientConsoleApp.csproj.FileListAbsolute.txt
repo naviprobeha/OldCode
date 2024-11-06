@@ -1,0 +1,17 @@
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\bin\Debug\netcoreapp2.2\ClientConsoleApp.deps.json
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\bin\Debug\netcoreapp2.2\ClientConsoleApp.runtimeconfig.json
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\bin\Debug\netcoreapp2.2\ClientConsoleApp.runtimeconfig.dev.json
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\bin\Debug\netcoreapp2.2\ClientConsoleApp.dll
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\bin\Debug\netcoreapp2.2\ClientConsoleApp.pdb
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\bin\Debug\netcoreapp2.2\ClientLibrary.dll
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\bin\Debug\netcoreapp2.2\Newtonsoft.Json.dll
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\bin\Debug\netcoreapp2.2\ClientLibrary.pdb
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\bin\Debug\netcoreapp2.2\Newtonsoft.Json.xml
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\obj\Debug\netcoreapp2.2\ClientConsoleApp.csprojAssemblyReference.cache
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\obj\Debug\netcoreapp2.2\ClientConsoleApp.csproj.CoreCompileInputs.cache
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\obj\Debug\netcoreapp2.2\ClientConsoleApp.AssemblyInfoInputs.cache
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\obj\Debug\netcoreapp2.2\ClientConsoleApp.AssemblyInfo.cs
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\obj\Debug\netcoreapp2.2\ClientConsoleApp.csproj.CopyComplete
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\obj\Debug\netcoreapp2.2\ClientConsoleApp.dll
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\obj\Debug\netcoreapp2.2\ClientConsoleApp.pdb
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientConsoleApp\bin\Debug\netcoreapp2.2\PDFtoPrinter.exe

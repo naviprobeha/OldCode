@@ -1,0 +1,9 @@
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\CaseMasterResources\bin\Release\CaseMasterResources.dacpac
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\CaseMasterResources\bin\Release\CaseMasterResources.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\CaseMasterResources\bin\Release\CaseMasterResources.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\CaseMasterResources\obj\Release\CaseMasterResources.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\CaseMasterResources\obj\Release\CaseMasterResources.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\CaseMasterResources\obj\Release\Model.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\CaseMasterResources\obj\Release\refactor.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\CaseMasterResources\obj\Release\postdeploy.sql
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Backoffice\CaseMasterResources\obj\Release\predeploy.sql

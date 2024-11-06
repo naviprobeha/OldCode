@@ -1,0 +1,13 @@
+H:\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\bin\Release\Konvex.SmartShipping.DataObjects.dll
+H:\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\bin\Release\Konvex.SmartShipping.DataObjects.pdb
+H:\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\bin\Release\SantaMonicaCommonLib.dll
+H:\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\obj\Release\Konvex.SmartShipping.DataObjects.dll
+H:\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\obj\Release\Konvex.SmartShipping.DataObjects.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\bin\Release\Konvex.SmartShipping.DataObjects.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\bin\Release\Konvex.SmartShipping.DataObjects.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\bin\Release\SantaMonicaCommonLib.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\obj\Release\DataObjects.csprojResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\obj\Release\Konvex.SmartShipping.DataObjects.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\obj\Release\Konvex.SmartShipping.DataObjects.pdb
+H:\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\obj\Release\DataObjects.csprojResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\Konvex.SantaMonica\DataObjects\bin\Release\Newtonsoft.Json.Net20.dll

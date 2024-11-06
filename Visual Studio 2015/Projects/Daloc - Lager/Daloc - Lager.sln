@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartShipment", "SmartShipment\SmartShipment.csproj", "{D78D7DF8-50D5-404D-A291-1D0794BF1067}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NavisionMobile", "http://192.168.5.22:/NavisionMobile/NavisionMobile.csproj", "{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "SmartShipmentSetup", "SmartShipmentSetup\SmartShipmentSetup.vddproj", "{451E329F-447C-4AEE-87BB-4B67CEA9897A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78D7DF8-50D5-404D-A291-1D0794BF1067}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Release|Any CPU.ActiveCfg = Release|.NET
+		{451E329F-447C-4AEE-87BB-4B67CEA9897A}.Debug|Any CPU.ActiveCfg = Debug
+		{451E329F-447C-4AEE-87BB-4B67CEA9897A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

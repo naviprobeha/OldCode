@@ -1,0 +1,6 @@
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Test\bin\Debug\Test.dll.config
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Test\bin\Debug\Test.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Test\bin\Debug\Test.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Test\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Test\obj\Debug\Test.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Newbody.PartnerPortal\Test\obj\Debug\Test.pdb

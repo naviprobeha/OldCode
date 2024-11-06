@@ -1,0 +1,354 @@
+BODY {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+	background-color: #e5e5e5;
+     }
+
+A:link    { color: #898989; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A:visited { color: #898989; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+At:active  { color: #898989; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A:hover   { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+
+A.nav:link    { color: #000000; font-weight: bold; font-size: 11px; text-decoration: none; text-transform: none; }
+A.nav:visited { color: #000000; font-weight: bold; font-size: 11px; text-decoration: none; text-transform: none; }
+A.nav:active  { color: #000000; font-weight: bold; font-size: 11px; text-decoration: none; text-transform: none; }
+A.nav:hover   { color: #DE3921; font-weight: bold; font-size: 11px; text-decoration: none; text-transform: none; }
+
+A.logoff:link    { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.logoff:visited { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.logoff:active  { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.logoff:hover   { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+
+A.news:link    { color: #898989; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.news:visited { color: #898989; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.news:active  { color: #898989; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.news:hover   { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+
+A.light:link    { color: #898989; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.light:visited { color: #898989; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.light:active  { color: #898989; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.light:hover   { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+
+A.strong:link    { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.strong:visited { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.strong:active  { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.strong:hover   { color: #000000; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+
+A.jobName:link    { color: #006699; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: none; }
+A.jobName:visited { color: #006699; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: none; }
+A.jobName:active  { color: #006699; font-weight: bold; font-size: 12px; text-decoration: none; text-transform: none; }
+A.jobName:hover   { color: #D28600; font-weight: bold; font-size: 12px; text-decoration: underline; text-transform: none; }
+
+A.menu:link    { color: #006699; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.menu:visited { color: #006699; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.menu:active  { color: #006699; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+A.menu:hover   { color: #D28600; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+
+A.helpText:link    { color: #006699; font-weight: bold; font-size: 11px; text-decoration: none; text-transform: none; }
+A.helpText:visited { color: #006699; font-weight: bold; font-size: 11px; text-decoration: none; text-transform: none; }
+A.helpText:active  { color: #006699; font-weight: bold; font-size: 11px; text-decoration: none; text-transform: none; }
+A.helpText:hover   { color: #D28600; font-weight: bold; font-size: 11px; text-decoration: underline; text-transform: none; }
+
+TABLE.frame {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        color: 			#006699;
+        font-size: 		11px;
+        background-color:	#FFFFFF;
+	border-top:             #98AAB1 1px solid;
+	border-left:            #98AAB1 1px solid;
+	border-right:           #98AAB1 1px solid;
+	border-bottom:          #98AAB1 1px solid;
+	}
+
+TABLE.innerFrame {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        color: 			#FFFFFF;
+        font-size: 		11px;
+        background-color:	#FFFFFF;
+	border-top:             #006699 2px solid;
+	border-left:            #006699 2px solid;
+	border-right:           #006699 2px solid;
+	border-bottom:          #006699 2px solid;
+	}
+
+TR.headerFrame {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-stretch:		expanded;
+        color: 			#FFFFFF;
+        background-color: 	#A3B7CA;
+        font-weight: 		bold;
+        font-size: 		13px;
+	border-top:             #7E95AB 2px solid;
+   }	
+
+TD.dividerLine {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        color: 			#FFFFFF;
+        font-size: 		11px;
+        background-color:	#FFFFFF;
+	border-top:             #006699 2px solid;
+	border-bottom:          #006699 2px solid;
+	}
+
+
+TR.jobFrame {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		10px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#EFEFEF;
+   }
+
+TD.menuBar {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		11px;
+        font-weight: 		normal;
+        color:			#006699;
+   }
+
+TD.legend {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		11px;
+        font-weight: 		normal;
+        color:			#000000;
+   }
+
+TD.companyFrame {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		14px;
+        font-weight: 		bold;
+        color:			#006699;
+   }
+
+TD.jobName {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		12px;
+        font-weight: 		bold;
+        color:			#006699;
+        background-color:	#EFEFEF;
+   }
+
+TD.jobDescription {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		10px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#EFEFEF;
+   }
+
+TD.history {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		12px;
+        font-weight: 		bold;
+        color:			#006699;
+        background-color:	#FFFFFF;
+   }
+
+TD.activityName {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		24px;
+        font-weight: 		bold;
+        color:			#006699;
+        background-color:	#FFFFFF;
+   }
+
+TD.activityDescription {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		11px;
+        font-weight: 		normal;
+        color:			#006699;
+        background-color:	#FFFFFF;
+   }
+
+TD.activityAuthor {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		10px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#EFEFEF;
+   }
+
+TD.interactionSubject {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		10px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#EFEFEF;
+   }
+
+TD.interaction {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		12px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#EFEFEF;
+   }
+
+TD.section {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		12px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#EFEFEF;
+        border:			1px #333333 dotted;
+   }
+
+TD.innerSection {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		12px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#EFEFEF;
+        border:			1px #333333 solid;
+   }
+
+TD.activityAuthor2 {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		10px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#DEE3E7;
+   }
+
+TD.interactionSubject2 {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		10px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#DEE3E7;
+   }
+
+TD.interaction2 {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		12px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#DEE3E7;
+   }
+
+TD.divider {
+        font-family: 		Geneva, Verdana, Arial;
+        color: 			#FFFFFF;
+        background-color: 	#D1D7DC;
+        font-size: 		4px;
+   }        
+
+TD.interactionFotter {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		11px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#D9E1E9;
+   }
+
+TD.internalComment {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		11px;
+        font-weight: 		normal;
+        color:			#000000;
+        background-color:	#FFFFFF;
+   }
+
+TD.helpText {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		11px;
+        font-weight: 		bold;
+        color:			#006699;
+   }
+
+TD.resultText {
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		11px;
+        font-weight: 		normal;
+        color:			#000000;
+   }
+
+TD.legal {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #000000;
+        font-size: 10px;
+        font-weight: normal;
+   }
+
+TD.formText      {
+        font-family: Geneva, Verdana, Arial;
+        color: #000000;
+        font-size: 9px;
+   }        
+
+TD.light {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #898989;
+        font-size: 11px;
+        font-weight: normal;
+   }
+
+TD.nav      {
+        font-family: Geneva, Verdana, Arial;
+        color: #000000;
+        font-size: 12px;
+   }        
+
+TD.small      {
+        font-family: Geneva, Verdana, Arial;
+        color: #000000;
+        font-size: 5px;
+   }        
+
+TD.headLine      {
+        font-family: Geneva, Verdana, Arial;
+        color: #000000;
+        font-weight: bold;
+        font-size: 16px;
+   }        
+
+TD.subLine      {
+        font-family: Geneva, Verdana, Arial;
+        color: #000000;
+        font-weight: bold;
+        font-size: 11px;
+   }        
+
+.TextField      {
+                        font-family:            Verdana, Helvetica, Arial, sans-serif;
+                        font-size:                      10px;
+                        color:                          #333333;
+                        height:                         18px;
+                        background-color:       #f5f5f5;
+                        border-top:                     #000000 1px solid;
+                        border-left:            #000000 1px solid;
+                        border-right:           #000000 1px solid;
+                        border-bottom:          #000000 1px solid;
+                        }   
+
+.TextFieldDisabled      {
+                        font-family:            Verdana, Helvetica, Arial, sans-serif;
+                        font-size:                      10px;
+                        color:                          #333333;
+                        height:                         18px;
+                        background-color:       #e5e5e5;
+                        border-top:                     #000000 1px solid;
+                        border-left:            #000000 1px solid;
+                        border-right:           #000000 1px solid;
+                        border-bottom:          #000000 1px solid;
+                        }   
+
+.DropDown      {
+                        font-family:            Verdana, Helvetica, Arial, sans-serif;
+                        font-size:                      11px;
+                        color:                          #333333;
+                        height:                         22px;
+                        background-color:       #FFFFFF;
+                        border-top:                     #000000 1px solid;
+                        border-left:            #000000 1px solid;
+                        border-right:           #000000 1px solid;
+                        border-bottom:          #000000 1px solid;
+                        }   
+
+.Button      {
+                        font-family:            Verdana, Helvetica, Arial, sans-serif;
+                        font-size:                      10px;
+                        color:                          #333333;
+                        height:                         18px;
+                        }   
+   

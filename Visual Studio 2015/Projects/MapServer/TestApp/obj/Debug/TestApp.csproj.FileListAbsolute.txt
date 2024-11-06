@@ -1,0 +1,20 @@
+H:\My Documents\Visual Studio 2008\Projects\MapServer\TestApp\obj\Debug\ResolveAssemblyReference.cache
+H:\My Documents\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\TestApp.exe
+H:\My Documents\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\TestApp.pdb
+H:\My Documents\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\MapServerLib.dll
+H:\My Documents\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\Common.dll
+H:\My Documents\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\Common.pdb
+H:\My Documents\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\MapServerLib.pdb
+H:\My Documents\Visual Studio 2008\Projects\MapServer\TestApp\obj\Debug\TestApp.exe
+H:\My Documents\Visual Studio 2008\Projects\MapServer\TestApp\obj\Debug\TestApp.pdb
+H:\My Documents\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\GpsToolsNET.200.dll
+C:\Visual Studio 2008\Projects\MapServer\TestApp\obj\Debug\TestApp.exe
+C:\Visual Studio 2008\Projects\MapServer\TestApp\obj\Debug\TestApp.pdb
+C:\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\TestApp.exe
+C:\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\TestApp.pdb
+C:\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\Common.dll
+C:\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\MapServerLib.dll
+C:\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\GpsToolsNET.200.dll
+C:\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\Common.pdb
+C:\Visual Studio 2008\Projects\MapServer\TestApp\bin\Debug\MapServerLib.pdb
+C:\Visual Studio 2008\Projects\MapServer\TestApp\obj\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\Visual Studio\VS2008\Projects\Update\bin\Release\update.xml
+C:\Visual Studio\VS2008\Projects\Update\bin\Release\Update.exe
+C:\Visual Studio\VS2008\Projects\Update\obj\Release\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Update\obj\Release\Update.Update.resources
+C:\Visual Studio\VS2008\Projects\Update\obj\Release\Update.csproj.GenerateResource.Cache
+C:\Visual Studio\VS2008\Projects\Update\obj\Release\Update.exe

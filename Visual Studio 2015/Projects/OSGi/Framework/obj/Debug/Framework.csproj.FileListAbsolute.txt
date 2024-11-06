@@ -1,0 +1,14 @@
+C:\Visual Studio\VS2008\Projects\OSGi\Framework\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\OSGi\Framework\bin\Debug\Navipro.OSGi.Framework.dll
+C:\Visual Studio\VS2008\Projects\OSGi\Framework\bin\Debug\Navipro.OSGi.Framework.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\Framework\obj\Debug\Navipro.OSGi.Framework.dll
+C:\Visual Studio\VS2008\Projects\OSGi\Framework\obj\Debug\Navipro.OSGi.Framework.pdb
+C:\Visual Studio\VS2008\Projects\OSGi\Framework\bin\Debug\Navipro.OSGi.Interfaces.dll
+C:\Visual Studio\VS2008\Projects\OSGi\Framework\bin\Debug\Navipro.OSGi.Interfaces.pdb
+D:\Visual Studio\VS2008\Projects\OSGi\Framework\bin\Debug\Navipro.OSGi.Framework.dll
+D:\Visual Studio\VS2008\Projects\OSGi\Framework\bin\Debug\Navipro.OSGi.Framework.pdb
+D:\Visual Studio\VS2008\Projects\OSGi\Framework\bin\Debug\Navipro.OSGi.Interfaces.dll
+D:\Visual Studio\VS2008\Projects\OSGi\Framework\bin\Debug\Navipro.OSGi.Interfaces.pdb
+D:\Visual Studio\VS2008\Projects\OSGi\Framework\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\OSGi\Framework\obj\Debug\Navipro.OSGi.Framework.dll
+D:\Visual Studio\VS2008\Projects\OSGi\Framework\obj\Debug\Navipro.OSGi.Framework.pdb

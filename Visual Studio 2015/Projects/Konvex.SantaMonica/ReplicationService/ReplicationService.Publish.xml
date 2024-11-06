@@ -1,0 +1,15 @@
+<publishData>
+  <publishTarget publishUrl="\\challenger\websites\konvex.workanywhere.se\replicationService\">
+    <file relUrl="bin/SantaMonicaCommonLib.pdb" publishTime="02/28/2019 08:39:21" />
+    <file relUrl="bin/ReplicationService.pdb" publishTime="05/13/2019 19:47:05" />
+    <file relUrl="bin/Konvex.SmartShipping.Goldfinger.pdb" publishTime="05/13/2019 19:47:02" />
+    <file relUrl="bin/Konvex.SmartShipping.DataObjects.pdb" publishTime="05/13/2019 19:47:00" />
+    <file relUrl="bin/Konvex.SmartShipping.Goldfinger.dll" publishTime="05/13/2019 19:47:02" />
+    <file relUrl="Web.config" publishTime="10/27/2013 19:26:41" />
+    <file relUrl="Request.asmx" publishTime="10/27/2013 19:24:15" />
+    <file relUrl="bin/ReplicationService.dll" publishTime="05/13/2019 19:47:05" />
+    <file relUrl="bin/SantaMonicaCommonLib.dll" publishTime="02/28/2019 08:39:21" />
+    <file relUrl="bin/ChilkatDotNet.dll" publishTime="08/06/2012 16:26:30" />
+    <file relUrl="bin/Konvex.SmartShipping.DataObjects.dll" publishTime="05/13/2019 19:47:00" />
+  </publishTarget>
+</publishData>

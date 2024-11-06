@@ -1,0 +1,517 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98C65E1C-65FC-4412-B5EA-711DFA84429F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationIcon>Navision.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SmartInventory</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OutputFileFolder>\Program Files\SmartInventory</OutputFileFolder>
+    <RootNamespace>SmartInventory</RootNamespace>
+    <StartupObject>SmartInventory.StartForm</StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OSVersion>5.02</OSVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <NativePlatformName>Windows Mobile 6.5.3 Professional DTK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PlatformID>2AC76CE7-3E8C-402d-85E7-AE9C98D7B6BA</PlatformID>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <DeployDirSuffix>$(AssemblyName)</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>0</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>0</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms">
+      <Name>Microsoft.WindowsCE.Forms</Name>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>MSCorLib</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <Name>System.Data.Common</Name>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataGrid">
+      <Name>System.Windows.Forms.DataGrid</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AckSyncEntry.cs" />
+    <Compile Include="Agent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bins.Designer.cs">
+      <DependentUpon>Bins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBinContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBins.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataCustomer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataCustomers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataItemUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataItemUnits.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSetup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataWhseActivityHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataWhseActivityHeaders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataWhseActivityLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataWhseActivityLines.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataWhseItemStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataWhseItemStores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Error.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Header.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobFreq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobFreq.Designer.cs">
+      <DependentUpon>JobFreq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobItem.Designer.cs">
+      <DependentUpon>JobItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobItems.Designer.cs">
+      <DependentUpon>JobItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jobs.Designer.cs">
+      <DependentUpon>Jobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobSynch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobSynch.Designer.cs">
+      <DependentUpon>JobSynch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Maintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance.Designer.cs">
+      <DependentUpon>Maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintInfo.Designer.cs">
+      <DependentUpon>MaintInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintInv.Designer.cs">
+      <DependentUpon>MaintInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintMove.Designer.cs">
+      <DependentUpon>MaintMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintMoveItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintMoveItem.Designer.cs">
+      <DependentUpon>MaintMoveItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintSaveItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintSaveItem.Designer.cs">
+      <DependentUpon>MaintSaveItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintSaveItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintSaveItems.Designer.cs">
+      <DependentUpon>MaintSaveItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintStatus.Designer.cs">
+      <DependentUpon>MaintStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintStatusChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintStatusChange.Designer.cs">
+      <DependentUpon>MaintStatusChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publication.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuantityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuantityForm.Designer.cs">
+      <DependentUpon>QuantityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveFreq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveFreq.Designer.cs">
+      <DependentUpon>SaveFreq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveItem.Designer.cs">
+      <DependentUpon>SaveItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveItems.Designer.cs">
+      <DependentUpon>SaveItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiceArgument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiceResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmartDatabase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sound.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Status.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreFreq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreFreq.Designer.cs">
+      <DependentUpon>StoreFreq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreItem.Designer.cs">
+      <DependentUpon>StoreItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreItemInstant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreItemInstant.Designer.cs">
+      <DependentUpon>StoreItemInstant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreItemQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreItemQuantity.Designer.cs">
+      <DependentUpon>StoreItemQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreJobLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreJobLines.Designer.cs">
+      <DependentUpon>StoreJobLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreJobs.Designer.cs">
+      <DependentUpon>StoreJobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreSynch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreSynch.Designer.cs">
+      <DependentUpon>StoreSynch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Synchronize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Synchronize.Designer.cs">
+      <DependentUpon>Synchronize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchSettings.Designer.cs">
+      <DependentUpon>SynchSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\se.navipro.dev1\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <EmbeddedResource Include="Bins.resx">
+      <DependentUpon>Bins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobFreq.resx">
+      <DependentUpon>JobFreq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobItem.resx">
+      <DependentUpon>JobItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobItems.resx">
+      <DependentUpon>JobItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jobs.resx">
+      <DependentUpon>Jobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobSynch.resx">
+      <DependentUpon>JobSynch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance.resx">
+      <DependentUpon>Maintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintInfo.resx">
+      <DependentUpon>MaintInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintInv.resx">
+      <DependentUpon>MaintInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintMove.resx">
+      <DependentUpon>MaintMove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintMoveItem.resx">
+      <DependentUpon>MaintMoveItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintSaveItem.resx">
+      <DependentUpon>MaintSaveItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintSaveItems.resx">
+      <DependentUpon>MaintSaveItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintStatus.resx">
+      <DependentUpon>MaintStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintStatusChange.resx">
+      <DependentUpon>MaintStatusChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuantityForm.resx">
+      <DependentUpon>QuantityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveFreq.resx">
+      <DependentUpon>SaveFreq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveItem.resx">
+      <DependentUpon>SaveItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveItems.resx">
+      <DependentUpon>SaveItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreFreq.resx">
+      <DependentUpon>StoreFreq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreItem.resx">
+      <DependentUpon>StoreItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreItemInstant.resx">
+      <DependentUpon>StoreItemInstant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreItemQuantity.resx">
+      <DependentUpon>StoreItemQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreJobLines.resx">
+      <DependentUpon>StoreJobLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreJobs.resx">
+      <DependentUpon>StoreJobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreSynch.resx">
+      <DependentUpon>StoreSynch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Synchronize.resx">
+      <DependentUpon>Synchronize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SynchSettings.resx">
+      <DependentUpon>SynchSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Web References\se.navipro.dev1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\se.navipro.dev1\SynchService.disco" />
+    <None Include="Web References\se.navipro.dev1\SynchService.wsdl" />
+    <WebReferenceUrl Include="http://dev1.navipro.se/NavisionMobile/SynchService.asmx%3fop=PerformServiceEx">
+      <RelPath>Web References\se.navipro.dev1\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+    </WebReferenceUrl>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v3.5'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+</Project>

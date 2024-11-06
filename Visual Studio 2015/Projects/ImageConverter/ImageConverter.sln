@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageConverter", "ImageConverter\ImageConverter.csproj", "{CE0010B7-3E71-4855-B04E-0FBB53B6D703}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ImageConverterSetup", "Setup1\Setup1.vdproj", "{87057D0A-02DD-4AB8-A9B5-304ABEA0EF9D}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ImageConverter\\ImageConverter.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = ImageConverter\\
+		SccProjectUniqueName2 = Setup1\\Setup1.vdproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Setup1\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE0010B7-3E71-4855-B04E-0FBB53B6D703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE0010B7-3E71-4855-B04E-0FBB53B6D703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE0010B7-3E71-4855-B04E-0FBB53B6D703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE0010B7-3E71-4855-B04E-0FBB53B6D703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87057D0A-02DD-4AB8-A9B5-304ABEA0EF9D}.Debug|Any CPU.ActiveCfg = Debug
+		{87057D0A-02DD-4AB8-A9B5-304ABEA0EF9D}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

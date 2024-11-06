@@ -1,0 +1,15 @@
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Release\Navipro.Newbody.Woppen.Library.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Release\Navipro.Newbody.Woppen.Library.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Release\InfojetLib.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Release\InfojetLib.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\obj\Release\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\obj\Release\Navipro.Newbody.Woppen.Library.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\obj\Release\Navipro.Newbody.Woppen.Library.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Release\Navipro.Newbody.Woppen.Library.XML
+D:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\obj\Release\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Release\Navipro.Newbody.Woppen.Library.dll
+D:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Release\Navipro.Newbody.Woppen.Library.pdb
+D:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Release\InfojetLib.dll
+D:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\bin\Release\InfojetLib.pdb
+D:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\obj\Release\Navipro.Newbody.Woppen.Library.dll
+D:\Visual Studio\VS2008\Projects\Newbody.Woppen\Library\obj\Release\Navipro.Newbody.Woppen.Library.pdb

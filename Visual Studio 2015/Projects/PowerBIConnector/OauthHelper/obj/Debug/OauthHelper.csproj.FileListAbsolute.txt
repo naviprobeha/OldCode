@@ -1,0 +1,6 @@
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\OauthHelper\bin\Debug\OauthHelper.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\OauthHelper\bin\Debug\OauthHelper.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\OauthHelper\obj\Debug\OauthHelper.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\OauthHelper\obj\Debug\OauthHelper.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\OauthHelper\bin\Debug\Newtonsoft.Json.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\OauthHelper\obj\Debug\OauthHelper.csprojResolveAssemblyReference.cache

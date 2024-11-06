@@ -1,0 +1,9 @@
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\x64\Debug\AddIns.csprojResolveAssemblyReference.cache
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\x64\Debug\AddIns.csproj.ResolveComReference.cache
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\x64\Debug\Navipro.CashJet.AddIns.ConfirmBox.resources
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\x64\Debug\Navipro.CashJet.AddIns.InputBox.resources
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\x64\Debug\Navipro.CashJet.AddIns.InputBox2.resources
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\x64\Debug\Navipro.CashJet.AddIns.Keyboard.resources
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\x64\Debug\Navipro.CashJet.AddIns.MessageBox.resources
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\ButtonPanel\obj\x64\Debug\AddIns.csproj.GenerateResource.Cache

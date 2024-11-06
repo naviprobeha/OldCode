@@ -1,0 +1,7 @@
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncUtility\bin\Debug\LyncUtility.dll
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncUtility\bin\Debug\LyncUtility.pdb
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncUtility\bin\Debug\Microsoft.Lync.Model.dll
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncUtility\bin\Debug\Microsoft.Office.Uc.dll
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncUtility\bin\Debug\Microsoft.Lync.Model.xml
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncUtility\obj\Debug\LyncUtility.dll
+D:\Visual Studio\VS2010\Projects\Navipro.Lync\LyncUtility\obj\Debug\LyncUtility.pdb

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dataViews>
+  <dataView code="closedSupportCases" name="Slutförda supportärenden" type="case" query="[Case Type Code] = 'SLUTFÖRT' AND [Reason Code] = 'SUPPORT'"  />
+  <dataView code="openSupportCases" name="Aktiva supportärenden" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'SUPPORT' AND [Responsible Resource] &lt;&gt; ''"  />
+  <dataView code="dueSupportCases" name="Förfallna supportärenden" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'SUPPORT' AND ([Case Status Code] = 'NY' OR [Case Status Code] = 'PÅGÅR') AND (DATEADD(day, 3, [Last Activity Date Time]) &lt; GETDATE())"  />
+  <dataView code="dueTodaySupportCases" name="Förfaller idag" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'SUPPORT' AND (CONVERT(date, DATEADD(day, 3, [Last Activity Date Time])) = CONVERT(date, GETDATE()))"  />
+  <dataView code="mySupportCases" name="Mina pågående supportärenden" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'SUPPORT' AND ([Responsible Resource] = @myResourceNo OR [Assigned Resources] LIKE '%'+ @myResourceNo +'%')"  />
+  <dataView code="todo" name="Ej tilldelade supportärenden" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'SUPPORT' AND [Responsible Resource] = '' AND [Case Status Code] = 'NY'"  recordCount="5"/>
+
+  <dataView code="unassignedSupportCases" name="Ej tilldelade supportärenden" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'SUPPORT' AND [Responsible Resource] = '' AND ([Case Status Code] = 'NY' OR [Case Status Code] = 'PÅGÅR')"  />
+  <dataView code="lastActivitySupportCases" name="Senaste aktiviteterna" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'SUPPORT' AND ([Last Activity Part] = 1 OR [Last Activity Part] = 2)" orderBy="[Last Activity Date Time] DESC" recordCount="20"/>
+  <dataView code="missedCalls" name="Missade samtal" type="phone" query="MissedCalls"  />
+  <dataView code="chart_createdSupportCases" name="Inkomna supportärende" type="case" select="[Received Date], COUNT(*)" query="[Reason Code] = 'LÖP' AND ([Received Date] &gt;= @fromDate AND [Received Date] &lt;= @toDate)" groupBy="GROUP BY [Received Date]"  />
+  <dataView code="chart_closedSupportCases" name="Avslutade supportärende" type="case" select="[Actual Ending Date], COUNT(*)" query="[Case Type Code] = 'SLUTFÖRT' AND [Reason Code] = 'LÖP' AND ([Actual Ending Date] &gt;= @fromDate AND [Actual Ending Date] &lt;= @toDate)" groupBy="GROUP BY [Actual Ending Date]"  />
+  <dataView code="allCustomers" name="Alla kunder" type="customer" select="" query="" groupBy=""  />
+  <dataView code="allJobs" name="Alla projekt" type="job" select="" query="" groupBy=""  />
+  <dataView code="allContacts" name="Alla kontakter" type="contact" select="" query="" groupBy=""  />
+  <dataView code="myCases" name="Mina ärenden" type="case" query="[Case Type Code] = 'ÄRENDE' AND ([Responsible Resource] = @myResourceNo OR [Assigned Resources] LIKE '%'+ @myResourceNo +'%')"  />
+
+  <dataView code="trattenRequests" name="Inkomna förfrågningar" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'TRATTEN' AND [Case Status Code] = 'FÖRFRÅGAN'"  />
+  <dataView code="trattenQuotes" name="Offerter" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'TRATTEN' AND [Case Status Code] = 'OFFERT'"  />
+  <dataView code="trattenConfirmed" name="För tilldelning" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'TRATTEN' AND [Case Status Code] = 'ORDER'"  />
+  <dataView code="trattenInProgress" name="Pågår" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'TRATTEN' AND ([Case Status Code] = 'PÅGÅR' OR [Case Status Code] = 'TESTKLAR')"  />
+  <dataView code="trattenDue" name="Förfallna" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Reason Code] = 'TRATTEN' AND [Case Status Code] = 'PÅGÅR' AND [Promised Ending Date] &lt;= GETDATE()"  />
+  <dataView code="trattenClosed" name="Slutförda" type="case" query="([Case Type Code] = 'ÄRENDE' OR [Case Type Code] = 'SLUTFÖRT') AND [Reason Code] = 'TRATTEN' AND ([Case Status Code] = 'GODKÄND' OR [Case Status Code] = 'AVSLUTAT')"  />
+
+  <dataView code="closedCases" name="Slutförda supportärenden" type="case" query="[Case Type Code] = 'SLUTFÖRT'"  />
+  <dataView code="openCases" name="Aktiva supportärenden" type="case" query="[Case Type Code] = 'ÄRENDE' AND [Responsible Resource] &lt;&gt; ''"  />
+  <dataView code="dueCases" name="Förfallna supportärenden" type="case" query="[Case Type Code] = 'ÄRENDE' AND ([Case Status Code] = 'NY' OR [Case Status Code] = 'PÅGÅR') AND (DATEADD(day, 3, [Last Activity Date Time]) &lt; GETDATE())"  />
+
+</dataViews>

@@ -1,0 +1,21 @@
+C:\Users\navipro_beha\Documents\Visual Studio 2008\Projects\Navipro.Apcoa.ContactParker\WebService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\navipro_beha\Documents\Visual Studio 2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.WebService.dll
+C:\Users\navipro_beha\Documents\Visual Studio 2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.WebService.pdb
+C:\Users\navipro_beha\Documents\Visual Studio 2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.Library.dll
+C:\Users\navipro_beha\Documents\Visual Studio 2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.Library.pdb
+C:\Users\navipro_beha\Documents\Visual Studio 2008\Projects\Navipro.Apcoa.ContactParker\WebService\obj\Debug\Navipro.Apcoa.ContractParker.WebService.dll
+C:\Users\navipro_beha\Documents\Visual Studio 2008\Projects\Navipro.Apcoa.ContactParker\WebService\obj\Debug\Navipro.Apcoa.ContractParker.WebService.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.WebService.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.WebService.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.Library.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.Library.pdb
+D:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\obj\Debug\Navipro.Apcoa.ContractParker.WebService.dll
+D:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\obj\Debug\Navipro.Apcoa.ContractParker.WebService.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.WebService.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.WebService.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.Library.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\bin\Navipro.Apcoa.ContractParker.Library.pdb
+H:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\obj\Debug\Navipro.Apcoa.ContractParker.WebService.dll
+H:\Visual Studio\VS2008\Projects\Navipro.Apcoa.ContactParker\WebService\obj\Debug\Navipro.Apcoa.ContractParker.WebService.pdb

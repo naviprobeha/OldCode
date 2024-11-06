@@ -1,0 +1,10 @@
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebServiceProxy\bin\WebServiceProxy.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebServiceProxy\bin\WebServiceProxy.pdb
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebServiceProxy\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebServiceProxy\obj\Debug\WebServiceProxy.dll
+C:\Visual Studio\VS2008\Projects\Infojet 2012\WebServiceProxy\obj\Debug\WebServiceProxy.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebServiceProxy\bin\WebServiceProxy.dll
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebServiceProxy\bin\WebServiceProxy.pdb
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebServiceProxy\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebServiceProxy\obj\Debug\WebServiceProxy.dll
+D:\Visual Studio\VS2008\Projects\Infojet 2012\WebServiceProxy\obj\Debug\WebServiceProxy.pdb

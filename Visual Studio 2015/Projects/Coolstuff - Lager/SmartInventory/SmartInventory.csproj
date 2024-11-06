@@ -1,0 +1,392 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBFF70E2-1CEE-4C08-89FE-B12818C31E42}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Navipro.SmartInventory</RootNamespace>
+    <AssemblyName>SmartInventory</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartInventory</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>Navision.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddItemToReceiptWorksheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItemToReceiptWorksheet.Designer.cs">
+      <DependentUpon>AddItemToReceiptWorksheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="DataInventoryItem.cs" />
+    <Compile Include="DataItemBinContent.cs" />
+    <Compile Include="DataItemCrossReference.cs" />
+    <Compile Include="DataPickConfig.cs" />
+    <Compile Include="DataPickItemLines.cs" />
+    <Compile Include="DataPickLine.cs" />
+    <Compile Include="DataPurchaseOrder.cs" />
+    <Compile Include="DataReceiptHeader.cs" />
+    <Compile Include="DataReceiptLine.cs" />
+    <Compile Include="DataShipmentHeader.cs" />
+    <Compile Include="DataShipmentHeaderCollection.cs" />
+    <Compile Include="DataStoreHeader.cs" />
+    <Compile Include="DataStoreLine.cs" />
+    <Compile Include="DataUser.cs" />
+    <Compile Include="DataUserCollection.cs" />
+    <Compile Include="DataWagon.cs" />
+    <Compile Include="DataWagonCollection.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="InventoryJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryJournal.Designer.cs">
+      <DependentUpon>InventoryJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryOption.Designer.cs">
+      <DependentUpon>InventoryOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryQuick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryQuick.Designer.cs">
+      <DependentUpon>InventoryQuick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemBinContentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemBinContentList.Designer.cs">
+      <DependentUpon>ItemBinContentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logger.cs" />
+    <Compile Include="MoveOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveOption.Designer.cs">
+      <DependentUpon>MoveOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovePickOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovePickOut.Designer.cs">
+      <DependentUpon>MovePickOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveStore.Designer.cs">
+      <DependentUpon>MoveStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveStoreItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveStoreItem.Designer.cs">
+      <DependentUpon>MoveStoreItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NAVComm.cs" />
+    <Compile Include="PickCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickCreate.Designer.cs">
+      <DependentUpon>PickCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickItem.Designer.cs">
+      <DependentUpon>PickItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickItemLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickItemLines.Designer.cs">
+      <DependentUpon>PickItemLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickLine.Designer.cs">
+      <DependentUpon>PickLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickList.Designer.cs">
+      <DependentUpon>PickList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickOptions.Designer.cs">
+      <DependentUpon>PickOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickRetailCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickRetailCreate.Designer.cs">
+      <DependentUpon>PickRetailCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QtyPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QtyPad.Designer.cs">
+      <DependentUpon>QtyPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiptItem.Designer.cs">
+      <DependentUpon>ReceiptItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiptList.Designer.cs">
+      <DependentUpon>ReceiptList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptWorksheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiptWorksheet.Designer.cs">
+      <DependentUpon>ReceiptWorksheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs" />
+    <Compile Include="ServiceArgument.cs" />
+    <Compile Include="ServiceRequest.cs" />
+    <Compile Include="ServiceResponse.cs" />
+    <Compile Include="SmartDatabase.cs" />
+    <Compile Include="Sound.cs" />
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddItemToReceiptWorksheet.resx">
+      <DependentUpon>AddItemToReceiptWorksheet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryJournal.resx">
+      <DependentUpon>InventoryJournal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryOption.resx">
+      <DependentUpon>InventoryOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryQuick.resx">
+      <DependentUpon>InventoryQuick.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemBinContentList.resx">
+      <DependentUpon>ItemBinContentList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveOption.resx">
+      <DependentUpon>MoveOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovePickOut.resx">
+      <DependentUpon>MovePickOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveStore.resx">
+      <DependentUpon>MoveStore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveStoreItem.resx">
+      <DependentUpon>MoveStoreItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickCreate.resx">
+      <DependentUpon>PickCreate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickItem.resx">
+      <DependentUpon>PickItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickItemLines.resx">
+      <DependentUpon>PickItemLines.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickLine.resx">
+      <DependentUpon>PickLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickList.resx">
+      <DependentUpon>PickList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickOptions.resx">
+      <DependentUpon>PickOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickRetailCreate.resx">
+      <DependentUpon>PickRetailCreate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QtyPad.resx">
+      <DependentUpon>QtyPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptItem.resx">
+      <DependentUpon>ReceiptItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptList.resx">
+      <DependentUpon>ReceiptList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptWorksheet.resx">
+      <DependentUpon>ReceiptWorksheet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreItem.resx">
+      <DependentUpon>StoreItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreList.resx">
+      <DependentUpon>StoreList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storing.resx">
+      <DependentUpon>Storing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Status.cs" />
+    <Compile Include="StoreItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreItem.Designer.cs">
+      <DependentUpon>StoreItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreList.Designer.cs">
+      <DependentUpon>StoreList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storing.Designer.cs">
+      <DependentUpon>Storing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translation.cs" />
+    <Compile Include="DataPickHeader.cs" />
+    <Compile Include="Web References\navWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Navision.ico" />
+    <None Include="Web References\navWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\navWebService\ServiceRequest.disco" />
+    <None Include="Web References\navWebService\ServiceRequest.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://gro/OutnorthWebService/ServiceRequest.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\navWebService\</RelPath>
+      <UpdateFromURL>http://gro/OutnorthWebService/ServiceRequest.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

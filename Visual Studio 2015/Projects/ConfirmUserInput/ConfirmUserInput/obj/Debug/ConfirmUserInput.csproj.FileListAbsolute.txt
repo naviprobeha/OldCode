@@ -1,0 +1,10 @@
+C:\Visual Studio\VS2008\Projects\ConfirmUserInput\ConfirmUserInput\bin\Debug\GrammarDefinitions\Confirmation.grxml
+C:\Visual Studio\VS2008\Projects\ConfirmUserInput\ConfirmUserInput\bin\Debug\GrammarDefinitions\Digits.grxml
+C:\Visual Studio\VS2008\Projects\ConfirmUserInput\ConfirmUserInput\bin\Debug\GrammarDefinitions\DigitsDtmf.grxml
+C:\Visual Studio\VS2008\Projects\ConfirmUserInput\ConfirmUserInput\bin\Debug\ConfirmUserInput.exe
+C:\Visual Studio\VS2008\Projects\ConfirmUserInput\ConfirmUserInput\bin\Debug\ConfirmUserInput.pdb
+C:\Visual Studio\VS2008\Projects\ConfirmUserInput\ConfirmUserInput\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\ConfirmUserInput\ConfirmUserInput\obj\Debug\ConfirmUserInput.Properties.Resources.resources
+C:\Visual Studio\VS2008\Projects\ConfirmUserInput\ConfirmUserInput\obj\Debug\ConfirmUserInput.csproj.GenerateResource.Cache
+C:\Visual Studio\VS2008\Projects\ConfirmUserInput\ConfirmUserInput\obj\Debug\ConfirmUserInput.exe
+C:\Visual Studio\VS2008\Projects\ConfirmUserInput\ConfirmUserInput\obj\Debug\ConfirmUserInput.pdb

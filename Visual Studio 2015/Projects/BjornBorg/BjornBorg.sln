@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAVWebService", "NAVWebService\NAVWebService.csproj", "{FAB5B7F7-3FB1-4C04-92DC-F2C629AD4F6F}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NAVWebService\\NAVWebService.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = NAVWebService\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB5B7F7-3FB1-4C04-92DC-F2C629AD4F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB5B7F7-3FB1-4C04-92DC-F2C629AD4F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB5B7F7-3FB1-4C04-92DC-F2C629AD4F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB5B7F7-3FB1-4C04-92DC-F2C629AD4F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

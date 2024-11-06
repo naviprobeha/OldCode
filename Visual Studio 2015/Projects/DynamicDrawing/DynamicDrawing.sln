@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicDrawingLib", "DynamicDrawingLib\DynamicDrawingLib.csproj", "{592996D8-A4DA-4380-833A-B0D15E9907EB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DynamicDrawingSetup", "DynamicDrawingSetup\DynamicDrawingSetup.vdproj", "{3422686F-9C44-4568-9D07-B041DD95C872}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DynamicDrawingLib\\DynamicDrawingLib.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = DynamicDrawingLib\\
+		SccProjectUniqueName2 = DynamicDrawingSetup\\DynamicDrawingSetup.vdproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = DynamicDrawingSetup\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{592996D8-A4DA-4380-833A-B0D15E9907EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592996D8-A4DA-4380-833A-B0D15E9907EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592996D8-A4DA-4380-833A-B0D15E9907EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592996D8-A4DA-4380-833A-B0D15E9907EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3422686F-9C44-4568-9D07-B041DD95C872}.Debug|Any CPU.ActiveCfg = Debug
+		{3422686F-9C44-4568-9D07-B041DD95C872}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

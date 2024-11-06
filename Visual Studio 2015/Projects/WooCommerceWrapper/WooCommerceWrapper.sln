@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooCommerceWrapperTestGUI", "WooCommerceWrapperTestGUI\WooCommerceWrapperTestGUI.csproj", "{49F0A5C4-1B15-4653-91E0-83D0630AC028}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "WooCommerceWrapperSetup", "WooCommerceWrapperSetup\WooCommerceWrapperSetup.isproj", "{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1} = {07EEB70F-BD65-48A6-8FC5-F88F627E30B1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooCommerceWrapper", "WooCommerceWrapper\WooCommerceWrapper.csproj", "{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49F0A5C4-1B15-4653-91E0-83D0630AC028}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{49F0A5C4-1B15-4653-91E0-83D0630AC028}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{49F0A5C4-1B15-4653-91E0-83D0630AC028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F0A5C4-1B15-4653-91E0-83D0630AC028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F0A5C4-1B15-4653-91E0-83D0630AC028}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F0A5C4-1B15-4653-91E0-83D0630AC028}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{49F0A5C4-1B15-4653-91E0-83D0630AC028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F0A5C4-1B15-4653-91E0-83D0630AC028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F0A5C4-1B15-4653-91E0-83D0630AC028}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{49F0A5C4-1B15-4653-91E0-83D0630AC028}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}.Debug|Any CPU.ActiveCfg = DVD-5
+		{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}.Debug|Any CPU.Build.0 = DVD-5
+		{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}.DVD-5|Any CPU.Build.0 = DVD-5
+		{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}.Release|Any CPU.ActiveCfg = SingleImage
+		{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}.Release|Any CPU.Build.0 = SingleImage
+		{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{1F8F81CF-31B1-497F-B282-C5ECC24FFB9D}.SingleImage|Any CPU.Build.0 = SingleImage
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{07EEB70F-BD65-48A6-8FC5-F88F627E30B1}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavisionMobile", "http://demo.navipro.se/NavisionMobile/NavisionMobile.csproj", "{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Debug.ActiveCfg = Debug|.NET
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Debug.Build.0 = Debug|.NET
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Release.ActiveCfg = Release|.NET
+		{08D6AEC3-1D6A-4087-8492-46476B4D3CAA}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

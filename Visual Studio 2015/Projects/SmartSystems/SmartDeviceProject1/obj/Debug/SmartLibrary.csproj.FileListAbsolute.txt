@@ -1,0 +1,5 @@
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartDeviceProject1\bin\Debug\SmartLibrary.dll
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartDeviceProject1\bin\Debug\SmartLibrary.pdb
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartDeviceProject1\obj\Debug\SmartLibrary.dll
+C:\Visual Studio\VS2008\Projects\SmartSystems\SmartDeviceProject1\obj\Debug\SmartLibrary.pdb

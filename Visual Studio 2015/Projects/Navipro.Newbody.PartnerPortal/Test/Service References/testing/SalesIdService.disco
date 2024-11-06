@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://hera/NewbodyInfojetWebService/SalesID/SalesIdService.asmx?wsdl" docRef="http://hera/NewbodyInfojetWebService/SalesID/SalesIdService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://hera/NewbodyInfojetWebService/SalesID/SalesIdService.asmx" xmlns:q1="http://infojet.navipro.se/newbody/partnerportal" binding="q1:SalesIDServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://hera/NewbodyInfojetWebService/SalesID/SalesIdService.asmx" xmlns:q2="http://infojet.navipro.se/newbody/partnerportal" binding="q2:SalesIDServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

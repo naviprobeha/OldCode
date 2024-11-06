@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{20D4826A-C6FA-45DB-90F4-C717570B9F32}") = "SmartInventory", "SmartInventory.csdproj", "{98C65E1C-65FC-4412-B5EA-711DFA84429F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{98C65E1C-65FC-4412-B5EA-711DFA84429F}.Debug.ActiveCfg = Debug|Pocket PC
+		{98C65E1C-65FC-4412-B5EA-711DFA84429F}.Debug.Build.0 = Debug|Pocket PC
+		{98C65E1C-65FC-4412-B5EA-711DFA84429F}.Debug.Deploy.0 = Debug|Pocket PC
+		{98C65E1C-65FC-4412-B5EA-711DFA84429F}.Release.ActiveCfg = Release|Pocket PC
+		{98C65E1C-65FC-4412-B5EA-711DFA84429F}.Release.Build.0 = Release|Pocket PC
+		{98C65E1C-65FC-4412-B5EA-711DFA84429F}.Release.Deploy.0 = Release|Pocket PC
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

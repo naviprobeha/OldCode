@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="NavisionMobile">
+</Property><Property Name="Solution File" Value="H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\NavisionMobile\NavisionMobile.sln">
+</Property><Property Name="User Options File" Value="H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\NavisionMobile\NavisionMobile.suo">
+</Property><Property Name="Date" Value="den 8 mars 2016">
+</Property><Property Name="Time" Value="10:56">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="NavisionMobile.sln" Description="File successfully backed up as H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\NavisionMobile\Backup\NavisionMobile.sln">
+</Event><Event ErrorLevel="0" Project="" Source="NavisionMobile.suo" Description="File successfully backed up as H:\Visual Studio\VS2008\Projects\Blomstergrossisten.SmartOrder\NavisionMobile\Backup\NavisionMobile.suo">
+</Event><Event ErrorLevel="1" Project="NavisionMobile" Source="http://demo.navipro.se/NavisionMobile/NavisionMobile.csproj" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="2" Project="http://demo.navipro.se/NavisionMobile/NavisionMobile.csproj" Source="http://demo.navipro.se/NavisionMobile/NavisionMobile.csproj" Description="ERROR: Failed to back up Web site http://demo.navipro.se/NavisionMobile/NavisionMobile.csproj">
+</Event><Event ErrorLevel="0" Project="" Source="NavisionMobile.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="NavisionMobile.sln" Description="Converted">
+</Event></UpgradeLog>

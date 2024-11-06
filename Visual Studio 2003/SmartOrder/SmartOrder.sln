@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{20D4826A-C6FA-45DB-90F4-C717570B9F32}") = "SmartOrder", "SmartOrder.csdproj", "{0C444699-D4B7-4A4F-8C7C-F444A54B0151}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0C444699-D4B7-4A4F-8C7C-F444A54B0151}.Debug.ActiveCfg = Debug|Pocket PC
+		{0C444699-D4B7-4A4F-8C7C-F444A54B0151}.Debug.Build.0 = Debug|Pocket PC
+		{0C444699-D4B7-4A4F-8C7C-F444A54B0151}.Debug.Deploy.0 = Debug|Pocket PC
+		{0C444699-D4B7-4A4F-8C7C-F444A54B0151}.Release.ActiveCfg = Release|Pocket PC
+		{0C444699-D4B7-4A4F-8C7C-F444A54B0151}.Release.Build.0 = Release|Pocket PC
+		{0C444699-D4B7-4A4F-8C7C-F444A54B0151}.Release.Deploy.0 = Release|Pocket PC
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

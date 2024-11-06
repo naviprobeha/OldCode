@@ -1,0 +1,32 @@
+<publishData>
+  <publishTarget publishUrl="\\nova\c$\WebSites\default\NyceWrapper\">
+    <file relUrl="NyceMethodInvoker.asmx" publishTime="09/07/2017 14:59:01" />
+    <file relUrl="bin/XmlCombiner.pdb" publishTime="11/17/2017 14:07:54" />
+    <file relUrl="bin/XmlCombiner.dll" publishTime="11/17/2017 14:07:54" />
+    <file relUrl="Web.config" publishTime="09/07/2017 16:03:16" />
+  </publishTarget>
+  <publishTarget publishUrl="\\nova\c$\WebSites\default\NyceWrapperOutnorth\">
+    <file relUrl="NyceMethodInvoker.asmx" publishTime="09/07/2017 14:59:01" />
+    <file relUrl="bin/XmlCombiner.pdb" publishTime="11/17/2017 14:07:54" />
+    <file relUrl="bin/XmlCombiner.dll" publishTime="11/17/2017 14:07:54" />
+    <file relUrl="Web.config" publishTime="09/07/2017 16:03:16" />
+  </publishTarget>
+  <publishTarget publishUrl="\\gro\c$\WebSites\default\NyceWrapper\">
+    <file relUrl="NyceMethodInvoker.asmx" publishTime="09/07/2017 14:59:01" />
+    <file relUrl="bin/XmlCombiner.pdb" publishTime="10/14/2017 18:25:17" />
+    <file relUrl="bin/XmlCombiner.dll" publishTime="10/14/2017 18:25:17" />
+    <file relUrl="Web.config" publishTime="09/07/2017 16:03:16" />
+  </publishTarget>
+  <publishTarget publishUrl="\\gro\c$\WebSites\default\NyceWrapperOutnorth\">
+    <file relUrl="NyceMethodInvoker.asmx" publishTime="09/07/2017 14:59:01" />
+    <file relUrl="bin/XmlCombiner.pdb" publishTime="10/12/2017 22:28:15" />
+    <file relUrl="bin/XmlCombiner.dll" publishTime="10/12/2017 22:28:15" />
+    <file relUrl="Web.config" publishTime="09/07/2017 16:03:16" />
+  </publishTarget>
+  <publishTarget publishUrl="\\gro\c$\WebSites\NyceWrapper\">
+    <file relUrl="NyceMethodInvoker.asmx" publishTime="09/07/2017 14:59:01" />
+    <file relUrl="bin/XmlCombiner.pdb" publishTime="09/07/2017 15:02:42" />
+    <file relUrl="bin/XmlCombiner.dll" publishTime="09/07/2017 15:02:42" />
+    <file relUrl="Web.config" publishTime="09/07/2017 14:43:13" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,6 @@
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\KlarnaV3\bin\Debug\KlarnaV3.dll
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\KlarnaV3\bin\Debug\KlarnaV3.pdb
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\KlarnaV3\bin\Debug\Newtonsoft.Json.dll
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\KlarnaV3\obj\Debug\KlarnaV3.csprojResolveAssemblyReference.cache
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\KlarnaV3\obj\Debug\KlarnaV3.dll
+H:\Visual Studio\VS2015\Projects\Navipro.CashJet.AddIns\KlarnaV3\obj\Debug\KlarnaV3.pdb

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blomstergrossisten.SmartOrder", "Blomstergrossisten.SmartOrder\Blomstergrossisten.SmartOrder.csproj", "{A27D3155-8CC8-49FB-B874-6FA6CCF45C2F}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "SmartOrderSetup", "SmartOrderSetup\SmartOrderSetup.vddproj", "{7EBCA521-8F13-4249-823E-D54BD48972F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A27D3155-8CC8-49FB-B874-6FA6CCF45C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A27D3155-8CC8-49FB-B874-6FA6CCF45C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A27D3155-8CC8-49FB-B874-6FA6CCF45C2F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A27D3155-8CC8-49FB-B874-6FA6CCF45C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A27D3155-8CC8-49FB-B874-6FA6CCF45C2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A27D3155-8CC8-49FB-B874-6FA6CCF45C2F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7EBCA521-8F13-4249-823E-D54BD48972F1}.Debug|Any CPU.ActiveCfg = Debug
+		{7EBCA521-8F13-4249-823E-D54BD48972F1}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

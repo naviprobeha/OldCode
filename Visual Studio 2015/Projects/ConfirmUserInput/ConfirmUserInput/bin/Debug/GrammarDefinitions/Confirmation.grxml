@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--====================================================================
+  File:      Confirmation.grxml
+
+  Summary:   Grammar rule definitions for user confirmation response.
+
+========================================================================
+  This file is part of the Microsoft Live Communications Code Samples.
+
+  Copyright (C) 2005 Microsoft Corporation.  All rights reserved.
+
+This source code is intended only as a supplement to Microsoft
+Development Tools and/or on-line documentation.  See these other
+materials for detailed information regarding Microsoft code samples.
+
+THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+=====================================================================-->
+
+<grammar xmlns:sapi="http://schemas.microsoft.com/Speech/2002/06/SRGSExtensions" xml:lang="en-US" tag-format="semantics-ms/1.0" version="1.0" mode="voice" xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="Confirmation" scope="public">
+    <one-of>
+      <item>
+        <ruleref uri="#Confirmation_Yes" type="application/srgs+xml"/>
+      </item>
+      <item>
+        <ruleref uri="#Confirmation_No" type="application/srgs+xml"/>
+      </item>
+      <item>
+        <ruleref uri="#Confirmation_Cancel" type="application/srgs+xml"/>
+      </item>
+    </one-of>
+    <tag>$ = $$</tag>
+  </rule>
+  
+  <rule id="Confirmation_YesNo" scope="public">
+    <one-of>
+      <item>
+        <ruleref uri="#Confirmation_Yes" type="application/srgs+xml"/>
+      </item>
+      <item>
+        <ruleref uri="#Confirmation_No" type="application/srgs+xml"/>
+      </item>
+    </one-of>
+    <tag>$ = $$</tag>
+  </rule>
+
+  <rule id="Confirmation_Yes" scope="public">
+    <item>
+      <one-of>
+        <item>yes</item>
+        <item>yeah</item>
+        <item>yep</item>
+        <item>ok</item>
+      </one-of>
+      <item repeat="0-1">please</item>
+    </item>
+    <tag>$._value = "Yes";</tag>
+  </rule>
+
+  <rule id="Confirmation_No" scope="public">
+    <one-of>
+      <item>no</item>
+      <item>nope</item>
+    </one-of>
+    <item repeat="0-1">
+      <one-of>
+        <item>thank you</item>
+        <item>thanks</item>
+      </one-of>
+    </item>
+    <tag>$._value = "No";</tag>
+  </rule>
+
+  <rule id="Confirmation_Cancel" scope="public">
+    <item>
+      <one-of>
+        <item>stop</item>
+        <item>
+          <item repeat="0-1">go</item>
+          <item>back</item>
+        </item>
+        <item>cancel</item>
+        <item>return</item>
+      </one-of>
+    </item>
+    <tag>$._value = "Cancel";</tag>
+  </rule>
+
+</grammar>

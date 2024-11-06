@@ -1,0 +1,1 @@
+\\workanywhere.net\navipro$\home\navipro_beha\Visual Studio\VS2015\Projects\Navipro.Cashjet.Iot\IotService\IotService.csproj;arm

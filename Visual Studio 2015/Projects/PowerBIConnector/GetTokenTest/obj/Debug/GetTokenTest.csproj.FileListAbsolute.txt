@@ -1,0 +1,12 @@
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\bin\Debug\GetTokenTest.exe.config
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\bin\Debug\GetTokenTest.exe
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\bin\Debug\GetTokenTest.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\obj\Debug\GetTokenTest.csprojResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\obj\Debug\GetTokenTest.exe
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\obj\Debug\GetTokenTest.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\bin\Debug\OauthHelper.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\bin\Debug\OauthHelper.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\bin\Debug\Newtonsoft.Json.dll
+H:\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\bin\Debug\GetTokenTest.exe.config
+H:\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\obj\Debug\GetTokenTest.exe
+H:\Visual Studio\VS2015\Projects\PowerBIConnector\GetTokenTest\obj\Debug\GetTokenTest.pdb

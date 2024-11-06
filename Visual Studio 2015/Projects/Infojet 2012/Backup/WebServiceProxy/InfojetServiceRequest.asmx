@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="InfojetServiceRequest.asmx.cs" Class="Navipro.Infojet.WebServiceProxy.InfojetWebServiceProxy" %>

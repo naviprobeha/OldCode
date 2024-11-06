@@ -1,0 +1,85 @@
+﻿    <!-- Left panel : Navigation area -->
+<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+<aside id="left-panel">
+
+    <!-- User info -->
+    @{ Html.RenderPartial("_CurrentUser"); }
+    <!-- end user info -->
+    <!-- NAVIGATION : This navigation is also responsive
+
+    To make this navigation dynamic please make sure to link the node
+    (the reference to the nav > ul) after page load. Or the navigation
+    will not initialize.
+    -->
+    <nav>
+        <!-- NOTE: Notice the gaps after each icon usage <i></i>..
+        Please note that these links work a bit different than
+        traditional href="" links. See documentation for details.
+        -->
+
+        <ul>
+            <li class="@Html.RouteIf("home", "active")">
+                <a href="/" title="Home"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">@GlobalRes.Home</span></a>
+            </li>
+            <li class="top-menu-invisible @Html.RouteIf("productview", "active" )">
+                <a href="#"><i class="fa fa-lg fa-fw fa-cube"></i> <span class="menu-item-parent">@GlobalRes.Products</span></a>
+                <ul>
+                    <li class="">
+                        <a href="@Url.Action("productview", "commerce", "SS19")" title="SS19"><i class="fa fa-cube"></i> <span class="menu-item-parent">SS19</span></a>
+                    </li>
+                    <li class="">
+                        <a href="@Url.Action("productview", "commerce", "HS19")" title="HS19"><i class="fa fa-cube"></i> <span class="menu-item-parent">HS19</span></a>
+                    </li>
+                    <li class="">
+                        <a href="@Url.Action("productview", "commerce", "AW19")" title="AW19"><i class="fa fa-cube"></i> <span class="menu-item-parent">AW19</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="@Html.RouteIf("commerce", "active")">
+                <a href="#"><i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span class="menu-item-parent">@GlobalRes.Orders</span></a>
+                <ul>
+                    <li class="@Html.RouteIf("orders", "active")">
+                        <a href="@Url.Action("orders", "commerce")">@GlobalRes.Orders</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="@Html.RouteIf("graphs", "active")">
+                <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent">@GlobalRes.Transactions</span></a>
+                <ul>
+                    <li class="@Html.RouteIf("flot", "active")">
+                        <a href="@Url.Action("flot", "graphs")">@GlobalRes.Receipts</a>
+                    </li>
+                    <li class="@Html.RouteIf("morris", "active")">
+                        <a href="@Url.Action("morris", "graphs")">@GlobalRes.EndOfDays</a>
+                    </li>
+                </ul>
+            </li>	
+            <li class="@Html.RouteIf("misc", "active")">
+                <a href="#"><i class="fa fa-lg fa-fw fa-list-alt"></i> <span class="menu-item-parent">@GlobalRes.Settings</span></a>
+                <ul>
+                    <li class="@Html.RouteIf("store", "active")">
+                        <a href="@Url.Action("index", "store")">@GlobalRes.Stores</a>
+                    </li>
+                    <li class="@Html.RouteIf("device", "active")">
+                        <a href="@Url.Action("index", "device")">@GlobalRes.Devices</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("login", "account")">@GlobalRes.PaymentMethods</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("register", "account")">@GlobalRes.VoucherTypes</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("lock", "account")">@GlobalRes.ButtonPanels</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <span class="minifyme" data-action="minifyMenu">
+        <i class="fa fa-arrow-circle-left hit"></i>
+    </span>
+
+</aside>
+<!-- END NAVIGATION -->

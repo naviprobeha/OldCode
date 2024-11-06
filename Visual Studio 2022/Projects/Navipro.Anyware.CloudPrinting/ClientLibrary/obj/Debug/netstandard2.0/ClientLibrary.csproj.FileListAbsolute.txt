@@ -1,0 +1,12 @@
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\bin\Debug\netstandard2.0\ClientLibrary.deps.json
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\bin\Debug\netstandard2.0\ClientLibrary.dll
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\bin\Debug\netstandard2.0\ClientLibrary.pdb
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\obj\Debug\netstandard2.0\ClientLibrary.csprojAssemblyReference.cache
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\obj\Debug\netstandard2.0\ClientLibrary.csproj.CoreCompileInputs.cache
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\obj\Debug\netstandard2.0\ClientLibrary.AssemblyInfoInputs.cache
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\obj\Debug\netstandard2.0\ClientLibrary.AssemblyInfo.cs
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\obj\Debug\netstandard2.0\ClientLibrary.csproj.CopyComplete
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\obj\Debug\netstandard2.0\ClientLibrary.dll
+D:\Local Projects\VS2019\Navipro.Anyware.CloudPrinting\ClientLibrary\obj\Debug\netstandard2.0\ClientLibrary.pdb

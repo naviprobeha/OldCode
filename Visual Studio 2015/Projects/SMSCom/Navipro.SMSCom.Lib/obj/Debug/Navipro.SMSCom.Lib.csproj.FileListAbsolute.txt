@@ -1,0 +1,15 @@
+C:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\bin\Debug\Navipro.SMSCom.Lib.dll
+C:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\bin\Debug\Navipro.SMSCom.Lib.pdb
+C:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\bin\Debug\mCoreLib.dll
+C:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\bin\Debug\Navipro.Base.Common.dll
+C:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\bin\Debug\Navipro.Base.Common.pdb
+C:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\obj\Debug\Navipro.SMSCom.Lib.dll
+C:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\obj\Debug\Navipro.SMSCom.Lib.pdb
+H:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\bin\Debug\Navipro.SMSCom.Lib.dll
+H:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\bin\Debug\Navipro.SMSCom.Lib.pdb
+H:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\bin\Debug\Navipro.Base.Common.dll
+H:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\bin\Debug\Navipro.Base.Common.pdb
+H:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\obj\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\obj\Debug\Navipro.SMSCom.Lib.dll
+H:\Visual Studio\VS2008\Projects\SMSCom\Navipro.SMSCom.Lib\obj\Debug\Navipro.SMSCom.Lib.pdb

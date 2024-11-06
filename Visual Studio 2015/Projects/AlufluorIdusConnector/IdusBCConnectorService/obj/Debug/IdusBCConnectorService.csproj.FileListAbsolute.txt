@@ -1,0 +1,12 @@
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\bin\Debug\config.xml
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\bin\Debug\IdusBCConnectorService.exe.config
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\bin\Debug\IdusBCConnectorService.exe
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\bin\Debug\IdusBCConnectorService.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\bin\Debug\NaviPro.Alufluor.Idus.Library.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\bin\Debug\Newtonsoft.Json.dll
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\bin\Debug\NaviPro.Alufluor.Idus.Library.pdb
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\obj\Debug\IdusBCConnectorService.csprojResolveAssemblyReference.cache
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\obj\Debug\IdusBCConnectorService.ProjectInstaller.resources
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\obj\Debug\IdusBCConnectorService.csproj.GenerateResource.Cache
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\obj\Debug\IdusBCConnectorService.exe
+\\workanywhere.net\navipro$\Home\navipro_beha\Visual Studio\VS2015\Projects\AlufluorIdusConnector\IdusBCConnectorService\obj\Debug\IdusBCConnectorService.pdb

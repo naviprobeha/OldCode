@@ -1,0 +1,70 @@
+﻿@model Navipro.Backoffice.Web.ViewModels.LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NaviPro Helpdesk | Logga in</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="~/Content/animate.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">HD+</h1>
+
+            </div>
+            <h3>Välkommen till NaviPro Helpdesk!</h3>
+            <p>Logga in med dina uppgifter nedan.</p>
+            
+            @if ((Model != null) && (Model.errorMessage != ""))
+            {
+                @:<div class="hepp">FEL!</div>
+            }
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-group">
+                    @Html.TextBoxFor(model => model.email, new { @class = "form-control", @type = "email", @placeholder = "E-postadress", @required = "" })
+                </div>
+                <div class="form-group">
+                    @Html.PasswordFor(model => model.password, new { @class = "form-control", @placeholder = "Lösenord", @required = "" })
+                </div>
+                <div>
+                    <label> @Html.CheckBoxFor(model => model.rememberMe, new { @class = "i-checks" }) <span style="vertical-align: 2px;">Kom ihåg mig</span> </label>
+                    <button type="submit" class="btn btn-primary block full-width m-b">Logga in</button>
+                </div>
+
+                <a href="@Url.Action("ForgotPassword", "Login")"><small>Glömt lösenordet?</small></a>
+                <p class="text-muted text-center"><small>Saknar du ett konto?</small></p>
+                <a class="btn btn-sm btn-white btn-block" href="@Url.Action("Register", "Login")">Skapa ett nytt konto</a>
+            }
+            <p class="m-t"> <small>&copy; NaviPro 2017</small> </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+

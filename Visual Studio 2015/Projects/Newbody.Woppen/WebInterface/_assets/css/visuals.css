@@ -1,0 +1,60 @@
+﻿* {
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+a:link    { color: #ef1c22; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+a:visited { color: #ef1c22; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+a:active  { color: #ef1c22; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+a:hover   { color: #ef1c22; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+
+a.white:link    { color: #ffffff; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+a.white:visited { color: #ffffff; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+a.white:active  { color: #ffffff; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+a.white:hover   { color: #ffffff; font-weight: normal; font-size: 11px; text-decoration: none; text-transform: none; }
+
+#main a:link    { color: #ce1817; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+#main a:visited { color: #ce1817; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+#main a:active  { color: #ce1817; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+#main a:hover   { color: #ff0908; font-weight: normal; font-size: 11px; text-decoration: underline; text-transform: none; }
+
+body {
+	color: #000000;
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+	font: 11px/18px Georgia, "Times New Roman", Times, serif;
+	height: 100%;
+	font-family: Verdana, Sans-Serif;
+}
+
+h1
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;	
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+h3
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;	
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+img
+{
+	border: 0px;
+}
+
+ul
+{
+	padding: 20px;
+	margin: 0px;
+	list-style: list-style-type;
+	list-style-type: decimal;
+}

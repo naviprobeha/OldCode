@@ -1,0 +1,9 @@
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\WebInterface\bin\WebInterface.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\WebInterface\bin\WebInterface.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\WebInterface\bin\InfojetLib.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\WebInterface\bin\Navipro.Newbody.Woppen.Library.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\WebInterface\bin\Navipro.Newbody.Woppen.Library.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\WebInterface\bin\InfojetLib.pdb
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\WebInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\WebInterface\obj\Debug\WebInterface.dll
+C:\Visual Studio\VS2008\Projects\Newbody.Woppen\WebInterface\obj\Debug\WebInterface.pdb
